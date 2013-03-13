@@ -1,0 +1,120 @@
+% +++++++++++++++++++++++++++++++++++++++++++++++++
+%  Documento maestros para la elaboración de la tesis
+%  creación: 		
+%  modificación:	FERNEY BELTRAN
+%  Fecha:		septiembre 2012
+% +++++++++++++++++++++++++++++++++++++++++++++++++
+
+% Los ficheros necesarios para este documento son:
+%
+%       Varios/* : 		ficheros con las partes del documento que no
+%          			son capítulos ni apéndices (portada, agradecimientos, bibliografia  etc.)
+%       Capitulos/*.tex : 	capítulos de la tesis
+%       Apendices/*.tex: 	apéndices de la tesis
+%       Config/*:		constantes.tex: constantes del documento 
+%       			config.tex : configuración del documeto en general  y plantillas del mismo
+%				
+
+
+
+\documentclass[12pt,a4paper, twoside ]{book}
+
+\usepackage{acronym}
+ 
+
+%% fichero de configuración
+\include{00_config/config}
+
+%% Config de cabeceras de capitulos  y secciones especiales
+\include{00_config/headers}
+
+% Fichero con las macros para crear la bibliografia
+%\include{config/config_bib}
+
+ % fichero de las constantes a usar en el documento
+\include{00_config/constantes}
+
+%
+% "Metadatos" para el PDF
+%
+
+  \pdfinfo{
+   /Author (\autorDoc)
+   /Title  (\tituloDoc)
+   /CreationDate (\today)
+   /Subject (PDFLaTeX)
+   /Keywords (PDF;LaTeX)
+
+}
+
+%\input{config/headers.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-----------------document begins here ---------%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+\ifx\release\undefined
+  \layout		% para ver la configuración de las pagimas
+\fi
+
+\include{00_varios/titlepage}
+
+\frontmatter % estilo que debe tener el documento (página de título, tabla de contenidos, prólogos), 
+	     % Números romanos
+
+
+\include{00_varios/resumen} 
+%%\include{00_varios/abstract}
+%%\include{00_varios/dedicatoria}
+%%\include{00_varios/agradecimientos}
+
+%% Tablas de Contenidos
+\ifx\nogeneratoc\undefine
+  \include{00_config/config_toc} 
+\fi
+%% Lista de acrónimos
+\ifx\nogeneraacronimos\undefine
+   \include{00_varios/acronimos} 
+\if
+
+
+%%-------------------AQUÍ COMIENZAN LOS CAPÍTULOS DEL DOCUMENTO---------------------------------%
+
+\mainmatter % estilo que debe tener el texto principal del documento, numeradas con números arábigos
+\restauraCabecera
+
+
+
+\include{01_introduction/introduction}
+
+\part{Nombre parte}
+%%\include{02_Chapters/01_Part}
+\include{02_Chapters/01_Chap}
+\part{Nombre parte}
+\include{02_Chapters/02_Chap}
+
+
+\newpage
+
+
+
+%%-------------------FINAL DE LOS CAPÍTULOS DE LA TESIS---------------------------------%
+
+
+% Apéndices
+\appendix
+\include{03_Appendix/01_appendix}
+
+\backmatter % se usa para el estilo de la parte final del libro (la bibliografía, los índices de materias).
+
+\addcontentsline{toc}{chapter}{Bibliografía} 
+
+ \bibliographystyle{plainnat}
+ \begin{small}
+   \bibliography{biblio_new}
+ \end{small}
+ 
+\end{document}

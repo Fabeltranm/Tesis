@@ -1,0 +1,158 @@
+% si estamos en debug o release
+ \def\release{1}
+% en modo debug  se debe comentar el release 
+
+\ifx\release\undefined
+    % modo debug
+     \def\printtodos{1}
+    \def\printcoments{1}
+    %\psdraft % no aparecen las imagenes en el documento  impreso
+    \def\comsdestacados{1}
+    \def\nogeneratoc{1}
+    \def\nogeneraacronimos{1}
+
+\fi
+
+
+
+%%%TEXTO
+
+\usepackage{verbatim}		% texto ascii puro tal cual
+\usepackage[spanish]{layout}	% depuracion de la config de las paginas 
+				% se incluye el comando \layout en el 
+				% docuento para ver la información de
+
+%\usepackage[ansinew]{inputenc}	% windows
+\usepackage[T1]{fontenc}		% codificación de las fuentes de  salidas
+\usepackage[latin1]{inputenc}  	% codificación de fuentes de entrada
+%\usepackage[utf8]{inputenc}  		% utf8
+
+\usepackage[round]{natbib}	% soporte para bibliografia 
+				% \citep{ref} entre parentesis
+				% \citet{ref} cita normal
+				% \citeyear{ref} para la fecha
+				% \citeauthor{ref} 
+				% http://merkel.zoneo.net/Latex/natbib.php
+					
+
+\usepackage[spanish,activeacute]{babel}	% Soporte para castellano
+
+
+%% PARRAFOS
+
+\usepackage{multicol}		% utilización de multicolumna
+\setlength{\parskip}{0.2ex} 	% separacion entre parrafos se aumenta 
+\newcommand{\linespacing}[1]{\renewcommand{\baselinestretch}{#1}\normalsize}
+
+%% TITULOS
+
+\usepackage{titlesec} 	% Cambia el formato de lso  titulos  
+			% importante para la definicien de encabezados    
+			% \chaptertitlename, -> \chaptername ("Capítulo")
+			% o  a \apendixname ("Apéndice")
+
+
+			
+% DIRECCIONES WEB
+
+\usepackage{url}		% soporte para incluir direcc. web	
+				% \url{http://...} 
+\usepackage{ifpdf}		% para compilaciones con pdflatex
+				% en lugar de latex, se define el ifpdf
+\ifpdf				% Color y borde de los enlaces
+  \RequirePackage[pdfborder=0,colorlinks,hyperindex,pdfpagelabels]{hyperref}
+  \def\pdfBorderAttrs{/Border [0 0 0] }
+\else
+  \usepackage{hyperref}
+\fi
+\hypersetup{colorlinks=false}
+
+
+%%  IMAGENES
+
+\usepackage{subfig}		% remplaza el obseleto subfigure
+\usepackage{epsfig}		% imagenes eps
+\usepackage{epsf}              % Ciertas manipulaciones a EPSs
+%\usepackage[final]{graphicx}
+%\usepackage[draft,dvips]{graphicx}
+%\usepackage[pdftex]{graphicx}		% para imagenes  JPG PNG PDF
+
+
+%% TABLAS
+
+\usepackage{tabularx}		% hacer tablas con párrafos
+\usepackage{longtable}		% tablas de  varias hojas 
+\renewcommand{\arraystretch}{1.2}	%(or 1.3) %más espacio entre las lineas de la tabla
+\usepackage{colortbl}			% color en la tablas
+\usepackage{color}
+
+\usepackage{booktabs} 			% Para poner las tablas elegantes
+
+
+%%  OTROS
+
+% Redefinicion al español los nombres de las  tablas  e indices, ya que 
+% el paquete babel  los pone con el nombre de cuadros
+\addto\captionsspanish{%
+  \def\tablename{Tabla}%
+  \def\listtablename{\'Indice de tablas}%
+  \def\listfigurename{\'Indice de figuras}
+  \def\contentsname{\'Indice general}%  
+  \def\chaptername{Cap\'itulo}%  
+  \def\listacronymname{Acr�nimos y abreviaturas}%
+}
+ 
+\usepackage{calc} % ayuda con cálculos  básicos dentro de latex
+
+
+%% ACRONIMOS
+% Se genera la base de datos de los acronimos  en el fichero
+% acronimos.gdf 
+% para  gestionar los acronimos o glosario, se gestiona por medio de 
+% \glosstex[(<lista>)]{<etiqueta>}
+% en donde lista es "acr" para acrónimos, y "glo" glosario. si no se 
+% incluye lista  se entiende que es glosario, y para  acronimos se 
+% puede usar el formato  \acronym{<etiqueta>}
+%
+% Para  que  aparezca el acronimo con el formato  largo la primera vez 
+% que se usa, es aconsejable usar el \ac{<etiqueta>}, quien de forma 
+% automaticamente general la forma larga la primera  vez que se  llama
+% http://www.ctan.org/tex-archive/help/Catalogue/entries/glosstex.html
+
+\usepackage{glosstex}
+
+
+%% GENERACI�N DE NUEVOS COMANDOS  PARA SIMPLIFICAR LA ESCRITURA
+
+% insertar una figura con el fin de evitar la inclusion de la carperta
+% en donde estan las imagenes 
+\newcommand{\imagen}[2]{%
+  \includegraphics[#2]{image/#1}%
+} 
+
+% insertar figuras directamente desde el texto, se debe indicar 4 
+% argumentos 1 el nombre del fichero, 2 width=Xcm,height=Ycm,angle=Z,
+% 3 la etiqueta de la figura y 4 el titulo de la misma
+\newcommand{\figura}[4]{%
+  \begin{figure}[t]%
+    \begin{center}%
+      \imagen{#1}{#2}%
+      \caption{#4} \label{#3}%
+    \end{center}%
+  \end{figure}%
+} 
+
+
+% Configuraci�n del resumen de cada capitulo 
+\newenvironment{resumen}{%
+\begin{quotation}\noindent\begin{small}\textbf{\textsc{Resumen:}}%
+}%
+{%
+\end{small}\end{quotation}%
+\bigskip%
+}
+
+
+%%% FIN CONFIG
+
+

@@ -1,0 +1,8 @@
+% Fichero con acrónimos para su uso con GlossTeX
+
+% Las entradas son:
+% @entry{<etiqueta>[,<item>[,<forma larga>]]} [<texto>]
+
+@entry{CVS, , \emph{Control Version System}, Sistema de Control de Versiones}
+
+@entry{IEEE, , \emph{Institute of Electrical and Electronic Engineers},}
