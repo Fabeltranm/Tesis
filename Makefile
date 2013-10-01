@@ -10,7 +10,7 @@ _DIR_BACKUP   =   backups
 _DIR_IMAGES    =   images
 
 
-# GeneraciÃ³n del documento utilizando latex y dvipdf con mekeglossaries
+# Generación del documento utilizando latex y dvipdf con mekeglossaries
 latex: dtmp
 	latex -output-directory=$(_DIR_TMP) $(_LATEX_NAME)
 	@cd $(_DIR_TMP); makeglossaries $(_LATEX_NAME)
@@ -23,7 +23,7 @@ latex: dtmp
 	
 #	dvipdf  $(_DIR_TMP)/$(_LATEX_NAME).dvi
 
-# GeneraciÃ³n del documento utilizando pdflatex
+# Generación del documento utilizando pdflatex
 pdflatex:dtmp
 	pdflatex -output-directory=$(_DIR_TMP) $(_LATEX_NAME)
 	-@cd $(_DIR_TMP);-bibtex $(_LATEX_NAME)		# se coloca el - para saltar los fallos
@@ -55,7 +55,7 @@ zipBackup:latex dbackup
 	zip -r $(_LATEX_NAME).zip . -x *.zip $(_DIR_BACKUP)/*.* 
 	@mv $(_LATEX_NAME).zip $(_DIR_BACKUP)/$(_LATEX_NAME)`date --iso`.zip
 
-# creaciÃ³n de la extructura de directorios temporal  
+# creación de la extructura de directorios temporal  
 dtmp:
 	@if [ ! -d $(_DIR_TMP) ]; then mkdir $(_DIR_TMP); fi
 	@for dir in */; 	do \
