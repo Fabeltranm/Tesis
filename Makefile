@@ -1,21 +1,21 @@
 #----------------------------------------------------------
 # makefile latex
-# elaborado por ferney beltran ferney.beltran@gmail.com
-# 2013
+# elaborado por ferney beltrán ferney.beltran@gmail.com
+# septiembre 2013
 #----------------------------------------------------------
 
 _LATEX_NAME   =   Tesis
 _DIR_TMP      =   tmp
 _DIR_BACKUP   =   backups
-_DIR_IMAGES    =   images
-
+_DIR_IMAGES   =  images
+_NAME_BIBLIO  =  biblio_tesis.bib  
 
 # Generación del documento utilizando latex y dvipdf con mekeglossaries
 latex: dtmp
 	latex -output-directory=$(_DIR_TMP) $(_LATEX_NAME)
+	@cp $(_NAME_BIBLIO) $(_DIR_TMP)/$(_NAME_BIBLIO) 
+	@cd $(_DIR_TMP); bibtex $(_LATEX_NAME)
 	@cd $(_DIR_TMP); makeglossaries $(_LATEX_NAME)
-	-@cd $(_DIR_TMP); bibtex $(_LATEX_NAME)
-	latex -output-directory=$(_DIR_TMP) $(_LATEX_NAME)
 	latex -output-directory=$(_DIR_TMP) $(_LATEX_NAME)
 	latex -output-directory=$(_DIR_TMP) $(_LATEX_NAME)
 	dvips  $(_DIR_TMP)/$(_LATEX_NAME).dvi

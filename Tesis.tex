@@ -3,7 +3,8 @@
 % Documento maestros para la elaboración de la tesis  proyectos fin de carrera  y master
 %  modificación:	FERNEY BELTRAN
 %  Fecha:		    septiembre 2012
-% ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+% +
+%+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 % Los ficheros necesarios para este documento son:
 %
@@ -136,7 +137,7 @@
 \include{01_introduction/introduction}
 \part{Nombre parte}
 %%\include{02_Chapters/01_Part}
-\include{02_Chapters/01_Chap}
+\input{02_Chapters/01_Chap}
 \part{Nombre parte}
 \include{02_Chapters/02_Chap}
 
@@ -145,7 +146,7 @@
 
 
 %%-------------------FINAL DE LOS CAPÍTULOS DE LA TESIS-------------%
-
+\nocite{*}
 
 % Apéndices
 \appendix
@@ -153,11 +154,11 @@
 
 \backmatter % se usa para el estilo de la parte final del libro (la
 % bibliografía, los í­ndices de materias).
-\printglossaries
 
+% \bibliographystyle{IEEEtran}  
  \bibliographystyle{plainnat}
  \begin{small}
-   \bibliography{00_varios/biblio}
+   \bibliography{biblio_tesis}
  \end{small}
 \addcontentsline{toc}{chapter}{Bibliografía} 
  
