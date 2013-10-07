@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: Tesis.aux
+A level-1 auxiliary file: 00_varios/titlepage.aux
+A level-1 auxiliary file: 00_varios/resumen.aux
+A level-1 auxiliary file: 00_varios/abstract.aux
+A level-1 auxiliary file: 01_introduction/introduction.aux
+A level-1 auxiliary file: 02_Chapters/02_Chap.aux
+A level-1 auxiliary file: 03_Appendix/01_appendix.aux
+The style file: plainnat.bst
+Database file #1: biblio_tesis.bib
+You've used 175 entries,
+            2773 wiz_defined-function locations,
+            1736 strings with 37270 characters,
+and the built_in function-call counts, 90482 in all, are:
+= -- 7626
+> -- 6009
+< -- 109
++ -- 2040
+- -- 1860
+* -- 7950
+:= -- 14003
+add.period$ -- 530
+call.type$ -- 175
+change.case$ -- 1108
+chr.to.int$ -- 170
+cite$ -- 350
+duplicate$ -- 3830
+empty$ -- 7041
+format.name$ -- 2105
+if$ -- 18917
+int.to.chr$ -- 6
+int.to.str$ -- 1
+missing$ -- 212
+newline$ -- 888
+num.names$ -- 700
+pop$ -- 2232
+preamble$ -- 1
+purify$ -- 970
+quote$ -- 0
+skip$ -- 2914
+stack$ -- 0
+substring$ -- 3504
+swap$ -- 472
+text.length$ -- 26
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1740
+warning$ -- 0
+while$ -- 697
+width$ -- 0
+write$ -- 2296

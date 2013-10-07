@@ -1,0 +1,1220 @@
+\begin{thebibliography}{175}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Ackerman(1991)]{Ackerman91}
+M.~J. Ackerman.
+\newblock The visible human project.
+\newblock \emph{The Journal of Biocommunication}, 18:\penalty0 14, 1991.
+
+\bibitem[Aliot et~al.(2004)Aliot, Nitzsché, and Ripart]{Aliot04}
+E.~Aliot, R.~Nitzsché, and A.~Ripart.
+\newblock Arrhythmia detection by dual-chamber implantable cardioverter
+  defibrillators. a review of current algorithms.
+\newblock \emph{Europace}, 6\penalty0 (4):\penalty0 273--286, Jul 2004.
+
+\bibitem[Allen et~al.(29 Oct-1 Nov 1992)Allen, Stewart, Carlisle, Kernohan, and
+  Adgey]{Allen92}
+J.D. Allen, A.J. Stewart, E.J.F. Carlisle, W.G. Kernohan, and A.A.J. Adgey.
+\newblock Fibrillation frequency and ventricular defibrillation.
+\newblock In \emph{Proceedings of the Annual International Conference of the
+  IEEE Engineering in Medicine and Biology Society}, pages 655--656, Lyon,
+  France, 29 Oct-1 Nov 1992.
+
+\bibitem[Alonso-Atienza et~al.(2005)Alonso-Atienza, Requena-Carrión,
+  García-Alberola, Rojo-Álvarez, Sánchez-Muñoz, Martinez-Sánchez, and
+  Valdés-Chávarri]{Alonso-Atienza05}
+F.~Alonso-Atienza, J.~Requena-Carrión, A.~García-Alberola, J.~L. Rojo-Álvarez,
+  J.~J. Sánchez-Muñoz, J.~Martinez-Sánchez, and M.~Valdés-Chávarri.
+\newblock A probabilistic model of cardiac electrical activity based on a
+  cellular automata system.
+\newblock \emph{Revista Española de Cardiología}, 58\penalty0 (1):\penalty0
+  41--47, Jan 2005.
+
+\bibitem[Amann et~al.(2001)Amann, Achleitner, Antretter, Bonatti, Krismer,
+  Lindner, Rieder, Wenzel, Voelckel, and Strohmenger]{Amann01}
+Anton Amann, Ulrich Achleitner, Herwig Antretter, Johannes~O. Bonatti,
+  Anette~C. Krismer, Karl~H. Lindner, Josef Rieder, Volker Wenzel, Wolfgang~G.
+  Voelckel, and Hans-Ulrich Strohmenger.
+\newblock Analysing ventricular fibrillation ecg-signals and predicting
+  defibrillation success during cardiopulmonary resuscitation employing
+  n($\alpha$)-histograms.
+\newblock \emph{Resuscitation}, 50\penalty0 (1):\penalty0 77--85, Jul 2001.
+
+\bibitem[Arzbaecher et~al.(1979)Arzbaecher, Jenkins, Collins, and
+  Berbari]{Arzbaecher79}
+R.~C. Arzbaecher, J.~M. Jenkins, S.~Collins, and E.~Berbari.
+\newblock Atrial electrical activity: The view from the esophagus.
+\newblock In \emph{IEEE/EMBS Frontiers of Engineering in Health Care}, pages
+  314--318, 1979.
+
+\bibitem[Atienza et~al.(2006)Atienza, Almendral, Moreno, Vaidyanathan,
+  Talkachou, Kalifa, Arenal, Villacastin, Torrecilla, Sanchez, Ploutz-Snyder,
+  Jalife, and Berenfeld]{Atienza06}
+F.~Atienza, J.~Almendral, J.~Moreno, R.~Vaidyanathan, A.~Talkachou, J.~Kalifa,
+  A.~Arenal, J.~P. Villacastin, E.~G. Torrecilla, A.~Sanchez, R.~Ploutz-Snyder,
+  J.~Jalife, and O.~Berenfeld.
+\newblock Activation of inward rectifier potassium channels accelerates atrial
+  fibrillation in humans: evidence for a reentrant mechanism.
+\newblock \emph{Circulation}, 114\penalty0 (23):\penalty0 2434--2442, Dec 2006.
+
+\bibitem[Balanis(2005)]{Balanis05}
+Constantine~A. Balanis.
+\newblock \emph{Antenna theory: analysis and design}.
+\newblock John Wiley \& Sons, Hoboken New Jersey, 2005.
+
+\bibitem[Barquero-Pérez et~al.(2010)Barquero-Pérez, Rojo-Álvarez, Caamaño,
+  Goya-Esteban, Everss, Alonso-Atienza, Sánchez-Muñoz, and
+  García-Alberola]{Barquero10}
+O.~Barquero-Pérez, J.L. Rojo-Álvarez, A.J. Caamaño, R.~Goya-Esteban, E.~Everss,
+  F.~Alonso-Atienza, J.J. Sánchez-Muñoz, and A.~García-Alberola.
+\newblock Fundamental frequency and regularity of cardiac electrograms with
+  fourier organization analysis.
+\newblock \emph{IEEE Transactions on Biomedical Engineering}, 57\penalty0
+  (9):\penalty0 2168 --2177, 2010.
+
+\bibitem[Barro et~al.(1989)Barro, Ruiz, Cabello, and Mira]{Barro89}
+S.~Barro, R.~Ruiz, D.~Cabello, and J.~Mira.
+\newblock Algorithmic sequential decision-making in the frequency domain for
+  life threatening ventricular arrhythmias and imitative artefacts: a
+  diagnostic system.
+\newblock \emph{Journal of Biomedical Engineering}, 11\penalty0 (4):\penalty0
+  320--328, Jul 1989.
+
+\bibitem[Baykal et~al.(May 1997)Baykal, Ranjan, and Thakor]{Baykal97}
+A.~Baykal, R.~Ranjan, and N.V. Thakor.
+\newblock Estimation of the ventricular fibrillation duration by autoregressive
+  modeling.
+\newblock \emph{IEEE Transactions on Biomedical Engineering}, 44:\penalty0
+  349--356, May 1997.
+
+\bibitem[Bayly et~al.(1993{\natexlab{a}})Bayly, Johnson, Idriss, Ideker, and
+  Smith]{Bayly93b}
+P.~V. Bayly, E.~E. Johnson, S.~F. Idriss, R.~E. Ideker, and W.~M. Smith.
+\newblock Efficient electrode spacing for examining spatial organization during
+  ventricular fibrillation.
+\newblock \emph{IEEE Transactions on Biomedical Engineering}, 40\penalty0
+  (10):\penalty0 1060--1066, Oct 1993{\natexlab{a}}.
+
+\bibitem[Bayly et~al.(1993{\natexlab{b}})Bayly, Johnson, Wolf, Greenside,
+  Smith, and Ideker]{Bayly93a}
+P.~V. Bayly, E.~E. Johnson, P.~D. Wolf, H.~S. Greenside, W.~M. Smith, and R.~E.
+  Ideker.
+\newblock A quantitative measurement of spatial order in ventricular
+  fibrillation.
+\newblock \emph{Journal of cardiovascular electrophysiology}, 4\penalty0
+  (5):\penalty0 533--546, Oct 1993{\natexlab{b}}.
+
+\bibitem[Beltrán-Molina et~al.(2012)Beltrán-Molina, Requena-Carrión, and
+  Väisänen]{Beltran12}
+F.A. Beltrán-Molina, J.~Requena-Carrión, and J.~Väisänen.
+\newblock Analysis of the effects of lead configuration on cardiac spectrum.
+\newblock In \emph{IEEE Computing in Cardiology}, 2012.
+
+\bibitem[Berenfeld(2007)]{Berenfeld07}
+O.~Berenfeld.
+\newblock Quantifying activation frequency in atrial fibrillation to establish
+  underlying mechanisms and ablation guidance.
+\newblock \emph{Heart Rhythm}, 4\penalty0 (9):\penalty0 1225--1234, Sep 2007.
+
+\bibitem[Berenfeld(2010)]{Berenfeld10}
+Omer Berenfeld.
+\newblock Toward discerning the mechanisms of atrial fibrillation from surface
+  electrocardiogram and spectral analysis.
+\newblock \emph{Journal of Electrocardiology}, 43\penalty0 (6):\penalty0
+  509--514, 2010.
+
+\bibitem[Berenfeld et~al.(2011)Berenfeld, Ennis, Hwang, Hooven, Grzeda,
+  Mironov, Yamazaki, Kalifa, and Jalife]{Berenfeld11}
+Omer Berenfeld, Steve Ennis, Elliot Hwang, Brian Hooven, Krzysztof Grzeda,
+  Sergey Mironov, Masatoshi Yamazaki, J.~Kalifa, and J.~Jalife.
+\newblock Time- and frequency-domain analyses of atrial fibrillation activation
+  rate: The optical mapping reference.
+\newblock \emph{Heart Rhythm}, 8\penalty0 (11):\penalty0 1758 -- 1765, 2011.
+
+\bibitem[Berne(2004)]{Berne04}
+Robert~M. Berne.
+\newblock \emph{Physiology}.
+\newblock Mosby, St. Louis, 2004.
+
+\bibitem[Bhatia et~al.(2004)Bhatia, Cooley, Berger, Blanck, Dhala, Sra,
+  Axtell-Mcbride, Vandervort, and Akhtar]{Bhatia04}
+A.~Bhatia, R.~Cooley, M.~Berger, Z.~Blanck, A.~Dhala, J.~Sra,
+  K.~Axtell-Mcbride, C.~Vandervort, and M.~Akhtar.
+\newblock The implantable cardioverter defibrillator: technology, indications,
+  and impact on cardiovascular survival.
+\newblock \emph{Current Problems in Cardiology}, 29\penalty0 (6):\penalty0
+  303--356, Jun 2004.
+
+\bibitem[Born and Wolf(2005)]{Born05}
+Max Born and Emil Wolf.
+\newblock \emph{Principles of optics electromagnetic theory of propagation,
+  interference and diffraction of light}.
+\newblock Cambridge University Press, Cambridge, 2005.
+
+\bibitem[Botteron and Smith(1996)]{Botteron96}
+G.~W. Botteron and J.~M. Smith.
+\newblock Quantitative assessment of the spatial organization of atrial
+  fibrillation in the intact human heart.
+\newblock \emph{Circulation}, 93:\penalty0 513--518, Feb 1 1996.
+
+\bibitem[Botteron and Smith(Jun 1995)]{Botteron95}
+G.W. Botteron and J.M. Smith.
+\newblock A technique for measurement of the extent of spatial organization of
+  atrial activation during atrial fibrillation in the intact human heart.
+\newblock \emph{IEEE Transactions on Biomedical Engineering}, 42:\penalty0
+  579--586, Jun 1995.
+
+\bibitem[Brody(1956)]{Brody56}
+D.~A. Brody.
+\newblock A theoretical analysis of intracavitary blood mass influence on the
+  heart-lead relationship.
+\newblock \emph{Circulation Research}, 4\penalty0 (6):\penalty0 731--738, Nov
+  1956.
+
+\bibitem[Brown et~al.(1991)Brown, Griffith, Ligten, Hoekstra, Nejman, Mitchell,
+  and Dzwonczyk]{Brown89}
+C.~G. Brown, R.~F. Griffith, P.~Van Ligten, J.~Hoekstra, G.~Nejman,
+  L.~Mitchell, and R.~Dzwonczyk.
+\newblock Median frequency--a new parameter for predicting defibrillation
+  success rate.
+\newblock \emph{Annals of Emergency Medicine}, 20\penalty0 (7):\penalty0
+  787--789, Jul 1991.
+
+\bibitem[Bunge(1982)]{Bunge82}
+Mario Bunge.
+\newblock \emph{Filosofía de la física}.
+\newblock Ariel, Barcelona, 1982.
+
+\bibitem[Burger and Milaan(1948)]{Burger48}
+H.~C. Burger and J.~B.~Van Milaan.
+\newblock Heart-vector and leads; geometrical representation.
+\newblock \emph{British Heart Journal}, 10:\penalty0 229--233, Oct 1948.
+
+\bibitem[Casaleggio et~al.(2006)Casaleggio, Rossi, Faini, Guidotto, Malavasi,
+  Musso, and Sartori]{Casaleggio06}
+A.~Casaleggio, P.~Rossi, A.~Faini, T.~Guidotto, V.~Malavasi, G.~Musso, and
+  G.~Sartori.
+\newblock Analysis of implantable cardioverter defibrillator signals for non
+  conventional cardiac electrical activity characterization.
+\newblock \emph{Medical and Biological Engineering and Computing}, 44:\penalty0
+  45--53, Mar 2006.
+
+\bibitem[Casaleggio et~al.(22-25 Sep 2002)Casaleggio, Rossi, Dall'~Acqua,
+  Faini, Sartori, Musso, Mureddu, Casali, Malavasi, and
+  Chierchia]{Casaleggio02}
+A.~Casaleggio, P.~Rossi, A.~Dall'~Acqua, A.~Faini, G.~Sartori, G.~Musso,
+  R.~Mureddu, E.~Casali, V.~Malavasi, and S.~Chierchia.
+\newblock On cardiac activity characterization from implantable cardioverter
+  defibrillator electrogram analysis: is far-field better?
+\newblock In \emph{IEEE Computers in Cardiology}, pages 161--164, 22-25 Sep
+  2002.
+
+\bibitem[Chalmers(2005)]{Chalmers05}
+Alan~F. Chalmers.
+\newblock \emph{¿Qué es esa cosa llamada ciencia?}
+\newblock Siglo Veintiuno, Madrid, 2005.
+
+\bibitem[Clayton et~al.(1 Mar 1995)Clayton, Murray, and Campbell]{Clayton95}
+R.H. Clayton, A.~Murray, and R.W.F. Campbell.
+\newblock Frequency analysis of ventricular fibrillation.
+\newblock In \emph{IEE Colloquium on Signal Processing in Cardiography}, pages
+  3/1--3/4, 1 Mar 1995.
+
+\bibitem[Clayton et~al.(11-14 Oct 1992)Clayton, Murray, and
+  Campbell]{Clayton92}
+R.H. Clayton, A.~Murray, and R.W.F. Campbell.
+\newblock Frequency analysis of ventricular fibrillation in three surface ecg
+  leads.
+\newblock In \emph{IEEE Computers in Cardiology}, pages 155--158, 11-14 Oct
+  1992.
+
+\bibitem[Clayton et~al.(25-28 Sep 1994)Clayton, Murray, and
+  Campbell]{Clayton94}
+R.H. Clayton, A.~Murray, and R.W.F. Campbell.
+\newblock Frequency analysis of self-terminating ventricular fibrillation.
+\newblock In \emph{IEEE Computers in Cardiology}, pages 705--708, 25-28 Sep
+  1994.
+
+\bibitem[Cohen(Nov 2005)]{Cohen05}
+L.~Cohen.
+\newblock The history of noise.
+\newblock \emph{IEEE Signal Processing Magazine}, 22:\penalty0 20--45, Nov
+  2005.
+
+\bibitem[Cohen(1995)]{Cohen95}
+Leon Cohen.
+\newblock \emph{Time-frequency analysis}.
+\newblock Prentice Hall PTR, Englewood Cliffs, N.J, 1995.
+
+\bibitem[Cooklin et~al.(1999)Cooklin, Tummala, Peters, Shorofsky, and
+  Gold]{Cooklin99}
+M.~Cooklin, R.~V. Tummala, R.~W. Peters, S.~R. Shorofsky, and M.~R. Gold.
+\newblock Comparison of bipolar and integrated sensing for redetection of
+  ventricular fibrillation.
+\newblock \emph{American Heart Journal}, 138\penalty0 (1 Pt 1):\penalty0
+  133--136, Jul 1999.
+
+\bibitem[Davison and Hinkley(1997)]{Davison97}
+A.~C. Davison and D.~V. Hinkley.
+\newblock \emph{Bootstrap methods and their application}.
+\newblock Cambridge University Press, Cambridge, 1997.
+
+\bibitem[de~Luna et~al.(1989)de~Luna, Coumel, and Leclercq]{BayesdeLuna89}
+A.~Bayés de~Luna, P.~Coumel, and J.~F. Leclercq.
+\newblock Ambulatory sudden cardiac death: mechanisms of production of fatal
+  arrhythmia on the basis of data from 157 cases.
+\newblock \emph{American Heart Journal}, 117\penalty0 (1):\penalty0 151--159,
+  Jan 1989.
+
+\bibitem[DeCaprio et~al.(1977)DeCaprio, Hurzeler, and Furman]{DeCaprio77}
+V.~DeCaprio, P.~Hurzeler, and S.~Furman.
+\newblock A comparison of unipolar and bipolar electrograms for cardiac
+  pacemaker sensing.
+\newblock \emph{Circulation}, 56\penalty0 (5):\penalty0 750--755, Nov 1977.
+
+\bibitem[Dibs et~al.(2008)Dibs, Ng, Arora, Passman, Kadish, and
+  Goldberger]{Dibs08}
+Samer~R Dibs, Jason Ng, Rishi Arora, Rod~S Passman, Alan~H Kadish, and
+  Jeffrey~J Goldberger.
+\newblock Spatiotemporal characterization of atrial activation in persistent
+  human atrial fibrillation: multisite electrogram analysis and surface
+  electrocardiographic correlations--a pilot study.
+\newblock \emph{Heart Rhythm}, 5\penalty0 (5):\penalty0 686--693, 2008.
+
+\bibitem[Dzwonczyk et~al.(1990)Dzwonczyk, Brown, and Werman]{Dzwonczyk90}
+R.~Dzwonczyk, C.G. Brown, and H.A. Werman.
+\newblock The median frequency of the ecg during ventricular fibrillation: its
+  use in an algorithm for estimating the duration of cardiac arrest.
+\newblock \emph{IEEE Transactions on Biomedical Engineering}, 37:\penalty0
+  640--646, 1990.
+
+\bibitem[Eftestøl et~al.(2000)Eftestøl, Sunde, Aase, Husoy, and
+  Steen]{Eftestol00}
+T.~Eftestøl, K.~Sunde, S.~Ole Aase, J.~H. Husoy, and P.~A. Steen.
+\newblock Predicting outcome of defibrillation by spectral characterization and
+  nonparametric classification of ventricular fibrillation in patients with
+  out-of-hospital cardiac arrest.
+\newblock \emph{Circulation}, 102\penalty0 (13):\penalty0 1523--1529, Sep 2000.
+
+\bibitem[Ellenbogen et~al.(2000)Ellenbogen, Kay, and Wilkoff]{Ellenbogen00}
+Kenneth~A. Ellenbogen, G.~Neal Kay, and Bruce~L. Wilkoff.
+\newblock \emph{Clinical cardiac pacing and defibrillation}.
+\newblock W.B. Saunders, Philadephia, 2000.
+
+\bibitem[Everett et~al.(2001{\natexlab{a}})Everett, Kok, Vaughn, Moorman, and
+  Haines]{Everett01a}
+T.~H. Everett, L.~C. Kok, R.~H. Vaughn, J.~R. Moorman, and D.~E. Haines.
+\newblock Frequency domain algorithm for quantifying atrial fibrillation
+  organization to increase defibrillation efficacy.
+\newblock \emph{IEEE Transactions on Biomedical Engineering}, 48\penalty0
+  (9):\penalty0 969--978, Sep 2001{\natexlab{a}}.
+
+\bibitem[Everett et~al.(2001{\natexlab{b}})Everett, Moorman, Kok, Akar, and
+  Haines]{Everett01b}
+T.~H. Everett, J.~R. Moorman, L.~C. Kok, J.~G. Akar, and D.~E. Haines.
+\newblock Assessment of global atrial fibrillation organization to optimize
+  timing of atrial defibrillation.
+\newblock \emph{Circulation}, 103\penalty0 (23):\penalty0 2857--2861, Jun
+  2001{\natexlab{b}}.
+
+\bibitem[{F. ~M. ~Nolle and K. ~L. ~Ryschon and A. ~E. ~Zencka}(1981)]{Nolle81}
+{F. ~M. ~Nolle and K. ~L. ~Ryschon and A. ~E. ~Zencka}.
+\newblock Power spectrum analysis of ventricular fibrillation and imitative
+  artifacts.
+\newblock In \emph{IEEE Computers in Cardiology}, pages 209--212, 1981.
+
+\bibitem[{F. M. Nolle and R. W. Bowser and F. K. Badura and J. M. Catlett and
+  R. R. Gudapati and T. T. Hee and A. N Moos and M. H. Sr.
+  Sketch}(1989)]{Nolle89}
+{F. M. Nolle and R. W. Bowser and F. K. Badura and J. M. Catlett and R. R.
+  Gudapati and T. T. Hee and A. N Moos and M. H. Sr. Sketch}.
+\newblock Evalutation of frequency-domain algorithm to detect ventricular
+  fibrillation in the surface electrocardiogram.
+\newblock In \emph{IEEE Computers in Cardiology}, pages 337--40, 1989.
+
+\bibitem[Farreras-Valentí and Rozman(2000)]{Farreras00}
+P.~Farreras-Valentí and C.~Rozman.
+\newblock \emph{Medicina interna}.
+\newblock Harcourt, Madrid, 2000.
+
+\bibitem[Fischer et~al.(2007)Fischer, Stuhlinger, Nowak, Wieser, Tilg, and
+  Hintringer]{Fischer07}
+G.~Fischer, M.~Ch Stuhlinger, C.~N. Nowak, L.~Wieser, B.~Tilg, and
+  F.~Hintringer.
+\newblock On computing dominant frequency from bipolar intracardiac
+  electrograms.
+\newblock \emph{IEEE Transactions on Biomedical Engineering}, 54\penalty0
+  (1):\penalty0 165--169, Jan 2007.
+
+\bibitem[Forster and Weaver(1982)]{Forster82}
+F.~K. Forster and W.~D. Weaver.
+\newblock Recognition of ventricular fibrillation, other rhythms and noise in
+  patients developing sudden cardiac death.
+\newblock In \emph{IEEE Computers in Cardiology}, pages 245--8, 1982.
+
+\bibitem[Frain et~al.(2007)Frain, Ellison, Michaud, Koo, Buxton, and
+  Kirk]{Frain07}
+B.~H. Frain, K.~E. Ellison, G.~F. Michaud, C.~H. Koo, A.~E. Buxton, and M.~M.
+  Kirk.
+\newblock True bipolar defibrillator leads have increased sensing latency and
+  threshold compared with the integrated bipolar configuration.
+\newblock \emph{Journal of Cardiovascular Electrophysiology}, 18\penalty0
+  (2):\penalty0 192--195, Feb 2007.
+
+\bibitem[Gardiner(2004)]{Gardiner04}
+Crispin~W. Gardiner.
+\newblock \emph{Handbook of stochastic methods: for physics, Chemistry and the
+  Natural sciences}, volume~13.
+\newblock Springer, Berlin, 2004.
+
+\bibitem[Gardner(1988)]{Gardner88}
+William~A. Gardner.
+\newblock \emph{Statistical spectral analysis: a nonprobabilistic theory}.
+\newblock Prentice-Hall, Englewood Cliffs, New Jersey, 1988.
+
+\bibitem[Glass and Mackey(1988)]{Glass88}
+Leon Glass and Michael~C. Mackey.
+\newblock \emph{From clocks to chaos: the rhythms of life}.
+\newblock Princeton University Press, Princeton, N.J, 1988.
+
+\bibitem[Gojraty et~al.(2009)Gojraty, Lavi, Valles, Kim, Michele, and
+  Gerstenfeld]{Gojraty09}
+Sattar Gojraty, Nimrod Lavi, Ermengol Valles, Steven~J Kim, John Michele, and
+  Edward~P Gerstenfeld.
+\newblock Dominant frequency mapping of atrial fibrillation: comparison of
+  contact and noncontact approaches.
+\newblock \emph{Journal of Cardiovascular Electrophysiology}, 20\penalty0
+  (9):\penalty0 997--1004, 2009.
+
+\bibitem[Goldberger et~al.(1998)Goldberger, Horvath, Donovan, Johnson,
+  Challapalli, and Kadish]{Goldberger98}
+J.~J. Goldberger, G.~Horvath, D.~Donovan, D.~Johnson, R.~Challapalli, and A.~H.
+  Kadish.
+\newblock Detection of ventricular fibrillation by transvenous defibrillating
+  leads: integrated versus dedicated bipolar sensing.
+\newblock \emph{Journal of Cardiovascular Electrophysiology}, 9:\penalty0
+  677--688, Jul 1998.
+
+\bibitem[Golden et~al.(Sept. 1973)Golden, Wolthuis, and Hoffler]{Golden73}
+Donald~P. Golden, Roger~A. Wolthuis, and G.~W. Hoffler.
+\newblock A spectral analysis of the normal resting electrocardiogram.
+\newblock \emph{IEEE Transactions on Biomedical Engineering}, pages 366--372,
+  Sept. 1973.
+
+\bibitem[Goldstine(1972)]{Goldstine72}
+Herman~Heine Goldstine.
+\newblock \emph{The computer from Pascal to von Neumann}.
+\newblock Princeton University Press, Princeton, N.J., 1972.
+
+\bibitem[Gollob and Seger(2001)]{Gollob01}
+M.~H. Gollob and J.~J. Seger.
+\newblock Current status of the implantable cardioverter-defibrillator.
+\newblock \emph{Chest}, 119\penalty0 (4):\penalty0 1210--1221, Apr 2001.
+
+\bibitem[Goodman(2000)]{Goodman00}
+Joseph~W. Goodman.
+\newblock \emph{Statistical optics}.
+\newblock John Wiley and Sons, New York, 2000.
+
+\bibitem[Gradaus et~al.(2003)Gradaus, Breithardt, and Bocker]{Gradaus03}
+R.~Gradaus, G.~Breithardt, and D.~Bocker.
+\newblock Icd leads: design and chronic dysfunctions.
+\newblock \emph{Pacing and Clinical Electrophysiology}, 26\penalty0 (2 Pt
+  1):\penalty0 649--657, Feb 2003.
+
+\bibitem[Guillem et~al.(2009)Guillem, Climent, Castells, Husser, Millet, Arya,
+  Piorkowski, and Bollmann]{Guillem09}
+MARIA~S. Guillem, ANDREU~M. Climent, FRANCISCO Castells, DANIELA Husser, JOSE
+  Millet, ARASH Arya, CHRISTOPHER Piorkowski, and ANDREAS Bollmann.
+\newblock Noninvasive mapping of human atrial fibrillation.
+\newblock \emph{Journal of Cardiovascular Electrophysiology}, 20\penalty0
+  (5):\penalty0 507--513, 2009.
+
+\bibitem[Hall and Wilson(1991)]{Hall91}
+Peter Hall and Susan~R. Wilson.
+\newblock Two guidelines for bootstrap hypothesis testing.
+\newblock \emph{Biometrics}, 47\penalty0 (2):\penalty0 757--762, Jun. 1991.
+
+\bibitem[Herbschleb et~al.(1979)Herbschleb, Heethaar, de~Tweel, Zimmerman, and
+  Meijler]{Herbschleb79}
+J.~N. Herbschleb, R.~M. Heethaar, I.~Van de~Tweel, A.~N.~E. Zimmerman, and
+  F.~L. Meijler.
+\newblock Signal analysis of ventricular fibrillation.
+\newblock In \emph{IEEE Computers in Cardiology}, pages 49--54, 1979.
+
+\bibitem[Hesselson(2005)]{Hesselson05}
+Aaron~B. Hesselson.
+\newblock \emph{Simplified interpretation of ICD electrograms}.
+\newblock Blackwell Futura, Malden etc., 2005.
+
+\bibitem[Hille(2001)]{Hille01}
+B.~Hille.
+\newblock \emph{Ion channels of excitable membranes}.
+\newblock Sinauer, Sunderland, Mass., 2001.
+
+\bibitem[Hodgkin and Huxley(1952)]{Hodgkin52}
+A.~L. Hodgkin and A.~F. Huxley.
+\newblock A quantitative description of membrane current and its application to
+  conduction and excitation in nerve.
+\newblock \emph{The Journal of Physiology}, 117\penalty0 (4):\penalty0
+  500--544, Aug 1952.
+
+\bibitem[Hoekema et~al.(1998)Hoekema, Uijen, Stilli, and van
+  Oosterom]{Hoekema98}
+R~Hoekema, G~J Uijen, D~Stilli, and A~van Oosterom.
+\newblock Lead system transformation of body surface map data.
+\newblock \emph{J Electrocardiol}, 31\penalty0 (2):\penalty0 71--82, 1998.
+\newblock ISSN 0022-0736.
+\newblock URL
+  \url{http://www.biomedsearch.com/nih/Lead-system-transformation-body-surface%
+/9588652.html}.
+
+\bibitem[Hoekstra et~al.(1995)Hoekstra, Diks, Allessie, and
+  De~Goedb]{Hoekstra95}
+BART~P.T. Hoekstra, CEES~G.H. Diks, MAURITS~A. Allessie, and JACOB De~Goedb.
+\newblock Nonlinear analysis of epicardial atrial electrograms of electrically
+  induced atrial fibrillation in man.
+\newblock \emph{Journal of Cardiovascular Electrophysiology}, 6\penalty0
+  (6):\penalty0 419--440, 1995.
+
+\bibitem[Hoppe et~al.(2005)Hoppe, Kahn, Feld, Hassankhani, and
+  Narayan]{Hoppe05}
+B.~L. Hoppe, A.~M. Kahn, G.~K. Feld, A.~Hassankhani, and S.~M. Narayan.
+\newblock Separating atrial flutter from atrial fibrillation with apparent
+  electrocardiographic organization using dominant and narrow f-wave spectra.
+\newblock \emph{Journal of the American College of Cardiology}, 46\penalty0
+  (11):\penalty0 2079--2087, Dec 2005.
+
+\bibitem[Hsu et~al.(2008)Hsu, Lin, Tai, Kao, Chang, Wongcharoen, Lo, Udyavar,
+  Hu, Tso, Chen, Higa, and Chen]{Hsu08}
+Nei-Wei Hsu, Yenn-Jiang Lin, Ching-Tai Tai, Tsair Kao, Shih-Lin Chang,
+  Wanwarang Wongcharoen, Li-Wei Lo, Ameya~R. Udyavar, Yu-Feng Hu, Han-Wen Tso,
+  Yi-Jen Chen, Satoshi Higa, and Shih-Ann Chen.
+\newblock Frequency analysis of the fibrillatory activity from surface ecg lead
+  v1 and intracardiac recordings: implications for mapping of af.
+\newblock \emph{Europace}, 10\penalty0 (4):\penalty0 438--443, 2008.
+
+\bibitem[Humphreys(1990)]{Humphreys90}
+Paul Humphreys.
+\newblock Computer simulations.
+\newblock In \emph{Biennial Meeting of the Philosophy of Science Association},
+  volume 1990, pages 497--506, 1990.
+
+\bibitem[Jalife(2000)]{Jalife00}
+J.~Jalife.
+\newblock Ventricular fibrillation: Mechanisms of initiation and maintenance.
+\newblock \emph{Annual Review of Physiology}, 62\penalty0 (1):\penalty0 25--50,
+  2000.
+
+\bibitem[Jekova(21-24 Sep 2003)]{Jekova03}
+I.~Jekova.
+\newblock Estimation of electrocardiogram peak frequency and periodicity during
+  ventricular fibrillation.
+\newblock In \emph{IEEE Computers in Cardiology}, pages 225--228, 21-24 Sep
+  2003.
+
+\bibitem[Jekova et~al.(2004)Jekova, Mougeolle, and Valance]{Jekova04}
+I.~Jekova, F.~Mougeolle, and A.~Valance.
+\newblock Defibrillation shock success estimation by a set of six parameters
+  derived from the electrocardiogram.
+\newblock \emph{Physiological Measurement}, 25\penalty0 (5):\penalty0
+  1179--1188, Oct 2004.
+
+\bibitem[Jenkins(1992)]{Jenkins92}
+J.~M. Jenkins.
+\newblock Impact of electrode placement and configuration on performance of
+  morphological measures of intraventricular electrograms.
+\newblock In \emph{IEEE Computers in Cardiology}, pages 367--370, Sep 1992.
+
+\bibitem[Jenkins and Caswell(Mar 1996)]{Jenkins96}
+J.M. Jenkins and S.A. Caswell.
+\newblock Detection algorithms in implantable cardioverter defibrillators.
+\newblock \emph{Proceedings of the IEEE}, 84:\penalty0 428--445, Mar 1996.
+
+\bibitem[Johnson(1997)]{Johnson97}
+C.~R. Johnson.
+\newblock Computational and numerical methods for bioelectric field problems.
+\newblock \emph{Critical Reviews in Biomedical Engineering}, 25:\penalty0
+  1--81, 1997.
+
+\bibitem[Kadanoff(Mar-Apr 2004)]{Kadanoff04}
+L.P. Kadanoff.
+\newblock Excellence in computer simulation.
+\newblock \emph{Computing in Science \& Engineering}, 6:\penalty0 57--67,
+  Mar-Apr 2004.
+
+\bibitem[Kauppinen et~al.(1998)Kauppinen, Hyttinen, Heinonen, and
+  Malmivuo]{Kauppinen98}
+P.~Kauppinen, J.~Hyttinen, T.~Heinonen, and J.~Malmivuo.
+\newblock Detailed model of the thorax as a volume conductor based on the
+  visible human man data.
+\newblock \emph{Journal of Medical Engineering \& Technology}, 22\penalty0
+  (3):\penalty0 126--133, May-Jun 1998.
+
+\bibitem[Khinchin(1949)]{Khinchin49}
+Aleksandr~Iakovlevich Khinchin.
+\newblock \emph{Mathematical foundations of statistical mechanics}.
+\newblock Dover Publications, New York, 1949.
+
+\bibitem[Khoury and Rudy(1992)]{Khoury92}
+D.~S. Khoury and Y.~Rudy.
+\newblock A model study of volume conductor effects on endocardial and
+  intracavitary potentials.
+\newblock \emph{Circulation Research}, 71\penalty0 (3):\penalty0 511--525, Sep
+  1992.
+
+\bibitem[Kleinert et~al.(1979)Kleinert, Elmqvist, and Strandberg]{Kleinert79}
+M.~Kleinert, H.~Elmqvist, and H.~Strandberg.
+\newblock Spectral properties of atrial and ventricular endocardial signals.
+\newblock \emph{Pacing and Clinical Electrophysiology}, 2\penalty0
+  (1):\penalty0 11--19, Jan 1979.
+
+\bibitem[Konings et~al.(1994)Konings, Kirchhof, Smeets, Wellens, Penn, and
+  Allessie]{Konings94}
+K.~T. Konings, C.~J. Kirchhof, J.~R. Smeets, H.~J. Wellens, O.~C. Penn, and
+  M.~A. Allessie.
+\newblock High-density mapping of electrically induced atrial fibrillation in
+  humans.
+\newblock \emph{Circulation}, 89\penalty0 (4):\penalty0 1665--1680, Apr 1994.
+
+\bibitem[Lang et~al.(1995)Lang, Heil, Hahn, Lindstrom, and Derfus]{Lang95}
+D.~J. Lang, J.~E. Heil, S.~J. Hahn, C.~C. Lindstrom, and D.~L. Derfus.
+\newblock Implantable cardioverter defibrillator lead technology: improved
+  performance and lower defibrillation thresholds.
+\newblock \emph{Pacing and Clinical Electrophysiology}, 18\penalty0 (3 Pt
+  2):\penalty0 548--559, Mar 1995.
+
+\bibitem[Langberg et~al.(1988)Langberg, Gibb, Auslander, and
+  Griffin]{Langberg88}
+J.~J. Langberg, W.~J. Gibb, D.~M. Auslander, and J.~C. Griffin.
+\newblock Identification of ventricular tachycardia with use of the morphology
+  of the endocardial electrogram.
+\newblock \emph{Circulation}, 77\penalty0 (6):\penalty0 1363--1369, Jun 1988.
+
+\bibitem[Langner(1953{\natexlab{a}})]{Langner53a}
+P.~H. Langner.
+\newblock High fidelity electrocardiography; further studies including the
+  comparative performance of four different electrocardiographs.
+\newblock \emph{American Heart Journal}, 45\penalty0 (5):\penalty0 683--690,
+  May 1953{\natexlab{a}}.
+
+\bibitem[Langner(1953{\natexlab{b}})]{Langner53b}
+P.~H. Langner.
+\newblock Further studies in high fidelity electrocardiography: myocardial
+  infarction.
+\newblock \emph{Circulation}, 8\penalty0 (6):\penalty0 905--913, Dec
+  1953{\natexlab{b}}.
+
+\bibitem[Lazar et~al.(2004)Lazar, Dixit, Marchlinski, Callans, and
+  Gerstenfeld]{Lazar04}
+S.~Lazar, S.~Dixit, F.~E. Marchlinski, D.~J. Callans, and E.~P. Gerstenfeld.
+\newblock Presence of left-to-right atrial frequency gradient in paroxysmal but
+  not persistent atrial fibrillation in humans.
+\newblock \emph{Circulation}, 110\penalty0 (20):\penalty0 3181--3186, Nov 2004.
+
+\bibitem[Lin et~al.(1988)Lin, DiCarlo, and Jenkins]{Lin88}
+D.~P. Lin, L.~A. DiCarlo, and J.~M. Jenkins.
+\newblock Identification of ventricular tachycardia using intracavitary
+  ventricular electrograms: analysis of time and frequency domain patterns.
+\newblock \emph{Pacing and Clinical Electrophysiology}, 11\penalty0 (11 Pt
+  1):\penalty0 1592--1606, Nov 1988.
+
+\bibitem[Lin et~al.(2007)Lin, Higa, Kao, Tso, Tai, Chang, Lo, Wongcharoen, and
+  Chen]{Lin07}
+YENN-JIANG Lin, SATOSHI Higa, TSAIR Kao, HAN-WEN Tso, CHING-TAI Tai, SHIH-LIN
+  Chang, LI-WEI Lo, WANWARANG Wongcharoen, and SHIH-ANN Chen.
+\newblock Validation of the frequency spectra obtained from the noncontact
+  unipolar electrograms during atrial fibrillation.
+\newblock \emph{Journal of Cardiovascular Electrophysiology}, 18\penalty0
+  (11):\penalty0 1147--1153, 2007.
+\newblock ISSN 1540-8167.
+
+\bibitem[Lindsay et~al.(1988)Lindsay, Ambos, Schechtman, and Cain]{Lindsay88}
+B.~D. Lindsay, H.~D. Ambos, K.~B. Schechtman, and M.~E. Cain.
+\newblock Improved differentiation of patients with and without ventricular
+  tachycardia by frequency analysis of multiple electrocardiographic leads.
+\newblock \emph{The American Journal of Cardiology}, 62\penalty0 (9):\penalty0
+  556--561, Sep 15 1988.
+
+\bibitem[Liu et~al.(2002)Liu, Dale, and Belliveau]{Liu02}
+A.~K. Liu, A.~M. Dale, and J.~W. Belliveau.
+\newblock Monte carlo simulation studies of eeg and meg localization accuracy.
+\newblock \emph{Human Brain Mapping}, 16\penalty0 (1):\penalty0 47--62, May
+  2002.
+
+\bibitem[{M. E. Nygards and J. Hulting}(1978)]{Nygards78}
+{M. E. Nygards and J. Hulting}.
+\newblock Recognition of ventricular fibrillation utilizing the power spectrum
+  of the ecg.
+\newblock In \emph{IEEE Computers in Cardiology}, pages 393--7, 1978.
+
+\bibitem[MacLeod et~al.(2005)MacLeod, Kornreich, van Oosterom, Rautaharju,
+  Selvester, Wagner, and Zywietz]{MacLeod05}
+R.~MacLeod, F.~Kornreich, A.~van Oosterom, P.~Rautaharju, R.~Selvester,
+  G.~Wagner, and C.~Zywietz.
+\newblock Report of the first virtual visualization of the reconstructed
+  electrocardiographic display symposium.
+\newblock \emph{Journal of Electrocardiology}, 38\penalty0 (4):\penalty0
+  385--399, Oct 2005.
+
+\bibitem[Malmivuo et~al.(Mar 1997)Malmivuo, Suihko, and Eskola]{Malmivuo97}
+J.~Malmivuo, V.~Suihko, and H.~Eskola.
+\newblock Sensitivity distributions of eeg and meg measurements.
+\newblock \emph{IEEE Transactions on Biomedical Engineering}, 44:\penalty0
+  196--208, Mar 1997.
+
+\bibitem[Malmivuo and Plonsey(1995)]{Malmivuo95}
+Jaakko Malmivuo and Robert Plonsey.
+\newblock \emph{Bioelectromagnetism: principles and applications of bioelectric
+  and biomagnetic fields}.
+\newblock Oxford University Press, New York, 1995.
+
+\bibitem[Mandapati et~al.(2000)Mandapati, Skanes, Chen, Berenfeld, and
+  Jalife]{Mandapati00}
+R~Mandapati, A~Skanes, J~Chen, O~Berenfeld, and J~Jalife.
+\newblock Stable microreentrant sources as a mechanism of atrial fibrillation
+  in the isolated sheep heart.
+\newblock \emph{Circulation}, 101\penalty0 (2):\penalty0 194--199, 2000.
+
+\bibitem[Mandel and Wolf(1995)]{Mandel95}
+Leonard Mandel and Emil Wolf.
+\newblock \emph{Optical coherence and quantum optics}.
+\newblock Cambridge University Press, Cambridge, 1995.
+
+\bibitem[Mansour et~al.(2001)Mansour, Mandapati, Berenfeld, Chen, Samie, and
+  Jalife]{Mansour01}
+M.~Mansour, R.~Mandapati, O.~Berenfeld, J.~Chen, F.~H. Samie, and J.~Jalife.
+\newblock Left-to-right gradient of atrial frequencies during acute atrial
+  fibrillation in the isolated sheep heart.
+\newblock \emph{Circulation}, 103:\penalty0 2631--2636, May 2001.
+
+\bibitem[Masani(1990)]{Masani90}
+Pesi~Rustom Masani.
+\newblock \emph{Norbert Wiener, 1894-1964}.
+\newblock Birkhäuser, Boston, 1990.
+
+\bibitem[Mathers and Loncar(2006)]{Mathers06}
+C.~D. Mathers and D.~Loncar.
+\newblock Projections of global mortality and burden of disease from 2002 to
+  2030.
+\newblock \emph{PLoS medicine}, 3\penalty0 (11):\penalty0 e442, Nov 2006.
+
+\bibitem[Mayo(1996)]{Mayo96}
+Deborah~G. Mayo.
+\newblock \emph{Error and the growth of experimental knowledge}.
+\newblock University of Chicago Press, Chicago, 1996.
+
+\bibitem[McFee and Johnston(1953)]{McFee53}
+R.~McFee and F.~D. Johnston.
+\newblock Electrocardiographic leads. i. introduction.
+\newblock \emph{Circulation}, 8\penalty0 (4):\penalty0 554--568, Oct 1953.
+
+\bibitem[McFee and Johnston(1954{\natexlab{a}})]{McFee54a}
+R.~McFee and F.~D. Johnston.
+\newblock Electrocardiographic leads. ii. analysis.
+\newblock \emph{Circulation}, 9\penalty0 (2):\penalty0 255--266, Feb
+  1954{\natexlab{a}}.
+
+\bibitem[McFee and Johnston(1954{\natexlab{b}})]{McFee54b}
+R.~McFee and F.~D. Johnston.
+\newblock Electrocardiographic leads. iii. synthesis.
+\newblock \emph{Circulation}, 9\penalty0 (6):\penalty0 868--880, Jun
+  1954{\natexlab{b}}.
+
+\bibitem[Mehra(2007)]{Mehra07}
+R.~Mehra.
+\newblock Global public health problem of sudden cardiac death.
+\newblock \emph{Journal of Electrocardiology}, 40\penalty0 (6 Suppl):\penalty0
+  S118--22, Nov-Dec 2007.
+
+\bibitem[Menz et~al.(1998)Menz, Schwartzman, Drachman, Michele, and
+  Dillon]{Menz98}
+V.~Menz, D.~Schwartzman, D.~Drachman, J.~J. Michele, and S.~M. Dillon.
+\newblock Recording of pacing stimulus artifacts by endovascular defibrillation
+  lead systems: comparison of true and integrated bipolar circuits.
+\newblock \emph{Journal of interventional cardiac electrophysiology : an
+  international journal of arrhythmias and pacing}, 2:\penalty0 269--272, Sep
+  1998.
+
+\bibitem[Mirowski et~al.(1970)Mirowski, Mower, Staewen, Tabatznik, and
+  Mendeloff]{Mirowski70}
+M.~Mirowski, M.~M. Mower, W.~S. Staewen, B.~Tabatznik, and A.~I. Mendeloff.
+\newblock Standby automatic defibrillator. an approach to prevention of sudden
+  coronary death.
+\newblock \emph{Archives of Internal Medicine}, 126\penalty0 (1):\penalty0
+  158--161, Jul 1970.
+
+\bibitem[Moe et~al.(1964)Moe, Rheinboldt, and Abildskov]{Moe64}
+G.~K. Moe, W.~C. Rheinboldt, and J.~A. Abildskov.
+\newblock A computer model of atrial fibrillation.
+\newblock \emph{American Heart Journal}, 67:\penalty0 200--220, Feb 1964.
+
+\bibitem[Montgomery and C.(2003)]{Montgomery03}
+D.~C. Montgomery and Runger~G. C.
+\newblock \emph{Applied Statistics and Probability for Engineers}.
+\newblock John Wiley \& Sons, 2003.
+
+\bibitem[Mower et~al.(1984)Mower, Reid, Jr, Griffith, Platia, Jr, Imran,
+  Juanteguy, and Mirowski]{Mower84}
+M.~M. Mower, P.~R. Reid, L.~Watkins Jr, L.~S. Griffith, E.~V. Platia,
+  S.~M.~Bach Jr, M.~Imran, J.~M. Juanteguy, and M.~Mirowski.
+\newblock Automatic implantable cardioverter-defibrillator structural
+  characteristics.
+\newblock \emph{Pacing and Clinical Electrophysiology}, 7\penalty0 (6 Pt
+  2):\penalty0 1331--1337, Nov 1984.
+
+\bibitem[Murray et~al.(1985)Murray, Campbell, and Julian]{Murray85}
+A.~Murray, R.~W.~F. Campbell, and D.~G. Julian.
+\newblock Characteristics of the ventricular fibrillation waveform.
+\newblock In \emph{IEEE Computers in Cardiology}, pages 275--278, 1985.
+
+\bibitem[Myers et~al.(1978)Myers, Kresh, and Parsonnet]{Myers78}
+G.~H. Myers, Y.~M. Kresh, and V.~Parsonnet.
+\newblock Characteristics of intracardiac electrograms.
+\newblock \emph{Pacing and Clinical Electrophysiology}, 1\penalty0
+  (1):\penalty0 90--103, Jan 1978.
+
+\bibitem[Mørkrid et~al.(April 1984)Mørkrid, Ohm, and Engedal]{Morkrid84}
+Lars Mørkrid, Ole-Jorgen Ohm, and Hogne Engedal.
+\newblock Time domain and spectral analysis of electrograms in man during
+  regular ventricular activity and ventricular fibrillation.
+\newblock \emph{IEEE Transactions on Biomedical Engineering}, pages 350--355,
+  April 1984.
+
+\bibitem[Natale et~al.(1996)Natale, Sra, Axtell, Akhtar, Newby, Kent, Geiger,
+  Brandon, Kearney, and Pacifico]{Natale96}
+A.~Natale, J.~Sra, K.~Axtell, M.~Akhtar, K.~Newby, V.~Kent, M.~J. Geiger, M.~J.
+  Brandon, M.~M. Kearney, and A.~Pacifico.
+\newblock Undetected ventricular fibrillation in transvenous implantable
+  cardioverter-defibrillators. prospective comparison of different lead
+  system-device combinations.
+\newblock \emph{Circulation}, 93\penalty0 (1):\penalty0 91--98, Jan 1996.
+
+\bibitem[Ng and Goldberger(2007)]{Ng07a}
+J.~Ng and J.~J. Goldberger.
+\newblock Understanding and interpreting dominant frequency analysis of af
+  electrograms.
+\newblock \emph{Journal of Cardiovascular Electrophysiology}, 18\penalty0
+  (6):\penalty0 680--685, Jun 2007.
+
+\bibitem[Ng et~al.(2006)Ng, Kadish, and Goldberger]{Ng06}
+J.~Ng, A.~H. Kadish, and J.~J. Goldberger.
+\newblock Effect of electrogram characteristics on the relationship of dominant
+  frequency to atrial activation rate in atrial fibrillation.
+\newblock \emph{Heart Rhythm}, 3\penalty0 (11):\penalty0 1295--1305, Nov 2006.
+
+\bibitem[Ng et~al.(2007)Ng, Kadish, and Goldberger]{Ng07b}
+J.~Ng, A.~H. Kadish, and J.~J. Goldberger.
+\newblock Technical considerations for dominant frequency analysis.
+\newblock \emph{Journal of Cardiovascular Electrophysiology}, 18\penalty0
+  (7):\penalty0 757--764, Jul 2007.
+
+\bibitem[Oppenheim and Schafer(1975)]{Oppenheim75}
+Alan~V. Oppenheim and Ronald~W. Schafer.
+\newblock \emph{Digital signal processing}.
+\newblock Prentice-Hall International, London, 1975.
+
+\bibitem[Panfilov and Holden(1997)]{Panfilov97}
+Alexander~V. Panfilov and Arun~V. Holden.
+\newblock \emph{Computational biology of the heart}.
+\newblock Wiley, Chichester, 1997.
+
+\bibitem[Pannizzo and Furman(1988)]{Pannizzo88}
+F.~Pannizzo and S.~Furman.
+\newblock Frequency spectra of ventricular tachycardia and sinus rhythm in
+  human intracardiac electrograms--application to tachycardia detection for
+  cardiac pacemakers.
+\newblock \emph{IEEE Transactions on Biomedical Engineering}, 35\penalty0
+  (6):\penalty0 421--425, Jun 1988.
+
+\bibitem[Papoulis(1962)]{Papoulis62}
+Athanasios Papoulis.
+\newblock \emph{The Fourier Integral and Its Applications}.
+\newblock McGraw-Hill, New York, 1962.
+
+\bibitem[Papoulis(1991)]{Papoulis91}
+Athanasios Papoulis.
+\newblock \emph{Probability, random variables, and stochastic processes}.
+\newblock McGraw-Hill, New York etc., 1991.
+
+\bibitem[Parsonnet et~al.(1980)Parsonnet, Myers, and Kresh]{Parsonnet80}
+V.~Parsonnet, G.~H. Myers, and Y.~M. Kresh.
+\newblock Characteristics of intracardiac electrograms ii: Atrial endocardial
+  electrograms.
+\newblock \emph{Pacing and Clinical Electrophysiology}, 3\penalty0
+  (4):\penalty0 406--417, Jul 1980.
+
+\bibitem[Peinado et~al.(2006)Peinado, Torrecilla, Ormaetxe, and
+  Alvarez]{Peinado06}
+R.~Peinado, E.~G. Torrecilla, J.~Ormaetxe, and M.~Alvarez.
+\newblock Registro español de desfibrilador automático implantable. segundo
+  informe oficial del grupo de trabajo de desfibrilador implantable de la
+  sociedad española de cardiología (año 2005).
+\newblock \emph{Revista Española de Cardiología}, 59:\penalty0 1292--1302, Dec
+  2006.
+
+\bibitem[Peña Sánchez~de Rivera(1986)]{Pena86}
+Daniel Peña Sánchez~de Rivera.
+\newblock \emph{Estadística : modelos y métodos}, volume 109.
+\newblock Alianza, Madrid, 1986.
+
+\bibitem[Picone(1993)]{Picone93}
+J.~W. Picone.
+\newblock Signal modeling techniques in speech recognition.
+\newblock \emph{Proceedings of the IEEE}, 81:\penalty0 1215--1247, 1993.
+
+\bibitem[Plonsey and Heppner(1967)]{Plonsey67}
+R.~Plonsey and D.~B. Heppner.
+\newblock Considerations of quasi-stationarity in electrophysiological systems.
+\newblock \emph{The Bulletin of Mathematical Biophysics}, 29\penalty0
+  (4):\penalty0 657--664, Dec 1967.
+
+\bibitem[Plonsey and Barr(2000)]{Plonsey00}
+Robert Plonsey and Roger~C. Barr.
+\newblock \emph{Bioelectricity: a quantitative approach}.
+\newblock Kluwer Academic-Plenum, New York, 2000.
+
+\bibitem[Proakis and Salehi(2002)]{Proakis02}
+John~G. Proakis and Masoud Salehi.
+\newblock \emph{Communication systems engineering}.
+\newblock Prentice Hall, Upper Saddle River New Jersey, 2002.
+
+\bibitem[Redhead(1980)]{Redhead80}
+Michael Redhead.
+\newblock Models in physics.
+\newblock \emph{The British Journal for the Philosophy of Science}, 31\penalty0
+  (2):\penalty0 145--163, June 1980.
+
+\bibitem[Requena-Carri{\'o}n et~al.(2007)Requena-Carri{\'o}n, V{\"a}is{\"a}nen,
+  Rojo-{\'A}lvarez, Hyttinen, Alonso-Atienza, and Malmivuo]{Requena-Carrion07b}
+Jes{\'u}s Requena-Carri{\'o}n, Juho V{\"a}is{\"a}nen, Jos{\'e}~Luis
+  Rojo-{\'A}lvarez, Jari Hyttinen, Felipe Alonso-Atienza, and Jaakko Malmivuo.
+\newblock Numerical analysis of the resolution of surface electrocardiographic
+  lead systems.
+\newblock In \emph{FIMH}, pages 310--319, 2007.
+
+\bibitem[Requena-Carrión et~al.(2007)Requena-Carrión, Väisänen, Rojo-Álvarez,
+  Hyttinen, Alonso-Atienza, and Malmivuo]{Requena-Carrion07a}
+J.~Requena-Carrión, J.~Väisänen, J.L. Rojo-Álvarez, J.~Hyttinen,
+  F.~Alonso-Atienza, and J.~Malmivuo.
+\newblock Analysis of the scope of unipolar and bipolar electrograms in
+  implantable cardioverter defibrillators.
+\newblock In \emph{International Society for Computerized Electrocardiology
+  Conference}, 2007.
+
+\bibitem[Requena-Carrión et~al.(2009{\natexlab{a}})Requena-Carrión, Väisänen,
+  Alonso-Atienza, García-Alberola, Ramos-López, and
+  Rojo-Álvarez]{RequenaCarrion09}
+J.~Requena-Carrión, J.~Väisänen, F.~Alonso-Atienza, A.~García-Alberola, F.~J.
+  Ramos-López, and J.~L. Rojo-Álvarez.
+\newblock Sensitivity and spatial resolution of transvenous leads in
+  implantable cardioverter defibrillator.
+\newblock \emph{IEEE Transactions on Biomedical Engineering}, 56\penalty0
+  (12):\penalty0 2773--2781, 2009{\natexlab{a}}.
+
+\bibitem[Requena-Carrión et~al.(2009{\natexlab{b}})Requena-Carrión, Väisänen,
+  Alonso-Atienza, García-Alberola, Ramos-López, and Rojo-Álvarez]{Requena09}
+J.~Requena-Carrión, J.~Väisänen, F.~Alonso-Atienza, A.~García-Alberola, F.J.
+  Ramos-López, and J.L. Rojo-Álvarez.
+\newblock Sensitivity and spatial resolution of transvenous leads in
+  implantable cardioverter defibrillator.
+\newblock \emph{IEEE Transactions on Biomedical Engineering}, 56\penalty0
+  (12):\penalty0 2773 --2781, 2009{\natexlab{b}}.
+\newblock ISSN 0018-9294.
+\newblock \doi{10.1109/TBME.2009.2027425}.
+
+\bibitem[Richter et~al.(2008)Richter, Stridh, Bollmann, Husser, and
+  Sörnmo]{Richter08}
+Ulrike Richter, Martin Stridh, Andreas Bollmann, Daniela Husser, and Leif
+  Sörnmo.
+\newblock Spatial characteristics of atrial fibrillation electrocardiograms.
+\newblock \emph{Journal of Electrocardiology}, 41\penalty0 (2):\penalty0 165 --
+  172, 2008.
+
+\bibitem[Riera and Fuentes(Jun 1998)]{Riera98}
+J.J. Riera and M.E. Fuentes.
+\newblock Electric lead field for a piecewise homogeneous volume conductor
+  model of the head.
+\newblock \emph{IEEE Transactions on Biomedical Engineering}, 45:\penalty0
+  746--753, Jun 1998.
+
+\bibitem[Rohrlich(1990)]{Rohrlich90}
+Fritz Rohrlich.
+\newblock Computer simulation in the physical sciences.
+\newblock In \emph{Proceedings of the Biennial Meeting of the Philosophy of
+  Science Association}, volume 1990, pages 507--518, 1990.
+
+\bibitem[Rojo-Álvarez et~al.(2002)Rojo-Álvarez, Garcáa-Alberola, Arenal-Maíz,
+  Pineiro-Ave, Valdés-Chávarri, and Artés-Rodriguez]{Rojo-Alvarez02}
+J.~L. Rojo-Álvarez, A.~Garcáa-Alberola, A.~Arenal-Maíz, J.~Pineiro-Ave,
+  M.~Valdés-Chávarri, and A.~Artés-Rodriguez.
+\newblock Automatic discrimination between supraventricular and ventricular
+  tachycardia using a multilayer perceptron in implantable cardioverter
+  defibrillators.
+\newblock \emph{Pacing and Clinical Electrophysiology}, 25:\penalty0
+  1599--1604, Nov 2002.
+
+\bibitem[Rudy and Plonsey(1979)]{Rudy79}
+Y.~Rudy and R.~Plonsey.
+\newblock The eccentric spheres model as the basis for a study of the role of
+  geometry and inhomogeneities in electrocardiography.
+\newblock \emph{IEEE Transactions on Biomedical Engineering}, 26\penalty0
+  (7):\penalty0 392--399, Jul 1979.
+
+\bibitem[Rudy and Plonsey(1980)]{Rudy80}
+Y.~Rudy and R.~Plonsey.
+\newblock A comparison of volume conductor and source geometry effects on body
+  surface and epicardial potentials.
+\newblock \emph{Circulation Research}, 46\penalty0 (2):\penalty0 283--291, Feb
+  1980.
+
+\bibitem[Rush and Driscoll(1969)]{Rush69}
+S.~Rush and D.~A. Driscoll.
+\newblock Eeg electrode sensitivity--an application of reciprocity.
+\newblock \emph{IEEE Transactions on Biomedical Engineering}, 16\penalty0
+  (1):\penalty0 15--22, Jan 1969.
+
+\bibitem[Sachse(2004)]{Sachse04}
+Frank~B. Sachse.
+\newblock \emph{Computational cardiology : modeling of anatomy,
+  electrophysiology, and mechanics}.
+\newblock Springer, Berlin, 2004.
+
+\bibitem[Saksena and Madan(2002)]{Saksena02}
+S.~Saksena and N.~Madan.
+\newblock Management of the patient with an implantable
+  cardioverter-defibrillator in the third millennium.
+\newblock \emph{Circulation}, 106\penalty0 (21):\penalty0 2642--2646, Nov 19
+  2002.
+
+\bibitem[Samie et~al.(2001)Samie, Berenfeld, Anumonwo, Mironov, Udassi,
+  Beaumont, Taffet, Pertsov, and Jalife]{Samie01}
+F.~H. Samie, O.~Berenfeld, J.~Anumonwo, S.~F. Mironov, S.~Udassi, J.~Beaumont,
+  S.~Taffet, A.~M. Pertsov, and J.~Jalife.
+\newblock Rectification of the background potassium current: a determinant of
+  rotor dynamics in ventricular fibrillation.
+\newblock \emph{Circulation Research}, 89\penalty0 (12):\penalty0 1216--1223,
+  Dec 7 2001.
+
+\bibitem[Sanchez-Muñoz et~al.(2009)Sanchez-Muñoz, Rojo-Alvarez,
+  Garcia-Alberola, Everss, Alonso-Atienza, Ortiz, Martinez-Sanchez,
+  Ramos-Lopez, and Valdes-Chavarri]{Sanchez09b}
+Juan~José Sanchez-Muñoz, Jose~Luis Rojo-Alvarez, Arcadi Garcia-Alberola,
+  Estrella Everss, Felipe Alonso-Atienza, Mercedes Ortiz, Juan
+  Martinez-Sanchez, Javier Ramos-Lopez, and Mariano Valdes-Chavarri.
+\newblock {Spectral analysis of intracardiac electrograms during induced and
+  spontaneous ventricular fibrillation in humans}.
+\newblock \emph{Europace}, 11\penalty0 (3):\penalty0 328--331, 2009.
+
+\bibitem[Sanders et~al.(2005)Sanders, Berenfeld, Hocini, Jais, Vaidyanathan,
+  Hsu, Garrigue, Takahashi, Rotter, Sacher, Scavee, Ploutz-Snyder, Jalife, and
+  Haissaguerre]{Sanders05}
+P.~Sanders, O.~Berenfeld, M.~Hocini, P.~Jais, R.~Vaidyanathan, L.~F. Hsu,
+  S.~Garrigue, Y.~Takahashi, M.~Rotter, F.~Sacher, C.~Scavee, R.~Ploutz-Snyder,
+  J.~Jalife, and M.~Haissaguerre.
+\newblock Spectral analysis identifies sites of high-frequency activity
+  maintaining atrial fibrillation in humans.
+\newblock \emph{Circulation}, 112\penalty0 (6):\penalty0 789--797, Aug 9 2005.
+
+\bibitem[Schmitt(1957)]{Schmitt57}
+O.~H. Schmitt.
+\newblock Lead vectors and transfer impedance.
+\newblock \emph{Annals of the New York Academy of Sciences}, 65\penalty0
+  (6):\penalty0 1092--1109, Aug 9 1957.
+
+\bibitem[Schuessler et~al.(2006)Schuessler, Kay, Melby, Branham, Boineau, and
+  Jr]{Schuessler06}
+R.~B. Schuessler, M.~W. Kay, S.~J. Melby, B.~H. Branham, J.~P. Boineau, and
+  R.~J.~Damiano Jr.
+\newblock Spatial and temporal stability of the dominant frequency of
+  activation in human atrial fibrillation.
+\newblock \emph{Journal of Electrocardiology}, 39\penalty0 (4 Suppl):\penalty0
+  S7--12, Oct 2006.
+
+\bibitem[Sih et~al.(1995)Sih, Sahakian, Arentzen, and Swiryn]{Sih95}
+H.~J. Sih, A.~V. Sahakian, C.~E. Arentzen, and S.~Swiryn.
+\newblock A frequency domain analysis of spatial organization of epicardial
+  maps.
+\newblock \emph{IEEE Transactions on Biomedical Engineering}, 42\penalty0
+  (7):\penalty0 718--727, Jul 1995.
+
+\bibitem[Skanes et~al.(1998)Skanes, Mandapati, Berenfeld, Davidenko, and
+  Jalife]{Skanes98}
+A.~C. Skanes, R.~Mandapati, O.~Berenfeld, J.~M. Davidenko, and J.~Jalife.
+\newblock Spatiotemporal periodicity during atrial fibrillation in the isolated
+  sheep heart.
+\newblock \emph{Circulation}, 98\penalty0 (12):\penalty0 1236--1248, Sep 22
+  1998.
+
+\bibitem[Stevenson et~al.(2004)Stevenson, Chaitman, Ellenbogen, Epstein, Gross,
+  Hayes, Strickberger, Sweeney, on~Electrocardiography, of~the American Heart
+  Association Council~on Clinical~Cardiology, and Society]{Stevenson04}
+W.~G. Stevenson, B.~R. Chaitman, K.~A. Ellenbogen, A.~E. Epstein, W.~L. Gross,
+  D.~L. Hayes, S.~A. Strickberger, M.~O. Sweeney, Subcommittee
+  on~Electrocardiography, Arrhythmias of~the American Heart Association
+  Council~on Clinical~Cardiology, and Heart~Rhythm Society.
+\newblock Clinical assessment and management of patients with implanted
+  cardioverter-defibrillators presenting to nonelectrophysiologists.
+\newblock \emph{Circulation}, 110\penalty0 (25):\penalty0 3866--3869, Dec 2004.
+
+\bibitem[Stewart et~al.(1992)Stewart, Allen, and Adgey]{Stewart92}
+A.~J. Stewart, J.~D. Allen, and A.~A. Adgey.
+\newblock Frequency analysis of ventricular fibrillation and resuscitation
+  success.
+\newblock \emph{The Quarterly Journal of Medicine}, 85\penalty0 (306):\penalty0
+  761--769, Oct 1992.
+
+\bibitem[Strohmenger et~al.(1997)Strohmenger, Lindner, and
+  Brown]{Strohmenger97}
+H.~U. Strohmenger, K.~H. Lindner, and C.~G. Brown.
+\newblock Analysis of the ventricular fibrillation ecg signal amplitude and
+  frequency parameters as predictors of countershock success in humans.
+\newblock \emph{Chest}, 111\penalty0 (3):\penalty0 584--589, Mar 1997.
+
+\bibitem[Sweeney(2006)]{Sweeney06}
+M.~O. Sweeney.
+\newblock Overcoming the defects of a virtue: dual-chamber versus
+  single-chamber detection enhancements for implantable defibrillator rhythm
+  diagnosis: the detect supraventricular tachycardia study.
+\newblock \emph{Circulation}, 113\penalty0 (25):\penalty0 2862--2864, Jun 27
+  2006.
+
+\bibitem[Sánchez-Muñoz et~al.(2009)Sánchez-Muñoz, Rojo-Alvarez,
+  García-Alberola, Requena-Carrión, Everss, Ortiz, Martínez-Sánchez, and
+  Valdés-Chavarri]{Sanchez09}
+J.~J. Sánchez-Muñoz, J.~L. Rojo-Alvarez, A.~García-Alberola,
+  J.~Requena-Carrión, E.~Everss, M.~Ortiz, J.~Martínez-Sánchez, and
+  M.~Valdés-Chavarri.
+\newblock Spectral analysis of sustained and non-sustained ventricular
+  fibrillation in patients with an implantable cardioverter-defibrillator.
+\newblock \emph{Revista Española de Cardiología}, 62:\penalty0 690--693, Jun
+  2009.
+
+\bibitem[Sánchez-Muñoz et~al.(2008)Sánchez-Muñoz, Rojo-Alvarez,
+  García-Alberola, Everss, Requena-Carrión, Ortiz, Alonso-Atienza, and
+  Valdés-Chavarri]{Sanchez08}
+Juan~José Sánchez-Muñoz, José~Luis Rojo-Alvarez, Arcadi García-Alberola,
+  Estrella Everss, Jesús Requena-Carrión, Mercedes Ortiz, Felipe
+  Alonso-Atienza, and Mariano Valdés-Chavarri.
+\newblock {Effects of the location of myocardial infarction on the spectral
+  characteristics of ventricular fibrillation}.
+\newblock \emph{Pacing and Clinical Electrophysiology}, 31:\penalty0 660 --
+  665, 2008.
+
+\bibitem[Sörnmo and Laguna(2005)]{Sornmo05}
+Leif Sörnmo and Pablo Laguna.
+\newblock \emph{Bioelectrical signal processing in cardiac and neurological
+  applications}.
+\newblock Elsevier Academic Press, Burlington MA, 2005.
+
+\bibitem[Tan et~al.(1990)Tan, Roth, and Jr]{Tan90}
+S.~Tan, B.~J. Roth, and J.~P.~Wikswo Jr.
+\newblock The magnetic field of cortical current sources: the application of a
+  spatial filtering model to the forward and inverse problems.
+\newblock \emph{Electroencephalography and Clinical Neurophysiology},
+  76\penalty0 (1):\penalty0 73--85, Jul 1990.
+
+\bibitem[Taneja et~al.(1997)Taneja, Goldberger, Parker, Johnson, Robinson,
+  Horvath, and Kadish]{Taneja97}
+T.~Taneja, J.~Goldberger, M.~A. Parker, D.~Johnson, N.~Robinson, G.~Horvath,
+  and A.~H. Kadish.
+\newblock Reproducibility of ventricular fibrillation characteristics in
+  patients undergoing implantable cardioverter defibrillator implantation.
+\newblock \emph{Journal of cardiovascular electrophysiology}, 8\penalty0
+  (11):\penalty0 1209--1217, Nov 1997.
+
+\bibitem[Taylor(2006)]{Taylor06}
+Michael Taylor.
+\newblock \emph{Measure theory and integration}.
+\newblock American Mathematical Society, Providence, R.I, 2006.
+
+\bibitem[{Toffoli}(1984)]{Toffoli84}
+T.~{Toffoli}.
+\newblock {Cellular automata as an alternative to (rather than an approximation
+  of) differential equations in modeling physics}.
+\newblock \emph{Physica D Nonlinear Phenomena}, 10:\penalty0 117--127, Jan
+  1984.
+
+\bibitem[van Kampen(1992)]{vanKampen92}
+N.~G. van Kampen.
+\newblock \emph{Stochastic processes in physics and chemistry}.
+\newblock North-Holland, Amsterdam, 1992.
+
+\bibitem[von Helmholtz(1853)]{Helmholtz1853}
+H.~von Helmholtz.
+\newblock Über einige gesetze der verteilung elektrischer ströme in
+  korperlichen leitern mit anwendung auf die thierisch-elektrischen versuche.
+\newblock \emph{Ann. Phys. Chem}, 89:\penalty0 211--233,354--377, 1853.
+
+\bibitem[Väisänen et~al.(2008)Väisänen, Väisänen, Malmivuo, and
+  Hyttinen]{Vaisanen08}
+J.~Väisänen, O.~Väisänen, J.~Malmivuo, and J.~Hyttinen.
+\newblock New method for analysing sensitivity distributions of
+  electroencephalography measurements.
+\newblock \emph{Med Bio Eng Comput}, 46:\penalty0 101--8, 2008.
+
+\bibitem[Väisänen et~al.(2007)Väisänen, Requena-Carri{\'o}n, Alonso-Atienza,
+  Hyttinen, Rojo-{\'A}lvarez, and Malmivuo]{Vaisanen07a}
+Juho Väisänen, Jes{\'u}s Requena-Carri{\'o}n, Felipe Alonso-Atienza, Jari
+  Hyttinen, Jos{\'e}~Luis Rojo-{\'A}lvarez, and Jaakko Malmivuo.
+\newblock Contributions of the 12 segments of left ventricular myocardium to
+  the body surface potentials.
+\newblock In \emph{FIMH}, pages 300--309, 2007.
+
+\bibitem[Warren et~al.(Mar 1996)Warren, Dreher, Jaworski, Putzke, and
+  Russie]{Warren96}
+J.A. Warren, R.D. Dreher, R.V. Jaworski, J.J. Putzke, and R.J. Russie.
+\newblock Implantable cardioverter defibrillators.
+\newblock \emph{Proceedings of the IEEE}, 84:\penalty0 468--479, Mar 1996.
+
+\bibitem[Wiener and Rosenblueth(1946)]{Wiener46}
+N.~Wiener and A.~Rosenblueth.
+\newblock The mathematical formulation of the problem of conduction of impulses
+  in a network of connected excitable elements, specifically in cardiac muscle.
+\newblock \emph{Arch. del Instit. de Cardiol.}, 16:\penalty0 205--265, 1946.
+
+\bibitem[Wiener(1966)]{Wiener66}
+Norbert Wiener.
+\newblock \emph{Generalized harmonic analysis and Tauberian theorems},
+  volume~51.
+\newblock M.I.T. Press, Cambridge, Mass. London, 1966.
+
+\bibitem[Winfree(2001)]{Winfree01}
+Arthur~T. Winfree.
+\newblock \emph{The geometry of biological time}, volume~12.
+\newblock Springer, New York, 2001.
+
+\bibitem[Wolf(1986)]{Wolf86}
+Emil Wolf.
+\newblock Invariance of the spectrum of light on propagation.
+\newblock \emph{Phys. Rev. Lett.}, 56:\penalty0 1370--1372, Mar 1986.
+
+\bibitem[Wolfram(1994)]{Wolfram94}
+Stephen Wolfram.
+\newblock \emph{Cellular automata and complexity: collected papers}.
+\newblock Addison-Wesley, Reading, Massachusetts, 1994.
+
+\bibitem[Zaitsev et~al.(2000)Zaitsev, Berenfeld, Mironov, Jalife, and
+  Pertsov]{Zaitsev00}
+A.~V. Zaitsev, O.~Berenfeld, S.~F. Mironov, J.~Jalife, and A.~M. Pertsov.
+\newblock Distribution of excitation frequencies on the epicardial and
+  endocardial surfaces of fibrillating ventricular wall of the sheep heart.
+\newblock \emph{Circulation Research}, 86:\penalty0 408--417, Mar 2000.
+
+\bibitem[Zipes and Jalife(2004)]{Zipes04}
+Douglas~P. Zipes and José Jalife.
+\newblock \emph{Cardiac electrophysiology: from cell to bedside}.
+\newblock Saunders, Philadelphia, 2004.
+
+\bibitem[Zlochiver et~al.(2008)Zlochiver, Yamazaki, Kalifa, and
+  Berenfeld]{Zlochiver08}
+Sharon Zlochiver, Masatoshi Yamazaki, Jérôme Kalifa, and Omer Berenfeld.
+\newblock Rotor meandering contributes to irregularity in electrograms during
+  atrial fibrillation.
+\newblock \emph{Heart Rhythm}, 5\penalty0 (6):\penalty0 846--854, 2008.
+
+\end{thebibliography}
