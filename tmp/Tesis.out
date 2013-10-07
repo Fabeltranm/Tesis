@@ -3,6 +3,7 @@
 \BOOKMARK [0][-]{tabla de contenidos.0}{Tabla de contenidos}{}
 \BOOKMARK [1][-]{indice de figuras.1}{\315ndice de figuras}{tabla de contenidos.0}
 \BOOKMARK [1][-]{indice de tablas.1}{\315ndice de tablas}{tabla de contenidos.0}
+\BOOKMARK [0][-]{section*.7}{Acr\363nimos y abreviaturas}{}
 \BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}
 \BOOKMARK [1][-]{section.1.1}{Motivaci\363n}{chapter.1}
 \BOOKMARK [1][-]{section.1.2}{Objetivos}{chapter.1}
@@ -12,10 +13,17 @@
 \BOOKMARK [0][-]{chapter.2}{Modelos Cardiacos}{part.1}
 \BOOKMARK [1][-]{section.2.1}{introducci\363n}{chapter.2}
 \BOOKMARK [1][-]{section.2.2}{concluciones}{chapter.2}
-\BOOKMARK [-1][-]{part.2}{II Nombre parte}{}
-\BOOKMARK [0][-]{chapter.3}{Resoluci\363n espacial del sistemas de electrodos}{part.2}
+\BOOKMARK [0][-]{chapter.3}{Resoluci\363n espacial del sistemas de electrodos}{part.1}
 \BOOKMARK [1][-]{section.3.1}{introducci\363n}{chapter.3}
 \BOOKMARK [1][-]{section.3.2}{modelos de sistemas de electrodos}{chapter.3}
 \BOOKMARK [1][-]{section.3.3}{Volumen equivalente de sistema de electrodos}{chapter.3}
 \BOOKMARK [1][-]{section.3.4}{concluciones}{chapter.3}
-\BOOKMARK [0][-]{appendix*.7}{Bibliograf\355a}{part.2}
+\BOOKMARK [-1][-]{part.2}{II Nombre parte}{}
+\BOOKMARK [0][-]{chapter.4}{An\341lisis espectral}{part.2}
+\BOOKMARK [1][-]{section.4.1}{introducci\363n}{chapter.4}
+\BOOKMARK [1][-]{section.4.2}{Funci\363n de tiempos}{chapter.4}
+\BOOKMARK [1][-]{section.4.3}{Mapas de correlaci\363n}{chapter.4}
+\BOOKMARK [1][-]{section.4.4}{Relaci\363n ancho de banda}{chapter.4}
+\BOOKMARK [1][-]{section.4.5}{Mapas de frecuencia dominante}{chapter.4}
+\BOOKMARK [1][-]{section.4.6}{concluciones}{chapter.4}
+\BOOKMARK [0][-]{appendix*.9}{Bibliograf\355a}{part.2}

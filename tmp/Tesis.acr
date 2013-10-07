@@ -1,0 +1,6 @@
+\glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
+\begin{theglossary}\glossaryheader
+\glsgroupheading{D}\relax\glsresetentrylist
+\glossaryentryfield{DF}{\glsnamefont{DF}}{Frecuencia Dominante}{\relax }{\glossaryentrynumbers{\relax 
+\setentrycounter{page}\glsnumberformat{1}}}%
+\end{theglossary}\glossarypostamble

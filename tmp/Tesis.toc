@@ -1,6 +1,7 @@
 \select@language {spanish}
 \contentsline {chapter}{Resumen}{\es@scroman {i}}{chapter*.2}
 \contentsline {chapter}{Abstract}{\es@scroman {iii}}{chapter*.3}
+\contentsline {chapter}{Acr\'onimos y abreviaturas}{\es@scroman {xi}}{section*.7}
 \contentsline {chapter}{\numberline {1}Introducci\'on}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Motivaci\'on}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Objetivos}{1}{section.1.2}
@@ -10,10 +11,17 @@
 \contentsline {chapter}{\numberline {2}Modelos Cardiacos}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}introducci\'on}{5}{section.2.1}
 \contentsline {section}{\numberline {2.2}concluciones}{5}{section.2.2}
-\contentsline {part}{II\hspace {1em}Nombre parte}{7}{part.2}
-\contentsline {chapter}{\numberline {3}Resoluci\'on espacial del sistemas de electrodos}{9}{chapter.3}
-\contentsline {section}{\numberline {3.1}introducci\'on}{9}{section.3.1}
-\contentsline {section}{\numberline {3.2}modelos de sistemas de electrodos}{9}{section.3.2}
-\contentsline {section}{\numberline {3.3}Volumen equivalente de sistema de electrodos}{9}{section.3.3}
-\contentsline {section}{\numberline {3.4}concluciones}{9}{section.3.4}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{26}{appendix*.7}
+\contentsline {chapter}{\numberline {3}Resoluci\'on espacial del sistemas de electrodos}{7}{chapter.3}
+\contentsline {section}{\numberline {3.1}introducci\'on}{7}{section.3.1}
+\contentsline {section}{\numberline {3.2}modelos de sistemas de electrodos}{7}{section.3.2}
+\contentsline {section}{\numberline {3.3}Volumen equivalente de sistema de electrodos}{7}{section.3.3}
+\contentsline {section}{\numberline {3.4}concluciones}{7}{section.3.4}
+\contentsline {part}{II\hspace {1em}Nombre parte}{9}{part.2}
+\contentsline {chapter}{\numberline {4}An\'alisis espectral}{11}{chapter.4}
+\contentsline {section}{\numberline {4.1}introducci\'on}{11}{section.4.1}
+\contentsline {section}{\numberline {4.2}Funci\'on de tiempos}{11}{section.4.2}
+\contentsline {section}{\numberline {4.3}Mapas de correlaci\'on}{11}{section.4.3}
+\contentsline {section}{\numberline {4.4}Relaci\'on ancho de banda}{11}{section.4.4}
+\contentsline {section}{\numberline {4.5}Mapas de frecuencia dominante}{11}{section.4.5}
+\contentsline {section}{\numberline {4.6}concluciones}{11}{section.4.6}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{28}{appendix*.9}
