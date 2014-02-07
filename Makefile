@@ -1,7 +1,7 @@
 #----------------------------------------------------------
 # makefile latex
 # elaborado por ferney beltrán ferney.beltran@gmail.com
-# septiembre 2013
+# septiembre 2013   
 #----------------------------------------------------------
 
 _LATEX_NAME   =   Tesis
