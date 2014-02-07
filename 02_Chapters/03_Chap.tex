@@ -1,10 +1,107 @@
 % -*-coding: iso-latin-1  -*-
-\chapter{Análisis espectral}
-\section{introducción}
-\section{Función de tiempos}
-\section{Mapas de correlación}
-\section{Relación ancho de banda}
-\section{Mapas de frecuencia dominante}
-\section{concluciones}
 
+\chapter{Análisis}
+
+\begin{resumen}
+ In this section we study analytically the spectral manifestation of two
+ second-order models of cardiac sources, namely the fully correlated (FC) source
+ and the fully uncorrelated (FU) source.  The FC and FU models are
+ physiologically meaningful and can be used to describe the dynamics of,
+ respectively, highly organized and highly disorganized cardiac rhythms.
+
+ We firstly define the autocorrelation and the spectrum of the following models
+ of spatiotemporal dynamics: identically distributed (ID), FC and FU. The ID
+ model is introduced for facilitating the comparison of the spectrum of cardiac
+ signals measured during FC and FU dynamics. Secondly, we define a simple,
+ idealized model of MSD, namely the pulse model. Because of its simplicity, the
+ pulse model is used in the analytical derivations and in the simulation
+ experiments throughout this study. Finally, we derive analytically the spectrum
+ of cardiac signals measured by pulse MSD during FU and FC dynamics.
+
+
+\end{resumen}
+
+\section{Introducción}
+.
+
+\section{Modelos de fuentes de 2 orden}
+\subsubsection{Identically distributed spatiotemporal dynamics}
+In this model of spatiotemporal dynamics all cardiac dipoles have the same autocorrelation and spectrum, 
+\begin{eqnarray}
+\boldsymbol{\rho}(v,v,\tau)=\boldsymbol{\rho}(\tau), \label{corr_IDS}\\
+\boldsymbol{\sigma}(v,v,f)=\boldsymbol{\sigma}(f). \label{spectrum_IDS}
+\end{eqnarray}
+By substituting \eqref{corr_IDS} and \eqref{spectrum_IDS} respectively into \eqref{total_corr} and \eqref{total_spectrum}, it can be proved that the total autocorrelation and total spectrum of all the dipoles are also identical, 
+\begin{eqnarray}
+R_{J}(v,v,\tau)&=&R_{J}(\tau)=\mathbf{1}^{T} \boldsymbol{\rho}(\tau)  \mathbf{1},\label{total_corr_IDS}\\ 
+S_{J}(v,v,f)&=&S_{J}(f)=\mathbf{1}^{T} \boldsymbol{\sigma}(f)  \mathbf{1}. \label{total_spectrum_IDS}
+\end{eqnarray}
+Note that this model only describes the activity of cardiac dipoles individually, and does not specify $\boldsymbol{\rho}(v,w,\tau)$ nor $\boldsymbol{\sigma}(v,w,f)$ for $v\neq w$.
+
+\subsubsection{Fully correlated spatiotemporal dynamics}
+This model of spatiotemporal dynamics corresponds to highly regular rhythms, such as sinus rhythm, in which the activity of one dipole $\mathbf{J}(w,t)$ can be expressed as a delayed version of the activity of another dipole $\mathbf{J}(v,t)$,
+\begin{equation}\label{def:FCS}
+\mathbf{J}(w,t)=\mathbf{J}(v,t-\zeta (v,w)),
+\end{equation}
+where $\zeta (v,w)$ is defined as the time delay between the activities of dipoles $\mathbf{J}(v,t)$ and $\mathbf{J}(w,t)$. Based on \eqref{def:FCS}, it can be proved (see Appendix B) that FC dynamics are also ID, $\boldsymbol{\rho}(v,v,\tau)=\boldsymbol{\rho}(\tau)$ and $\boldsymbol{\sigma}(v,v,f)=\boldsymbol{\sigma}(f)$ [cf. \eqref{corr_IDS} and \eqref{spectrum_IDS}],  and that the autocorrelation and the spectrum of FC sources can be expressed as:
+\begin{eqnarray}
+\boldsymbol{\rho}(v,w,\tau) &=&\boldsymbol{\rho}(\tau - \zeta (v,w)), \label{eq:autocorrelation_correlated1}\\
+\boldsymbol{\sigma}(v,w,f) &=& \boldsymbol{\sigma}(f) \exp[-j2\pi f \zeta (v,w)]. \label{eq:spectrum_correlated}
+\end{eqnarray}
+Consequently, FC sources are completely characterized by $\boldsymbol{\rho}(\tau)$, $\boldsymbol{\sigma}(f)$ and $\zeta (v,w)$.
+
+
+\subsubsection{Fully uncorrelated spatiotemporal dynamics}
+This model of spatiotemporal dynamics constitutes an idealization of highly irregular and disorganized rhythms, such as fibrillation, in which there is no second-order relationship between the temporal activity of any pair of cardiac dipoles. The autocorrelation and the spectrum of a FU source are defined as
+\begin{eqnarray}
+\boldsymbol{\rho}(v,w,\tau)=\boldsymbol{\rho}(v,v,\tau)\delta(v-w),\label{eq:autocorrelation_uncorrelated} \\
+\boldsymbol{\sigma}(v,w,\tau)=\boldsymbol{\sigma}(v,v,\tau)\delta(v-w).\label{eq:spectrum_uncorrelated}
+\end{eqnarray}
+In words, the cross-correlation between two cardiac dipoles $\mathbf{J}(w,t)$ and $\mathbf{J}(v,t)$, where $v\neq w$, is null.
+
+
+\section{Función de distribución de tiempos}
+
+\section{Lead Fields}
+
+\subsection{idealized model}
+
+in this section we define one simple, idealized model of MSD, namely the pulse
+model. The pulse model describes a lead system that measures with the same
+sensitivity every dipole within a region $V_0$ of the volume source $V$, while
+rejecting the rest. Mathematically, this model is defined as
+
+\begin{equation}
+\label{def:pulso}
+\mathbf{L}_{V_0}(v)= 
+\begin{cases}
+    \begin{tabular}{ll}
+    $\mathbf{1}$ & if $v\in V_0$\\
+    $\mathbf{0}$ & otherwise
+        \end{tabular}
+ \end{cases}.
+\end{equation}
+
+The pulse model can be treated as an approximation of physical MSD that
+effectively concentrate their measurement in a region $V_0$.
+
+For the subsequent analysis it is also convenient to quantify the spatial
+resolution (SR) of pulse leads. The SR can be defined as the region of the
+cardiac source that contributes the most to the measured signal. In this study
+we quantify the SR of pulse leads by introducing the notion of the lead
+equivalent volume (LEV), which is defined as the relative size of $V_{0}$ to
+the size of $V$,
+
+\begin{equation}
+LEV=\frac{\int_{V_{0}}{dv}}{\int_{V}{dv}}=\frac{M_{V_{0}}}{M_V},\label{eq:SR}
+\end{equation}
+where $M_{V_{0}}$ and $M_V$ are the sizes of $V_{0}$ and $V$ respectively.
+Thus, for local measurements the LEV is close to zero, whereas for global
+measurements where $V_0\simeq V$, the LEV is close to one.
+
+
+\section{Resolución Espacial vs Ancho de Banda}
+we identify the relationship between: the spectrum of cardiac signals,
+the spatiotemporal dynamics of cardiac sources and the measurement
+characteristics of lead systems
  

@@ -1,8 +1,148 @@
 % -*-coding: iso-latin-1  -*-
-\chapter{Resolución espacial del sistemas de electrodos}
-\section{introducción}
-\section{modelos de sistemas de electrodos}
-\section{Volumen equivalente de sistema de electrodos}
-\section{concluciones}
+\chapter{Definición  del Espectro}
+
+\begin{resumen}
+In this section we present the mathematical formalism for investigating the
+spectrum of cardiac signals. Firstly, we introduce the lead-field bioelectric
+model of cardiac sources and signals. Then, based on multivariate signal
+analysis, we define the autocorrelation and the spectrum of cardiac sources.
+
+Throughout this paper the following notation is used: $\langle\cdot\rangle_t$
+denotes time-average, $\mathcal{F}[\cdot]$ is the Fourier Transform operator,
+$(\ast)$ denotes convolution and $\delta(\cdot)$ is the Dirac's delta. We use
+the following vector definitions: $\mathbf{1}=[1, 1, 1]^T$ and $\mathbf{0}=[0,
+0, 0]^T$.
+\end{resumen}
+
+
+\section{Introducción}
+\subsection{Señal}
+\subsection{Vector}
+\subsection{Campo Vectorial}
+\section{Autocorrelación}
+
+\subsection{Autocorrelation and spectrum of cardiac sources}
+
+ The autocorrelation of a cardiac source, $\boldsymbol{\rho}(v,w,\tau)$,
+ $\forall v,w\in V$, is defined as the collection of the cross-correlations
+ between all pairs of dipoles in $V$. Since cardiac dipoles are vectorial
+ entities, the cross-correlation between two dipoles consists of the
+ cross-correlations between all three components of each dipole
+ \cite{Papoulis91}.
+ In order to define the autocorrelation of a cardiac source, the average dipole
+ field $\bar{\mathbf{J}}(v)$ needs to be introduced:
+ 
+ \begin{eqnarray}\label{eq:average_dipole}
+ \bar{\mathbf{J}}(v)&=&\langle\mathbf{J}(v,t)\rangle_t  \nonumber \\
+			     &=& [\langle J_x(v,t)\rangle_t, \langle J_y(v,t)\rangle_t, \langle J_z(v,t)\rangle_t]^T. 
+ \end{eqnarray}
+ Based on $\bar{\mathbf{J}}(v)$, we define the zero-average dipole field
+ $\mathbf{J'}(v,t)=\mathbf{J}(v,t)-\bar{\mathbf{J}}(v)$, so that
+ $\langle\mathbf{J'}(v,t)\rangle_t=\mathbf{0}$. The cross-correlation matrix
+ between two cardiac dipoles $\mathbf{J}(v,t)$ and $\mathbf{J}(w,t)$, where
+ $v,w\in V$, is then defined as
+ 
+ \begin{eqnarray}\label{eq:autocorrelation_source}
+ &&\boldsymbol{\rho}(v,w,\tau)=\langle\mathbf{J'}(v,t+\tau)\mathbf{J'}^{T}(w,t)\rangle_t
+ \nonumber \\
+ &&= \left( \begin{array}{ccc}
+ {\rho}_{xx}(v,w,\tau) & {\rho}_{xy}(v,w,\tau) & {\rho}_{xz}(v,w,\tau) \\
+ {\rho}_{yx}(v,w,\tau) & {\rho}_{yy}(v,w,\tau) & {\rho}_{yz}(v,w,\tau) \\
+ {\rho}_{zx}(v,w,\tau) & {\rho}_{zy}(v,w,\tau) & {\rho}_{zz}(v,w,\tau) 
+ \end{array} \right).
+ \end{eqnarray}
+ Therefore, each entry of $\boldsymbol{\rho}(v,w,\tau)$ contains the
+ cross-correlation between one component of $\mathbf{J}(v,t)$ and one component
+ of $\mathbf{J}(w,t)$. For instance, matrix entry ${\rho}_{zy}(v,w,\tau)$ is
+ $\langle J'_z(v,t+\tau) J'_y(w,t)\rangle_t$. Also, the average power of dipole
+ component  $J'_x(v,t)$ is by definition $P_x(v)={\rho}_{xx}(v,v,0)$, and
+ analogous expressions can be obtained for the average power of dipole
+ components $J'_y(v,t)$ and $J'_z(v,t)$.
+
+ The spectrum of a cardiac source, $\boldsymbol{\sigma}(v,w,f)$, $\forall v,w\in
+ V$, corresponds to the collection of the cross-spectra between all pairs of
+ dipoles in $V$, and is defined as
+ \begin{eqnarray}\label{eq:spectrum_source}
+ &&\boldsymbol{\sigma}(v,w,f) =\mathcal{F}[\boldsymbol{\rho}(v,w,\tau)]
+ \nonumber \\
+ &&=\left( \begin{array}{ccc}
+ {\sigma}_{xx}(v,w, f) & {\sigma}_{xy}(v,w, f) & {\sigma}_{xz}(v,w, f) \\
+ {\sigma}_{yx}(v,w, f) & {\sigma}_{yy}(v,w, f) & {\sigma}_{yz}(v,w, f) \\
+ {\sigma}_{zx}(v,w, f) & {\sigma}_{zy}(v,w, f) & {\sigma}_{zz}(v,w, f)
+ \end{array} \right)
+ \end{eqnarray}
+ where the operator $\mathcal{F}[\cdot]$ is applied to
+ $\boldsymbol{\rho}(v,w,\tau)$ on a component-by-component basis. For instance,
+ ${\sigma}_{zy}(v,w, f)$ is $\mathcal{F}[{\rho}_{zy}(v,w,\tau)]$. 
+ 
+ We also define the \emph{total cross-correlation} $R_{J}(v,w,\tau)$ between two
+ cardiac dipoles $\mathbf{J}(v,t)$ and $\mathbf{J}(w,t)$ as the sum of the
+ entries of $\boldsymbol{\rho}(v,w,\tau)$ and the \emph{total cross-spectrum}
+ $S_{J}(v,w,f)$ as the Fourier Transform of $R_{J}(v,w,\tau)$. Mathematically,
+ they can be expressed as
+ 
+ \begin{eqnarray}
+  R_{J}(v,w,\tau) &=&  \mathbf{1}^{T} \boldsymbol{\rho}(v,w,\tau) 
+  \mathbf{1},\label{total_corr}\\
+ S_{J}(v,w,f)  &=&  \mathbf{1}^{T} \boldsymbol{\sigma}(v,w, f)  \mathbf{1}.
+\label{total_spectrum}
+\end{eqnarray}
+
+ Finally, we define the \emph{normalized} cross-correlation
+$\boldsymbol{\hat{\rho}}(v,w,\tau)$ as the matrix of entries
+\begin{equation}\label{eq:normalized_autocorrelation_source}
+\hat{\rho}_{ab}(v,w,\tau) = \frac{{\rho}_{ab}(v,w,\tau)}{\sqrt{{\rho}_{aa}(v,v,0){\rho}_{bb}(w,w,0)}}
+\end{equation}
+ where $a,b\in \{x,y,z\}$, and the \emph{normalized} total cross-correlation
+$\hat{R}_{J}(v,w,\tau)$ as
+\begin{equation}\label{normalized_total_corr}
+\hat{R}_{J}(v,w,\tau)= \frac{R_{J}(v,w,\tau)}{{\underset{\tau}{\max}}\{R_{J}(v,w,\tau)\}}.
+\end{equation}
+
+
+
+\subsection{Autocorrelation and spectrum of cardiac signals}
+
+ Let $c(t)$ be a cardiac signal measured by applying $\mathbf{L}(v)$ to a
+cardiac source of autocorrelation $\boldsymbol{\rho}(v,w,\tau)$ and spectrum $\boldsymbol{\sigma}(v,w,f)$ in $V$. Define $c'(t)$ as the cardiac signal $c(t)$ minus its time-average value $\bar{c}=\langle c(t) \rangle_t$,
+\begin{equation}\label{c_minus_average}
+c'(t)=c(t)-\bar{c}.
+\end{equation}
+ The autocorrelation function $R_{c}(\tau)$ of the cardiac signal $c(t)$ is
+defined as the following average \cite{Papoulis91}:
+\begin{equation}\label{signal_autocorr}
+R_{c}(\tau)  = \langle c'(t+\tau)c'(t) \rangle_t,
+\end{equation}
+ and its power spectrum $S_{c}(f)$ is defined as the Fourier Transform of its
+autocorrelation function,
+\begin{equation}\label{signal_spectrum}
+S_{c}(f)  = \mathcal{F}[R_{c}(\tau)].
+\end{equation}
+ Based on \eqref{eq:EqSintesis}, the following relationships can be derived
+between $R_{c}(\tau)$ and $\boldsymbol{\rho}(v,w,\tau)$, and betwen $S_{c}(f)$ and $\boldsymbol{\sigma}(v,w,f)$ (see Appendix A):
+\begin{eqnarray}
+R_{c}(\tau)&=& \int_{V\times V}{\mathbf{L}^{T}(v) \boldsymbol{\rho}(v,w,\tau) \mathbf{L}(w)}{dvdw},\label{eq:signal_model_autocorr}\\
+S_{c}(f) &=&\int_{V\times V}{\mathbf{L}^{T}(v) \boldsymbol{\sigma}(v,w,f) \mathbf{L}(w)}{dv dw}. \label{eq:signal_model_spectrum}
+\end{eqnarray}
+ Equations \eqref{eq:signal_model_autocorr} and \eqref{eq:signal_model_spectrum}
+ reflect the linear relationship between cardiac signals and sources [c.f.
+ \eqref{eq:EqSintesis}], and can be used to gain insight into the nature of the
+ autocorrelation and spectrum of cardiac signals. According to
+ \eqref{eq:signal_model_spectrum}, two factors determine the spectrum of cardiac
+ signals. The first factor is the spectrum $\boldsymbol{\sigma}(v,w,f)$ of
+ cardiac sources. It is worth noting that this is the solely feature of the
+ spatiotemporal dynamics of cardiac sources that manifests on the spectrum of
+ cardiac signals. The second factor is the MSD of the lead system,
+ $\mathbf{L}(v)$. Since $\mathbf{L}(v)$ is specific for each lead system,
+ \eqref{eq:signal_model_spectrum} reveals that cardiac signals measured by
+ different lead systems will in general have different spectra for the same
+ underlying spatiotemporal dynamics.
+
+
+
+\section{Métodos estimación del espectro}
+\section{Frecuencia Dominante}
+
+\section{Concluciones}
 
  
