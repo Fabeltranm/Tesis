@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>TesisFerney</name>
+	<name>mindmap</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -16,7 +16,7 @@
 			<arguments>
 				<dictionary>
 					<key>LaunchConfigHandle</key>
-					<value>&lt;project&gt;/.externalToolBuilders/net.sourceforge.texlipse.builder.TexlipseBuilder.launch</value>
+					<value>&lt;project&gt;/.externalToolBuilders/Preview Document in itexmac [Builder].launch</value>
 				</dictionary>
 			</arguments>
 		</buildCommand>

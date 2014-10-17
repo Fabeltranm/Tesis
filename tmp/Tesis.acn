@@ -1,3 +1,3 @@
-(indexentry :tkey (("DF" "\\glossaryentryfield{DF}{\\glsnamefont{DF}}{Frecuencia Dominante}{\\relax }") ) :locref "1" :attr "glsnumberformat" ) 
-(indexentry :tkey (("LF" "\\glossaryentryfield{LF}{\\glsnamefont{LF}}{Lead Field}{\\relax }") ) :locref "1" :attr "glsnumberformat" ) 
-(indexentry :tkey (("LF" "\\glossaryentryfield{LF}{\\glsnamefont{LF}}{Lead Field}{\\relax }") ) :locref "6" :attr "glsnumberformat" ) 
+(indexentry :tkey (("DF" "\\glossentry{DF}") ) :locref "{}{1}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("LF" "\\glossentry{LF}") ) :locref "{}{1}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("LF" "\\glossentry{LF}") ) :locref "{}{6}" :attr "pageglsnumberformat" ) 

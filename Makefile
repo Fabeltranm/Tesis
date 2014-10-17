@@ -41,9 +41,9 @@ fastlatex:dtmp
 
 clean:
 	@echo Borrando los ficheros temporales...
-	@rm -fR $(_DIR_TMP)
+	@rm -fR $(_DIR_TMP)/*
 	@echo Borrando los ficheros de salida ps...
-	@rm -f *.ps
+	@rm -f *.ps *.dvi
 	@echo Borrando los ficheros de salida...
 	@rm -f *.pdf
 
