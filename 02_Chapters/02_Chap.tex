@@ -2,17 +2,31 @@
 \chapter{Definición  del Espectro}
 
 \begin{resumen}
-En esta sección se presentan el  formalismo matemático \ldots. 
-In this section we present the mathematical formalism for investigating the
-spectrum of cardiac signals. Firstly, we introduce the lead-field bioelectric
-model of cardiac sources and signals. Then, based on multivariate signal
-analysis, we define the autocorrelation and the spectrum of cardiac sources.
 
-Throughout this paper the following notation is used: $\langle\cdot\rangle_t$
-denotes time-average, $\mathcal{F}[\cdot]$ is the Fourier Transform operator,
-$(\ast)$ denotes convolution and $\delta(\cdot)$ is the Dirac's delta. We use
-the following vector definitions: $\mathbf{1}=[1, 1, 1]^T$ and $\mathbf{0}=[0,
-0, 0]^T$.
+
+
+En el siguiente capítulo se aborda el formalismo matemático que enmarca el
+estudio del espectro de las señales cardiacas. El objetivo del capitulo es 
+desarrollar la teoría que conecta el espectro de la señales cardiacas, con su 
+dinámica espacio-temporal. Por lo tanto, los resultados teóricos, presentes  en
+este capitulo, derivan en el análisis e interpretación del espectro de señales cardiacas.
+
+La relación entre los diferentes sistemas de mediada de señales cardiacas y los
+espectros de las mismas, se abordar a partir del análisis de señales
+multivariantes junto con módelos bioeléctricos. A su vez, se definen mapas de
+autocorrelación para las fuentes  y señales  bioeléctricas, de esta forma, de
+acuerdo con la correlación espacio-temporal, se clasifican las diferentes
+dinàmicas cardiacas, en perfectamente correlacionandas, parcialmente
+correlacionadas  y perfectamente incorrelacionadas. A si mismo, se abordan los
+diferentes métodos de estimación del espectro de señales.
+
+Para terminar, se aborda los mapas de (\ac{DF}), como ejemplo de análisis
+espectral. en donde se expome la relación entre las caracteristicas del sistema
+de electrodos, utilizados para estimar la actividad local del miocardio, y el
+ancho de banda del espectro resultante.
+
+
+
 \end{resumen}
 
 
@@ -22,7 +36,12 @@ the following vector definitions: $\mathbf{1}=[1, 1, 1]^T$ and $\mathbf{0}=[0,
 \subsection{Campo Vectorial}
 \section{Autocorrelación}
 
+\subsection{Autocorrelación  de fuentes cardiacas}
+
 \subsection{Autocorrelation and spectrum of cardiac sources}
+
+la autocorrelación de fuentes cardiacas, se define como la correlacion cruzada 
+
 
  The autocorrelation of a cardiac source, $\boldsymbol{\rho}(v,w,\tau)$,
  $\forall v,w\in V$, is defined as the collection of the cross-correlations
@@ -105,7 +124,9 @@ $\hat{R}_{J}(v,w,\tau)$ as
 \subsection{Autocorrelation and spectrum of cardiac signals}
 
  Let $c(t)$ be a cardiac signal measured by applying $\mathbf{L}(v)$ to a
-cardiac source of autocorrelation $\boldsymbol{\rho}(v,w,\tau)$ and spectrum $\boldsymbol{\sigma}(v,w,f)$ in $V$. Define $c'(t)$ as the cardiac signal $c(t)$ minus its time-average value $\bar{c}=\langle c(t) \rangle_t$,
+cardiac source of autocorrelation $\boldsymbol{\rho}(v,w,\tau)$  and spectrum
+$\boldsymbol{\sigma}(v,w,f)$ in $V$. Define $c'(t)$ as the cardiac  signal
+$c(t)$ minus its time-average value $\bar{c}=\langle c(t) \rangle_t$,
 \begin{equation}\label{c_minus_average}
 c'(t)=c(t)-\bar{c}.
 \end{equation}
@@ -138,6 +159,113 @@ S_{c}(f) &=&\int_{V\times V}{\mathbf{L}^{T}(v) \boldsymbol{\sigma}(v,w,f) \mathb
  \eqref{eq:signal_model_spectrum} reveals that cardiac signals measured by
  different lead systems will in general have different spectra for the same
  underlying spatiotemporal dynamics.
+
+\subsection{Mapa de intensidades pico de autocorrelación}
+
+\begin{figure}[t]
+%\centering
+\begin{tabular}{ccc}
+ \epsfig{file = ./images/02_chap/Plano_Dinamica.eps,width = 4.5cm} &
+ \epsfig{file = ./images/02_chap/Espiral_Dinamica.eps,width = 4.5cm} &
+ \epsfig{file = ./images/02_chap/Caos_Dinamica.eps,width = 4.5cm}\\
+ (a)  & (b) &  (c)
+ \end{tabular}
+  \caption{ejemplo de dipolos (a) perfectamente correlacionados, (b))
+  parcialmente correlacionados y (c) perfectamente incorrelacionadas .}
+  \label{fig:dinámicas}
+\end{figure}
+
+
+
+El mapa de intensidades pico de correlación del  dipolo presenta la relación 
+entre un dipolo dado, $\mathbf{J}(v_o,t)$ y todos los elementos del  tejido 
+cardiaco. 
+
+La cuantificar esta relación caracterizamos el  grado de  correlación
+para clasificar el dipolo en función de la región de correlación, en dipolo 
+perfectamente  correlacionado, dipolo  perfectamente  incorrelacionado o dipolo
+parcialmente correlacionado, con respecto al tejido cardíaco. Cada elemento del 
+mapa de intensidades pico de correlación del dipolo $\mathbf{J}(v_o,t)$, 
+corresponde a la máxima intensidad de la correlación total normalizada entre  el
+dipolo $\mathbf{J}(v_o,t)$ y cada dipolo $\mathbf{J}(w,t)$ del tejido cardiaco.
+
+ Dados los dipolos  $\mathbf{J}(v_o,t)$  y $\mathbf{J}(w,t)$, dipolos del
+ tejido cardiaco,  y si  $\mathbf{J'}(v_o,t)$  y $\mathbf{J'}(w,t)$ son los 
+ respectivos dipolos con media cero,  la correlación cruzada entre $\mathbf{J}(v_o,t)$  y $\mathbf{J}(w,t)$ esta definida por:
+ 
+\begin{equation}\label{eq:correlationrho}
+\boldsymbol{\rho}(v_o,w,\tau) =\langle \mathbf{J'}^{T}(v_o,t+\tau) \mathbf{J'}(w,t)\rangle_t
+\end{equation}
+
+Donde, $\mathbf{\rho}(v_o,w,\tau)$, define la matriz  que describe la correlación  entre todas componentes del par de dipolos, $\mathbf{J}(v_o,t)$  y $\mathbf{J}(w,t)$ del  tejido cardiaco., De esta forma, la correlación total entre dos dipolos, se define  en \cite{RequenaSpectral1},  como la suma de los componentes de cada dipolo centrado en cero. ${R_{J}}(v_o,w,\tau)$, es la correlación total cruzada  de los dipolos $\mathbf{J}(v_o,t)$ y $\mathbf{J}(w,t)$, dada por:
+
+\begin{eqnarray}\label{eq:correlationRj}
+{R_{J}}(v_o,w,\tau) = {\rho_{xx}}(v_o,w,\tau)+{\rho_{xy}}(v_o,w,\tau)\\  \nonumber
+                                   +{\rho_{xz}}(v_o,w,\tau) +{\rho_{yx}}(v_o,w,\tau)+{\rho_{yy}}(v_o,w,\tau) \\ \nonumber
+                                   +{\rho_{yz}}(v_o,w,\tau) +{\rho_{zx}}(v_o,w,\tau)+{\rho_{zy}}(v_o,w,\tau)\\ \nonumber
+                                   +{\rho_{zz}}(v_o,w,\tau)
+\end{eqnarray}
+
+Donde ${\rho_{xx}}(v_o,w,\tau)$, corresponde a la correlación de las componentes ${J_{x}}(v_0,t)$ y ${J_{x}}(w,t)$. Para normalizar la correlación total es necesario definir la potencia media del dipolo como:
+
+\begin{equation}\label{eq:Potencia}
+{P}(v) = {R_{J}}(v,v,0)
+\end{equation}
+
+Donde, ${R_{J}}(v,v,0)$  es la auto-correlación total del dipolo $\mathbf{J}(v,t)$ en $\tau=0$. De esta manera, ${R'}_{J}(v_o,w,\tau)$, es la correlación total normaliza por las potencias de $\mathbf{J}(v_0,t)$ y $\mathbf{J}(w,t)$, definida  por:
+
+\begin{equation}\label{eq:RjN}
+ {R'_{J}}(v_o,w,\tau)=\dfrac{{R_{J}}(v_o,w,\tau)}{\sqrt{P(v_o)P(w)}}
+\end{equation}
+
+ La intensidad pico de correlación total de los  dipolos  $\mathbf{J}(v_0,t)$ y $\mathbf{J}(w,t)$, esta definido por: 
+\begin{equation}
+{r}(v_o,w)  =max{|{R'_{J}}(v_o,w,\tau)|}
+\end{equation}
+
+Donde ${r}(v_o,w)$, puede tomar valores entre 0 y 1, De esta forma, el mapa de intensidades pico de correlación del dipolo $\mathbf{J}(v_0,t)$, contiene  todo los elementos correspondientes  a  ${r}(v_o,w)$,  donde $w$ denota cada uno de los dipolos de $V$. Si ${r}(v_o,w)=0$, decimos que los dipolos  $\mathbf{J}(v_0,t)$ y $\mathbf{J}(w,t)$, están perfectamente  incorrelacionados, cuando  ${r}(v_o,w)=1$, decimos que los dipolos  $\mathbf{J}(v_0,t)$ y $\mathbf{J}(w,t)$ están perfectamente correlacionados. Cuando  $w = v_o$, ${r}(v_o,w)$ es la intensidad máxima de la auto-correlación del dipolo $\mathbf{J}(v_0,t)$, por lo que ${r}(v_o,w)={r}(v_o,v_o)=1$.
+
+
+\subsection{Grado de auto-correlación del tejido cardiaco}
+
+El grado de auto-correlación de una región nos da el porcentaje de dipolos correlacionados dentro del volumen cardiaco. Se cuantifica la relación entre los dipolos del tejido cardiaco, a través del promediado del número de dipolos correlacionados  en cada mapa de intensidades pico.
+
+En este sentido, si la región de auto-correlación es homogénea, podemos  hablar de áreas perfectamente  auto-correlacionadas cuando todos sus elementos están correlacionados entre si, y de áreas  perfectamente incorrelacionadas cuando todos los elementos de  la región no satisfacen el  grado de correlación, es decir su intensidad pico es nula.  Si la región de auto-correlación presenta diferentes intensidades de correlación total, nosotros definimos umbrales de correlación y de esta forma, se  clasifican las dinámicas parcialmente correlacionadas.
+ 
+En este orden y en función de un umbral de correlación, nosotros definimos la función boleana para todos los elementos del mapa de intensidades pico de correlación, como:
+ 
+\begin{equation}
+ \boldsymbol{U}(v,w)=
+ \begin{cases}
+    \begin{tabular}{ll}
+        ${1}$ & if ${r}(v,w) > {u}$\\
+        ${0}$ & otherwise
+    \end{tabular}
+ \end{cases}
+\end{equation}
+
+Donde $u$ es el umbral de correlación  normalizado  por encima del cual  consideramos que la intensidad pico de correlación total ${r}(v,w)$ es satisfactoria, $u$ varia entre 0 y 1. Si la región de auto-correlación es heterogénea, es de suponer que a mayor valor del umbral de correlación es menor el radio de la región de auto-correlación. De esta manera, el grado de auto-correlación del tejido cardiaco  se puede define como el promedio de la cantidad de  dipolos  correlacionados  para cada $\mathbf{U}(v.w) \in V$. 
+
+\begin{equation}
+{T}=\frac{1}{V^2}\int_{VxV}{\mathbf{U}(v,w){dvdw}}
+\end{equation}
+
+En consecuencia, basados en el umbral de correlación,  el volumen cardiaco se caracteriza de acuerdo al grado de auto-correlación,  en donde, en función del porcentaje de dipolos que satisfacen la auto-correlación hablamos de  tejido correlacionado o incorrelacionado. Si el tamaño de  la región de auto-correlación es equiparado  con el tamaño del tejido observado por el Lead Field, podemos hablar que el tejido cardiaco se aproxima a una dinámica perfectamente correlacionada, por el contrario cuando  el  tamaño  de la región de auto-correlación es significativamente menor que el volumen del  tejido, hablamos de   dinámicas incorrelacionadas.
+
+\subsection{Spectrum of Cardic Signal}
+
+La estimación de la densidad espectral de potencia,  tanto para el  dipolo como para las señales cardiacas,  se realiza con el método de Welch. La resolución de la estimación espectral depende  del  número de muestra del  enventanado y del solapamiento del mismo. El cálculo del promedio de periodogramas, para observar la  envolvente espectral en las diferentes resoluciones  de Lead Field en cada una de las dinámica simuladas, se realiza con una ventana  Hamming de 512 muestras y un solapamiento del 50\%. Para ilustrar la  relación entre los  espectro de las señales cardiacas del frente de onda plano y su dinámica  temporal, nosotros empleamos ventanas Hamming de 2048 muestras para la estimación del espectro de potencia  y observar los armónicos de la señal.
+
+Las señales cardiacas de las tres dinámicas simuladas (frente de onda plano, espiral y caos), son sintetizadas en los 8 tamaños de lead Field definidos, $A_1$, $A_2$, $A_3$, $A_4$, $A_5$, $A_6$, $A_7$ y $A_8$,. el tiempo total  de simulación es de 60 s. Para la estimación del espectro  y  los mapas de correlación se toma un intervalo de 20 s. La  tasa de muestreo de las señales  sintetizadas es de 500 Hz. 
+
+El espectro de las señales cardiacas  en la dinámica perfectamente correlacionada, como se expone en \cite{RequenaSpectral1}, tiene asociado la función de diferencia de tiempos de activación ${\zeta}(v,w)$. Las diferencias de  tiempo son estimadas a partir de los instantes de  despolarización  de los  dipolo $\mathbf{J}(v,t)$ y $\mathbf{J}(w,t)$.  Cuando $v=w  { \zeta}(v,w)=0$. Para  las cuatro resoluciones espaciales de mayor tamaño de LeadField  se generan la funciones de distribución $F_{A_1}(\zeta)$, $F_{A_2}(\zeta)$, $F_{A_3}(\zeta)$, $F_{A_4}(\zeta)$, respectivamente, y constituyen la descripción espacial de los dipolos perfectamente correlacionados.  De esta forma, el espectro  de las señales cardiacas en dinámicas perfectamente correlacionas es expresado por:
+
+\begin{equation}
+S_{C_o}(\omega)=S_{A_o}(\omega) \cdot  S_{J}(\omega)
+\end{equation}
+
+Donde, $S_{A_o}(\omega)$, es la transformada de  Fourier de la funcion de distribución de  tiempos  $F_{A_o}(\zeta)$ y $S_{J}(\omega)$, es el espectro de un  dipolo del  tejido cardíaco. por lo que, el espectro del las  señales cardiacas en el frente de onda plano, depende de la resolución espacial de cada leadField que nosotros definimos. En consecuencia, nosotos calculamos a partir de la funcion de distribución de  tiempos, $S_{A_1}(\omega)$, $S_{A_2}(\omega)$, $S_{A_3}(\omega)$, $S_{A_4}(\omega)$.
+
 
 
 

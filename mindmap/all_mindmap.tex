@@ -1,0 +1,164 @@
+\newgeometry{margin=1cm}
+\thispagestyle{empty}
+\begin{figure}
+  \centering 
+	\begin{tikzpicture}[mindmap, text=white,level 1 concept/.append
+	style={level distance=120}, connection bar color/.style={every circle connection bar/.append style={
+            append after command={[fill=#1]}}}]
+%   	\tikzstyle{level 1 concept}+=[font=\sf \large,level distance=120 ]
+%    	\tikzstyle{level 2 concept}+=[font=\sf,level distance=80,text=black]
+%    	\tikzstyle{level 3 concept}+=[font=\sf,text=black ]
+   	\tikzstyle{level 1 concept}+=[level distance=120 ]
+   	\tikzstyle{level 2 concept}+=[level distance=80,text=black]
+   	\tikzstyle{level 3 concept}+=[level distance=50,text=black ]
+  	% INTRODUCCION
+	  \begin{scope}[concept color=orange, text=white]
+	    \node [concept] at (-9,0){Introducci{\'o}n}
+	    [clockwise from=60,concept color=orange!85] 
+	    child [grow=25] 
+	    	{node [concept] (1_1) {Motivaci{\'o}n}}
+	    child [grow=-10]
+	      	{node [concept] (1_2) {Objetivos}
+	      	[clockwise from=-145,concept color=orange!65]
+				child [grow=-20] { node[concept] (1_2_1) {obj 1} }
+				child [grow=20] { node[concept] (1_2_2) {obj 2} }
+				} 
+	    child [grow=-115]
+	    	{node [concept] (1_3) {Metodolog{\'i}a}}
+	    child [grow=-45]
+	        {node [concept] (1_4) {Aportaciones}}
+		child [grow=-80] 
+	    	{node [concept] (1_5){Estado de arte} 
+	    	[clockwise from=25,concept color=orange!65]
+				child [grow=-70]  { node[concept] (1_5_1) {Modelos} }
+				child [grow=-110] { node[concept] (1_5_2) {An{\'a}lisis Espectral} 
+					[clockwise from=25,concept color=orange!45]
+					child [grow=195]  { node[concept] (1_5_2_1) {Caracte-\\r{\'i}sticas
+					Espectrales} } 
+					child [grow=145] { node[concept] (1_5_2_2) {Mapas de Frecuencia} } 
+					}
+				};
+	  \end{scope}
+	  % METODOS
+      \begin{scope}[concept color=red,text=white]
+	    \node [concept]  at (-7,-11)  {Modelos Bioel{\'e}ctricos}[concept
+	    color=red!85] child [grow=25]
+	        	{node [concept] (2_1) {Anatomia y Fisiolog{\'i}a}}
+      		child [grow=60] 
+	    	{node [concept] (2_2){Modelo Electrofisiol{\'o}gico} 
+	    	[clockwise from=65,concept color=red!65]
+				child { node[concept] (2_2_1) {C{\'e}lula} }
+				child [grow=25] { node[concept] (2_2_2) {Tejido} }
+				}
+	 		child [grow=-5,level distance=150] 
+	    	{node [concept] (2_3){Sistema de Medida} 
+	    	[clockwise from=40,concept color=red!65,]
+				child [grow=-0] { node[concept] (2_3_1) {Sistema de Electrodos} }
+				child [grow=50] { node[concept] (2_3_2) {Volumen Equivalente} }
+				}
+			child [grow=155]
+	        	{node [concept] (2_4) {Conclusiones}}		
+	      ;
+	  \end{scope}
+   	  \begin{scope}[concept color=red,text=white]
+	    \node [concept]  at (-7,-16)  {Definici{\'o}n del Espectro}[concept
+	    color=red!85] child [grow=-185] 
+	    		{node [concept] (3_1_1) {Señal}}
+ 	    	child [grow=-150]
+	        	{node [concept] (3_1_2) {Vector}}
+  	    	child [grow=-115]
+	        	{node [concept] (3_1_3) {Campo Vector}}
+      		child [grow=-75] 
+	    		{node [concept] (3_2){Auto- correlaci{\'o}n} 
+	    		[clockwise from=20,concept color=red!65]
+					child [grow=-0] { node[concept] (3_2_1) {Fuentes} }
+					child { node[concept] (3_2_2) {Señal} }
+				}
+			child [grow=-25]
+	        	{node [concept] (3_3) {Estimaci{\'o}n del Espectro}
+	        	[clockwise from=0,concept color=red!65]
+					child { node[concept] (3_3_1) {Pwelch} }
+				}		
+			child [grow=15]
+	        	{node [concept] (3_4) {Mapas de Frecuencia}
+	        	[clockwise from=45,concept color=red!65]
+					child [grow=25] { node[concept] (3_4_1) {Frecuencia Dominante} }
+					child { node[concept] (3_4_2) {Frecuencia Pico} }
+				}		
+			child [grow=140]
+	        	{node [concept] (3_5) {Conclusiones}}		
+	      ;
+	  \end{scope}
+	  
+	  \begin{scope}[concept color=green!65!black,text=white]
+	    \node [concept] at (5.5,-21) {An{\'a}lisis} [concept
+	    color=green!65!black!75] child [grow=185] 
+	        {node [concept] (4_2) {Modelos de fuentes de 2 orden}} 
+	      child [grow=150] 
+	        {node [concept] (4_3) {Funci{\'o}n de  distribuci{\'o}n de tiempos}}
+	      child [grow=115] 
+	        {node [concept] (4_4) {Lead Field}[concept color=green!45!black!50]
+				child [grow=110] { node[concept] (4_4_1) {LEV} }
+	        }
+	      child [grow=80] 
+	        {node [concept] (4_5) {Resoluci{\'o}n Espacial}};
+	  \end{scope}
+
+      \begin{scope}[concept color=blue!65!black,text=white]
+	    \node [concept]  at (5,-5)  {Simulaciones}[concept color=blue!65!black!75] 
+	    	child [grow=-175]
+	        	{node [concept] (5_3) {Modelos Lead Field}}
+ 	    	child [grow=80]
+	        	{node [concept] (5_4) {Resoluci{\'o}n Espacial del Sistema de
+	        	electrodos}} child [grow=-140]
+	        	{node [concept] (5_5) {Relaci{\'o}n Ancho de Banda}}
+      		child [grow=115] 
+	    		{node [concept] (5_1){Expermentos} 
+	    		[clockwise from=20,concept color=blue!65!black!50]
+	   	        	child [grow=165] { node[concept] (5_1_1) {Exp 1} }
+   		        	child [grow=125] { node[concept] (5_1_2) {Exp 2} }
+   	    	    	child [grow= 85] { node[concept] (5_1_3) {Exp 3} }
+				}
+			child [grow=-80]
+	        	{node [concept] (5_2) {Implementa- ci{\'o}n de \\ Modelos}
+	        	[clockwise from=0,concept color=blue!65!black!50]
+   	        	child [grow=-155] { node[concept] (5_2_1) {Rudo Blanco} }
+   	        	child [grow=-110] { node[concept] (5_2_2) {Automata 2D} }
+   	        	child [grow= -70] { node[concept] (5_2_3) {3D Realista} }
+				}		
+			child [grow=150]
+	        	{node [concept] (5_6) {Conclusiones}}		
+	      ;
+	  \end{scope}	  
+	  \begin{pgfonlayer}{background}
+		\draw [gray!85,circle connection bar,connection bar color=gray!50] 
+		(1_4)  to (2_4)
+		(1_4)  to (3_5)
+		(1_4)  to (5_6)
+		(1_5_2) to (2_3)
+		(1_5_2) to (3_4)
+		(1_2_1) to (5_1_1)
+		(1_2_2) to (5_1_2)		
+		(1_5_1) to (2_2_1)
+		(1_5_1)	to (2_2_2)
+ 		(2_2)	to (2_1)
+	    (3_4)	to (3_3_1)
+		(2_3)	to (3_3_1)
+		(2_3)	to (4_4_1)
+		(4_5)	to (2_3_1)
+		(4_3)	to (2_2_2)
+		(4_3)	to (2_2_2)
+		(4_3)	to (2_2_2)
+		(5_2)	to (2_2)
+		(5_3)	to (2_3)
+		(5_4)	to (2_3_1)
+		(5_5)	to (2_3_1)
+	
+		;
+	 \end{pgfonlayer}
+	  
+	\end{tikzpicture}
+  \caption{mapa}
+
+\end{figure}
+\restoregeometry

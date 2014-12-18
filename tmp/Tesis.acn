@@ -1,3 +1,4 @@
-(indexentry :tkey (("DF" "\\glossentry{DF}") ) :locref "{}{1}" :attr "pageglsnumberformat" ) 
-(indexentry :tkey (("LF" "\\glossentry{LF}") ) :locref "{}{1}" :attr "pageglsnumberformat" ) 
-(indexentry :tkey (("LF" "\\glossentry{LF}") ) :locref "{}{6}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("DF" "\\glossentry{DF}") ) :locref "{}{3}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("LF" "\\glossentry{LF}") ) :locref "{}{3}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("LF" "\\glossentry{LF}") ) :locref "{}{8}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("DF" "\\glossentry{DF}") ) :locref "{}{9}" :attr "pageglsnumberformat" ) 

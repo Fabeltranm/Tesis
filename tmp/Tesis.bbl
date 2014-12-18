@@ -1,0 +1,25 @@
+\begin{thebibliography}{3}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Malmivuo and Plonsey(1995)]{Malmivuo95}
+Jaakko Malmivuo and Robert Plonsey.
+\newblock \emph{Bioelectromagnetism: principles and applications of bioelectric
+  and biomagnetic fields}.
+\newblock Oxford University Press, New York, 1995.
+
+\bibitem[Papoulis(1991)]{Papoulis91}
+Athanasios Papoulis.
+\newblock \emph{Probability, random variables, and stochastic processes}.
+\newblock McGraw-Hill, New York etc., 1991.
+
+\bibitem[Sachse(2004)]{Sachse04}
+Frank~B. Sachse.
+\newblock \emph{Computational cardiology : modeling of anatomy,
+  electrophysiology, and mechanics}.
+\newblock Springer, Berlin, 2004.
+
+\end{thebibliography}

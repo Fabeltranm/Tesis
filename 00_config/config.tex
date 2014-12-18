@@ -19,14 +19,17 @@
 %%%TEXTO
 
 \usepackage{verbatim}		% texto ascii puro tal cual
+\usepackage{geometry}		% para la configuración personal de margenes
 \usepackage[spanish]{layout}	% depuración de la config de las paginas 
 				% se incluye el comando \layout en el 
 				% documento para ver la información de config de pag.
 
 %\usepackage[ansinew]{inputenc}	% windows
 \usepackage[T1]{fontenc}		% codificación de las fuentes de  salidas
-\usepackage[latin1]{inputenc}  	% codificación de fuentes de entrada
-%\usepackage[utf8]{inputenc}  		% utf8
+\usepackage{textcomp}
+\usepackage[latin1]{inputenc}  	% codificación de fuentes
+% de entrada \usepackage[utf8]{inputenc}  		% utf8
+
 
 \usepackage[round]{natbib}	% soporte para bibliografia 
 				% \citep{ref} entre parentesis
@@ -37,7 +40,7 @@
 					
 
 \usepackage[spanish,activeacute]{babel}	% Soporte para castellano
-
+\fontfamily{garamond}
 
 %% PARRAFOS
 
@@ -77,7 +80,9 @@
 %\usepackage[final]{graphicx}
 %\usepackage[draft,dvips]{graphicx}
 %\usepackage[pdftex]{graphicx}		% para imagenes  JPG PNG PDF
+
 \usepackage{tikz}
+\usetikzlibrary{mindmap, trees,backgrounds}
 
 %% TABLAS
 
@@ -163,6 +168,7 @@ shortcuts,hyperfirst=false,sanitize=none]{glossaries}
 \end{small}\end{quotation}%
 \bigskip%
 }
+
 
 
 %%% FIN CONFIG
