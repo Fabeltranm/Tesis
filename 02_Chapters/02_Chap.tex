@@ -25,43 +25,72 @@ espectral. en donde se expome la relación entre las caracteristicas del sistema
 de electrodos, utilizados para estimar la actividad local del miocardio, y el
 ancho de banda del espectro resultante.
 
+indicar en que publicación esta esta descripción 
 
 
 \end{resumen}
 
 
 \section{Introducción}
-\subsection{Señal}
-\subsection{Vector}
-\subsection{Campo Vectorial}
+
+Los procesos estocásticos nos permiten modelar aquellos sistemas
+multivariantes, en tiempo y espacio. De esta manera, se puede estudiar cómo se
+comportan señales variantes en el tiempo, que de otra forma, serian muy dificil
+tratar, si no es por herramientas estadisticas.
+
+Las señales aleatores, en los procesos estocasticos de segundo orden, se
+analizan por medio de la distribución de potencia en frecuencia y de la
+autocorrelación de la señal.  Por esto, que los procesos estocásticos de
+segundo orden, son una de las técnicas matemáticas más utilizadas para 
+describir las señales bioélectricas, ya que para este tipo de variables,  soló
+se dispone de un segmento finito de la señal y por lo tanto es necesario acudir
+a técnicas de estimación espectral.
+
+
+El espectro en potencia, de la señales bioelectricas y, en general de las
+señales discretas que sólo se puede analizar e un tiempo finito,se define en
+función del módelo estocastico como la transformada de Fourier de la función de
+autocorrelación.
+
+colocar aca la funcion de espectro y de autocorrelación genérica
+
+
+
+aca hablar de \cite{Papoulis91},
+
+\subsection{Correlación Señal}
+\subsection{Correlación de Vector}
+
+referencias a jesus tesis y el articulo
 \section{Autocorrelación}
 
 \subsection{Autocorrelación  de fuentes cardiacas}
 
-\subsection{Autocorrelation and spectrum of cardiac sources}
+Al tomar el dipolo cardiaco como el elemento básico de un fuerte cardiaca,
+podemos definir la autocorrelación de fuentes cardiacas, como la correlación 
+cruzada entre un dipolo cardiaco y todos los dipolos pertenecientes al tejido. 
+De esta manera, el dipolo cardiaco es un ente  vectorial,
+$\mathbf{J}(v,t)={\{ J_x(v,t), J_y(v,t), J_z(v,t) \}}$ \cite{Malmivuo95}, y
+por lo tanto, la correlación cruzada entre dos dipolos esta dada por la correlación cruzada entre las tres componentes de cada dipolo.
 
-la autocorrelación de fuentes cardiacas, se define como la correlacion cruzada 
-
-
- The autocorrelation of a cardiac source, $\boldsymbol{\rho}(v,w,\tau)$,
- $\forall v,w\in V$, is defined as the collection of the cross-correlations
- between all pairs of dipoles in $V$. Since cardiac dipoles are vectorial
- entities, the cross-correlation between two dipoles consists of the
- cross-correlations between all three components of each dipole
- \cite{Papoulis91}.
- In order to define the autocorrelation of a cardiac source, the average dipole
- field $\bar{\mathbf{J}}(v)$ needs to be introduced:
- 
+La media de un dipolo cardiaco, segun \cite{Papoulis91},  esta dada por:
+  
  \begin{eqnarray}\label{eq:average_dipole}
  \bar{\mathbf{J}}(v)&=&\langle\mathbf{J}(v,t)\rangle_t  \nonumber \\
 			     &=& [\langle J_x(v,t)\rangle_t, \langle J_y(v,t)\rangle_t, \langle J_z(v,t)\rangle_t]^T. 
  \end{eqnarray}
- Based on $\bar{\mathbf{J}}(v)$, we define the zero-average dipole field
- $\mathbf{J'}(v,t)=\mathbf{J}(v,t)-\bar{\mathbf{J}}(v)$, so that
- $\langle\mathbf{J'}(v,t)\rangle_t=\mathbf{0}$. The cross-correlation matrix
- between two cardiac dipoles $\mathbf{J}(v,t)$ and $\mathbf{J}(w,t)$, where
- $v,w\in V$, is then defined as
- 
+
+A continuación  y basados en  $\bar{\mathbf{J}}(v)$, se define el dipolo
+cardiaco con media cero, $\langle\mathbf{J'}(v,t)\rangle_t=\mathbf{0}$, como:
+
+
+\begin{eqnarray}\label{eq:zero_average_dipole}
+	\mathbf{J'}(v,t)=\mathbf{J}(v,t)-\bar{\mathbf{J}}(v)
+\end{eqnarray}
+
+La correlación cruzada entre dos dipolos cardiacos, $\mathbf{J}(v,t)$ y 
+$\mathbf{J}(w,t)$, del tejido cardiaco definido por $V$, queda definida como:
+
  \begin{eqnarray}\label{eq:autocorrelation_source}
  &&\boldsymbol{\rho}(v,w,\tau)=\langle\mathbf{J'}(v,t+\tau)\mathbf{J'}^{T}(w,t)\rangle_t
  \nonumber \\
@@ -71,52 +100,35 @@ la autocorrelación de fuentes cardiacas, se define como la correlacion cruzada
  {\rho}_{zx}(v,w,\tau) & {\rho}_{zy}(v,w,\tau) & {\rho}_{zz}(v,w,\tau) 
  \end{array} \right).
  \end{eqnarray}
- Therefore, each entry of $\boldsymbol{\rho}(v,w,\tau)$ contains the
- cross-correlation between one component of $\mathbf{J}(v,t)$ and one component
- of $\mathbf{J}(w,t)$. For instance, matrix entry ${\rho}_{zy}(v,w,\tau)$ is
- $\langle J'_z(v,t+\tau) J'_y(w,t)\rangle_t$. Also, the average power of dipole
- component  $J'_x(v,t)$ is by definition $P_x(v)={\rho}_{xx}(v,v,0)$, and
- analogous expressions can be obtained for the average power of dipole
- components $J'_y(v,t)$ and $J'_z(v,t)$.
 
- The spectrum of a cardiac source, $\boldsymbol{\sigma}(v,w,f)$, $\forall v,w\in
- V$, corresponds to the collection of the cross-spectra between all pairs of
- dipoles in $V$, and is defined as
- \begin{eqnarray}\label{eq:spectrum_source}
- &&\boldsymbol{\sigma}(v,w,f) =\mathcal{F}[\boldsymbol{\rho}(v,w,\tau)]
- \nonumber \\
- &&=\left( \begin{array}{ccc}
- {\sigma}_{xx}(v,w, f) & {\sigma}_{xy}(v,w, f) & {\sigma}_{xz}(v,w, f) \\
- {\sigma}_{yx}(v,w, f) & {\sigma}_{yy}(v,w, f) & {\sigma}_{yz}(v,w, f) \\
- {\sigma}_{zx}(v,w, f) & {\sigma}_{zy}(v,w, f) & {\sigma}_{zz}(v,w, f)
- \end{array} \right)
- \end{eqnarray}
- where the operator $\mathcal{F}[\cdot]$ is applied to
- $\boldsymbol{\rho}(v,w,\tau)$ on a component-by-component basis. For instance,
- ${\sigma}_{zy}(v,w, f)$ is $\mathcal{F}[{\rho}_{zy}(v,w,\tau)]$. 
- 
- We also define the \emph{total cross-correlation} $R_{J}(v,w,\tau)$ between two
- cardiac dipoles $\mathbf{J}(v,t)$ and $\mathbf{J}(w,t)$ as the sum of the
- entries of $\boldsymbol{\rho}(v,w,\tau)$ and the \emph{total cross-spectrum}
- $S_{J}(v,w,f)$ as the Fourier Transform of $R_{J}(v,w,\tau)$. Mathematically,
- they can be expressed as
- 
- \begin{eqnarray}
+Donde, $\boldsymbol{\rho}(v,w,\tau)$, define la matriz  que describe la
+correlación cruzada entre cada una de las componentes del par de dipolos, 
+$\mathbf{J}(v,t)$ y $\mathbf{J}(w,t)$ del  tejido cardiaco. Es asi como,
+${\rho}_{zy}(v,w,\tau)$ es $\langle J'_z(v,t+\tau) J'_y(w,t)\rangle_t$
+
+
+De esta forma. se define la correlación cruzada total entre dos dipolos
+cardiacos, $\mathbf{J}(v,t)$ and $\mathbf{J}(w,t)$, como la suma de todos los elementos de
+$\boldsymbol{\rho}(v,w,\tau)$.
+
+\begin{eqnarray}
   R_{J}(v,w,\tau) &=&  \mathbf{1}^{T} \boldsymbol{\rho}(v,w,\tau) 
-  \mathbf{1},\label{total_corr}\\
- S_{J}(v,w,f)  &=&  \mathbf{1}^{T} \boldsymbol{\sigma}(v,w, f)  \mathbf{1}.
-\label{total_spectrum}
+  \mathbf{1},\label{total_corr}
 \end{eqnarray}
 
- Finally, we define the \emph{normalized} cross-correlation
-$\boldsymbol{\hat{\rho}}(v,w,\tau)$ as the matrix of entries
-\begin{equation}\label{eq:normalized_autocorrelation_source}
-\hat{\rho}_{ab}(v,w,\tau) = \frac{{\rho}_{ab}(v,w,\tau)}{\sqrt{{\rho}_{aa}(v,v,0){\rho}_{bb}(w,w,0)}}
+Para normalizar la correlación cruzada total es necesario definir la potencia
+media del dipolo cardiaco como:
+
+\begin{equation}\label{eq:Potencia}
+{P}(v) = {R_{J}}(v,v,0)
 \end{equation}
- where $a,b\in \{x,y,z\}$, and the \emph{normalized} total cross-correlation
-$\hat{R}_{J}(v,w,\tau)$ as
-\begin{equation}\label{normalized_total_corr}
-\hat{R}_{J}(v,w,\tau)= \frac{R_{J}(v,w,\tau)}{{\underset{\tau}{\max}}\{R_{J}(v,w,\tau)\}}.
+
+Donde, ${R_{J}}(v,v,0)$  es la auto-correlación total del dipolo $\mathbf{J}(v,t)$ en $\tau=0$. 
+De esta manera, ${R'}_{J}(v_o,w,\tau)$, es la correlación total normaliza por
+las potencias de  $\mathbf{J}(v,t)$ y $\mathbf{J}(w,t)$, definida  por:
+
+\begin{equation}\label{eq:RjN}
+ {R'_{J}}(v_o,w,\tau)=\dfrac{{R_{J}}(v,w,\tau)}{\sqrt{P(v)P(w)}}
 \end{equation}
 
 
@@ -162,6 +174,14 @@ S_{c}(f) &=&\int_{V\times V}{\mathbf{L}^{T}(v) \boldsymbol{\sigma}(v,w,f) \mathb
 
 \subsection{Mapa de intensidades pico de autocorrelación}
 
+
+El mapa de intensidades pico de correlación del  dipolo presenta la relación 
+entre un dipolo dado, $\mathbf{J}(v_o,t)$ y todos los elementos del  tejido 
+cardiaco. 
+Cada elemento del mapa de intensidades pico de correlación del dipolo $\mathbf{J}(v,t)$, 
+corresponde a la máxima intensidad de la correlación total normalizada entre  el
+dipolo $\mathbf{J}(v,t)$ y cada dipolo $\mathbf{J}(w,t)$ del tejido cardiaco.
+
 \begin{figure}[t]
 %\centering
 \begin{tabular}{ccc}
@@ -174,57 +194,6 @@ S_{c}(f) &=&\int_{V\times V}{\mathbf{L}^{T}(v) \boldsymbol{\sigma}(v,w,f) \mathb
   parcialmente correlacionados y (c) perfectamente incorrelacionadas .}
   \label{fig:dinámicas}
 \end{figure}
-
-
-
-El mapa de intensidades pico de correlación del  dipolo presenta la relación 
-entre un dipolo dado, $\mathbf{J}(v_o,t)$ y todos los elementos del  tejido 
-cardiaco. 
-
-La cuantificar esta relación caracterizamos el  grado de  correlación
-para clasificar el dipolo en función de la región de correlación, en dipolo 
-perfectamente  correlacionado, dipolo  perfectamente  incorrelacionado o dipolo
-parcialmente correlacionado, con respecto al tejido cardíaco. Cada elemento del 
-mapa de intensidades pico de correlación del dipolo $\mathbf{J}(v_o,t)$, 
-corresponde a la máxima intensidad de la correlación total normalizada entre  el
-dipolo $\mathbf{J}(v_o,t)$ y cada dipolo $\mathbf{J}(w,t)$ del tejido cardiaco.
-
- Dados los dipolos  $\mathbf{J}(v_o,t)$  y $\mathbf{J}(w,t)$, dipolos del
- tejido cardiaco,  y si  $\mathbf{J'}(v_o,t)$  y $\mathbf{J'}(w,t)$ son los 
- respectivos dipolos con media cero,  la correlación cruzada entre $\mathbf{J}(v_o,t)$  y $\mathbf{J}(w,t)$ esta definida por:
- 
-\begin{equation}\label{eq:correlationrho}
-\boldsymbol{\rho}(v_o,w,\tau) =\langle \mathbf{J'}^{T}(v_o,t+\tau) \mathbf{J'}(w,t)\rangle_t
-\end{equation}
-
-Donde, $\mathbf{\rho}(v_o,w,\tau)$, define la matriz  que describe la correlación  entre todas componentes del par de dipolos, $\mathbf{J}(v_o,t)$  y $\mathbf{J}(w,t)$ del  tejido cardiaco., De esta forma, la correlación total entre dos dipolos, se define  en \cite{RequenaSpectral1},  como la suma de los componentes de cada dipolo centrado en cero. ${R_{J}}(v_o,w,\tau)$, es la correlación total cruzada  de los dipolos $\mathbf{J}(v_o,t)$ y $\mathbf{J}(w,t)$, dada por:
-
-\begin{eqnarray}\label{eq:correlationRj}
-{R_{J}}(v_o,w,\tau) = {\rho_{xx}}(v_o,w,\tau)+{\rho_{xy}}(v_o,w,\tau)\\  \nonumber
-                                   +{\rho_{xz}}(v_o,w,\tau) +{\rho_{yx}}(v_o,w,\tau)+{\rho_{yy}}(v_o,w,\tau) \\ \nonumber
-                                   +{\rho_{yz}}(v_o,w,\tau) +{\rho_{zx}}(v_o,w,\tau)+{\rho_{zy}}(v_o,w,\tau)\\ \nonumber
-                                   +{\rho_{zz}}(v_o,w,\tau)
-\end{eqnarray}
-
-Donde ${\rho_{xx}}(v_o,w,\tau)$, corresponde a la correlación de las componentes ${J_{x}}(v_0,t)$ y ${J_{x}}(w,t)$. Para normalizar la correlación total es necesario definir la potencia media del dipolo como:
-
-\begin{equation}\label{eq:Potencia}
-{P}(v) = {R_{J}}(v,v,0)
-\end{equation}
-
-Donde, ${R_{J}}(v,v,0)$  es la auto-correlación total del dipolo $\mathbf{J}(v,t)$ en $\tau=0$. De esta manera, ${R'}_{J}(v_o,w,\tau)$, es la correlación total normaliza por las potencias de $\mathbf{J}(v_0,t)$ y $\mathbf{J}(w,t)$, definida  por:
-
-\begin{equation}\label{eq:RjN}
- {R'_{J}}(v_o,w,\tau)=\dfrac{{R_{J}}(v_o,w,\tau)}{\sqrt{P(v_o)P(w)}}
-\end{equation}
-
- La intensidad pico de correlación total de los  dipolos  $\mathbf{J}(v_0,t)$ y $\mathbf{J}(w,t)$, esta definido por: 
-\begin{equation}
-{r}(v_o,w)  =max{|{R'_{J}}(v_o,w,\tau)|}
-\end{equation}
-
-Donde ${r}(v_o,w)$, puede tomar valores entre 0 y 1, De esta forma, el mapa de intensidades pico de correlación del dipolo $\mathbf{J}(v_0,t)$, contiene  todo los elementos correspondientes  a  ${r}(v_o,w)$,  donde $w$ denota cada uno de los dipolos de $V$. Si ${r}(v_o,w)=0$, decimos que los dipolos  $\mathbf{J}(v_0,t)$ y $\mathbf{J}(w,t)$, están perfectamente  incorrelacionados, cuando  ${r}(v_o,w)=1$, decimos que los dipolos  $\mathbf{J}(v_0,t)$ y $\mathbf{J}(w,t)$ están perfectamente correlacionados. Cuando  $w = v_o$, ${r}(v_o,w)$ es la intensidad máxima de la auto-correlación del dipolo $\mathbf{J}(v_0,t)$, por lo que ${r}(v_o,w)={r}(v_o,v_o)=1$.
-
 
 \subsection{Grado de auto-correlación del tejido cardiaco}
 
@@ -244,19 +213,51 @@ En este orden y en función de un umbral de correlación, nosotros definimos la fu
  \end{cases}
 \end{equation}
 
+ La intensidad pico de correlación total de los  dipolos  $\mathbf{J}(v_0,t)$ y $\mathbf{J}(w,t)$, esta definido por: 
+\begin{equation}
+{r}(v_o,w)  =max{|{R'_{J}}(v_o,w,\tau)|}
+\end{equation}
+
+Donde ${r}(v_o,w)$, puede tomar valores entre 0 y 1, De esta forma, el mapa de intensidades pico de correlación del dipolo $\mathbf{J}(v_0,t)$, contiene  todo los elementos correspondientes  a  ${r}(v_o,w)$,  donde $w$ denota cada uno de los dipolos de $V$. Si ${r}(v_o,w)=0$, decimos que los dipolos  $\mathbf{J}(v_0,t)$ y $\mathbf{J}(w,t)$, están perfectamente  incorrelacionados, cuando  ${r}(v_o,w)=1$, decimos que los dipolos  $\mathbf{J}(v_0,t)$ y $\mathbf{J}(w,t)$ están perfectamente correlacionados. Cuando  $w = v_o$, ${r}(v_o,w)$ es la intensidad máxima de la auto-correlación del dipolo $\mathbf{J}(v_0,t)$, por lo que ${r}(v_o,w)={r}(v_o,v_o)=1$.
+
+
+
+
 Donde $u$ es el umbral de correlación  normalizado  por encima del cual  consideramos que la intensidad pico de correlación total ${r}(v,w)$ es satisfactoria, $u$ varia entre 0 y 1. Si la región de auto-correlación es heterogénea, es de suponer que a mayor valor del umbral de correlación es menor el radio de la región de auto-correlación. De esta manera, el grado de auto-correlación del tejido cardiaco  se puede define como el promedio de la cantidad de  dipolos  correlacionados  para cada $\mathbf{U}(v.w) \in V$. 
 
 \begin{equation}
 {T}=\frac{1}{V^2}\int_{VxV}{\mathbf{U}(v,w){dvdw}}
 \end{equation}
 
-En consecuencia, basados en el umbral de correlación,  el volumen cardiaco se caracteriza de acuerdo al grado de auto-correlación,  en donde, en función del porcentaje de dipolos que satisfacen la auto-correlación hablamos de  tejido correlacionado o incorrelacionado. Si el tamaño de  la región de auto-correlación es equiparado  con el tamaño del tejido observado por el Lead Field, podemos hablar que el tejido cardiaco se aproxima a una dinámica perfectamente correlacionada, por el contrario cuando  el  tamaño  de la región de auto-correlación es significativamente menor que el volumen del  tejido, hablamos de   dinámicas incorrelacionadas.
+En consecuencia, basados en el umbral de correlación,  el volumen  cardiaco se
+caracteriza de acuerdo al grado de auto-correlación,  en donde, en función del 
+porcentaje de dipolos que satisfacen la auto-correlación hablamos de  tejido 
+correlacionado o incorrelacionado. Si el tamaño de  la región de
+auto-correlación  es equiparado  con el tamaño del tejido observado por el Lead
+Field,  podemos hablar que el tejido cardiaco se aproxima a una dinámica
+perfectamente  correlacionada, por el contrario cuando  el  tamaño  de la región
+de auto-correlación  es significativamente menor que el volumen del  tejido,
+hablamos de dinámicas incorrelacionadas.
 
 \subsection{Spectrum of Cardic Signal}
 
-La estimación de la densidad espectral de potencia,  tanto para el  dipolo como para las señales cardiacas,  se realiza con el método de Welch. La resolución de la estimación espectral depende  del  número de muestra del  enventanado y del solapamiento del mismo. El cálculo del promedio de periodogramas, para observar la  envolvente espectral en las diferentes resoluciones  de Lead Field en cada una de las dinámica simuladas, se realiza con una ventana  Hamming de 512 muestras y un solapamiento del 50\%. Para ilustrar la  relación entre los  espectro de las señales cardiacas del frente de onda plano y su dinámica  temporal, nosotros empleamos ventanas Hamming de 2048 muestras para la estimación del espectro de potencia  y observar los armónicos de la señal.
+La estimación de la densidad espectral de potencia,   tanto para el  dipolo como
+para las señales cardiacas,  se realiza con el método de Welch.  La resolución
+de la estimación espectral depende  del  número de muestra del  e nventanado y
+del solapamiento del mismo. El cálculo del promedio de periodogramas,  para
+observar la  envolvente espectral en las diferentes resoluciones  de Lead Field 
+en cada una de las dinámica simuladas, se realiza con una ventana  Hamming de
+512  muestras y un solapamiento del 50\%. Para ilustrar la  relación entre los  
+espectro de las señales cardiacas del frente de onda plano y su dinámica 
+temporal,  nosotros empleamos ventanas Hamming de 2048 muestras para la
+estimación del  espectro de potencia  y observar los armónicos de la señal.
 
-Las señales cardiacas de las tres dinámicas simuladas (frente de onda plano, espiral y caos), son sintetizadas en los 8 tamaños de lead Field definidos, $A_1$, $A_2$, $A_3$, $A_4$, $A_5$, $A_6$, $A_7$ y $A_8$,. el tiempo total  de simulación es de 60 s. Para la estimación del espectro  y  los mapas de correlación se toma un intervalo de 20 s. La  tasa de muestreo de las señales  sintetizadas es de 500 Hz. 
+Las señales cardiacas de las tres dinámicas simuladas (frente de onda plano, 
+espiral y caos), son sintetizadas en los 8 tamaños de lead Field definidos, 
+$A_1$, $A_2$, $A_3$, $A_4$, $A_5$, $A_6$, $A_7$ y $A_8$,. el tiempo total  de 
+simulación es de 60 s. Para la estimación del espectro  y  los mapas de
+correlación  se toma un intervalo de 20 s. La  tasa de muestreo de las señales  
+sintetizadas es de 500 Hz.
 
 El espectro de las señales cardiacas  en la dinámica perfectamente correlacionada, como se expone en \cite{RequenaSpectral1}, tiene asociado la función de diferencia de tiempos de activación ${\zeta}(v,w)$. Las diferencias de  tiempo son estimadas a partir de los instantes de  despolarización  de los  dipolo $\mathbf{J}(v,t)$ y $\mathbf{J}(w,t)$.  Cuando $v=w  { \zeta}(v,w)=0$. Para  las cuatro resoluciones espaciales de mayor tamaño de LeadField  se generan la funciones de distribución $F_{A_1}(\zeta)$, $F_{A_2}(\zeta)$, $F_{A_3}(\zeta)$, $F_{A_4}(\zeta)$, respectivamente, y constituyen la descripción espacial de los dipolos perfectamente correlacionados.  De esta forma, el espectro  de las señales cardiacas en dinámicas perfectamente correlacionas es expresado por:
 
@@ -265,6 +266,49 @@ S_{C_o}(\omega)=S_{A_o}(\omega) \cdot  S_{J}(\omega)
 \end{equation}
 
 Donde, $S_{A_o}(\omega)$, es la transformada de  Fourier de la funcion de distribución de  tiempos  $F_{A_o}(\zeta)$ y $S_{J}(\omega)$, es el espectro de un  dipolo del  tejido cardíaco. por lo que, el espectro del las  señales cardiacas en el frente de onda plano, depende de la resolución espacial de cada leadField que nosotros definimos. En consecuencia, nosotos calculamos a partir de la funcion de distribución de  tiempos, $S_{A_1}(\omega)$, $S_{A_2}(\omega)$, $S_{A_3}(\omega)$, $S_{A_4}(\omega)$.
+
+
+
+\subsection{spectrum of cardiac sources}
+
+ 
+ The spectrum of a cardiac source, $\boldsymbol{\sigma}(v,w,f)$, $\forall v,w\in
+ V$, corresponds to the collection of the cross-spectra between all pairs of
+ dipoles in $V$, and is defined as
+ \begin{eqnarray}\label{eq:spectrum_source}
+ &&\boldsymbol{\sigma}(v,w,f) =\mathcal{F}[\boldsymbol{\rho}(v,w,\tau)]
+ \nonumber \\
+ &&=\left( \begin{array}{ccc}
+ {\sigma}_{xx}(v,w, f) & {\sigma}_{xy}(v,w, f) & {\sigma}_{xz}(v,w, f) \\
+ {\sigma}_{yx}(v,w, f) & {\sigma}_{yy}(v,w, f) & {\sigma}_{yz}(v,w, f) \\
+ {\sigma}_{zx}(v,w, f) & {\sigma}_{zy}(v,w, f) & {\sigma}_{zz}(v,w, f)
+ \end{array} \right)
+ \end{eqnarray}
+ where the operator $\mathcal{F}[\cdot]$ is applied to
+ $\boldsymbol{\rho}(v,w,\tau)$ on a component-by-component basis. For instance,
+ ${\sigma}_{zy}(v,w, f)$ is $\mathcal{F}[{\rho}_{zy}(v,w,\tau)]$. 
+ 
+ We also define the \emph{total cross-correlation} $R_{J}(v,w,\tau)$ between two
+ cardiac dipoles $\mathbf{J}(v,t)$ and $\mathbf{J}(w,t)$ as the sum of the
+ entries of $\boldsymbol{\rho}(v,w,\tau)$ and the \emph{total cross-spectrum}
+ $S_{J}(v,w,f)$ as the Fourier Transform of $R_{J}(v,w,\tau)$. Mathematically,
+ they can be expressed as
+ 
+ \begin{eqnarray}
+ S_{J}(v,w,f)  &=&  \mathbf{1}^{T} \boldsymbol{\sigma}(v,w, f)  \mathbf{1}.
+\label{total_spectrum}
+\end{eqnarray}
+
+ Finally, we define the \emph{normalized} cross-correlation
+$\boldsymbol{\hat{\rho}}(v,w,\tau)$ as the matrix of entries
+\begin{equation}\label{eq:normalized_autocorrelation_source}
+\hat{\rho}_{ab}(v,w,\tau) = \frac{{\rho}_{ab}(v,w,\tau)}{\sqrt{{\rho}_{aa}(v,v,0){\rho}_{bb}(w,w,0)}}
+\end{equation}
+ where $a,b\in \{x,y,z\}$, and the \emph{normalized} total cross-correlation
+$\hat{R}_{J}(v,w,\tau)$ as
+\begin{equation}\label{normalized_total_corr}
+\hat{R}_{J}(v,w,\tau)= \frac{R_{J}(v,w,\tau)}{{\underset{\tau}{\max}}\{R_{J}(v,w,\tau)\}}.
+\end{equation}
 
 
 
