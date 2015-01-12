@@ -14,45 +14,45 @@ A level-1 auxiliary file: 03_Appendix/01_appendix.aux
 The style file: plainnat.bst
 Database file #1: biblio_tesis.bib
 Warning--I didn't find a database entry for "RequenaSpectral1"
-You've used 3 entries,
+You've used 8 entries,
             2773 wiz_defined-function locations,
-            628 strings with 5541 characters,
-and the built_in function-call counts, 986 in all, are:
-= -- 75
-> -- 41
-< -- 3
-+ -- 15
-- -- 12
-* -- 58
-:= -- 166
-add.period$ -- 9
-call.type$ -- 3
-change.case$ -- 10
-chr.to.int$ -- 3
-cite$ -- 6
-duplicate$ -- 60
-empty$ -- 97
-format.name$ -- 17
-if$ -- 201
+            670 strings with 6673 characters,
+and the built_in function-call counts, 3639 in all, are:
+= -- 302
+> -- 212
+< -- 6
++ -- 74
+- -- 66
+* -- 301
+:= -- 580
+add.period$ -- 24
+call.type$ -- 8
+change.case$ -- 43
+chr.to.int$ -- 8
+cite$ -- 16
+duplicate$ -- 162
+empty$ -- 305
+format.name$ -- 76
+if$ -- 748
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 6
-newline$ -- 23
-num.names$ -- 12
-pop$ -- 34
+missing$ -- 11
+newline$ -- 48
+num.names$ -- 32
+pop$ -- 93
 preamble$ -- 1
-purify$ -- 10
+purify$ -- 38
 quote$ -- 0
-skip$ -- 40
+skip$ -- 116
 stack$ -- 0
-substring$ -- 6
-swap$ -- 3
+substring$ -- 143
+swap$ -- 10
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 18
+type$ -- 73
 warning$ -- 0
-while$ -- 9
+while$ -- 30
 width$ -- 0
-write$ -- 46
+write$ -- 111
 (There was 1 warning)

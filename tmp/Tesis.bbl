@@ -1,9 +1,46 @@
-\begin{thebibliography}{3}
+\begin{thebibliography}{8}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Berenfeld(2007)]{Berenfeld07}
+O.~Berenfeld.
+\newblock Quantifying activation frequency in atrial fibrillation to establish
+  underlying mechanisms and ablation guidance.
+\newblock \emph{Heart Rhythm}, 4\penalty0 (9):\penalty0 1225--1234, Sep 2007.
+
+\bibitem[Berenfeld(2010)]{Berenfeld10}
+Omer Berenfeld.
+\newblock Toward discerning the mechanisms of atrial fibrillation from surface
+  electrocardiogram and spectral analysis.
+\newblock \emph{Journal of Electrocardiology}, 43\penalty0 (6):\penalty0
+  509--514, 2010.
+
+\bibitem[Berenfeld et~al.(2011)Berenfeld, Ennis, Hwang, Hooven, Grzeda,
+  Mironov, Yamazaki, Kalifa, and Jalife]{Berenfeld11}
+Omer Berenfeld, Steve Ennis, Elliot Hwang, Brian Hooven, Krzysztof Grzeda,
+  Sergey Mironov, Masatoshi Yamazaki, J.~Kalifa, and J.~Jalife.
+\newblock Time- and frequency-domain analyses of atrial fibrillation activation
+  rate: The optical mapping reference.
+\newblock \emph{Heart Rhythm}, 8\penalty0 (11):\penalty0 1758 -- 1765, 2011.
+
+\bibitem[Fischer et~al.(2007)Fischer, Stuhlinger, Nowak, Wieser, Tilg, and
+  Hintringer]{Fischer07}
+G.~Fischer, M.~Ch Stuhlinger, C.~N. Nowak, L.~Wieser, B.~Tilg, and
+  F.~Hintringer.
+\newblock On computing dominant frequency from bipolar intracardiac
+  electrograms.
+\newblock \emph{IEEE Transactions on Biomedical Engineering}, 54\penalty0
+  (1):\penalty0 165--169, Jan 2007.
+
+\bibitem[J.~Requena-Carri\'{o}n(2013)]{Requena13b}
+A.~G.~Marques J.~Requena-Carri\'{o}n, F. Beltr\'{a}n-Molina.
+\newblock Relating the spectrum of cardiac signals to the spatiotemporal
+  dynamics of cardiac sources.
+\newblock \emph{Biomedical Signal Processing and Control}, 8\penalty0
+  (6):\penalty0 935--944, 2013.
 
 \bibitem[Malmivuo and Plonsey(1995)]{Malmivuo95}
 Jaakko Malmivuo and Robert Plonsey.

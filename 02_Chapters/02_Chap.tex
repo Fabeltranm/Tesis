@@ -6,10 +6,11 @@
 
 
 En el siguiente capítulo se aborda el formalismo matemático que enmarca el
-estudio del espectro de las señales cardiacas. El objetivo del capitulo es 
-desarrollar la teoría que conecta el espectro de la señales cardiacas, con su 
-dinámica espacio-temporal. Por lo tanto, los resultados teóricos, presentes  en
-este capitulo, derivan en el análisis e interpretación del espectro de señales cardiacas.
+estudio del espectro de las señales cardiacas, y el cual se encuentra en la
+publicación \cite{Requena13b} . El objetivo del capitulo es desarrollar  la
+teoría que conecta el espectro de la señales cardiacas, con su dinámica espacio-temporal.
+Por lo tanto, los resultados teóricos, presentes  en este capitulo, derivan en
+el análisis e interpretación del espectro de señales cardiacas.
 
 La relación entre los diferentes sistemas de mediada de señales cardiacas y los
 espectros de las mismas, se abordar a partir del análisis de señales
@@ -25,7 +26,7 @@ espectral. en donde se expome la relación entre las caracteristicas del sistema
 de electrodos, utilizados para estimar la actividad local del miocardio, y el
 ancho de banda del espectro resultante.
 
-indicar en que publicación esta esta descripción 
+
 
 
 \end{resumen}
@@ -34,23 +35,32 @@ indicar en que publicación esta esta descripción
 \section{Introducción}
 
 Los procesos estocásticos nos permiten modelar aquellos sistemas
-multivariantes, en tiempo y espacio. De esta manera, se puede estudiar cómo se
-comportan señales variantes en el tiempo, que de otra forma, serian muy dificil
-tratar, si no es por herramientas estadisticas.
+multivariantes, en tiempo y espacio. De esta manera, gracias a las herramientas
+estadisticas, se puede estudiar como se comportan señales variantes en el
+tiempo, que de otra forma serian muy dificiles de tratar.
 
-Las señales aleatores, en los procesos estocasticos de segundo orden, se
-analizan por medio de la distribución de potencia en frecuencia y de la
-autocorrelación de la señal.  Por esto, que los procesos estocásticos de
-segundo orden, son una de las técnicas matemáticas más utilizadas para 
-describir las señales bioélectricas, ya que para este tipo de variables,  soló
-se dispone de un segmento finito de la señal y por lo tanto es necesario acudir
-a técnicas de estimación espectral.
+Una variable aleatoria, como función medible que asigna un número real a cada
+posible resultado del espacio muestral de un experimento aleatorio, se
+puede caracterizar por medio de su probabilidad de ocurrencia. De esta forma, la
+función de distribución ${F(x)}$  es una descripción de las probabilidades asociadas a los posibles
+valores de la variable aleatoria. 
 
+Por tanto, toda variable aleatoria tiene asociada una función de distribución
+${F(x)}$, tal que ${F(x)=P(X \leq x)}$. Para variables aleatoria continua, la 
+distribución de probabilidad viene descrita por una función de densidad
+${f(x)}$. en donde, ${f(x)= dF(x)/dx}$. Asi mismo,  para las variables
+aleatorias discretas relacionamos la función de distribución con la función de
+densidad como ${F(x)= \displaystyle\sum_{x_i \leq x }f(x_i)}$.
 
-El espectro en potencia, de la señales bioelectricas y, en general de las
-señales discretas que sólo se puede analizar e un tiempo finito,se define en
-función del módelo estocastico como la transformada de Fourier de la función de
-autocorrelación.
+Un proceso estocastico es una sucesión infinita de variables aleatorias que
+evolucionan en el tiempo. Por lo tanto, al dependen del un tiempo
+$t$  la función de distribución da lugar a ${F(x,t)=P(\mathbf{x}(t) \leq x)}$.
+
+En de señales biolectricas, y en general en señales discretas que se analizan 
+en un tiempo finito, el análisis espectral se realiza en función
+de los modelo estocástico. Es asi como el espectro en potencia se define como
+la transformada de Fourier de la función de autocorrelación\cite{Papoulis91}.
+
 
 colocar aca la funcion de espectro y de autocorrelación genérica
 
@@ -59,6 +69,7 @@ colocar aca la funcion de espectro y de autocorrelación genérica
 aca hablar de \cite{Papoulis91},
 
 \subsection{Correlación Señal}
+
 \subsection{Correlación de Vector}
 
 referencias a jesus tesis y el articulo
@@ -315,6 +326,9 @@ $\hat{R}_{J}(v,w,\tau)$ as
 
 \section{Métodos estimación del espectro}
 \section{Frecuencia Dominante}
+
+hablar aca de Fischer  \cite{Fischer07} y de Berenfeld \cite{Berenfeld10},
+\cite{Berenfeld11} ,\cite{Berenfeld07}, \cite{Berenfeld10}
 
 \section{Concluciones}
 
