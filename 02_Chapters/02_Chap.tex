@@ -55,22 +55,65 @@ densidad como ${F(x)= \displaystyle\sum_{x_i \leq x }f(x_i)}$.
 Un proceso estocastico es una sucesión infinita de variables aleatorias que
 evolucionan en el tiempo. Por lo tanto, al dependen del un tiempo
 $t$  la función de distribución da lugar a ${F(x,t)=P(\mathbf{x}(t) \leq x)}$.
+Por lo que, la función de densidad de $x(t)$ es $f(x,t)=
+\partial{F(x,t)}/\partial{x}$ \cite{Papoulis91}.
 
-En de señales biolectricas, y en general en señales discretas que se analizan 
-en un tiempo finito, el análisis espectral se realiza en función
-de los modelo estocástico. Es asi como el espectro en potencia se define como
-la transformada de Fourier de la función de autocorrelación\cite{Papoulis91}.
+Los modelos estocásticos son fundamentales para el análisis espectral de señales
+biolectricas, y en general en señales discretas que se analizan en un tiempo
+finito. De esta formas, tanto la autocorrelación con la densidad espectral de
+potencia, son habitualmente muy utilizadas para describir procesos
+estocasticos de segundo orden. Con los estadisticos de segundo orden, por lo
+tanto, es posible describir patrones, tales como la periidicidad  y la
+coherencia de las señales \cite{Requena08}.
 
+\subsection{Autocorrelación de Señal}\label{subs:corresignal}
+Siendo $\mathbf{x}(t)$, un proceso estocasticos real y $\mathbf{x}(t_1)$,
+$\mathbf{x}(t_2)$, dos valiables aleatorias, se define, $\mathbf{R}(t_1,t_2)$,
+la autocorrelación de $\mathbf{x}(t)$ como \cite{Papoulis91}:
 
-colocar aca la funcion de espectro y de autocorrelación genérica
+\begin{eqnarray}\label{eq:autocorrelation}
+	\mathbf{R}(t_1,t_2)=E{\{ \mathbf{x}(t_1)\mathbf{x}(t_2) \}}
+\end{eqnarray}
+Donde $E$ es la media estadistica. De esta manera, se define la autocorrelación
+de un procesos $\mathbf{x}$, real o complejo, como la media estadistica del
+producto de $\mathbf{x}(t_1)\mathbf{x}^*(t_2)$, donde la máxima correlación se
+obtienen cuando $t_1=t_2$.
 
+Cuando se tiene dos procesos estocasticos $\mathbf{x}(t)$ y
+$\mathbf{y}(t)$,se habla de corelación cruzada $\mathbf{R}_{xy}(\tau)$. como 
+\cite{Requena08}:
 
+\begin{eqnarray}\label{eq:correlation}
+	\mathbf{R}_{xy}(\tau)=E{\{ \mathbf{x}(t-\tau)\mathbf{y}(t) \}}
+\end{eqnarray}
+De esta forma, la correlación es la operación básica para la búsqueda de
+patrones por emparejamiento. como se expone en \cite{Requena08} el ruido blanco,
+$W(t)$, es un porcesos estocástico particular cuya función de autocorrelación es
+$\mathbf{R}(\tau)= \delta(\tau)$, donde $\delta(\tau)$ es la función delta de
+Dirac, y lo que indica es que las variables aleatorias que conforman $W(t)$
+no estan correlacionadas entre si.
 
-aca hablar de \cite{Papoulis91},
-
-\subsection{Correlación Señal}
 
 \subsection{Correlación de Vector}
+
+Un procesos vectorial, de $n$ dimensiones, es una familia de $n$ procesos
+estocasticos. Por lo tanto, un proceso estocástico vectorial es un
+vector cuyas componentes son procesos estocásticos escalares \cite{Requena08}. 
+
+Se extienda la definición de la correlación de dos señales, sección
+\ref{subs:corresignal}, a los procesos vectoriales, al realizar para cada par de
+procesos escalares  definidos por el producto vectorial de dos procesos
+vectoriales, como se expone en \cite{Requena08}.
+
+Para la correlación de vectores se  habla la correlacion cruzada de los
+componentes del vector , que dan como resultado las matriz de correlación
+cruzada.
+
+
+
+
+
+
 
 referencias a jesus tesis y el articulo
 \section{Autocorrelación}

@@ -1,4 +1,4 @@
-\begin{thebibliography}{8}
+\begin{thebibliography}{9}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -52,6 +52,13 @@ Jaakko Malmivuo and Robert Plonsey.
 Athanasios Papoulis.
 \newblock \emph{Probability, random variables, and stochastic processes}.
 \newblock McGraw-Hill, New York etc., 1991.
+
+\bibitem[Requena-Carrión(2008)]{Requena08}
+Jesús Requena-Carrión.
+\newblock \emph{Análisis espectral de electrogramas almacenados en
+  desfibrilador automático implantable durante fibrilación ventricular, Ph.D.
+  Dissertation}.
+\newblock Universidad Carlos III de Madrid, Spain, 2008.
 
 \bibitem[Sachse(2004)]{Sachse04}
 Frank~B. Sachse.
