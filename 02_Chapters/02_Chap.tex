@@ -66,7 +66,7 @@ estocasticos de segundo orden. Con los estadisticos de segundo orden, por lo
 tanto, es posible describir patrones, tales como la periidicidad  y la
 coherencia de las señales \cite{Requena08}.
 
-\subsection{Autocorrelación de Señal}\label{subs:corresignal}
+\subsection{Correlación de Señales}\label{subs:corresignal}
 Siendo $\mathbf{x}(t)$, un proceso estocasticos real y $\mathbf{x}(t_1)$,
 $\mathbf{x}(t_2)$, dos valiables aleatorias, se define, $\mathbf{R}(t_1,t_2)$,
 la autocorrelación de $\mathbf{x}(t)$ como \cite{Papoulis91}:
@@ -94,7 +94,7 @@ Dirac, y lo que indica es que las variables aleatorias que conforman $W(t)$
 no estan correlacionadas entre si.
 
 
-\subsection{Correlación de Vector}
+\subsection{Correlación de Vectores}\label{subs:correvector}
 
 Un procesos vectorial, de $n$ dimensiones, es una familia de $n$ procesos
 estocasticos. Por lo tanto, un proceso estocástico vectorial es un
@@ -103,29 +103,61 @@ vector cuyas componentes son procesos estocásticos escalares \cite{Requena08}.
 Se extienda la definición de la correlación de dos señales, sección
 \ref{subs:corresignal}, a los procesos vectoriales, al realizar para cada par de
 procesos escalares  definidos por el producto vectorial de dos procesos
-vectoriales, como se expone en \cite{Requena08}.
-
-Para la correlación de vectores se  habla la correlacion cruzada de los
-componentes del vector , que dan como resultado las matriz de correlación
+vectoriales, como se expone en \cite{Requena08}. La correlación de vectores es la correlación cruzada de los
+componentes del vector que dan como resultado las matriz de correlación
 cruzada.
 
+Si $\mathbf{V}_n(t)$ y $\mathbf{W}_n(t)$ son dos procesos vectoriales  de $n$
+dimensiones, $\{v_1, v_2, v_3, \ldots v_n\}$ y  $\{w_1, w_2, w_3, \ldots
+w_n\}$ los respectivos procesos estocasticos. Entonces, acorde con la
+la ecuación \ref{eq:correlation}, decimos que la correlación cruzada entre dos
+componentes de $\mathbf{V}_n(t)$ y $\mathbf{W}_n(t)$, esta definida 
+
+ \begin{eqnarray}\label{eq:correlationCompVector}
+ {\rho_{11}}(v,w,\tau)=E{\{ \mathbf{v_1}(t-\tau)\mathbf{w_1}(t) \}}
+ \end{eqnarray}
+
+De esta forma, la matriz de correlación cruzada entre dos procesos vectoriales
+$\mathbf{V}_n(t)$ y $\mathbf{W}_n(t)$, se define 
+
+ \begin{eqnarray}\label{eq:correlationVector}
+ &&\boldsymbol{\rho}(v,w,\tau)
+ = \left( \begin{array}{cccc}
+ {\rho}_{11}(v,w,\tau) & {\rho}_{12}(v,w,\tau) & \ldots &{\rho}_{1n}(v,w,\tau)\\
+ {\rho}_{21}(v,w,\tau) & {\rho}_{22}(v,w,\tau) & \ldots &{\rho}_{2n}(v,w,\tau)\\
+ \ldots & \ldots& & \ldots\\
+ {\rho}_{n1}(v,w,\tau) & {\rho}_{n2}(v,w,\tau) & \ldots &{\rho}_{nn}(v,w,\tau) 
+ \end{array} \right).
+ \end{eqnarray}
+ 
+
+Si  $\boldsymbol{\rho}(v,w,\tau)$  es una matriz  nula de $nxn$ elementos, se
+decir que los dos procesos vectorales estas incorrelacionados. Adicionalmente,
+si $\mathbf{V}_n(t) = \mathbf{W}_n(t)$, entonces hablamos de que la diagonal de la
+matriz $\boldsymbol{\rho}(v,w,\tau)$, es la autocorrelación de cada una de las
+componestes del  proceso vectorial.
 
 
+\section{Autocorrelación de fuentes bioelectricas}
 
+En esta sección nosotros proponemos la definición de autocorrelación tanto de
+fuentes como de senñales cardiacas. Nuestro punto de partida se refleja del
+trabajo realizado en \cite{Requena08}, que junto con la
+definición de dipolo bioeléctrico de la sección \ref{sec:modelElectrofi}
+enmarcan las fuentes bioeléctricas en los procesos estocasticos de segundo.
 
-
-
-referencias a jesus tesis y el articulo
-\section{Autocorrelación}
 
 \subsection{Autocorrelación  de fuentes cardiacas}
 
-Al tomar el dipolo cardiaco como el elemento básico de un fuerte cardiaca,
-podemos definir la autocorrelación de fuentes cardiacas, como la correlación 
-cruzada entre un dipolo cardiaco y todos los dipolos pertenecientes al tejido. 
-De esta manera, el dipolo cardiaco es un ente  vectorial,
-$\mathbf{J}(v,t)={\{ J_x(v,t), J_y(v,t), J_z(v,t) \}}$ \cite{Malmivuo95}, y
-por lo tanto, la correlación cruzada entre dos dipolos esta dada por la correlación cruzada entre las tres componentes de cada dipolo.
+Como se vio en la sección \ref{sec:modelElectrofi}, nosotros tomamos el dipolo
+cardiaco como elemento basico de una fuente cardiaca, y de esta forma definimos
+la autocorrelación de fuentes cardiacas, como la correlación cruzada entre un
+dipolo cardiaco y todos los dipolos pertenecientes al tejido.
+
+El dipolo cardiaco es un ente  vectorial, tal que $\mathbf{J}(v,t)={\{ J_x(v,t),
+J_y(v,t), J_z(v,t) \}}$ \cite{Malmivuo95}, por lo que podemos extrapolar la
+correlación de vectores de  \ref{subs:correvector} a la correlacion entre dos
+dipolos,  como la correlación cruzada entre las tres componentes de cada dipolo.
 
 La media de un dipolo cardiaco, segun \cite{Papoulis91},  esta dada por:
   
@@ -157,9 +189,7 @@ $\mathbf{J}(w,t)$, del tejido cardiaco definido por $V$, queda definida como:
 
 Donde, $\boldsymbol{\rho}(v,w,\tau)$, define la matriz  que describe la
 correlación cruzada entre cada una de las componentes del par de dipolos, 
-$\mathbf{J}(v,t)$ y $\mathbf{J}(w,t)$ del  tejido cardiaco. Es asi como,
-${\rho}_{zy}(v,w,\tau)$ es $\langle J'_z(v,t+\tau) J'_y(w,t)\rangle_t$
-
+$\mathbf{J}(v,t)$ y $\mathbf{J}(w,t)$ del  tejido cardiaco. 
 
 De esta forma. se define la correlación cruzada total entre dos dipolos
 cardiacos, $\mathbf{J}(v,t)$ and $\mathbf{J}(w,t)$, como la suma de todos los elementos de
