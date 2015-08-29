@@ -5,54 +5,89 @@ A level-1 auxiliary file: 00_varios/titlepage.aux
 A level-1 auxiliary file: 00_varios/resumen.aux
 A level-1 auxiliary file: 00_varios/abstract.aux
 A level-1 auxiliary file: 01_introduction/introduction.aux
-A level-1 auxiliary file: 02_Chapters/01_Chap.aux
-A level-1 auxiliary file: 02_Chapters/02_Chap.aux
-A level-1 auxiliary file: 02_Chapters/03_Chap.aux
-A level-1 auxiliary file: 02_Chapters/04_Chap.aux
-A level-1 auxiliary file: 02_Chapters/05_Chap.aux
 A level-1 auxiliary file: 03_Appendix/01_appendix.aux
 The style file: plainnat.bst
 Database file #1: biblio_tesis.bib
-Warning--I didn't find a database entry for "RequenaSpectral1"
-You've used 9 entries,
+Warning--I didn't find a database entry for "Atienza09"
+Too many commas in name 1 of "M.~S. Guillem, A.~M. Climent, J.~Millet, Á.~Arenal, F.~Fernández-Avilés,J.~Jalife, F.~Atienza, O.~Berenfeld" for entry Guillem13
+while executing---line 1347 of file plainnat.bst
+Too many commas in name 1 of "M.~S. Guillem, A.~M. Climent, J.~Millet, Á.~Arenal, F.~Fernández-Avilés,J.~Jalife, F.~Atienza, O.~Berenfeld" for entry Guillem13
+while executing---line 1347 of file plainnat.bst
+Too many commas in name 1 of "M.~S. Guillem, A.~M. Climent, J.~Millet, Á.~Arenal, F.~Fernández-Avilés,J.~Jalife, F.~Atienza, O.~Berenfeld" for entry Guillem13
+while executing---line 1347 of file plainnat.bst
+Too many commas in name 1 of "M.~S. Guillem, A.~M. Climent, J.~Millet, Á.~Arenal, F.~Fernández-Avilés,J.~Jalife, F.~Atienza, O.~Berenfeld" for entry Guillem13
+while executing---line 1347 of file plainnat.bst
+Too many commas in name 1 of "M.~S. Guillem, A.~M. Climent, J.~Millet, Á.~Arenal, F.~Fernández-Avilés,J.~Jalife, F.~Atienza, O.~Berenfeld" for entry Guillem13
+while executing---line 1347 of file plainnat.bst
+Too many commas in name 1 of "M.~S. Guillem, A.~M. Climent, J.~Millet, Á.~Arenal, F.~Fernández-Avilés,J.~Jalife, F.~Atienza, O.~Berenfeld" for entry Guillem13
+while executing---line 1347 of file plainnat.bst
+Too many commas in name 1 of "M.~S. Guillem, A.~M. Climent, J.~Millet, Á.~Arenal, F.~Fernández-Avilés,J.~Jalife, F.~Atienza, O.~Berenfeld" for entry Guillem13
+while executing---line 1347 of file plainnat.bst
+Too many commas in name 1 of "M.~S. Guillem, A.~M. Climent, J.~Millet, Á.~Arenal, F.~Fernández-Avilés,J.~Jalife, F.~Atienza, O.~Berenfeld" for entry Guillem13
+while executing---line 1347 of file plainnat.bst
+Too many commas in name 1 of "M.~S. Guillem, A.~M. Climent, J.~Millet, Á.~Arenal, F.~Fernández-Avilés,J.~Jalife, F.~Atienza, O.~Berenfeld" for entry Guillem13
+while executing---line 1347 of file plainnat.bst
+Too many commas in name 1 of "M.~S. Guillem, A.~M. Climent, J.~Millet, Á.~Arenal, F.~Fernández-Avilés,J.~Jalife, F.~Atienza, O.~Berenfeld" for entry Guillem13
+while executing---line 1347 of file plainnat.bst
+Too many commas in name 1 of "M.~S. Guillem, A.~M. Climent, J.~Millet, Á.~Arenal, F.~Fernández-Avilés,J.~Jalife, F.~Atienza, O.~Berenfeld" for entry Guillem13
+while executing---line 1429 of file plainnat.bst
+Too many commas in name 1 of "M.~S. Guillem, A.~M. Climent, J.~Millet, Á.~Arenal, F.~Fernández-Avilés,J.~Jalife, F.~Atienza, O.~Berenfeld" for entry Guillem13
+while executing---line 1429 of file plainnat.bst
+Too many commas in name 1 of "M.~S. Guillem, A.~M. Climent, J.~Millet, Á.~Arenal, F.~Fernández-Avilés,J.~Jalife, F.~Atienza, O.~Berenfeld" for entry Guillem13
+while executing---line 1429 of file plainnat.bst
+Too many commas in name 1 of "M.~S. Guillem, A.~M. Climent, J.~Millet, Á.~Arenal, F.~Fernández-Avilés,J.~Jalife, F.~Atienza, O.~Berenfeld" for entry Guillem13
+while executing---line 1429 of file plainnat.bst
+Too many commas in name 1 of "M.~S. Guillem, A.~M. Climent, J.~Millet, Á.~Arenal, F.~Fernández-Avilés,J.~Jalife, F.~Atienza, O.~Berenfeld" for entry Guillem13
+while executing---line 1429 of file plainnat.bst
+Too many commas in name 1 of "M.~S. Guillem, A.~M. Climent, J.~Millet, Á.~Arenal, F.~Fernández-Avilés,J.~Jalife, F.~Atienza, O.~Berenfeld" for entry Guillem13
+while executing---line 1429 of file plainnat.bst
+Too many commas in name 1 of "M.~S. Guillem, A.~M. Climent, J.~Millet, Á.~Arenal, F.~Fernández-Avilés,J.~Jalife, F.~Atienza, O.~Berenfeld" for entry Guillem13
+while executing---line 1429 of file plainnat.bst
+Too many commas in name 1 of "M.~S. Guillem, A.~M. Climent, J.~Millet, Á.~Arenal, F.~Fernández-Avilés,J.~Jalife, F.~Atienza, O.~Berenfeld" for entry Guillem13
+while executing---line 1429 of file plainnat.bst
+Too many commas in name 1 of "M.~S. Guillem, A.~M. Climent, J.~Millet, Á.~Arenal, F.~Fernández-Avilés,J.~Jalife, F.~Atienza, O.~Berenfeld" for entry Guillem13
+while executing---line 1429 of file plainnat.bst
+Too many commas in name 1 of "M.~S. Guillem, A.~M. Climent, J.~Millet, Á.~Arenal, F.~Fernández-Avilés,J.~Jalife, F.~Atienza, O.~Berenfeld" for entry Guillem13
+while executing---line 1429 of file plainnat.bst
+You've used 24 entries,
             2773 wiz_defined-function locations,
-            677 strings with 6892 characters,
-and the built_in function-call counts, 3935 in all, are:
-= -- 325
-> -- 222
-< -- 7
-+ -- 78
-- -- 69
-* -- 317
-:= -- 629
-add.period$ -- 27
-call.type$ -- 9
-change.case$ -- 46
-chr.to.int$ -- 9
-cite$ -- 18
-duplicate$ -- 182
-empty$ -- 337
-format.name$ -- 80
-if$ -- 810
+            777 strings with 11993 characters,
+and the built_in function-call counts, 16630 in all, are:
+= -- 1342
+> -- 1541
+< -- 4
++ -- 516
+- -- 492
+* -- 1668
+:= -- 2679
+add.period$ -- 73
+call.type$ -- 24
+change.case$ -- 234
+chr.to.int$ -- 24
+cite$ -- 48
+duplicate$ -- 499
+empty$ -- 980
+format.name$ -- 518
+if$ -- 3311
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 13
-newline$ -- 53
-num.names$ -- 36
-pop$ -- 104
+missing$ -- 25
+newline$ -- 129
+num.names$ -- 96
+pop$ -- 430
 preamble$ -- 1
-purify$ -- 41
+purify$ -- 211
 quote$ -- 0
-skip$ -- 128
+skip$ -- 448
 stack$ -- 0
-substring$ -- 145
-swap$ -- 11
+substring$ -- 619
+swap$ -- 30
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 79
+type$ -- 259
 warning$ -- 0
-while$ -- 33
+while$ -- 107
 width$ -- 0
-write$ -- 124
-(There was 1 warning)
+write$ -- 320
+(There were 20 error messages)

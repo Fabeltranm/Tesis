@@ -4,7 +4,6 @@
 \begin{resumen}
 
 
-
 En el siguiente capítulo se aborda el formalismo matemático que enmarca el
 estudio del espectro de las señales cardiacas, y el cual se encuentra en la
 publicación \cite{Requena13b} . El objetivo del capitulo es desarrollar  la
@@ -163,7 +162,7 @@ La media de un dipolo cardiaco, segun \cite{Papoulis91},  esta dada por:
   
  \begin{eqnarray}\label{eq:average_dipole}
  \bar{\mathbf{J}}(v)&=&\langle\mathbf{J}(v,t)\rangle_t  \nonumber \\
-			     &=& [\langle J_x(v,t)\rangle_t, \langle J_y(v,t)\rangle_t, \langle J_z(v,t)\rangle_t]^T. 
+	&=& [\langle J_x(v,t)\rangle_t, \langle J_y(v,t)\rangle_t, \langle J_z(v,t)\rangle_t]^T. 
  \end{eqnarray}
 
 A continuación  y basados en  $\bar{\mathbf{J}}(v)$, se define el dipolo
@@ -191,14 +190,17 @@ Donde, $\boldsymbol{\rho}(v,w,\tau)$, define la matriz  que describe la
 correlación cruzada entre cada una de las componentes del par de dipolos, 
 $\mathbf{J}(v,t)$ y $\mathbf{J}(w,t)$ del  tejido cardiaco. 
 
-De esta forma. se define la correlación cruzada total entre dos dipolos
-cardiacos, $\mathbf{J}(v,t)$ and $\mathbf{J}(w,t)$, como la suma de todos los elementos de
-$\boldsymbol{\rho}(v,w,\tau)$.
+Ahora bien, para definir la autocorrelación de fuentes cardiacas,  nosotros
+definimo es primera instancia, a partir de \ref{eq:autocorrelation_source}, la
+correlación cruzada  total  entre dos dipolos cardiacos $\mathbf{J}(v,t)$ y
+$\mathbf{J}(w,t)$, como la suma de todos los elementos de $\boldsymbol{\rho}(v,w,\tau)$.
 
-\begin{eqnarray}
+\begin{eqnarray} 
   R_{J}(v,w,\tau) &=&  \mathbf{1}^{T} \boldsymbol{\rho}(v,w,\tau) 
   \mathbf{1},\label{total_corr}
 \end{eqnarray}
+
+
 
 Para normalizar la correlación cruzada total es necesario definir la potencia
 media del dipolo cardiaco como:
