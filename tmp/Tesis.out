@@ -6,12 +6,54 @@
 \BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}% 6
 \BOOKMARK [1][-]{section.1.1}{Motivaci\363n}{chapter.1}% 7
 \BOOKMARK [1][-]{section.1.2}{Estado del Arte}{chapter.1}% 8
-\BOOKMARK [2][-]{subsection.1.2.1}{}{section.1.2}% 9
-\BOOKMARK [2][-]{subsection.1.2.2}{}{section.1.2}% 10
-\BOOKMARK [2][-]{subsection.1.2.3}{}{section.1.2}% 11
-\BOOKMARK [1][-]{section.1.3}{Objetivos}{chapter.1}% 12
-\BOOKMARK [1][-]{section.1.4}{Metodolog\355a}{chapter.1}% 13
-\BOOKMARK [1][-]{section.1.5}{Aportaciones}{chapter.1}% 14
-\BOOKMARK [1][-]{section.1.6}{Estructura}{chapter.1}% 15
-\BOOKMARK [-1][-]{part.1}{I Ap\351ndices}{}% 16
-\BOOKMARK [0][-]{appendix*.8}{Bibliograf\355a}{part.1}% 17
+\BOOKMARK [1][-]{section.1.3}{Objetivos}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.4}{Metodolog\355a}{chapter.1}% 10
+\BOOKMARK [1][-]{section.1.5}{Aportaciones}{chapter.1}% 11
+\BOOKMARK [1][-]{section.1.6}{Estructura}{chapter.1}% 12
+\BOOKMARK [-1][-]{part.1}{I M\351todos}{}% 13
+\BOOKMARK [0][-]{chapter.2}{Modelos Bioel\351ctricos}{part.1}% 14
+\BOOKMARK [1][-]{section.2.1}{Introducci\363n}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.1.1}{Anatom\355a y fisiolog\355a de las celular}{section.2.1}% 16
+\BOOKMARK [1][-]{section.2.2}{Modelo Electrofisiol\363gico}{chapter.2}% 17
+\BOOKMARK [2][-]{subsection.2.2.1}{Modelo Celular}{section.2.2}% 18
+\BOOKMARK [2][-]{subsection.2.2.2}{Modelo de Tejido}{section.2.2}% 19
+\BOOKMARK [1][-]{section.2.3}{Sistemas de medida}{chapter.2}% 20
+\BOOKMARK [2][-]{subsection.2.3.1}{Sistema de Electrodos}{section.2.3}% 21
+\BOOKMARK [2][-]{subsection.2.3.2}{Volumen equivalente de sistema de electrodos}{section.2.3}% 22
+\BOOKMARK [1][-]{section.2.4}{Conclusiones}{chapter.2}% 23
+\BOOKMARK [0][-]{chapter.3}{Definici\363n del Espectro}{part.1}% 24
+\BOOKMARK [1][-]{section.3.1}{Introducci\363n}{chapter.3}% 25
+\BOOKMARK [2][-]{subsection.3.1.1}{Correlaci\363n de Se\361ales}{section.3.1}% 26
+\BOOKMARK [2][-]{subsection.3.1.2}{Correlaci\363n de Vectores}{section.3.1}% 27
+\BOOKMARK [1][-]{section.3.2}{Autocorrelaci\363n de fuentes bioelectricas}{chapter.3}% 28
+\BOOKMARK [2][-]{subsection.3.2.1}{Autocorrelaci\363n de fuentes cardiacas}{section.3.2}% 29
+\BOOKMARK [2][-]{subsection.3.2.2}{Autocorrelation and spectrum of cardiac signals}{section.3.2}% 30
+\BOOKMARK [2][-]{subsection.3.2.3}{Mapa de intensidades pico de autocorrelaci\363n}{section.3.2}% 31
+\BOOKMARK [2][-]{subsection.3.2.4}{Grado de auto-correlaci\363n del tejido cardiaco}{section.3.2}% 32
+\BOOKMARK [2][-]{subsection.3.2.5}{Spectrum of Cardic Signal}{section.3.2}% 33
+\BOOKMARK [2][-]{subsection.3.2.6}{spectrum of cardiac sources}{section.3.2}% 34
+\BOOKMARK [1][-]{section.3.3}{M\351todos estimaci\363n del espectro}{chapter.3}% 35
+\BOOKMARK [1][-]{section.3.4}{Frecuencia Dominante}{chapter.3}% 36
+\BOOKMARK [1][-]{section.3.5}{Concluciones}{chapter.3}% 37
+\BOOKMARK [-1][-]{part.2}{II An\341lisis y Simulaciones}{}% 38
+\BOOKMARK [0][-]{chapter.4}{An\341lisis}{part.2}% 39
+\BOOKMARK [1][-]{section.4.1}{Introducci\363n}{chapter.4}% 40
+\BOOKMARK [1][-]{section.4.2}{Modelos de fuentes de 2 orden}{chapter.4}% 41
+\BOOKMARK [1][-]{section.4.3}{Funci\363n de distribuci\363n de tiempos}{chapter.4}% 42
+\BOOKMARK [1][-]{section.4.4}{Lead Fields}{chapter.4}% 43
+\BOOKMARK [2][-]{subsection.4.4.1}{Idealized model}{section.4.4}% 44
+\BOOKMARK [1][-]{section.4.5}{Resoluci\363n Espacial vs Ancho de Banda}{chapter.4}% 45
+\BOOKMARK [0][-]{chapter.5}{Simulaciones}{part.2}% 46
+\BOOKMARK [1][-]{section.5.1}{Introducci\363n}{chapter.5}% 47
+\BOOKMARK [2][-]{subsection.5.1.1}{Tablas de experimentos}{section.5.1}% 48
+\BOOKMARK [1][-]{section.5.2}{Implementaci\363n de modelos}{chapter.5}% 49
+\BOOKMARK [2][-]{subsection.5.2.1}{Modelo de ruido blanco}{section.5.2}% 50
+\BOOKMARK [2][-]{subsection.5.2.2}{Modelo Aut\363mata}{section.5.2}% 51
+\BOOKMARK [1][-]{section.5.3}{Modelos de leadfield}{chapter.5}% 52
+\BOOKMARK [1][-]{section.5.4}{Resoluci\363n espacial del sistemas de electrodos}{chapter.5}% 53
+\BOOKMARK [1][-]{section.5.5}{Relaci\363n ancho de banda}{chapter.5}% 54
+\BOOKMARK [1][-]{section.5.6}{concluciones}{chapter.5}% 55
+\BOOKMARK [-1][-]{part.3}{III Discusi\363n y Conclusiones}{}% 56
+\BOOKMARK [0][-]{chapter.6}{Conclusiones}{part.3}% 57
+\BOOKMARK [-1][-]{part.4}{IV Ap\351ndices}{}% 58
+\BOOKMARK [0][-]{appendix*.9}{Bibliograf\355a}{part.4}% 59

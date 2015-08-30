@@ -4,12 +4,58 @@
 \contentsline {chapter}{\numberline {1}Introducci\'on}{3}{chapter.1}
 \contentsline {section}{\numberline {1.1}Motivaci\'on}{3}{section.1.1}
 \contentsline {section}{\numberline {1.2}Estado del Arte}{5}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}}{5}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}}{5}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}}{5}{subsection.1.2.3}
-\contentsline {section}{\numberline {1.3}Objetivos}{5}{section.1.3}
+\contentsline {section}{\numberline {1.3}Objetivos}{6}{section.1.3}
 \contentsline {section}{\numberline {1.4}Metodolog\IeC {\'\i }a}{6}{section.1.4}
-\contentsline {section}{\numberline {1.5}Aportaciones}{6}{section.1.5}
-\contentsline {section}{\numberline {1.6}Estructura}{6}{section.1.6}
-\contentsline {part}{I\hspace {1em}Ap\'endices}{7}{part.1}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{13}{appendix*.8}
+\contentsline {section}{\numberline {1.5}Aportaciones}{7}{section.1.5}
+\contentsline {section}{\numberline {1.6}Estructura}{7}{section.1.6}
+\contentsline {part}{I\hspace {1em}M\'etodos}{9}{part.1}
+\contentsline {chapter}{\numberline {2}Modelos Bioel\'ectricos}{11}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introducci\'on}{11}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Anatom\IeC {\'\i }a y fisiolog\IeC {\'\i }a de las celular}{11}{subsection.2.1.1}
+\contentsline {section}{\numberline {2.2}Modelo Electrofisiol\'ogico}{11}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Modelo Celular}{12}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Modelo de Tejido}{12}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Sistemas de medida}{12}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Sistema de Electrodos}{12}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Volumen equivalente de sistema de electrodos}{12}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}Conclusiones}{12}{section.2.4}
+\contentsline {chapter}{\numberline {3}Definici\'on del Espectro}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introducci\'on}{13}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Correlaci\'on de Se\~nales}{14}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Correlaci\'on de Vectores}{15}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Autocorrelaci\'on de fuentes bioelectricas}{15}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Autocorrelaci\'on de fuentes cardiacas}{16}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Autocorrelation and spectrum of cardiac signals}{17}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Mapa de intensidades pico de autocorrelaci\'on}{18}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Grado de auto-correlaci\'on del tejido cardiaco}{18}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Spectrum of Cardic Signal}{20}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}spectrum of cardiac sources}{21}{subsection.3.2.6}
+\contentsline {section}{\numberline {3.3}M\'etodos estimaci\'on del espectro}{21}{section.3.3}
+\contentsline {section}{\numberline {3.4}Frecuencia Dominante}{21}{section.3.4}
+\contentsline {section}{\numberline {3.5}Concluciones}{21}{section.3.5}
+\contentsline {part}{II\hspace {1em}An\'alisis y Simulaciones}{23}{part.2}
+\contentsline {chapter}{\numberline {4}An\'alisis}{25}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introducci\'on}{25}{section.4.1}
+\contentsline {section}{\numberline {4.2}Modelos de fuentes de 2 orden}{26}{section.4.2}
+\contentsline {subsubsection}{\numberline {4.2.0.1}Identically distributed spatiotemporal dynamics}{26}{subsubsection.4.2.0.1}
+\contentsline {subsubsection}{\numberline {4.2.0.2}Fully correlated spatiotemporal dynamics}{26}{subsubsection.4.2.0.2}
+\contentsline {subsubsection}{\numberline {4.2.0.3}Fully uncorrelated spatiotemporal dynamics}{26}{subsubsection.4.2.0.3}
+\contentsline {section}{\numberline {4.3}Funci\'on de distribuci\'on de tiempos}{27}{section.4.3}
+\contentsline {section}{\numberline {4.4}Lead Fields}{27}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Idealized model}{27}{subsection.4.4.1}
+\contentsline {section}{\numberline {4.5}Resoluci\'on Espacial vs Ancho de Banda}{27}{section.4.5}
+\contentsline {chapter}{\numberline {5}Simulaciones}{29}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introducci\'on}{29}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Tablas de experimentos}{30}{subsection.5.1.1}
+\contentsline {section}{\numberline {5.2}Implementaci\'on de modelos}{30}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Modelo de ruido blanco}{30}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Modelo Aut\'omata}{30}{subsection.5.2.2}
+\contentsline {subsubsection}{\numberline {5.2.2.1}protocolos de estimulac\'on}{30}{subsubsection.5.2.2.1}
+\contentsline {section}{\numberline {5.3}Modelos de leadfield}{30}{section.5.3}
+\contentsline {section}{\numberline {5.4}Resoluci\'on espacial del sistemas de electrodos}{30}{section.5.4}
+\contentsline {section}{\numberline {5.5}Relaci\'on ancho de banda}{30}{section.5.5}
+\contentsline {section}{\numberline {5.6}concluciones}{30}{section.5.6}
+\contentsline {part}{III\hspace {1em}Discusi\'on y Conclusiones}{31}{part.3}
+\contentsline {chapter}{\numberline {6}Conclusiones}{33}{chapter.6}
+\contentsline {part}{IV\hspace {1em}Ap\'endices}{35}{part.4}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{42}{appendix*.9}

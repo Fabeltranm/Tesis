@@ -1,9 +1,26 @@
-\begin{thebibliography}{24}
+\begin{thebibliography}{35}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Alonso-Atienza et~al.(2005)Alonso-Atienza, Requena-Carrión,
+  García-Alberola, Rojo-Álvarez, Sánchez-Muñoz, Martinez-Sánchez, and
+  Valdés-Chávarri]{Alonso-Atienza05}
+F.~Alonso-Atienza, J.~Requena-Carrión, A.~García-Alberola, J.~L. Rojo-Álvarez,
+  J.~J. Sánchez-Muñoz, J.~Martinez-Sánchez, and M.~Valdés-Chávarri.
+\newblock A probabilistic model of cardiac electrical activity based on a
+  cellular automata system.
+\newblock \emph{Revista Española de Cardiología}, 58\penalty0 (1):\penalty0
+  41--47, Jan 2005.
+
+\bibitem[Arzbaecher et~al.(1979)Arzbaecher, Jenkins, Collins, and
+  Berbari]{Arzbaecher79}
+R.~C. Arzbaecher, J.~M. Jenkins, S.~Collins, and E.~Berbari.
+\newblock Atrial electrical activity: The view from the esophagus.
+\newblock In \emph{IEEE/EMBS Frontiers of Engineering in Health Care}, pages
+  314--318, 1979.
 
 \bibitem[Atienza et~al.(2006)Atienza, Almendral, Moreno, Vaidyanathan,
   Talkachou, Kalifa, Arenal, Villacastin, Torrecilla, Sanchez, Ploutz-Snyder,
@@ -25,6 +42,12 @@ Felipe Atienza, David Calvo, Jes{\'u}s Almendral, Sharon Zlochiver, Krzysztof~R
   left atrium during paroxysmal atrial fibrillation in humans.
 \newblock \emph{Journal of the American College of Cardiology}, 57\penalty0
   (9):\penalty0 1081--1092, 2011.
+
+\bibitem[Berenfeld(2007)]{Berenfeld07}
+O.~Berenfeld.
+\newblock Quantifying activation frequency in atrial fibrillation to establish
+  underlying mechanisms and ablation guidance.
+\newblock \emph{Heart Rhythm}, 4\penalty0 (9):\penalty0 1225--1234, Sep 2007.
 
 \bibitem[Berenfeld(2010)]{Berenfeld10}
 Omer Berenfeld.
@@ -85,6 +108,13 @@ Nei-Wei Hsu, Yenn-Jiang Lin, Ching-Tai Tai, Tsair Kao, Shih-Lin Chang,
   v1 and intracardiac recordings: implications for mapping of af.
 \newblock \emph{Europace}, 10\penalty0 (4):\penalty0 438--443, 2008.
 
+\bibitem[J.~Requena-Carri\'{o}n(2013)]{Requena13b}
+A.~G.~Marques J.~Requena-Carri\'{o}n, F. Beltr\'{a}n-Molina.
+\newblock Relating the spectrum of cardiac signals to the spatiotemporal
+  dynamics of cardiac sources.
+\newblock \emph{Biomedical Signal Processing and Control}, 8\penalty0
+  (6):\penalty0 935--944, 2013.
+
 \bibitem[Kogawa et~al.(2015)Kogawa, Okumura, Watanabe, Kofune, Nagashima, Mano,
   Sonoda, Sasaki, Iso, Takahashi, et~al.]{kogawa2015effect}
 Rikitake Kogawa, Yasuo Okumura, Ichiro Watanabe, Masayoshi Kofune, Koichi
@@ -130,6 +160,18 @@ J.~Millet Á.~Arenal F.~Fernández-Avilés J.~Jalife F.~Atienza O.~Berenfeld
 \newblock \emph{Circulation: Arrhythmia and Electrophysiology}, 6~(2):\penalty0
   294--301, 2013.
 
+\bibitem[Malmivuo et~al.(Mar 1997)Malmivuo, Suihko, and Eskola]{Malmivuo97}
+J.~Malmivuo, V.~Suihko, and H.~Eskola.
+\newblock Sensitivity distributions of eeg and meg measurements.
+\newblock \emph{IEEE Transactions on Biomedical Engineering}, 44:\penalty0
+  196--208, Mar 1997.
+
+\bibitem[Malmivuo and Plonsey(1995)]{Malmivuo95}
+Jaakko Malmivuo and Robert Plonsey.
+\newblock \emph{Bioelectromagnetism: principles and applications of bioelectric
+  and biomagnetic fields}.
+\newblock Oxford University Press, New York, 1995.
+
 \bibitem[Mandapati et~al.(2000)Mandapati, Skanes, Chen, Berenfeld, and
   Jalife]{Mandapati00}
 R~Mandapati, A~Skanes, J~Chen, O~Berenfeld, and J~Jalife.
@@ -162,6 +204,22 @@ Yasuo Okumura, Ichiro Watanabe, Masayoshi Kofune, Koichi Nagashima, Kazumasa
 \newblock \emph{Journal of interventional cardiac electrophysiology},
   34\penalty0 (3):\penalty0 267--275, 2012.
 
+\bibitem[Papoulis(1991)]{Papoulis91}
+Athanasios Papoulis.
+\newblock \emph{Probability, random variables, and stochastic processes}.
+\newblock McGraw-Hill, New York etc., 1991.
+
+\bibitem[Requena-Carrión et~al.(2009)Requena-Carrión, Väisänen, Alonso-Atienza,
+  García-Alberola, Ramos-López, and Rojo-Álvarez]{Requena09}
+J.~Requena-Carrión, J.~Väisänen, F.~Alonso-Atienza, A.~García-Alberola, F.J.
+  Ramos-López, and J.L. Rojo-Álvarez.
+\newblock Sensitivity and spatial resolution of transvenous leads in
+  implantable cardioverter defibrillator.
+\newblock \emph{IEEE Transactions on Biomedical Engineering}, 56\penalty0
+  (12):\penalty0 2773 --2781, 2009.
+\newblock ISSN 0018-9294.
+\newblock \doi{10.1109/TBME.2009.2027425}.
+
 \bibitem[Requena-Carrión(2008)]{Requena08}
 Jesús Requena-Carrión.
 \newblock \emph{Análisis espectral de electrogramas almacenados en
@@ -186,6 +244,18 @@ Ulrike Richter, Luca Faes, Alessandro Cristoforetti, Michela Mas{\`e}, Flavia
 \newblock \emph{Annals of biomedical engineering}, 39\penalty0 (1):\penalty0
   310--323, 2011.
 
+\bibitem[Rush and Driscoll(1969)]{Rush69}
+S.~Rush and D.~A. Driscoll.
+\newblock Eeg electrode sensitivity--an application of reciprocity.
+\newblock \emph{IEEE Transactions on Biomedical Engineering}, 16\penalty0
+  (1):\penalty0 15--22, Jan 1969.
+
+\bibitem[Sachse(2004)]{Sachse04}
+Frank~B. Sachse.
+\newblock \emph{Computational cardiology : modeling of anatomy,
+  electrophysiology, and mechanics}.
+\newblock Springer, Berlin, 2004.
+
 \bibitem[Sanders et~al.(2005)Sanders, Berenfeld, Hocini, Jais, Vaidyanathan,
   Hsu, Garrigue, Takahashi, Rotter, Sacher, Scavee, Ploutz-Snyder, Jalife, and
   Haissaguerre]{Sanders05}
@@ -203,6 +273,13 @@ A.~C. Skanes, R.~Mandapati, O.~Berenfeld, J.~M. Davidenko, and J.~Jalife.
   sheep heart.
 \newblock \emph{Circulation}, 98\penalty0 (12):\penalty0 1236--1248, Sep 22
   1998.
+
+\bibitem[Väisänen et~al.(2008)Väisänen, Väisänen, Malmivuo, and
+  Hyttinen]{Vaisanen08}
+J.~Väisänen, O.~Väisänen, J.~Malmivuo, and J.~Hyttinen.
+\newblock New method for analysing sensitivity distributions of
+  electroencephalography measurements.
+\newblock \emph{Med Bio Eng Comput}, 46:\penalty0 101--8, 2008.
 
 \bibitem[Zlochiver et~al.(2008)Zlochiver, Yamazaki, Kalifa, and
   Berenfeld]{Zlochiver08}
