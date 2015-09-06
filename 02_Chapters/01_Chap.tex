@@ -1,35 +1,509 @@
-% -*-coding: iso-latin-1  -*-
-\chapter{Modelos Bioeléctricos}
+%%%% -*-coding: iso-latin-1  -*-
+\chapter{módelos Bioeléctricos}
 
 \begin{resumen}
   En esta sección se abarcan los conceptos básicos de anatomía  y
   fisiología cardiaca, dando un repaso por las arritmias cardiacas, en especial
-  la fibrilación. Luego se pasa a dar la visión de los modelos numéricos, como
-  los modelos anatómicos de corazón en 2D y 3D realistas.
-  Luego entramos a analizar los diferentes módelos para la generación y
-  propagación de la actividad eléctrica del miocardio, se describe el Automata
-  celular propuesto en \cite{Alonso-Atienza05}, como un modelo de baja carga
-  computacional
+  la fibrilación. Luego se pasa a los módelos matemáticos que describen
+  la actividad electrica de la células y el tejido  cardiaco en 2D y 3D
+  realistas. A posteriori se analizan los diferentes módelos para la generación
+  y propagación de la actividad eléctrica del miocardio. se hace una
+  descripción del módelo autómata Celular propuesto en \cite{Alonso-Atienza05},
+  como un módelo de baja carga computacional. se presenta el módelo  \ac{LRd}
+  \cite{luo1994, livshitz2007}, módelo celular cardiaco que representar el
+  comportamiento de las corrientes ionicas de las células ventriculares. Para
+  concluir el capitulo, se hace una introducción a los sistema
+  de medida simulados, en donde se plantean la definicion de \ac{MSD}, usada a posteriori
+  para el cálculo de volumen equivalente. Está da un acercando a la simulación
+  cardiacas que se trabaja en esta Tesis.  
   
-  Para concluir el capitulo, se hace una introducción a los sistema de medida,
-  en donde se exponen el volumen equivalente de los diferentes sistemas de electrodos.
+  
+  TODO: habar de   velocidad de conducción que sera usada en el autómata celular
+  
+  
 \end{resumen} 
 
 
 \section{Introducción}
+
+La contracción coordinada del corazón es resposable del eficaz bombeo de la
+sangre a travez del sistema cardiovascular. Esta coordinación se realiza
+mediante el sistema de conducción eléctrica del corazón, que controla el tiempo
+exacto para realizar la contracción del miocardio, a traves de un sistema de
+estimulación intrinsico, el cual fija la tasa de bombeo del sistema
+cardiovascular. El sistema de estimulos es espontaneo y de manera regular mandas
+los impulsos eléctricos, el cual se distribuye, gracias a sistema especializado
+de conducción, a través de todas las celular del corazón. Es asi como un sistema
+electro-mécanico de excitación-cotracción ocasiona el bombeo sistemático de la
+sangre, y a lo que en situaciones nornales se le denimina ciclo cardiaco,
+periodo donde corazón alterna entre una contracción y una relajación.
+Cuando se presentan alguna alteración a este ciclo cardiaco, bien sea por
+alteraciones en la generación y/o en la conducción de los impulsos eléctricos, se habla de
+transtornos cardiacos, conocidos como arritmias. Por lo tanto, el registro de la
+actividad eléctrica, mediante sistemas de electrodos intracardiacos \ac{EGM} o en la superficie del corazón \ac{ECG},
+proporciona informacion sobre el estado normal o anormal del ciclo cardiaco.
+
+
+
 \subsection{Anatomía y fisiología de las celular}
 
-algo de acá http://www.bem.fi/book/, \cite{Malmivuo95}
+La anatomía del corazón se puede describir desde un  mirada espacial. De manera,
+macroscopia, la descripción espacial del corazon humano, indica que el corazón 
+se encuentra al interior del tórax y contiguo a los pulmones. Se encuentra
+recubierto por el saco pericárdiaco, y acorde con el sistema  circulatorio
+su funcionamiento se divider dos secciones anatomicamente similiares, la mitad
+derecha e izquierda. A su estas dos mitadas, se dividen en dos cavidades. Las
+cavidades superiores, auriculas, se encargan de recibir la sangre, y las
+cavidades  inferiores, ventriculos,bombean la sangre al sitemas circulatorio.
 
-\section{Modelo Electrofisiológico} \label{sec:modelElectrofi}
-bibliografia \cite{Sachse04} para el modelado del corazón, sin embargo  falta 
-ve el modelado de la actividad celular  ejemplo neurociencia
+Por un lado, la estructura derecha del corazón, a través de la auricula derecha,
+recibe la sangre desoxigenda del cuerpo  y la bombea, desde el ventriculo
+derecho, a los pulmones. De forma paralela, la mitad izquierda del corazón
+recibe la sangre oxigenada, en la aurícula izquierda, proveniente de los
+pulmones, y a posteriori, por medio del ventriculo izquierdo, abastecer a todo
+el cuerpo incluido el propio corazón con la sangre ya oxigenada.
+El ventriculo izquierdo, tiene una cavidad mucho
+más gruesa y fuerte que su homologo derecho. 
 
-\subsection{Modelo Celular}
-\subsection{Modelo de Tejido}
+Desde una mirada anatómica, las cuatro cavidades del corazón, 2 aurículas y
+dos ventíiculos, estan compuestas de un músculo estructural denominado
+miocardio. El miocardio, esta cubierto el interior de las cavidades por el
+tejido endocardiaco. Al exterior de las pared miocardiaca se encuentra el tejido
+epicardiaco. A si mismo, se habla que el miocardio esta dividido en
+pared subepicárdica, pared media y pared subendocárdica. El flujo de sangre
+entre auriculas y ventriculos, es controlado por las válvulas tricúspide  y la
+mitral, ubicadas en la la estructura derecha e izquierda respectivamente.
+La válvula pulmonar controla el flujo sanguíneo del ventrículo derecho a las
+arterias pulmonares y la válvula aórtica controla el paso de la sangre oxigenada
+desde el ventrículo izquierdo a la aorta.
+
+En resumen, la función del corazón es proveer al todo el cuerpo la sangre
+oxigenada, y para ello, el corazon ejecuta tres movimientos autónomos que le
+permite bombear la sangre al cuerpo, sístole auricular y ventricular
+y  la diástole, movimientos de contracción y dilatación respectivamente. la
+generación de estos eventos cardiacos, el músculo cardiaco se autoestimula y
+la secuencia de las contracciones cardiacas son producida  por la
+despolarización de las celulas cardiacas, y  propagada por el miocardio, a través del sistema de conducción del corazón.
+
+
+
+\subsubsection{Actividad eléctrica del corazón }
+
+El origen de la actividad eléctrica del corazón son los miocitos. La actividad
+eléctrica de cada miocito del corazón, genera cambios transitorios en el
+potencial de menbrana, \ac{AP}. El \ac{AP} es el producto de la actividad
+electroquimica que genera el intercambio de iones, a través de los canales
+iónicos  y bombas elctrogénicas, en la membrana células. Estos intercambios
+generan impulsos eléctricos que se propagan a través del tejido. En las células
+cardiacas, los impulso eléctrico genera la contracción sincronizada de todas
+las células  que están eléctricamente acopladas, trayendo consigo que todas las
+cámaras en el corazón se contraigan.
+
+Por lo tanto, hablamos de exítabilidad, cuado a un estímulo suficientemente
+fuertes se presenta un cambio transitorio de la polaridad del voltaje
+transmembrana. De esta manera, se entiendo que cada célula cardiaca tiene
+asociado un proceso de contracción asociado a su \ac{AP} respectivo. en el
+\ac{AP} de cada célula se distinguen dos estados, cuando la célula esta en
+reposo o cuando esta en estado activo.
+
+Con la menbrana en estado en reposo, la célula está en equilibrio dinámico el
+medio intracelular está a menor potencial que el extracelular. La membrana es
+ ligueramente impermeable al sodio (Na+) y un poco permeable al potacio  (K+) y
+ al calcio (ca 2+). En respuesta a un estímulo eléctrico o mecánico, la
+ permeabilidad de la membrana se modifica, lo que conlleva a que los iones de
+ potasio puedan salir de la célula de una forma más eficiente de lo que pueden
+ llegar a entrar los iones de sodio, que provoca la despolarización celular, es
+ decir, un cambio en el potencial eléctrico transmembrana. cuando la celula esta
+ despolarizada se habla de esta manera de estado activo. Inmediatamente, el
+ equilibrio i onico tiende a restablecerse de forma progresiva durante el
+ proceso denominado repolarización.
+ La membranas células excitables, de esta manera, tienen la capacidad de  
+ modificar la polaridad ante estímulos, que superen el umbral de activación, y
+ generar un \ac{AP}, gracias a la diferencia de concentraciones iónicas entre
+ los dos medios, y por lo tanto, entre las fuerzas de difusión  y de campo eléctrico.
+ 
+El \ac{AP} caracteriza, en parte, la propagacíon de la despolarización del
+tejido cardiaco. Es asi como, el tiempo entre de pasar de estado de reposo a
+estado activo  y retornar al estado de reposo, se le da el nombre de
+\ac{APD}. En  la \ref{fig:apds} se observan diferentes \ac{APD} y esto es porque
+el corazón esta formado por distintos tipos de celular cardiacas y por lo
+tanto, presentan distintas formas de \ac{AP}, \cite{dawodu1996, Malmivuo95,
+Sachse04}.
+
+
+
+\begin{figure}[t]
+\centering
+ \epsfig{file = ./images/01_chap/APDs2.eps,width = 15cm} 
+\caption{Cambio transitorio del voltaje transmembrana, durante un potencial de
+acción:(a) Nodo sinusal, (b) Auricula, (c) Nodo Auriculo-ventricular (d)
+His-bundle,  (e) His-Tawara, (f) Fibras de Purkinje, (g)
+Ventriculo (Subendocárdico), (h) Ventriculo (subepicárdico). }
+  \label{fig:apds}
+\end{figure}
+
+
+Como se observa en \ref{fig:apds}(h), el \ac{AP} de los ventriculos  presentan
+cinco fases distintas, esta caracterización fisiológico comprende:
+
+La fase ascendente del \ac{AP}, es el cambio drástico del potencial inicial de
+la menbra. En esta fase, conocida como fase 0, la membrana,  de forma
+abrupta, permite el ingreso masivo de iones de sodio ($Na^+$) por unos cuantos
+segundos.
+
+La  fase de repolarización inicial, es el instante en que los canales de sodios
+se inactivan, y se abren los canales de potasio ($K^+$). En esta fase 1, se
+provocando asi una pequeña repolarización rapida del \ac{AP}, debido a las corrientes de
+salida de potasio.
+
+En la siguiente fase, el \ac{AP} se mantiene casi constante (cercano a los 
+0mV), y se conoce como fase de meseta o fase 2. En esta fase se activan los
+canales de Calcio $(Ca^{2+}$). en esta fase las corrientes de calcio 
+son compensadas por las corrientes de potacio, generando el efecto meseta del
+\ac{AP}.
+
+En la fase 3, se inactivan los canales de calcio, y sólo los canales de
+potasio quedan activos, permitiendo que el procesos de polarizacion se
+accelere. a esta fase se le conoce como fase repolarización final.
+
+Por último la el \ac{AP} en estado de reposo, entra a la fase 4, y el potencia
+de la menbrana, estable y constante, queda a la espera de un nuevo estimulo que
+supere el potencial de umbral, para generar un nuevo \ac{AP}. Al tiempo de
+recuperación, que va desde el final del \ac{APD}, hasta el comienzo de un nuevo
+\ac{APD}, se loe conoce como \ac{DI}.
+
+
+El músculo cardíaco, en condiciones normales, se contrae de acuerdo con los
+impulso generados por celular autoexitables, ubicados en algunas zonas del corazon. Dos
+nodos autoexitables, que se presentan en la \ref{fig:apds}(a) y (b), son lo 
+nodo sinusal y el nodo auriculo-ventricular, respectivamente. Estos dos nodos
+tienen la propiedad de despolarizarse de manera espontánea, es decir no es
+necesario la intervención de un estímulo externos. la \ref{fig:apds}(a) y (b)
+refleja como la membrana celular, de dichos nodos,  se despolariza lentamente
+durante la fase de reposo debido,principalmente, al cierre gradual de los
+canales de potasio y a que la entrada masiva de sodio en el interior de la
+célula no es tan rápida como en las celular del ventriculo. Al llegar al
+potencial umbral, se da inicio a la despolarización. en estos nodos se evidencia
+la ausencias de la fase de reposo, vista en el \ac{APD} de las celulas ventriculares. 
+
+
+Las celulas cardiacas tiene la propiedad de excitabilidad, funcion de \ac{APD}
+y del \ac{DI}, y que, en la mayorias de las células del corazón, es
+consecuencia de un estimula externos. Pero esta propiedad  de excitabilidad, no
+se cumple, por un periodo dentro del tiempo \ac{AP}. El tiempo refractario, o
+fase de refractariedad, como se le denomina a este periodo de no exitabilidad,
+es el tiempo en el que la célular exitable no responde a un estimula externo,
+sin importar su intensidad. 
+
+Por consiguiente, al variar la frecuencia de estimulación del corazon
+varia el \ac{DI}. Se estima que el tiempo refractario sea
+mayor cuando \ac{DI} es mayor, y viceversa. En consecuencia,
+el \ac{APD}, es función tanto del \ac{DI}, como del \ac{APD} predecesor.  El
+\ac{APD} dismunuye con la disminución del \ac{DI} y con el incremento en la
+frecuencia de estimulación. La relación entre \ac{APD} y \ac{DI} se conoce como
+curva de restitución, y se observa en \ref{fig:curvares}.
+
+\begin{figure}[t]
+\centering
+ \epsfig{file = ./images/01_chap/curvarestitucion.eps,width = 15cm} 
+\caption{Cambio esta curva  esta es vil copia del libro }
+  \label{fig:curvares}
+\end{figure}
+
+\subsubsection{Sistema de propagación }
+
+El músculo cardiaco esta conformado por miocitos y por fibras
+musculares. Los miocitos que componen una fibra muscular está conectados en
+serie entre sí, y favorecen la propagación del impulso eléctrico en la
+dirección del eje de la fibra muscular. La despolarización en un miocito, genera
+a su vez estímulos eléctricos que despolarizan otras celularas vecinas interconectadas electrícamente. 
+
+La principal propiedad del tejido cardiaca  es la propagación del \ac{AP}.
+Durrer junto con sus colaboradores en \cite{durrer1970}, presentan el estudio de
+la velocidad de propagación del corazón humano aislado. Cuando una célula es
+estimulada, es decir  inicia la despolarización, la diferencia de potencial
+intracelular, aumenta. y por lo tanto, se genera una corriente eléctrica, entre
+la célula recien despolarizada  y las célula contigua, lo que conlleva al
+aumento del potencial interto de la celular vecina. cuando el potencial interno
+de la célula vecina,  supera el umbrar de desporalización, dicha celular se
+exita. Este proceso se repite con la nueva célula, lo que conlleva a la
+propagación del \ac{AP} \ac{jalife2011}.
+
+Para la propagación ordenada, en
+condiciones normales de un ciclo cardíaco, el \ac{AP} es iniciado en el nodo
+sinusal, poropagandose por la auriculas. Estas a su vez, estan separadas
+electricante  de los ventriculos, y por lo tanto, el \ac{AP} viaja por el nodo
+auriculo-ventricular, que conecta eléctricante las auriculos  con los
+ventriculos. El nodo auriculo-ventricular actúan como línea de retardo para
+lograr una temporización adecuada entre la acción de las aurículas y
+ventrículo. Una vez terminada la contracción de la auriculas, el estimulo  se
+propaga desde el has de hiz al sistema de His-Purkinje, desde el cual el
+\ac{AP}  se distribuye por el resto de los miocitos  ventriculares. La velocidad
+de conducción del \ac{AP} depende, principalmente, de la dirección en la que se
+propaga. el sistema de propagación del \ac{AP} se observar en la parte superior
+izquierda de la \ref{fig:apds}, el cual se conoce como tejido especializado de
+conducción.
+
+Al igual que la dependencia del valor de \ac{APD} con respecto al \ac{DI},  la
+propagación del impuso es caracterizado por \acf{CV}. \ac{CV} tambien 
+es dependiente de \ac{DI}. En la Figura XXX, se muestra la relación entre el
+\ac{CV} y el \ac{DI}. Como se puede observar, y al igual que en el \ac{APD}, la
+\ac{CV} disminuye cuando el \ac{DI} disminye, por lo tanto, se dice que a una
+tasa de activacion cardiaca mayor, la velocidad de propagacion del estímulo sera
+menor.
+
+
+\section{Módelo Electrofisiológico} \label{sec:modelElectrofi}
+
+Por lo expuesto en la sección anterior, se evidencia la actividad
+electrofisiológica del corazón, puede ser  modelada bajos aproximaciones
+matematicas, que permiten hoy por hoy realizar estudios cardiacos, por medio de
+simulaciones de computador de las diversas dinamicas cardíacas. Desde un punto
+de vista matemático, podemos describir, tanto el flujo de corriente ionicas en
+los miocitos, como modelar el sistemas de propagación de \ac{AP}. Como se discution en el apartado
+anterior, el aspecto más importante de la dinamica del tejido es el \ac{AP}, y 
+por lo tanto, los módelos  electrófisiológicos, principalmente, se basan  en la
+simulación del \ac{AP}.
+
+ 
+los módelos matematicos de la membrana celular, que describen el
+flujo de corrientes se basan, principalmente, en el 
+trabajo desarrollado por Hodgkin-Huxley \cite{Hodgkin52}. este módelo se observa
+en la figura \ref{fig:circuitomembrana}. el módelo estas  basado en las curvas de corrietne 
+nedidas en unsa celula nerviosa, por lo cual no se evidencia la contribución de
+la corriente de Calcio, que presenta la excitación en los miocitos. en la figura 
+\ref{fig:circuitomembrana}, se presenta las contribuciones de las corrientes
+generadas por el flujo de sodio ($I_{N_a}$), de potasio ($I_{k}$),  y otros
+iones ($I_L (leak current)$). Ademas,  $V_m$,  representa el potencial de
+membrana, definido como la diferencia entre los potenciales intracelular
+$\Phi_i$ y extracelular $\Phi_e$, por último $C_m$ refleja el efecto
+capacitivo de membrana. El módelo permite calcular las corrientes iónicas de
+diferente tipo que pasa a través de la membrana del axón y el voltaje de
+transmembrana. Asi el cambio  de $V_m$ en el tiempo se describe en 
+ \ref{eq:N-N}:
+
+\begin{equation}\label{eq:N-N}
+\frac{\partial{\mathbf{V_m}}}{\partial{t}}=
+\frac{\partial{I_{m} - i_{stim}}}{\partial{C_m}}
+\end{equation}
+
+Donde, $I_m$ es la suma de las corriente iónicas que  atraviesan la
+membrana celular,$I_m = I_{Na} + I_K + I_l$ y y $I_{stim}$ representa la
+corriente de estimulación aplicada desde el medio extracelular.
+
+
+\begin{figure}[t]
+\centering
+ \epsfig{file = ./images/01_chap/circuitomembrana.eps,width = 8cm} 
+\caption{Circuito equivalente de la membrana celular Hodgkin-Huxley }
+  \label{fig:circuitomembrana}
+\end{figure}
+
+
+
+\subsection{Módelo de la Célula}
+
+El módelo de Hodgkin-Huxley, se ha modificado por diversos
+autores, permitiendo simular miocitos de zonas especificas del tejido cardiaco,
+y con mayor complejida. En \cite{Sachse04}, se compila una listado de diversos
+autores, que han modelados los miocitos. Los primeros trabajos basados en
+el módelo de Hodgkin-Huxleym, y que dan inicio al módelo de celulas
+cardiacas, en especifico las fibras de purkinje, fueron los trabajo de Noble
+\cite{noble1962} y McAllister,R.E \cite{mcallister1975}. 
+
+A posteriori, varios autores proponen diversos módelo del nodo sinusal en
+conejos \cite{noble1984, demir1994}. Por otra parte, las propuestas del módelo
+para los miocitos ventriculares, inician con le trabajo de Beeler y Reuter
+\cite{beeler1977}. El planteamiento mátematico de Beeler y Reutes, es
+replanteado en el trabajo de Luo y Rudy \cite{luo1991}. Este último módelo, con
+las respectivas actualzaciones  y revisiones \cite{luo1994, livshitz2007}, es
+posiblemente el mas utilizados hoy en día.
+Asi mismo en la literatura se encuentran varios autores que han módelado los
+ventriculos de maniferos, como conejos y perros \cite{courtemanche1998,
+demir1996, lindblad1996, noble1998}.  El desarrollo del módelo de la actividad
+electrica en venriculos humanos, en los  trabajos de
+\cite{nygren1998, bernus2002, sachse2003, ten2004}
+
+En los próximos dos apartados se presenta de manera resumida los
+dos módelos matemáticos, que son usados en esta Tesis: el módelo \acf{LRd} y el
+autómata celular. Ambos módelos nos permiten generar la actividad
+eléctrica en los miocitos y que posteriormente  son utilizados en la  simulación
+del tejidos cardiaco, para generar diversos tipos de arritmias, entre ella la
+fibrilación ventricular.  
+
+
+
+
+\subsubsection{Módelo Luo-Ruby}
+
+El módelo de \acf{LRd}, describe la electrofisiología de un miocito ventricular
+del cobayo. el módelos \ac{LRd}, espresa el formalísmo matematico del \ac{AP} a
+partir del desarrollo realizados por Beeler-Reuter \cite{beeler1977}, y aporta
+al módelo la contribción de que realza la concentración de calcio $Ca^{2+}$,
+en la despolarización de la celular, voltaje trasnmembrana. Desde publicacion
+incial \cite{luo1991}, y luego expandido en  \cite{luo1994}, se han tenido XX 
+actualziaciones.  En \cite{zeng1995}, se separa la contribución de las
+corrientes de potasio, $I_{Kr}$ y $I_{Ks}$, en contribución rapida y lenta.
+a posterior se estudia los efectos de $I_{Kr}$ y $I_{Ks}$  en el \ac{APD}, dando
+como resultado la reformulación de la coriente $I_{Ks}$ acorde a tres tipos de
+celulas diferenten, epicardio, endocardio  y miocardio. este estudio se
+encuentra en \cite{viswanathan1999}. Un año mas tarde en \cite{faber2000} se 
+incluye en el módelo el formalizmo matemático de la corriente generado por el intercambio de
+sodio-calcio. Asi mismo, Hund y Rudy en \cite{hund2004}, desarrolaron el
+formalismo matemático que modelar la electrofisiología de una celula ventricular
+del perro, \ac{HRd}.
+
+ Livshitz y  Rudy \cite{livshitz2007}  modifican los módelos \ac{LRd} y
+ \ac{HRd}, e incomporan nuevas relaciones entre el transiente de $Ca$, la
+ corriente $I_{ca_{(L)}}$. En resumen en la figura \ref{fig:modelHRd}, se
+ visualiza el actual módelo  \ac{LRd} de la celular cardiaca del ventriculo en
+ mamiferos,
+ 
+ Como se explico, en la anterior sección, hay un gran variedad de  módelos
+ cardiacos para diferentes mamiferos, donde se observan sutiles diferencias
+ elctrofisiológicas entre las especies, en relación a las corrientes y
+ canales ionicos. Entonces a distintos estimulos cada módelo cardiaco
+ tiene un comportamiento diferente, ya que la caracteristicas del \ac{AP}
+ varian entre cada especie \ref{OHara2012}, y son de  importnacia en el estudo
+ de respuesta a distintos fármacos. Sin embargo, esta pequeñas diferencias,
+ para efectos prácticos, en estudios donde trabaja a partir de las propiedades
+ macroscopias del \ac{AP} tiende a ser indiferente el tipo de módelo que sea
+ usado.
+ 
+  \begin{figure}[t]
+\centering
+ \epsfig{file = ./images/01_chap/modelHRd.eps,width = 10cm} 
+\caption{bla bla ). tomado de la web de rudy }
+  \label{fig:modelHRd}
+\end{figure}
+
+ 
+\subsubsection{autómata celular } 
+
+
+
+
+Partiendo de la actividad eléctrica del miocito,  y principalmente de las
+caracteristicas del \ac{AP}, en el autómata celular propuesta en 
+\cite{Alonso-Atienza05} la celular puede adopta 3 estados diferentes:
+
+
+\begin{itemize}
+\item Reposo: periodo  durante el cual la celula esta relaja  y puede ser
+estimulada por una fuente externa 
+\item Refractario 1: la célula se encuentra excitada  y ademas tiene el
+suficiente potencial para excitar a células contiguas.
+\item Refractario 2: La célula se encuentra excitada, mas sin embargo, el nivel
+del \ac{AP} es bajo, y por lo cual pierde la capacidad de excitar a las células
+vecinas.
+\end{itemize}
+
+De esta manera, el periodo refractario 1 y 2 es el tiempo  en el cual la celula
+se encuentras despolarizada, y  por ende la despolarización del micito, sucede
+en la transición del estado de Reposo al estado Refractario 1. Por su parte, la
+fase 1 de repolalización parcial de \ac{AP}, debido a las corrientes de salida
+del potasio, corresponde a la transición del estado Refractario 1 al estado
+Refractario 2. La repolarización total de la célula, fase 2, se da en paso del
+estado Refractario 2 al estado de Reposo. 
+
+
+La figura XXXX, muestra las caracteristicas del \ac{AP}. Asi mismo,las
+propiedades de restitución hacen que el \ac{APD} dependan directamente de la
+tasa de estimulación a la que este sometida la membrana célular. Al tener una
+frecuencia de estimulación elevada  se observa la reducción del \ac{DI}, y como causa, la
+reducción del \ac{APD}. Sucede lo contrario cuando el ritmo de excitación es
+bajo. De esta manera, en el autómata celular el tiempo es el estado en reposo es
+igual al \ac{DI} y para el \ac{APD}, se fija los tienpo de duración de los
+estados refractarios de manera fija, Es decir, el tiempo que permanece
+la celula es en estado Refractaio 1 es una fracción del tiempo total del
+\ac{APD}, por lo general el 10\%, y el restatan 90\% es, por lo tanto, el tiempo
+que dura la célula en el estado refractario 2. Es asi, como los tienpo de
+repolaizacion total y parcial se fijan acorde al valor de \ac{APD} predecesor.
+
+En cuanto a la despolarización del micito, en el autámata celular se da en
+función de la probabilidad de excitación de la celula cardiaca. 
+
+falta la figura
+
+
+\subsection{módelo de Tejido}
+
+Por lo pronto se ha visto que los módelos computationales de miocitos cardíacos,
+han sido herramientas importantes para la comprensión del \ac{AP}. y por lo
+tanto, para entender los mecanismos que dan lugar a las diferentes arritmias
+cardiacas, se han modelados diversas aproximaciones que simulan la propagación
+del estímulo cardiaco. Al igual que los módelos de celular, los módelos de los
+tejidos cardiacos se agrupan en módelos microscopicos y macroscopicos. 
+
+los módelos microscópicos del tejido del corazón, estan restringuidos a
+regiones pequeñas, debido la alta carga computacional que requiere al tener en
+cuenta un elevado numero de variables que contribuyen  tanto en el \ac{AP} como
+la velocidad de conducción.
+
+
+\subsubsection{Módelo de la membrana en el autómata}
+
+Los autómatas celulares son ampliamente usados en diversas disciplinas. De igual
+maneras, en el contexto de cardiologia celular, un número bastante amplio de
+autores han modelado el sistema de propagación de excitación del corazón, por
+medio del autómata celular. La ventaja de simular la dinámica cardiaca, por
+medio del autómata celular, es la eficiencia computacional que ofrece la
+versatilidad de variar las propiedades de conducción. En general, el módelo
+automata celular de la membrana esta conformado en primera instancia, como se
+observa en la Figura \ref{fig:automata1},  por la red discreta de nodos que
+representa la estructura espacial del tejido cardiaco, y en segunda instancia, la representación del autómata celular de cada
+nodo que representan los miocitos. Por lo tanto, se dice que cada miosito,
+cuenta con un número $N$ de celulas conectadas y de esta forma se
+conforma la región de vecindad  usada para  estimar la propogación del \ac{AP}.
+la comunicación entre las celulas vecinas  es de forma determinista, uniforme  y
+sincrónica.
+
+En esta \nombreDoc, el módelo del tejido cardiaca, se basa en el 
+trabajo realzado en \cite{Alonso-Atienza05}, donde se concibe el musculo
+cardíaco como un conjunto de elementos (miocitos) discretos interconectados
+entre si. y el \ac{AP} de cada celula es representada por 3 estados posibles:
+Reposo, refractario 1 y 2. El cambio de  de los estados de cada célula, viene
+dado en función del estado de los elementos vecinos y de  acuerdo al estado
+predecesor.
+
+
+  \begin{figure}
+\centering
+ \epsfig{file = ./images/01_chap/automata1.eps,width = 14cm} 
+\caption{Represetación del módelo del autómata celular. (a)\ac(AP) es modelado
+acorde a las fases de despolarización de la celula y los tres estados del
+automata definidos en \cite{Alonso-Atienza05} (b) Cada celda esta modelada por
+medio del autómata celular, que se conecta con 4 vecinos, la vecinda  tiene
+forma de cruz  y esta commpuesta por 5 celdas. (c) representación de la
+propagacion del \ac{AP} en un tejido de 100x100 celdas.}
+  \label{fig:automata1}
+\end{figure}
+
+
+
+\subsubsection{módelo de reaccion-difusión}
+
+
+ Denominados de reacción-difusión, reproducen la dinámica de membrana simulando
+ el paso de las corrientes iónicas a través de los canales iónicos y el
+ potencial de membrana asociado16-18. La conexión entre las células se modela
+ mediante resistencias eléctricas y la propagación del impulso se calcula
+ resolviendo las ecuaciones que gobiernan los circuitos eléctricos19,20. Estos
+ módelos son mucho más realistas y reproducen mejor las situaciones complejas,
+ pero requieren una carga computacional muy elevada y a menudo son necesarias
+ muchas horas de cálculo en multiprocesadores para poder simular 1 o 2 segundos
+ de actividad eléctrica21.
+
+
+
 
 \section{Sistemas de medida}
 algo de acá http://www.bem.fi/book/ \cite{Malmivuo95}
+
+
+The excitation propagation process can be registered with extracorporal
+electrodes
+
 
 Cardiac sources are the bioelectric processes generated by the heart during
 contraction. There exist different, equivalent mathematical paradigms to model
@@ -54,6 +528,7 @@ c(t)=\int_V{\mathbf{L}^{T}(v) \mathbf{J}(v,t)}{dv}
  measurement sensitivity distribution (MSD) and describes the ability of the
 l ead system to measure cardiac dipoles located at $v\in V$. In words, cardiac
 si gnals are a weighted linear combination of the underlying cardiac sources.
+
 
 
 \subsection{Sistema de Electrodos}

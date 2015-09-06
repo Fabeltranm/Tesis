@@ -1,19 +1,9 @@
-\begin{thebibliography}{35}
+\begin{thebibliography}{58}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
-
-\bibitem[Alonso-Atienza et~al.(2005)Alonso-Atienza, Requena-Carrión,
-  García-Alberola, Rojo-Álvarez, Sánchez-Muñoz, Martinez-Sánchez, and
-  Valdés-Chávarri]{Alonso-Atienza05}
-F.~Alonso-Atienza, J.~Requena-Carrión, A.~García-Alberola, J.~L. Rojo-Álvarez,
-  J.~J. Sánchez-Muñoz, J.~Martinez-Sánchez, and M.~Valdés-Chávarri.
-\newblock A probabilistic model of cardiac electrical activity based on a
-  cellular automata system.
-\newblock \emph{Revista Española de Cardiología}, 58\penalty0 (1):\penalty0
-  41--47, Jan 2005.
 
 \bibitem[Arzbaecher et~al.(1979)Arzbaecher, Jenkins, Collins, and
   Berbari]{Arzbaecher79}
@@ -43,6 +33,23 @@ Felipe Atienza, David Calvo, Jes{\'u}s Almendral, Sharon Zlochiver, Krzysztof~R
 \newblock \emph{Journal of the American College of Cardiology}, 57\penalty0
   (9):\penalty0 1081--1092, 2011.
 
+\bibitem[Atienza et~al.(2005)Atienza, Carri{\'o}n, Alberola, {\'A}lvarez,
+  Mu{\~n}oz, S{\'a}nchez, and Ch{\'a}varri]{Alonso-Atienza05}
+Felipe~Alonso Atienza, Jes{\'u}s~Requena Carri{\'o}n, Arcadi~Garc{\'\i}a
+  Alberola, Jos{\'e} L~Rojo {\'A}lvarez, Juan J~S{\'a}nchez Mu{\~n}oz,
+  Juan~Mart{\'\i}nez S{\'a}nchez, and Mariano~Vald{\'e}s Ch{\'a}varri.
+\newblock A probabilistic model of cardiac electrical activity based on a
+  cellular automata system.
+\newblock \emph{Revista Espa{\~n}ola de Cardiolog{\'\i}a (English Edition)},
+  58\penalty0 (1):\penalty0 41--47, 2005.
+
+\bibitem[Beeler and Reuter(1977)]{beeler1977}
+Go~W Beeler and H~Reuter.
+\newblock Reconstruction of the action potential of ventricular myocardial
+  fibres.
+\newblock \emph{The Journal of physiology}, 268\penalty0 (1):\penalty0
+  177--210, 1977.
+
 \bibitem[Berenfeld(2007)]{Berenfeld07}
 O.~Berenfeld.
 \newblock Quantifying activation frequency in atrial fibrillation to establish
@@ -64,6 +71,45 @@ Omer Berenfeld, Steve Ennis, Elliot Hwang, Brian Hooven, Krzysztof Grzeda,
   rate: The optical mapping reference.
 \newblock \emph{Heart Rhythm}, 8\penalty0 (11):\penalty0 1758 -- 1765, 2011.
 
+\bibitem[Bernus et~al.(2002)Bernus, Wilders, Zemlin, Verschelde, and
+  Panfilov]{bernus2002}
+Olivier Bernus, Ronald Wilders, Christian~W Zemlin, Henri Verschelde, and
+  Alexander~V Panfilov.
+\newblock A computationally efficient electrophysiological model of human
+  ventricular cells.
+\newblock \emph{American Journal of Physiology-Heart and Circulatory
+  Physiology}, 282\penalty0 (6):\penalty0 H2296--H2308, 2002.
+
+\bibitem[Courtemanche et~al.(1998)Courtemanche, Ramirez, and
+  Nattel]{courtemanche1998}
+Marc Courtemanche, Rafael~J Ramirez, and Stanley Nattel.
+\newblock Ionic mechanisms underlying human atrial action potential properties:
+  insights from a mathematical model.
+\newblock \emph{American Journal of Physiology-Heart and Circulatory
+  Physiology}, 275\penalty0 (1):\penalty0 H301--H321, 1998.
+
+\bibitem[Dawodu et~al.(1996)Dawodu, Monti, Iwashiro, Schiariti, Chiavarelli,
+  and Puddu]{dawodu1996}
+Amos~Adeyemo Dawodu, Francesco Monti, Katsunori Iwashiro, Michele Schiariti,
+  Roberta Chiavarelli, and Paolo~Emilio Puddu.
+\newblock The shape of human atrial action potential accounts for different
+  frequency-related changes in vitro.
+\newblock \emph{International journal of cardiology}, 54\penalty0 (3):\penalty0
+  237--249, 1996.
+
+\bibitem[Demir et~al.(1996)Demir, O'Rourke, Tomaselli, Marban, and
+  Winslow]{demir1996}
+Semahat~S Demir, Brian O'Rourke, Gordon~F Tomaselli, Eduardo Marban, and
+  Raimontl~L Winslow.
+\newblock Action potential variation in canine ventricle: a modeling study.
+\newblock In \emph{Computers in Cardiology, 1996}, pages 221--224. IEEE, 1996.
+
+\bibitem[Demir et~al.(1994)Demir, Clark, Murphey, and Giles]{demir1994}
+SS~Demir, JW~Clark, CR~Murphey, and WR~Giles.
+\newblock A mathematical model of a rabbit sinoatrial node cell.
+\newblock \emph{American Journal of Physiology-Cell Physiology}, 266\penalty0
+  (3):\penalty0 C832--C852, 1994.
+
 \bibitem[Dibs et~al.(2008)Dibs, Ng, Arora, Passman, Kadish, and
   Goldberger]{Dibs08}
 Samer~R Dibs, Jason Ng, Rishi Arora, Rod~S Passman, Alan~H Kadish, and
@@ -72,6 +118,19 @@ Samer~R Dibs, Jason Ng, Rishi Arora, Rod~S Passman, Alan~H Kadish, and
   human atrial fibrillation: multisite electrogram analysis and surface
   electrocardiographic correlations--a pilot study.
 \newblock \emph{Heart Rhythm}, 5\penalty0 (5):\penalty0 686--693, 2008.
+
+\bibitem[Durrer et~al.(1970)Durrer, Van~Dam, Freud, Janse, Meijler, and
+  Arzbaecher]{durrer1970}
+Dirk Durrer, R~Th Van~Dam, GE~Freud, MJ~Janse, FL~Meijler, and RC~Arzbaecher.
+\newblock Total excitation of the isolated human heart.
+\newblock \emph{Circulation}, 41\penalty0 (6):\penalty0 899--912, 1970.
+
+\bibitem[Faber and Rudy(2000)]{faber2000}
+Gregory~M Faber and Yoram Rudy.
+\newblock Action potential and contractility changes in [na+] i overloaded
+  cardiac myocytes: a simulation study.
+\newblock \emph{Biophysical Journal}, 78\penalty0 (5):\penalty0 2392--2404,
+  2000.
 
 \bibitem[Fischer et~al.(2007)Fischer, Stuhlinger, Nowak, Wieser, Tilg, and
   Hintringer]{Fischer07}
@@ -99,6 +158,13 @@ MARIA~S. Guillem, ANDREU~M. Climent, FRANCISCO Castells, DANIELA Husser, JOSE
 \newblock \emph{Journal of Cardiovascular Electrophysiology}, 20\penalty0
   (5):\penalty0 507--513, 2009.
 
+\bibitem[Hodgkin and Huxley(1952)]{Hodgkin52}
+A.~L. Hodgkin and A.~F. Huxley.
+\newblock A quantitative description of membrane current and its application to
+  conduction and excitation in nerve.
+\newblock \emph{The Journal of Physiology}, 117\penalty0 (4):\penalty0
+  500--544, Aug 1952.
+
 \bibitem[Hsu et~al.(2008)Hsu, Lin, Tai, Kao, Chang, Wongcharoen, Lo, Udyavar,
   Hu, Tso, Chen, Higa, and Chen]{Hsu08}
 Nei-Wei Hsu, Yenn-Jiang Lin, Ching-Tai Tai, Tsair Kao, Shih-Lin Chang,
@@ -107,6 +173,12 @@ Nei-Wei Hsu, Yenn-Jiang Lin, Ching-Tai Tai, Tsair Kao, Shih-Lin Chang,
 \newblock Frequency analysis of the fibrillatory activity from surface ecg lead
   v1 and intracardiac recordings: implications for mapping of af.
 \newblock \emph{Europace}, 10\penalty0 (4):\penalty0 438--443, 2008.
+
+\bibitem[Hund and Rudy(2004)]{hund2004}
+Thomas~J Hund and Yoram Rudy.
+\newblock Rate dependence and regulation of action potential and calcium
+  transient in a canine cardiac ventricular cell model.
+\newblock \emph{Circulation}, 110\penalty0 (20):\penalty0 3168--3174, 2004.
 
 \bibitem[J.~Requena-Carri\'{o}n(2013)]{Requena13b}
 A.~G.~Marques J.~Requena-Carri\'{o}n, F. Beltr\'{a}n-Molina.
@@ -152,6 +224,35 @@ YENN-JIANG Lin, SATOSHI Higa, TSAIR Kao, HAN-WEN Tso, CHING-TAI Tai, SHIH-LIN
   (11):\penalty0 1147--1153, 2007.
 \newblock ISSN 1540-8167.
 
+\bibitem[Lindblad et~al.(1996)Lindblad, Murphey, Clark, and
+  Giles]{lindblad1996}
+DS~Lindblad, CR~Murphey, JW~Clark, and WR~Giles.
+\newblock A model of the action potential and underlying membrane currents in a
+  rabbit atrial cell.
+\newblock \emph{American Journal of Physiology-Heart and Circulatory
+  Physiology}, 271\penalty0 (4):\penalty0 H1666--H1696, 1996.
+
+\bibitem[Livshitz and Rudy(2007)]{livshitz2007}
+Leonid~M Livshitz and Yoram Rudy.
+\newblock Regulation of ca2+ and electrical alternans in cardiac myocytes: role
+  of camkii and repolarizing currents.
+\newblock \emph{American Journal of Physiology-Heart and Circulatory
+  Physiology}, 292\penalty0 (6):\penalty0 H2854--H2866, 2007.
+
+\bibitem[Luo and Rudy(1991)]{luo1991}
+Ching-hsing Luo and Yoram Rudy.
+\newblock A model of the ventricular cardiac action potential. depolarization,
+  repolarization, and their interaction.
+\newblock \emph{Circulation research}, 68\penalty0 (6):\penalty0 1501--1526,
+  1991.
+
+\bibitem[Luo and Rudy(1994)]{luo1994}
+Ching-hsing Luo and Yoram Rudy.
+\newblock A dynamic model of the cardiac ventricular action potential. i.
+  simulations of ionic currents and concentration changes.
+\newblock \emph{Circulation research}, 74\penalty0 (6):\penalty0 1071--1096,
+  1994.
+
 \bibitem[M.~S.~Guillem(2013)]{Guillem13}
 J.~Millet Á.~Arenal F.~Fernández-Avilés J.~Jalife F.~Atienza O.~Berenfeld
   M.~S.~Guillem, A.~M.~Climent.
@@ -186,12 +287,46 @@ M.~Mansour, R.~Mandapati, O.~Berenfeld, J.~Chen, F.~H. Samie, and J.~Jalife.
   fibrillation in the isolated sheep heart.
 \newblock \emph{Circulation}, 103:\penalty0 2631--2636, May 2001.
 
+\bibitem[McAllister et~al.(1975)McAllister, Noble, and Tsien]{mcallister1975}
+Ro~E McAllister, D~Noble, and RW~Tsien.
+\newblock Reconstruction of the electrical activity of cardiac purkinje fibres.
+\newblock \emph{The Journal of physiology}, 251\penalty0 (1):\penalty0 1--59,
+  1975.
+
 \bibitem[Ng and Goldberger(2007)]{Ng07a}
 J.~Ng and J.~J. Goldberger.
 \newblock Understanding and interpreting dominant frequency analysis of af
   electrograms.
 \newblock \emph{Journal of Cardiovascular Electrophysiology}, 18\penalty0
   (6):\penalty0 680--685, Jun 2007.
+
+\bibitem[Noble and Noble(1984)]{noble1984}
+D~Noble and SJ~Noble.
+\newblock A model of sino-atrial node electrical activity based on a
+  modification of the difrancesco--noble (1984) equations.
+\newblock \emph{Proceedings of the Royal Society of London B: Biological
+  Sciences}, 222\penalty0 (1228):\penalty0 295--304, 1984.
+
+\bibitem[Noble(1962)]{noble1962}
+Denis Noble.
+\newblock A modification of the hodgkin-huxley equations applicable to purkinje
+  fibre action and pacemaker potentials.
+\newblock \emph{The Journal of Physiology}, 160\penalty0 (2):\penalty0
+  317--352, 1962.
+
+\bibitem[Noble et~al.(1998)Noble, Varghese, Kohl, and Noble]{noble1998}
+Denis Noble, Anthony Varghese, Peter Kohl, and Penelope Noble.
+\newblock Improved guinea-pig ventricular cell model incorporating a diadic
+  space, ikr and iks, and length-and tension-dependent processes.
+\newblock \emph{Canadian Journal of Cardiology}, 14\penalty0 (1):\penalty0
+  123--134, 1998.
+
+\bibitem[Nygren et~al.(1998)Nygren, Fiset, Firek, Clark, Lindblad, Clark, and
+  Giles]{nygren1998}
+A~Nygren, C~Fiset, L~Firek, JW~Clark, DS~Lindblad, RB~Clark, and WR~Giles.
+\newblock Mathematical model of an adult human atrial cell the role of k+
+  currents in repolarization.
+\newblock \emph{Circulation Research}, 82\penalty0 (1):\penalty0 63--81, 1998.
 
 \bibitem[Okumura et~al.(2012)Okumura, Watanabe, Kofune, Nagashima, Sonoda,
   Mano, Ohkubo, Nakai, and Hirayama]{okumura2012}
@@ -256,6 +391,14 @@ Frank~B. Sachse.
   electrophysiology, and mechanics}.
 \newblock Springer, Berlin, 2004.
 
+\bibitem[Sachse et~al.(2003)Sachse, Seemann, Chaisaowong, and
+  WEI{\ss}]{sachse2003}
+Frank~B Sachse, Gunnar Seemann, Kraisorn Chaisaowong, and DANIEL WEI{\ss}.
+\newblock Quantitative reconstruction of cardiac electromechanics in human
+  myocardium.
+\newblock \emph{Journal of cardiovascular electrophysiology}, 14\penalty0
+  (s10):\penalty0 S210--S218, 2003.
+
 \bibitem[Sanders et~al.(2005)Sanders, Berenfeld, Hocini, Jais, Vaidyanathan,
   Hsu, Garrigue, Takahashi, Rotter, Sacher, Scavee, Ploutz-Snyder, Jalife, and
   Haissaguerre]{Sanders05}
@@ -274,12 +417,33 @@ A.~C. Skanes, R.~Mandapati, O.~Berenfeld, J.~M. Davidenko, and J.~Jalife.
 \newblock \emph{Circulation}, 98\penalty0 (12):\penalty0 1236--1248, Sep 22
   1998.
 
+\bibitem[Ten~Tusscher et~al.(2004)Ten~Tusscher, Noble, Noble, and
+  Panfilov]{ten2004}
+KHWJ Ten~Tusscher, D~Noble, PJ~Noble, and AV~Panfilov.
+\newblock A model for human ventricular tissue.
+\newblock \emph{American Journal of Physiology-Heart and Circulatory
+  Physiology}, 286\penalty0 (4):\penalty0 H1573--H1589, 2004.
+
+\bibitem[Viswanathan et~al.(1999)Viswanathan, Shaw, and Rudy]{viswanathan1999}
+Prakash~C Viswanathan, Robin~M Shaw, and Yoram Rudy.
+\newblock Effects of ikr and iks heterogeneity on action potential duration and
+  its rate dependence a simulation study.
+\newblock \emph{Circulation}, 99\penalty0 (18):\penalty0 2466--2474, 1999.
+
 \bibitem[Väisänen et~al.(2008)Väisänen, Väisänen, Malmivuo, and
   Hyttinen]{Vaisanen08}
 J.~Väisänen, O.~Väisänen, J.~Malmivuo, and J.~Hyttinen.
 \newblock New method for analysing sensitivity distributions of
   electroencephalography measurements.
 \newblock \emph{Med Bio Eng Comput}, 46:\penalty0 101--8, 2008.
+
+\bibitem[Zeng et~al.(1995)Zeng, Laurita, Rosenbaum, and Rudy]{zeng1995}
+Jinglin Zeng, Kenneth~R Laurita, David~S Rosenbaum, and Yoram Rudy.
+\newblock Two components of the delayed rectifier k+ current in ventricular
+  myocytes of the guinea pig type theoretical formulation and their role in
+  repolarization.
+\newblock \emph{Circulation Research}, 77\penalty0 (1):\penalty0 140--152,
+  1995.
 
 \bibitem[Zlochiver et~al.(2008)Zlochiver, Yamazaki, Kalifa, and
   Berenfeld]{Zlochiver08}
