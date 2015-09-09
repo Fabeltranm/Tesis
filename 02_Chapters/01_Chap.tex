@@ -8,7 +8,7 @@
   la actividad electrica de la células y el tejido  cardiaco en 2D y 3D
   realistas. A posteriori se analizan los diferentes módelos para la generación
   y propagación de la actividad eléctrica del miocardio. se hace una
-  descripción del módelo autómata Celular propuesto en \cite{Alonso-Atienza05},
+  descripción del módelo \ac{AC} propuesto en \cite{Alonso-Atienza05},
   como un módelo de baja carga computacional. se presenta el módelo  \ac{LRd}
   \cite{luo1994, livshitz2007}, módelo celular cardiaco que representar el
   comportamiento de las corrientes ionicas de las células ventriculares. Para
@@ -83,7 +83,7 @@ permite bombear la sangre al cuerpo, sístole auricular y ventricular
 y  la diástole, movimientos de contracción y dilatación respectivamente. la
 generación de estos eventos cardiacos, el músculo cardiaco se autoestimula y
 la secuencia de las contracciones cardiacas son producida  por la
-despolarización de las celulas cardiacas, y  propagada por el miocardio, a través del sistema de conducción del corazón.
+despolarización de las células cardiacas, y  propagada por el miocardio, a través del sistema de conducción del corazón.
 
 
 
@@ -113,7 +113,7 @@ medio intracelular está a menor potencial que el extracelular. La membrana es
  permeabilidad de la membrana se modifica, lo que conlleva a que los iones de
  potasio puedan salir de la célula de una forma más eficiente de lo que pueden
  llegar a entrar los iones de sodio, que provoca la despolarización celular, es
- decir, un cambio en el potencial eléctrico transmembrana. cuando la celula esta
+ decir, un cambio en el potencial eléctrico transmembrana. cuando la célula esta
  despolarizada se habla de esta manera de estado activo. Inmediatamente, el
  equilibrio i onico tiende a restablecerse de forma progresiva durante el
  proceso denominado repolarización.
@@ -184,15 +184,15 @@ durante la fase de reposo debido,principalmente, al cierre gradual de los
 canales de potasio y a que la entrada masiva de sodio en el interior de la
 célula no es tan rápida como en las celular del ventriculo. Al llegar al
 potencial umbral, se da inicio a la despolarización. en estos nodos se evidencia
-la ausencias de la fase de reposo, vista en el \ac{APD} de las celulas ventriculares. 
+la ausencias de la fase de reposo, vista en el \ac{APD} de las células ventriculares. 
 
 
-Las celulas cardiacas tiene la propiedad de excitabilidad, funcion de \ac{APD}
+Las células cardiacas tiene la propiedad de excitabilidad, funcion de \ac{APD}
 y del \ac{DI}, y que, en la mayorias de las células del corazón, es
 consecuencia de un estimula externos. Pero esta propiedad  de excitabilidad, no
 se cumple, por un periodo dentro del tiempo \ac{AP}. El tiempo refractario, o
 fase de refractariedad, como se le denomina a este periodo de no exitabilidad,
-es el tiempo en el que la célular exitable no responde a un estimula externo,
+es el tiempo en el que la celular exitable no responde a un estimula externo,
 sin importar su intensidad. 
 
 Por consiguiente, al variar la frecuencia de estimulación del corazon
@@ -270,7 +270,7 @@ los módelos matematicos de la membrana celular, que describen el
 flujo de corrientes se basan, principalmente, en el 
 trabajo desarrollado por Hodgkin-Huxley \cite{Hodgkin52}. este módelo se observa
 en la figura \ref{fig:circuitomembrana}. el módelo estas  basado en las curvas de corrietne 
-nedidas en unsa celula nerviosa, por lo cual no se evidencia la contribución de
+nedidas en unsa célula nerviosa, por lo cual no se evidencia la contribución de
 la corriente de Calcio, que presenta la excitación en los miocitos. en la figura 
 \ref{fig:circuitomembrana}, se presenta las contribuciones de las corrientes
 generadas por el flujo de sodio ($I_{N_a}$), de potasio ($I_{k}$),  y otros
@@ -305,9 +305,9 @@ corriente de estimulación aplicada desde el medio extracelular.
 
 El módelo de Hodgkin-Huxley, se ha modificado por diversos
 autores, permitiendo simular miocitos de zonas especificas del tejido cardiaco,
-y con mayor complejida. En \cite{Sachse04}, se compila una listado de diversos
+y con mayor complejida. En \cite{Sachse04}, se compila un listado de diversos
 autores, que han modelados los miocitos. Los primeros trabajos basados en
-el módelo de Hodgkin-Huxleym, y que dan inicio al módelo de celulas
+el módelo de Hodgkin-Huxleym, y que dan inicio al módelo de células
 cardiacas, en especifico las fibras de purkinje, fueron los trabajo de Noble
 \cite{noble1962} y McAllister,R.E \cite{mcallister1975}. 
 
@@ -346,11 +346,11 @@ actualziaciones.  En \cite{zeng1995}, se separa la contribución de las
 corrientes de potasio, $I_{Kr}$ y $I_{Ks}$, en contribución rapida y lenta.
 a posterior se estudia los efectos de $I_{Kr}$ y $I_{Ks}$  en el \ac{APD}, dando
 como resultado la reformulación de la coriente $I_{Ks}$ acorde a tres tipos de
-celulas diferenten, epicardio, endocardio  y miocardio. este estudio se
+células diferenten, epicardio, endocardio  y miocardio. este estudio se
 encuentra en \cite{viswanathan1999}. Un año mas tarde en \cite{faber2000} se 
 incluye en el módelo el formalizmo matemático de la corriente generado por el intercambio de
 sodio-calcio. Asi mismo, Hund y Rudy en \cite{hund2004}, desarrolaron el
-formalismo matemático que modelar la electrofisiología de una celula ventricular
+formalismo matemático que modelar la electrofisiología de una célula ventricular
 del perro, \ac{HRd}.
 
  Livshitz y  Rudy \cite{livshitz2007}  modifican los módelos \ac{LRd} y
@@ -378,18 +378,23 @@ del perro, \ac{HRd}.
 \end{figure}
 
  
-\subsubsection{autómata celular } 
+\subsubsection{Autómata Celular } 
 
 
 
+Los autómatas celulares son ampliamente usados en diversas disciplinas. De igual
+maneras, en el contexto de cardiologia celular, un número bastante amplio de
+autores han modelado la actividad de la célula por medio del autómata celular.
+La ventaja de utilizar este sistema de \ac{AC}, es la eficiencia
+computacional que ofrece la versatilidad de variar las propiedades de conducción.
 
 Partiendo de la actividad eléctrica del miocito,  y principalmente de las
-caracteristicas del \ac{AP}, en el autómata celular propuesta en 
+caracteristicas del \ac{AP}, en el \ac{AC}propuesta en 
 \cite{Alonso-Atienza05} la celular puede adopta 3 estados diferentes:
 
 
 \begin{itemize}
-\item Reposo: periodo  durante el cual la celula esta relaja  y puede ser
+\item Reposo: periodo  durante el cual la célula esta relaja  y puede ser
 estimulada por una fuente externa 
 \item Refractario 1: la célula se encuentra excitada  y ademas tiene el
 suficiente potencial para excitar a células contiguas.
@@ -398,7 +403,7 @@ del \ac{AP} es bajo, y por lo cual pierde la capacidad de excitar a las células
 vecinas.
 \end{itemize}
 
-De esta manera, el periodo refractario 1 y 2 es el tiempo  en el cual la celula
+De esta manera, el periodo refractario 1 y 2 es el tiempo  en el cual la célula
 se encuentras despolarizada, y  por ende la despolarización del micito, sucede
 en la transición del estado de Reposo al estado Refractario 1. Por su parte, la
 fase 1 de repolalización parcial de \ac{AP}, debido a las corrientes de salida
@@ -409,19 +414,19 @@ estado Refractario 2 al estado de Reposo.
 
 La figura XXXX, muestra las caracteristicas del \ac{AP}. Asi mismo,las
 propiedades de restitución hacen que el \ac{APD} dependan directamente de la
-tasa de estimulación a la que este sometida la membrana célular. Al tener una
+tasa de estimulación a la que este sometida la membrana celular. Al tener una
 frecuencia de estimulación elevada  se observa la reducción del \ac{DI}, y como causa, la
 reducción del \ac{APD}. Sucede lo contrario cuando el ritmo de excitación es
-bajo. De esta manera, en el autómata celular el tiempo es el estado en reposo es
+bajo. De esta manera, en el \ac{AC} el tiempo es el estado en reposo es
 igual al \ac{DI} y para el \ac{APD}, se fija los tienpo de duración de los
 estados refractarios de manera fija, Es decir, el tiempo que permanece
-la celula es en estado Refractaio 1 es una fracción del tiempo total del
+la célula es en estado Refractaio 1 es una fracción del tiempo total del
 \ac{APD}, por lo general el 10\%, y el restatan 90\% es, por lo tanto, el tiempo
-que dura la célula en el estado refractario 2. Es asi, como los tienpo de
-repolaizacion total y parcial se fijan acorde al valor de \ac{APD} predecesor.
+que dura la célula en el estado refractario 2. Es asi, como los tiempo de
+repolaización total y parcial se fijan acorde al valor de \ac{APD} predecesor.
 
 En cuanto a la despolarización del micito, en el autámata celular se da en
-función de la probabilidad de excitación de la celula cardiaca. 
+función de la probabilidad de excitación de la célula cardiaca. 
 
 falta la figura
 
@@ -443,58 +448,114 @@ la velocidad de conducción.
 
 \subsubsection{Módelo de la membrana en el autómata}
 
-Los autómatas celulares son ampliamente usados en diversas disciplinas. De igual
-maneras, en el contexto de cardiologia celular, un número bastante amplio de
-autores han modelado el sistema de propagación de excitación del corazón, por
-medio del autómata celular. La ventaja de simular la dinámica cardiaca, por
-medio del autómata celular, es la eficiencia computacional que ofrece la
-versatilidad de variar las propiedades de conducción. En general, el módelo
-automata celular de la membrana esta conformado en primera instancia, como se
-observa en la Figura \ref{fig:automata1},  por la red discreta de nodos que
-representa la estructura espacial del tejido cardiaco, y en segunda instancia, la representación del autómata celular de cada
-nodo que representan los miocitos. Por lo tanto, se dice que cada miosito,
-cuenta con un número $N$ de celulas conectadas y de esta forma se
+El módelo \ac{AC} de la membrana esta conformado, como se observa en la Figura
+\ref{fig:automata1},  por la red discreta de nodos que representa la estructura
+espacial del tejido cardiaco, y en segunda instancia, la representación del \ac{AC} de cada nodo que representan los miocitos. Por lo tanto, se dice que cada miocito,
+cuenta con un número $N$ de células conectadas y de esta forma se
 conforma la región de vecindad  usada para  estimar la propogación del \ac{AP}.
-la comunicación entre las celulas vecinas  es de forma determinista, uniforme  y
+la comunicación entre las células vecinas  es de forma determinista, uniforme  y
 sincrónica.
 
 En esta \nombreDoc, el módelo del tejido cardiaca, se basa en el 
-trabajo realzado en \cite{Alonso-Atienza05}, donde se concibe el musculo
+trabajo realizado en \cite{Alonso-Atienza05}, donde se concibe el musculo
 cardíaco como un conjunto de elementos (miocitos) discretos interconectados
-entre si. y el \ac{AP} de cada celula es representada por 3 estados posibles:
-Reposo, refractario 1 y 2. El cambio de  de los estados de cada célula, viene
-dado en función del estado de los elementos vecinos y de  acuerdo al estado
-predecesor.
+entre si. Se observa en la Figura \ref{fig:automata1} (a) que el \ac{AP} de
+cada célula es representada por 3 estados posibles:  Reposo, refractario 1 y 2.
+El cambio de  de los estados de cada célula, viene dado en función del estado
+de los elementos vecinos y de  acuerdo al estado predecesor. El valor de voltaje
+de la membrana, es prototipado a partir del modelo \ac{LRd}
+\cite{Alonso-Atienza05}
+
 
 
   \begin{figure}
 \centering
  \epsfig{file = ./images/01_chap/automata1.eps,width = 14cm} 
-\caption{Represetación del módelo del autómata celular. (a)\ac(AP) es modelado
-acorde a las fases de despolarización de la celula y los tres estados del
+\caption{Represetación del módelo del autómata celular. (a)Prototipo de \ac(AP)
+con niveles de $V_m$. el nivel de $V_m$ se asocia a los tres estados del
 automata definidos en \cite{Alonso-Atienza05} (b) Cada celda esta modelada por
-medio del autómata celular, que se conecta con 4 vecinos, la vecinda  tiene
-forma de cruz  y esta commpuesta por 5 celdas. (c) representación de la
+medio del autómata celular, que se conecta con 4 vecinos, la vecinda  tiene forma de cruz  y esta commpuesta por 5 celdas. (c) representación de la
 propagacion del \ac{AP} en un tejido de 100x100 celdas.}
   \label{fig:automata1}
 \end{figure}
 
+En la propagación del \ac{AP}, la despolarización de la célula, en el modelo
+\cite{Alonso-Atienza05}, se define en terminos probabilísticos y , se tienen en
+cuenta el grado de excitabilidad de la célula (E) y la cantidad de celdas
+exitadas de la vecindad (Q). Por lo tanto, si ${P_{j}}^{exc}$ es la
+probabilidad de excitación de la célula, decimos:
+
+\begin{equation}\label{eq:Propaga}
+P_j^{exc}= k\cdot E\cdot Q
+\end{equation}
+
+Donde $k$, es una constante de proporcionalidad. $E$ viene determinda por las
+curvas de restitución de \ac{CV} y $Q$ es definida en función del número de
+células que se encuentran en estado Refractario 1. Por lo tanto, al aumentar
+\ac{CV} la ${P_{j}}^{exc}$ de la célula $i$ aumente, y de igual manera, sucede
+si se aumenta el número de células vecinas recien estimuladas.
+
+Cada célula en el automa celular tiene la capacidad de excitar a las
+células vecinas sólo cuando dicha célula se encuentra en el estado
+Refractario 1. Se codifican los estados de la célula en (A):
+1 cuando la célula esta en estado refractario 1 y, 0 si la
+célula ha perdido la propiedad de excitar a otras células
+\cite{Alonso-Atienza05}, por lo tanto, $P_j^{exc}$ esta definida por:
+
+
+\begin{equation}\label{eq:Propaga2}
+P_j^{exc}= k \cdot E\cdot\sum_{i \neq j}\frac{A_i}{d_{ji}^2}
+\end{equation}
+
+Donde $i$ indica una celda pertenecientes a la vecindad de la célula $j$. $A_i$,
+representa la codificación de los dos estados de la célula, (1 o 0) y $d_{ji}$ 
+es la distancia de conexión entre la celda $i$ y la celda $j$.
+
+
+Aca seria bueno poner como se generan las dinamicas variando cv y apd, eso lo
+tengo yo ahi en el computador de la sun,,, de esta forma validamos el uso de
+este automata para la tesis
+
+Por lo tanto, se puede hablar que el módelo del muúculo cardiaco, a través de
+\ac{AC}, es una simplificación del tejido cardiaco, que permite  simular las
+propiedades de propagacion del \ac{AP}.
 
 
 \subsubsection{módelo de reaccion-difusión}
 
+Los módelos reaccion-difusión para representa la dináica del tejido cardiaco,
+por un lado modelan la conexión  entre las células a partir de
+resistencias eléctricas y, por otro lado la actividad eléctrica de la célula es
+reproducica con la simulación de los canales  y corrientes iónicas. A primera
+instancia se observa que este tipo de modélo es mucho mas realistas y por lo
+tanto, la dinamicas cardiacas complejas son reproducidas de mejor manera.
 
- Denominados de reacción-difusión, reproducen la dinámica de membrana simulando
- el paso de las corrientes iónicas a través de los canales iónicos y el
- potencial de membrana asociado16-18. La conexión entre las células se modela
- mediante resistencias eléctricas y la propagación del impulso se calcula
- resolviendo las ecuaciones que gobiernan los circuitos eléctricos19,20. Estos
- módelos son mucho más realistas y reproducen mejor las situaciones complejas,
- pero requieren una carga computacional muy elevada y a menudo son necesarias
- muchas horas de cálculo en multiprocesadores para poder simular 1 o 2 segundos
- de actividad eléctrica21.
+Los sistemas de reacción-difusión, utilizan ecuaciones diferenciales no lineales
+para describir el proceso de excitación de la celular y propagación.
+
+\begin{equation}\label{eq:r-d}
+\frac{\partial{u_i}}{\partial{t}}=f_i(u_i, \ldots,u_n) + \nabla \dot
+(\mathbf{D}_i \nabla u_i), i=1,\ldots.n
+\end{equation}
 
 
+Para el musculo cardiaco, se considera que el tejido se comporta
+como un sistema compuesto por tres medios continuos \cite{holden1997}, el medio intrecelular, el
+medio extracelular y la membrana celular. lo que conlleva a representar las
+celulas electrofisiológicas con la aproximación de dos modelos el modelo bidominio y el modelo momodominio.
+
+
+En el modelo bidominio \cite{henriquez1992 miller1978}, el tejido cardiaco está
+compuesto por dos medios continuos, uno intracelular y otro extracelular que ocupan el
+mismo espacio físico. el medio intracelular representa el interior de la célula,
+mientras que el medio extracelular modela el espacio entre célular. se habla de
+que los espacion son continuosm en el sentido  que las corrientes pueden fluir
+de una céula a otra, a través del medio intracelular (debido a las uniones
+comunicantes), sin tener que pasar por el medio extracelular. 
+
+
+no se que poner aca si las ecuaciones o dejar aca  y ya  y hablar mas bien de
+lso modelso 2d  y 3d
 
 
 \section{Sistemas de medida}

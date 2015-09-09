@@ -1,4 +1,4 @@
-\begin{thebibliography}{58}
+\begin{thebibliography}{59}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -164,6 +164,11 @@ A.~L. Hodgkin and A.~F. Huxley.
   conduction and excitation in nerve.
 \newblock \emph{The Journal of Physiology}, 117\penalty0 (4):\penalty0
   500--544, Aug 1952.
+
+\bibitem[Holden and Panfilov(1997)]{holden1997}
+AV~Holden and AV~Panfilov.
+\newblock Modelling propagation in excitable media.
+\newblock \emph{Computational biology of the heart}, pages 65--99, 1997.
 
 \bibitem[Hsu et~al.(2008)Hsu, Lin, Tai, Kao, Chang, Wongcharoen, Lo, Udyavar,
   Hu, Tso, Chen, Higa, and Chen]{Hsu08}

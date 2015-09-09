@@ -6,6 +6,10 @@ A level-1 auxiliary file: 00_varios/resumen.aux
 A level-1 auxiliary file: 00_varios/abstract.aux
 A level-1 auxiliary file: 01_introduction/introduction.aux
 A level-1 auxiliary file: 02_Chapters/01_Chap.aux
+White space in argument---line 60 of file 02_Chapters/01_Chap.aux
+ : \citation{henriquez1992
+ :                         miller1978}
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: 02_Chapters/02_Chap.aux
 A level-1 auxiliary file: 02_Chapters/03_Chap.aux
 A level-1 auxiliary file: 02_Chapters/04_Chap.aux
@@ -13,7 +17,7 @@ A level-1 auxiliary file: 02_Chapters/05_Chap.aux
 A level-1 auxiliary file: 03_Appendix/01_appendix.aux
 The style file: plainnat.bst
 Database file #1: biblio_tesis.bib
-Repeated entry---line 2368 of file biblio_tesis.bib
+Repeated entry---line 2397 of file biblio_tesis.bib
  : @article{Alonso-Atienza05
  :                          ,
 I'm skipping whatever remains of this entry
@@ -63,45 +67,45 @@ Too many commas in name 1 of "M.~S. Guillem, A.~M. Climent, J.~Millet, Á.~Arenal
 while executing---line 1429 of file plainnat.bst
 Too many commas in name 1 of "M.~S. Guillem, A.~M. Climent, J.~Millet, Á.~Arenal, F.~Fernández-Avilés,J.~Jalife, F.~Atienza, O.~Berenfeld" for entry Guillem13
 while executing---line 1429 of file plainnat.bst
-You've used 58 entries,
+You've used 59 entries,
             2773 wiz_defined-function locations,
-            1010 strings with 18918 characters,
-and the built_in function-call counts, 34357 in all, are:
-= -- 2928
-> -- 2632
-< -- 21
-+ -- 883
-- -- 825
-* -- 3249
-:= -- 5388
-add.period$ -- 178
-call.type$ -- 58
-change.case$ -- 444
-chr.to.int$ -- 58
-cite$ -- 116
-duplicate$ -- 1222
-empty$ -- 2385
-format.name$ -- 905
-if$ -- 6993
+            1017 strings with 19054 characters,
+and the built_in function-call counts, 34866 in all, are:
+= -- 2979
+> -- 2653
+< -- 23
++ -- 890
+- -- 831
+* -- 3281
+:= -- 5459
+add.period$ -- 181
+call.type$ -- 59
+change.case$ -- 449
+chr.to.int$ -- 59
+cite$ -- 118
+duplicate$ -- 1249
+empty$ -- 2427
+format.name$ -- 914
+if$ -- 7108
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 62
-newline$ -- 301
-num.names$ -- 232
-pop$ -- 813
+missing$ -- 63
+newline$ -- 306
+num.names$ -- 236
+pop$ -- 823
 preamble$ -- 1
-purify$ -- 390
+purify$ -- 394
 quote$ -- 0
-skip$ -- 1005
+skip$ -- 1030
 stack$ -- 0
-substring$ -- 1526
-swap$ -- 87
-text.length$ -- 2
+substring$ -- 1552
+swap$ -- 95
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 618
+type$ -- 629
 warning$ -- 0
-while$ -- 266
+while$ -- 272
 width$ -- 0
-write$ -- 767
-(There were 21 error messages)
+write$ -- 780
+(There were 22 error messages)

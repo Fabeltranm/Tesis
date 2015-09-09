@@ -8,7 +8,7 @@
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Cambio esta curva esta es vil copia del libro \relax }}{16}{figure.caption.9}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Circuito equivalente de la membrana celular Hodgkin-Huxley \relax }}{18}{figure.caption.10}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces bla bla ). tomado de la web de rudy \relax }}{20}{figure.caption.11}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Represetaci\'on del m\'odelo del aut\'omata celular. (a)\ac (AP) es modelado acorde a las fases de despolarizaci\'on de la celula y los tres estados del automata definidos en \cite {Alonso-Atienza05} (b) Cada celda esta modelada por medio del aut\'omata celular, que se conecta con 4 vecinos, la vecinda tiene forma de cruz y esta commpuesta por 5 celdas. (c) representaci\'on de la propagacion del \ac {AP} en un tejido de 100x100 celdas.\relax }}{22}{figure.caption.12}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Represetaci\'on del m\'odelo del aut\'omata celular. (a)Prototipo de \ac (AP) con niveles de $V_m$. el nivel de $V_m$ se asocia a los tres estados del automata definidos en \cite {Alonso-Atienza05} (b) Cada celda esta modelada por medio del aut\'omata celular, que se conecta con 4 vecinos, la vecinda tiene forma de cruz y esta commpuesta por 5 celdas. (c) representaci\'on de la propagacion del \ac {AP} en un tejido de 100x100 celdas.\relax }}{22}{figure.caption.12}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces ejemplo de dipolos (a) perfectamente correlacionados, (b)) parcialmente correlacionados y (c) perfectamente incorrelacionadas .\relax }}{30}{figure.caption.13}
 \addvspace {10\p@ }

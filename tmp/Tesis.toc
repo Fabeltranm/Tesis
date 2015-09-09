@@ -17,14 +17,14 @@
 \contentsline {section}{\numberline {2.2}M\'odelo Electrofisiol\'ogico}{17}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}M\'odelo de la C\'elula}{17}{subsection.2.2.1}
 \contentsline {subsubsection}{\numberline {2.2.1.1}M\'odelo Luo-Ruby}{19}{subsubsection.2.2.1.1}
-\contentsline {subsubsection}{\numberline {2.2.1.2}aut\'omata celular }{19}{subsubsection.2.2.1.2}
+\contentsline {subsubsection}{\numberline {2.2.1.2}Aut\'omata Celular }{19}{subsubsection.2.2.1.2}
 \contentsline {subsection}{\numberline {2.2.2}m\'odelo de Tejido}{21}{subsection.2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.2.1}m\'odelo de la membrana en el aut\'omata}{21}{subsubsection.2.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2.2}m\'odelo de reaccion-difusi\'on}{22}{subsubsection.2.2.2.2}
-\contentsline {section}{\numberline {2.3}Sistemas de medida}{22}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Sistema de Electrodos}{23}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Volumen equivalente de sistema de electrodos}{23}{subsection.2.3.2}
-\contentsline {section}{\numberline {2.4}Conclusiones}{23}{section.2.4}
+\contentsline {subsubsection}{\numberline {2.2.2.1}M\'odelo de la membrana en el aut\'omata}{21}{subsubsection.2.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2.2}m\'odelo de reaccion-difusi\'on}{23}{subsubsection.2.2.2.2}
+\contentsline {section}{\numberline {2.3}Sistemas de medida}{23}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Sistema de Electrodos}{24}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Volumen equivalente de sistema de electrodos}{24}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}Conclusiones}{24}{section.2.4}
 \contentsline {chapter}{\numberline {3}Definici\'on del Espectro}{25}{chapter.3}
 \contentsline {section}{\numberline {3.1}Introducci\'on}{26}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Correlaci\'on de Se\~nales}{26}{subsection.3.1.1}
