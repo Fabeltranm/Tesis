@@ -1,4 +1,4 @@
-\begin{thebibliography}{59}
+\begin{thebibliography}{61}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -158,6 +158,13 @@ MARIA~S. Guillem, ANDREU~M. Climent, FRANCISCO Castells, DANIELA Husser, JOSE
 \newblock \emph{Journal of Cardiovascular Electrophysiology}, 20\penalty0
   (5):\penalty0 507--513, 2009.
 
+\bibitem[Henriquez(1992)]{henriquez1992}
+Craig~S Henriquez.
+\newblock Simulating the electrical behavior of cardiac tissue using the
+  bidomain model.
+\newblock \emph{Critical reviews in biomedical engineering}, 21\penalty0
+  (1):\penalty0 1--77, 1992.
+
 \bibitem[Hodgkin and Huxley(1952)]{Hodgkin52}
 A.~L. Hodgkin and A.~F. Huxley.
 \newblock A quantitative description of membrane current and its application to
@@ -297,6 +304,12 @@ Ro~E McAllister, D~Noble, and RW~Tsien.
 \newblock Reconstruction of the electrical activity of cardiac purkinje fibres.
 \newblock \emph{The Journal of physiology}, 251\penalty0 (1):\penalty0 1--59,
   1975.
+
+\bibitem[Miller and Geselowitz(1978)]{miller1978}
+Walter~T Miller and David~B Geselowitz.
+\newblock Simulation studies of the electrocardiogram. i. the normal heart.
+\newblock \emph{Circulation Research}, 43\penalty0 (2):\penalty0 301--315,
+  1978.
 
 \bibitem[Ng and Goldberger(2007)]{Ng07a}
 J.~Ng and J.~J. Goldberger.

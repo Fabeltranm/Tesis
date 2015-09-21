@@ -538,20 +538,58 @@ para describir el proceso de excitación de la celular y propagación.
 (\mathbf{D}_i \nabla u_i), i=1,\ldots.n
 \end{equation}
 
+Donde $u_i$ es la variable de estado, para el caso del tejido cardiaco $u_i$
+represtna la diferencia de potencial de la transmembrana, la conductividad de
+los canales  y la concentración iónica \cite{Sachse04}. $f_i$ es el grado de excitación, y
+$\mathbf{D}_i$ el tensor de difusión. a su vez el cambio de estado es
+determinado por $f_i$ y $\nabla \dot(\mathbf{D}_i \nabla u_i)$
 
 Para el musculo cardiaco, se considera que el tejido se comporta
-como un sistema compuesto por tres medios continuos \cite{holden1997}, el medio intrecelular, el
-medio extracelular y la membrana celular. lo que conlleva a representar las
-celulas electrofisiológicas con la aproximación de dos modelos el modelo bidominio y el modelo momodominio.
+como un sistema compuesto por tres medios continuos \cite{holden1997}, el medio
+intrecelular, el medio extracelular y la membrana celular. lo que conlleva a
+representar las celulas electrofisiológicas con la aproximación de dos modelos
+el modelo bidominio y el modelo momodominio.
 
 
-En el modelo bidominio \cite{henriquez1992 miller1978}, el tejido cardiaco está
+Estos dos modelos, el bidominio  y monodominio, combinan los
+modelos electrofisiológios, con el flujo de corriente a través de los espacios
+extracelulares y/o intracelulares, respectivamtente. Como se observa en la
+figura \ref{fig:mono_bidominio}, este enfoque biofisico, une el modelo de
+menbrana celular con el modelo de corrientes, este último modela el acoplamiento
+eléctrico de la conductividad de membrana celular con el medio, a través de
+resistencias. La diferencia de los modelos bidominos y monodominos, es por lo
+tanto, el número de dominos que maneja el modelo, para el flujo de la corriente
+eléctrica.
+
+El modelo monodominio incorpora los efectos de la conductancia
+intracelular, y asume que la diferencia de potencial entre el medio extracelular  y la
+menbrana es cero. en otras palabras el potencial de membrana $V_m$, es equivalente al
+potencia intracelual $\theta_i$. tomando la ecuación \ref{eq:r-d}
+
+
+
+
+[ 242 , 243 , 244 ] o tensores de conductividad . En cada
+paso de tiempo y para cada celda se realizan dos cálculo
+
+
+En el modelo bidominio \cite{henriquez1992, miller1978}, el tejido cardiaco está
 compuesto por dos medios continuos, uno intracelular y otro extracelular que ocupan el
 mismo espacio físico. el medio intracelular representa el interior de la célula,
 mientras que el medio extracelular modela el espacio entre célular. se habla de
 que los espacion son continuosm en el sentido  que las corrientes pueden fluir
-de una céula a otra, a través del medio intracelular (debido a las uniones
+de una célula a otra, a través del medio intracelular (debido a las uniones
 comunicantes), sin tener que pasar por el medio extracelular. 
+
+
+\begin{figure}
+\centering
+ \epsfig{file = ./images/01_chap/modelosbiofisicos.eps,width = 14cm} 
+\caption{Diagrama del modelo de tejido unidimensional simulado. Modelos
+circuitales biofísicos: (a) monodomino y (b) bidominio}
+  \label{fig:mono_bidominio}
+\end{figure}
+
 
 
 no se que poner aca si las ecuaciones o dejar aca  y ya  y hablar mas bien de

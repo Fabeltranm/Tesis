@@ -124,5 +124,5 @@
 (indexentry :tkey (("CV" "\\glossentry{CV}") ) :locref "{}{22}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("CV" "\\glossentry{CV}") ) :locref "{}{22}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("AP" "\\glossentry{AP}") ) :locref "{}{23}" :attr "pageglsnumberformat" ) 
-(indexentry :tkey (("LF" "\\glossentry{LF}") ) :locref "{}{24}" :attr "pageglsnumberformat" ) 
-(indexentry :tkey (("DF" "\\glossentry{DF}") ) :locref "{}{25}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("LF" "\\glossentry{LF}") ) :locref "{}{25}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("DF" "\\glossentry{DF}") ) :locref "{}{27}" :attr "pageglsnumberformat" ) 
