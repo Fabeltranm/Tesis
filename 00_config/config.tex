@@ -42,6 +42,8 @@
 \usepackage[spanish,activeacute]{babel}	% Soporte para castellano
 \fontfamily{garamond}
 
+\usepackage{xcolor}
+
 %% PARRAFOS
 
 \usepackage{multicol}		% utilización de multicolumna
@@ -169,6 +171,12 @@ shortcuts,hyperfirst=false,sanitize=none]{glossaries}
 \bigskip%
 }
 
+% configiraciòn de comentarios y cosas por hacer 
+
+% TODO
+\newcommand{\TODO}[1]{{\color{orange} TODO: #1}}
+% comentarios Director
+\newcommand{\commentDir}[1]{{\color{red} #1}}
 
 
 %%% FIN CONFIG

@@ -1,13 +1,12 @@
 % -*-coding: iso-latin-1  -*-
 
 \chapter{Introducción}
-
 \begin{resumen}
 La presente \nombreDoc tiene como pilares el estudio de los efectos  espectrales
-en sistemas de electrodos mediante \ldots procesados digital de señales
+en sistemas de electrodos mediante \ldots procesados digital de señales.
 ...........
 
-TODO: metodologías, aprotaciones y objetivos especifificos
+\TODO{metodologías, aportaciones y objetivos especifificos}
 
 \end{resumen} 
 
@@ -16,37 +15,45 @@ TODO: metodologías, aprotaciones y objetivos especifificos
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 \section{Motivación}
-Las fibrilaciones son una de las arritmias cardiacas de mas interés 
-y de las cuales no se conoce con claridad sus mecanismos de activación. Se ha
-estudiado bastante, que una de las causas de las fibrilaciones cardiacas viene
+Las fibrilaciones son una de las arritmias cardiacas de mayor
+interés y de las cuales no se conoce con claridad sus mecanismos de activación. Se ha
+estudiado bastante que una de las causas de las fibrilaciones cardiacas, viene
 dada por zonas del tejido cardiaco que presentan altas frecuencias en la
-actividad cardíaca. Es así como los mapas de \ac{DF} es una técnica muy usada
-para identificar dichas zonas  que son potencialmente causantes de la
-fibrilación cardiaca. En \cite{Berenfeld10}, se da una  aproximación a los
-mecanismos en fibrilación auricular, con los mapas de \ac{DF} intracardíacos,
-los cuales han sido usados como guía para las terapias de fibrilación. En
-estudios con pacientes, como se observa en \cite{Sanders05, Atienza09,
-atienza2011, kumagai2013, okumura2012} los mapas de \ac{DF}, han permitido
-localizar las zonas cardiacas de alta frecuencia durante la \ac{AF}, lo que
-proporciona una estimación de la tasa de activación local del miocardio. De
-esta manera (bibliografía) es ampliamente aceptado que, identificar la regiones
-del tejido cardiaco con re-entrada durante la fibrilación cardiaca, es de gran
-importancia para el diagnóstico y el tratamiento de este tipo de arritmias.
+actividad cardíaca. Es así como, por la correlación entre la \ac{DF} y
+la activación de los rotores que generan dichos transtornos cardiacos, los mapas
+de \ac{DF} son una técnica muy usada para identificar las zonas que son
+potencialmente causantes de la fibrilación cardiaca. En \cite{Berenfeld10}, se
+da una  aproximación a los mecanismos en fibrilación auricular, con los mapas
+de \ac{DF} intracardíacos, los cuales han sido usados como guía para las
+terapias de fibrilación. En estudios con pacientes,  como se observa en
+\cite{Sanders05, atienza2009, atienza2011, kumagai2013, okumura2012} los mapas
+de \ac{DF}, han permitido localizar las zonas cardiacas de alta frecuencia durante
+la \ac{AF}, lo que proporciona una estimación de la tasa de activación local del
+miocardio. De esta manera \TODO{(bibliografía)} es ampliamente aceptado que,
+identificar la regiones del tejido cardiaco que presentas mecanismos de
+re-entrada durante la fibrilación cardiaca, es de gran importancia para el
+diagnóstico y el tratamiento de este tipo de arritmias.
 
+En otras palabras los mapas de \ac{DF}, por medio del análisis espectral,
+representan una estimación de la tasa de activación local del tejido cardiaco. 
+La adquisición de señales cardiacas, para realizar el posterior análisis de los
+mapas de \ac{DF} y asi localizar los sustratos arritmicos que seran intervenidos
+en los procedimientos de ablación de arritmias cardíacas, se realiza en muchas
+casos con sistemas de navegación invasivos. Ejemplo de estos sistemas es la
+cartografía de contacto, que utiliza un único electrodo bipolar localizado en
+diferentes regiones, de forma secuencial, del endocardio. CARTO
+\cite{gepstein1997} es posiblemente el sistema de contacto de mayor uilización
+para realizar el mapeo de arritmias; en él el electrodo adquiere la actividad
+eléctrica del sustrato mientras es desplazado secuencialmente por el edocardio.
+También se encuentra el mapeo de la actividad eléctrica del corazón sin
+contacto, que consiste en reconstruir la actividad local del endocardio mediante
+múltiples electrodos bipolares, midiendo la actividad eléctrica simultáneamente
+en todos los electrodos. Hay una amplia literatura en donde se discuten y
+presentan métodos para detección y posterior tratamiento de la \ac{AF}, como se
+refleja en \cite{richter2011novel, kogawa2015effect}. El principal
+inconveniente para practicar este tipo de procedimientos, es la hospitalización
+del paciente, lo que se traduce, en que su aplicación se limite a un grupo reducidos de arritmias.
 
-Para analizar la tasa de activación local del tejido cardiaco se usan
-en muchos casos procedimientos invasivos, como la cartografía de contacto, que
-utiliza un único electrodo bipolar localizado en diferentes regiones, de forma
-secuencial, del endocardio (poner referencias).También se encuentra el mapeo de
-la actividad eléctrica del corazón sin contacto, que consiste en reconstruir la
-actividad local del endocardios, mediante múltiples electrodos bipolares,
-midiendo la actividad eléctrica simultáneamente en todos los electrodos. Hay
-una amplia literatura en donde se discuten y presentan métodos para detección 
-y posterior tratamiento de la \ac{AF}, como se refleja en
-\cite{richter2011novel, kogawa2015effect}. El principal inconveniente, para
-practicar este tipo de procedimientos, es la hospitalización del paciente, lo
-que se traduce, en que su aplicación se limite a un grupo reducidos de
-arritmias.
 
 Para solventar la limitación de los procedimientos invasivos, se están
 desarrollando técnicas no invasivas, como el mapeo de \ac{DF} sobre el torso.
@@ -73,12 +80,12 @@ a su proximidad al miocardio, hace un registro muy local de la actividad
 eléctrica. Por el contrario, con el sistema de medidas del torso, tendrá una
 captura global de la actividad. De esta manera, el mapa de \ac{DF} del torso, no
 es un reflejo directo de los mapas de \ac{DF} intracardiacos, sino mas bien
-el promedio de \ac{SR} como lo analiza \cite{Lemay08}. estas discrepancia nos da
-pie para estudiar con mayor profundidad el \ac{SR} y proponer un
+el promedio de \ac{SR} como lo analiza \cite{Lemay08}. Estas discrepancias nos
+da pie para estudiar con mayor profundidad el \ac{SR} y proponer un
 método de cuantificación de \ac{SR} en los sistemas de medición de la actividad
 eléctrica del corazón.
-
-Los mapas de DF, han revelado regularidades espacio-temporales
+ 
+Los mapas de \ac{DF}, han revelado regularidades espacio-temporales
 durante la fibrilación cardiaca, tanto en animales \cite{Skanes98, Mandapati00,
 Mansour01}, como en humanos \cite{Sanders05, Atienza06, Berenfeld11}. junto con
 los mapas de \ac{DF} existe un creciente número de estudios que utilizan
