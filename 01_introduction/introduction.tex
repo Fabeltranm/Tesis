@@ -2,16 +2,28 @@
 
 \chapter{Introducción}
 \begin{resumen}
-La presente \nombreDoc tiene como pilares el estudio de los efectos  espectrales
-en sistemas de electrodos mediante \ldots procesados digital de señales.
-...........
+La presente \nombreDoc tiene como pilar el estudio de los efectos  de los
+diferentes sistemas de electrodos en el espectro de las señales cardiacas,
+mediante procesado digital de señales y el modelado de diferentes dinámicas
+cardiacas, en un entornos de simulación. 
 
-\TODO{metodologías, aportaciones y objetivos especifificos}
+En este capítulo introductorio, se expone la motivación y el estado del arte. Se
+da paso a exponer el objetivo general y los objetivos específicos. Luego, se
+aborda la metodología usada para conseguir los objetivos propuestos en la
+presente \nombreDoc. Para concluir, se plasma  la estructura que sigue esta
+documento  y se exponen las aportaciones de la \nombreDoc.
+
+
+\TODO{metodologías, aportaciones y objetivos específicos}
 
 \end{resumen} 
 
 
 \medskip % Espacio vertical
+
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 \section{Motivación}
@@ -37,12 +49,12 @@ diagnóstico y el tratamiento de este tipo de arritmias.
 En otras palabras los mapas de \ac{DF}, por medio del análisis espectral,
 representan una estimación de la tasa de activación local del tejido cardiaco. 
 La adquisición de señales cardiacas, para realizar el posterior análisis de los
-mapas de \ac{DF} y asi localizar los sustratos arritmicos que seran intervenidos
+mapas de \ac{DF} y así localizar los sustratos arrítmicos que serán intervenidos
 en los procedimientos de ablación de arritmias cardíacas, se realiza en muchas
 casos con sistemas de navegación invasivos. Ejemplo de estos sistemas es la
 cartografía de contacto, que utiliza un único electrodo bipolar localizado en
 diferentes regiones, de forma secuencial, del endocardio. CARTO
-\cite{gepstein1997} es posiblemente el sistema de contacto de mayor uilización
+\cite{gepstein1997} es posiblemente el sistema de contacto de mayor utilización
 para realizar el mapeo de arritmias; en él el electrodo adquiere la actividad
 eléctrica del sustrato mientras es desplazado secuencialmente por el edocardio.
 También se encuentra el mapeo de la actividad eléctrica del corazón sin
@@ -52,60 +64,80 @@ en todos los electrodos. Hay una amplia literatura en donde se discuten y
 presentan métodos para detección y posterior tratamiento de la \ac{AF}, como se
 refleja en \cite{richter2011novel, kogawa2015effect}. El principal
 inconveniente para practicar este tipo de procedimientos, es la hospitalización
-del paciente, lo que se traduce, en que su aplicación se limite a un grupo reducidos de arritmias.
-
-
-Para solventar la limitación de los procedimientos invasivos, se están
-desarrollando técnicas no invasivas, como el mapeo de \ac{DF} sobre el torso.
-La base de este procedimiento, es la relación entre las señales
+del paciente, lo que se traduce, en que su aplicación se limite a un grupo
+reducidos de arritmias. Para solventar la limitación de los procedimientos
+invasivos, se están desarrollando técnicas no invasivas, como el mapeo de
+\ac{DF} sobre el torso.  La base de este procedimiento, es la relación entre las señales
 intracardiacas y el \ac{ECG}, como se presenta en \cite{Richter08, Hsu08,Dibs08}. 
-En otros estudios, como se observa en \cite{Guillem13, Guillem09},los
-mapas de \ac{DF} del torso han sido comparado con los mapas de \ac{DF} intracardiacos 
-durante una \ac{AF}, dando resultados muy similares en la identificación de
-zonas de actividad de alta frecuencia. 
+Se observa en \cite{Guillem13, Guillem09} que los mapas de \ac{DF} del torso
+han sido comparado con los mapas de \ac{DF} intracardiacos durante una \ac{AF},
+dando resultados muy similares en la identificación de zonas de actividad de
+alta frecuencia. Sin embargo, hasta ahora, no hay una clara definición para la
+relación exacta entre mapas intracardiacas y del torsos.  No se evidencia una
+clara relación entre estos dos procesos.
 
-Sin embargo, hasta ahora, no hay una clara definición para la relación exacta
-entre mapas intracardiacas y del torsos. No se evidencia una clara relación 
-entre estos dos procesos. El trabajo realizado por \cite{Requena08}, estudia
-las propiedades de captación de los sistemas de electrodos en desfibriladores
-automáticos implantables, y los resultados  muestran que las características
-espectrales de las señales cardiacas  tienen relación con las propiedades de
-captación  de los sistemas de electrodos. Esto nos hace pensar que los mapeo de
-\ac{DF}, pueden no ser del todo confiables  si no se tienen en cuenta los
-efectos de los sistemas de electrodos
 
-Al comparar la resolución espacial \ac{SR} de un sistema de electrodos ubicado
-en el torso con otro próximo al tejido cardíaco, se ve que este último,  debido
-a su proximidad al miocardio, hace un registro muy local de la actividad
-eléctrica. Por el contrario, con el sistema de medidas del torso, tendrá una
-captura global de la actividad. De esta manera, el mapa de \ac{DF} del torso, no
-es un reflejo directo de los mapas de \ac{DF} intracardiacos, sino mas bien
-el promedio de \ac{SR} como lo analiza \cite{Lemay08}. Estas discrepancias nos
-da pie para estudiar con mayor profundidad el \ac{SR} y proponer un
-método de cuantificación de \ac{SR} en los sistemas de medición de la actividad
-eléctrica del corazón.
+Adicionalmente, los mapas de \ac{DF} han revelado regularidades
+espacio-temporales durante la fibrilación cardiaca, tanto en animales
+\cite{Skanes98, Mandapati00, Mansour01}, como en humanos \cite{Sanders05,
+Atienza06, atienza2009, Berenfeld11}. Por consiguiente, junto con los mapas de
+\ac{DF}, existe un creciente número de estudios que utilizan técnicas
+espectrales para analizar la fibrilación tanto auricular como ventricular. Sin
+embargo, el significado de la relación entre el espectro de las señales
+cardiacas  y las características espacio-temporales de las dinámicas cardiacas
+sigue siendo confuso a la fecha. A pesar de que las características espectrales
+individuales de señales cardiacas se han relacionado con las características
+espacio-temporales de los ritmos cardíacos \cite{Fischer07, Ng07a,
+Zlochiver08}, la relación entre el espectro de señales cardiacas y las
+características espacio-temporales de los ritmos cardíacos no ha sido
+investigado a fondo. En este sentido, el trabajo realizado por
+\cite{Requena08}, donde se estudia las propiedades de captación de los sistemas
+de electrodos en desfibriladores automáticos implantables, muestra que las
+características espectrales de las señales cardiacas  tienen relación con las
+propiedades de captación  de los sistemas de electrodos. Esto hace pensar que
+los mapeo de \ac{DF}, pueden no ser del todo confiables  si no se tienen en
+cuenta los efectos de los sistemas de electrodos. De lo anterior, se extrae la
+importancia de conocer la configuración del sistema de electrodos de
+adquisicion ya que este puede afectar el espectro de las señales cardiacas.
+En general, los sistemas de electrodos se pueden clasificar en electrodos
+intracardiacos de contacto y sin contacto, y de superficie corporal. por lo
+tanto, con esta diversodad  de cómo el espectro captado con diferentes sitemas
+de electrodos se relacionan entre sí.
+
+Por su parte en el trabajo de \cite{Lemay08} al comparar la \ac{SR} de un
+sistema de electrodos ubicado en el torso con otro próximo al tejido cardíaco,
+se ve que este último, debido a su proximidad al miocardio, hace un registro
+muy local de la actividad eléctrica. Entonces, con el sistema de medidas del
+torso se tiene una captura global de la actividad. De esta manera, el mapa de
+\ac{DF} del torso, no es un reflejo directo de los mapas de \ac{DF}
+intracardiacos, sino mas bien el promedio de \ac{SR}. Estas discrepancias dan
+pie para estudiar con mayor profundidad el \ac{SR}  y proponer un método de
+cuantificación de \ac{SR} en los sistemas de medición de la actividad eléctrica
+del corazón.
  
-Los mapas de \ac{DF}, han revelado regularidades espacio-temporales
-durante la fibrilación cardiaca, tanto en animales \cite{Skanes98, Mandapati00,
-Mansour01}, como en humanos \cite{Sanders05, Atienza06, Berenfeld11}. junto con
-los mapas de \ac{DF} existe un creciente número de estudios que utilizan
-técnicas espectrales para analizar la fibrilación (bibliografía), sin embargo,
-el significado de la relación entre el espectro de las señales cardiacas  y las
-características espacio-temporales sigue siendo confuso a la fecha.A pesar de
-que las características espectrales individuales de señales cardiacas se han
-relacionado con las características  espacio-temporales de los ritmos cardíacos
-\cite{Fischer07, Ng07a, Zlochiver08}, la relación entre el espectro de señales
-cardiacas y las características espacio-temporales de los ritmos cardíacos no ha sido investigado a fondo.
-
-Por lo tanto, explicación con mayor profundidad la relación entre los
-espectros de señales cardiacas medidos por diferentes sistemas de electrodos, junto a la
-relación teórica de las características espacio-temporales de las actividad
-eléctrica del corazón, sin dudad nos permiten mejorar los actuales métodos
+Por lo tanto, explicar con mayor profundidad la relación entre los
+espectros de señales cardiacas medidos por diferentes sistemas de electrodos,
+junto a la relación teórica de las características espacio-temporales de las
+actividad eléctrica del corazón, sin duda permite mejorar los actuales métodos
 usados en la caracterización de las fibrilaciones cardiacas, bien sean por
 procedimientos  invasivos, mapas de \ac{DF} intracardiaca \cite{Lin07,
 Gojraty09}, o no invasivos, mapas de \ac{DF} a partir de ECG del torso.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
- \section{Estado del Arte}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Estado del Arte}
+
+El análisis espectral juega un papel importante en la electrofisiología, tanto
+clinica como experimental, es asi como en la electrofisiología cardiaca, los
+métodos espectral han sido ampliamente usado para el estudos de  transtornos
+cardiacos, como la \ac{AF}  \cite{Everett01, Lazar04, Sanders05, Atienza06,
+Atienza09, Uldry12, Guillem13, Kumagai13, Salinet14} y la  \ac{VF}
+\cite{Strohmenger97, Eftestol00, Jekova04, Panfilov09, Mollerus11, Requena13}.
+
+
 
 La técnicas de mapeado intracardiaca combinadas con  el análisis de \ac{DF},
 conocido como mapeo de \ac{DF}, han permiten estudiar las
@@ -113,18 +145,36 @@ características espacio-temporal de las fibrilaciones. Este método, ha
 dejado ver una cierta regularidad espacio-temporal durante un \ac{AF}.
 Estos estudios se han realizado en animales, 
 \cite{Skanes98,Mandapati00,Mansour01} y en humanos  en los trabajos
-\cite{Sanders05,Atienza06}.
+\cite{Sanders05,Atienza06}. De igual manera, el analisis de los mapas de \ac{DF}
+ne una fibrilación auricular en humanos ha permitido identificar las zonas
+anatómicas del miocardio que presentan frecuencias altas 
+\cite{ Sanders05, Atienza09, Kumagai13}, los cuales se han planteado como focos 
+responsables de la conducción de \ac{AF}.
+
 
 De esta manera, como lo expone Berenfeld en su libro \cite{Berenfeld11Book},
 los mapas de \ac{DF}, han sido una herramienta muy potente para las terapias de
 \ac{AF}. Para los mapas de \ac{DF}, el análisis espectral es la columna
-vertebral para cuantificar el grado de organización, tanto clínica como experimentalmente, de
-las señales electrofisiológicas \cite{Zipes09}. Y en estudios previos, los
-efectos  de la resolución del sistema de electrodos en el
-espectro de las señales electrofisiológicas han sido analizados con 
-dos enfoques diferentes. El primer método utiliza la representación de fuentes
+vertebral para cuantificar el grado de organización de las dinamicas cardiacas 
+\cite{Zipes09}. Sin embargo, en la electrofisiología cardiaca, existe una gran
+variedad de sistemas de adquisición, intracardiacos y de superficie corporal.
+los sistemas intracardiacos a su vez se clasifican en sistemas de contanto  y
+sin contacto. En los sistemas de contacto, los electrodos intracardiacos se
+ubican sobre el endocardio y miden la actividad eléctrica del corazón
+localmente, mientras que en los sistemas sin contacto, los electrodos
+intracardiacos no se ubican directamente en el endocardo, proporcionando asi
+una vista cercana de la actividad electrica del  sustrato cardiaco. Finalmente,
+los sistemas de adquisición sobre la superficie corporal proporcionan una vista
+distante de la actividad eléctrica del corazón. Con una  diversidad de sistemas
+de electrodos, surgen la pregunta de cómo los difrentes sistemas de adquisición 
+se relacionas entre sí y como afectan las diferentes medidas en los mapas de
+\ac{DF}.
+
+En estudios previos, los efectos  de la resolución del sistema de electrodos en
+el espectro de las señales electrofisiológicas han sido analizados con dos
+enfoques diferentes. El primer método utiliza la representación de fuentes
 bioeléctricas como onda en las que se aplica el análisis de Fourier
-espacio-temporal \cite{Nunez95, NunezSrinivasan06b}. 
+espacio-temporal \cite{Nunez95, NunezSrinivasan06b}.
 En el segundo enfoque las fuentes bioeléctricos se modelan como dipolos
 estocástico cuya dinámica se describen en términos estadísticos \cite{Requena08}. 
 Más específicamente el análisis realizado por \cite{Requena08} se
@@ -137,6 +187,7 @@ dependientes de \ac{SR} del sistema de electrodos. Así las señales
 de electrofisiología, tienen asociado un tipo de filtro paso bajos o paso alto, 
 según sea mayor o menor la escala del sistema de electrodos, respectivamente.
 
+
 Por su parte, en la cuantificación de \ac{SR} de los
 sistemas de electrodos, en la literatura, a partir del trabajo de Rush y
 Driscoll \cite{Rush69}, es ampliamente usada \ac{MSD}. 
@@ -146,15 +197,15 @@ bipolare ubicados en la derivada esofágicas \cite{Arzbaecher79}. En
 \cite{Malmivuo97}, se ha propuesto el valor medio del volumen de  sensibilidad,
 como medidad de comparación del \ac{SR} del \ac{EEG} y el magnetoencefalograma 
 
-En \cite{Vaisanen08} , definen la región de sensibilidad del sistema de
+En \cite{Vaisanen08}, definen la región de sensibilidad del sistema de
 electrodos  como, la relación entre el promedio de las sensibilidad de dos
 regiones, y se utiliza para cuantificar las mediciones de \ac{EEG}.  Por
 último, la resolución del sistema de electrodos fue propuesto para la
 cuantificación la SR del sistema de electrodos en un desfibrilador implantable
 \cite{Requena09}.
 
-Hace falta hablar de el estado de arte de los módelos
-cardiacos
+\TODO{Hace falta hablar de el estado de arte de los módelos
+cardiacos}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \section{Objetivos}
@@ -166,8 +217,9 @@ identificar la conexión entre el espectro de las señales cardiacas  y la
 dinámica espacio-temporal de los ritmos cardíacos, con diversos grados de
 correlación. Teniendo en cuenta,  que esta \nombreDoc sigue el
 enfoque de análisis de señales multivariantes y, que las aportaciones de esta
-\nombreDoc buscan contribuir en mejorar el análisis e interpretación, con los actuales procedimientos invasivos y no invasivos, de los mapas de
-\ac{DF}, proponemos los siguientes objetivos específicos:
+\nombreDoc buscan contribuir en mejorar el análisis e interpretación,  con los
+actuales procedimientos invasivos y no invasivos, de los mapas de \ac{DF},
+proponemos los siguientes objetivos específicos:
 
 \begin{itemize}
 \item 1d
@@ -187,7 +239,7 @@ de las diversas  dinámicas cardiacas.
 \section{Estructura}
 
 Esta \nombreDoc, se  articula de 4 capítulos, con el fin de conseguir lso
-objetivos propuestos, acorde con la metodolfía de trabajo. Es asi como la
+objetivos propuestos, acorde con la metodología de trabajo. Es asi como la
 estructura de \nombreDoc esta dada por:
 
 
@@ -208,22 +260,21 @@ estructura de \nombreDoc esta dada por:
   la estimación del espectro, para  general los mapas de frecuencia tanto pico
   como dominante. 
   
-  \item \textit{Capítulo 4}. se dedica a presentar el formalismos matemático, que
-  conecta el espectro de las señales cardiacas con las características  espacio
-  temporal de diferentes dinámicas cardiacas. Por lo cual, en esta sección se
-  realizar el análisis sistemáticos de \ac{MSD}, nuestra propuesta de
+  \item \textit{Capítulo 4}. se dedica a presentar el formalismos matemático,
+  que conecta el espectro de las señales cardiacas con las características 
+  espacio temporal de diferentes dinámicas cardiacas. Por lo cual, en esta
+  sección se realizar el análisis sistemáticos de \ac{MSD}, nuestra propuesta de
   cuantificación de la resolución espacial del sistema de electrodos. Así mismo,
   se analizan las principales propiedades de la distribución de tiempos de
   activación, para darle una base sólida en función de la correlación de la
   actividad cardiaca.
   
-  \item para culminar  el \textit{Capítulo 5}, utilizar el formalismo
-  matemático presentado anteriormente, para analizar en un marco
-  simulado la relación entre el volumen de correlación y el
-  espectro captado por el sistema de electrodos. Por medio de la
-  implementación de diferentes modelos de la anatomia de tejido
-  cardiaco, y junto a la simulación de diversos sistemas de electrodos,
-  se simulan distintas dinámicas con distintas correlaciones  para ilustrar los
+  \item para culminar  el \textit{Capítulo 5}, utilizar el formalismo matemático
+  presentado anteriormente, para analizar en un marco simulado la relación entre
+  el volumen de correlación y el espectro captado por el sistema de electrodos.
+  Por medio de la implementación de diferentes modelos de la anatomia de tejido
+  cardiaco, y junto a la simulación de diversos sistemas de electrodos, se
+  simulan distintas dinámicas con distintas correlaciones  para ilustrar los
   resultados analíticos del capítulo anterior.
   
   \end{itemize}
