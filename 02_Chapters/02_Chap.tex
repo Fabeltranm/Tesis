@@ -5,81 +5,113 @@
 
 \begin{resumen}
 
+En el siguiente capítulo se aborda el formalismo matemático que enmarca la
+definición del espectro de las señales cardiacas de esta \nombreDoc, y el cual
+se encuentra publicado en \cite{Requena13b}. La motivación del capítulo es
+desarrollar la teoría que conecta el espectro de la señales cardiacas, con su
+dinámica espacio-temporal de las señales cardiacas. 
 
-En el siguiente capítulo se aborda el formalismo matemático que enmarca el
-estudio del espectro de las señales cardiacas de esta \nombreDoc, y el cual se
-encuentra en la publicación \cite{Requena13b}. El objetivo del capítulo es
-desarrollar  la teoría que conecta el espectro de la señales cardiacas, con su
-dinámica espacio-temporal de las señales cardiacas. Así mismos, se abordan los
-efectos de sistemas de electrodos sobre el espectro de las señales. Por lo
-tanto, los resultados teóricos, presentes en este capitulo, derivan  en el
-análisis e interpretación del espectro de señales cardiacas, que se abordad en el próximo capítulo
+A lo largo del capitulo se plasman los diferentes conceptos necesarios para el
+análisis espectral, como la auto-correlación de las fuentes y  señales
+cardiacas. Y mediante el análisis multivariante, se estudian los mecanismos para
+la estimación del espectro que conllevan a los mapas de \acf{DF} y de \acf{PF}.
+Por último, se abordan los efectos de sistemas de electrodos sobre el espectro
+de las señales.
 
-La relación entre los diferentes sistemas de medida de señales cardiacas y los
-espectros de las mismas, se abordar a partir del análisis de señales
-multivariantes junto con módelos bioeléctricos. 
-
-We analyze the spectral manifestation of cardiac rhythms and the spectral
-effects of lead systems.
-We relate analytically c
-
-A su vez, se definen mapas de autocorrelación para las fuentes  y señales 
-bioeléctricas, de esta forma, de acuerdo con la correlación espacio-temporal,
-se clasifican las diferentes dinàmicas cardiacas, en perfectamente
-correlacionandas, parcialmente correlacionadas  y perfectamente incorrelacionadas. A si mismo, se abordan los
-diferentes métodos de estimación del espectro de señales.
 
 Para terminar, se aborda los mapas de (\ac{DF}), como ejemplo de análisis
 espectral. en donde se expome la relación entre las caracteristicas del sistema
 de electrodos, utilizados para estimar la actividad local del miocardio, y el
 ancho de banda del espectro resultante.
 
-medida del grado de correlación espacio temporal
+Los resultados teóricos, presentes en este capitulo, derivan en el análisis e
+interpretación del espectro de señales cardiacas y los efectos del sistema
+de electrodos, que se abordan en los próximos capítulos
 
-tesis de jesus  en resumen  y lo del articulo la parte teórica
 
-llega hasta la descrip la correlación de voltajes  definicion de tipos de
+
+
+
+NOTAS llega hasta la descrip la correlación de voltajes  definicion de tipos de
 fuentes se toma del articulo
-
-
-
 
 \end{resumen}
 
 
 \section{Introducción}
 
-Los procesos estocásticos nos permiten modelar aquellos sistemas
-multivariantes, en tiempo y espacio. De esta manera, gracias a las herramientas
-estadisticas, se puede estudiar como se comportan señales variantes en el
-tiempo, que de otra forma serian muy dificiles de tratar.
+En el estudio de la fibrilaciones cardiacas, por medio de \ac{ECG}, se observan
+trazas muy irregulares de la señal captada, y por lo tanto, tradicionalmente se
+han descrito dichas arritmias complejas como aleatorias  y desorganizadas.
+Pero el análisis espectral, técnica ampliamente utilizada en el estudio de
+señales cardiaca, a permitido cuantificar la organización espacio-temporal del
+sustrato cardiaco durante la fibrilación. Con el uso de la teoria de la dinámica
+no lineal y gracias al desarrollo de técnicas de mapeo optico y eléctrico, se ha
+spropuesto que la fibrilación puede tener algun grado de regularidad
+espacio-temporal \cite{Hoekstra95, Jalife00}.
+
+
+De esta forma, las caracteristicas espectrales de señales cardiacas, se han
+propuestos como índices experimentales para la detección de \ac{VF} \cite
+{Barro89}, para cuantificar el grado de organización espacio-temporal de la
+\ac{AF} \cite{Everett01a} y para predecir el éxito de
+descargas de desfibrilación \cite{Strohmenger97, Eftestol00, Jekova04}. 
+Adicionalmente con los mapas de \ac{DF} se han podido observar un grado de
+regularidad durante la \ac{AF} tanto en animales \cite{Skanes98,
+Mandapati00, Mansour01} como en humanos \cite{Sanders05, Atienza06}. 
+
+Se observa, el análisis espectro de las señales cardiaca, viene en
+constante crecimiento. Sin embargo, aùn sigue siendo difusa la relación entre el
+espectro de señales cardiacas y la dinámica espacio-temporales de las fuentes
+cardíacas subyacentes. por lo cual en este capítulo se presenta  el formalismo
+matemático que sustenta la investigación el espectro de la actividad eléctrica
+del corazón.
+
+
+
+
+Los procesos estocásticos nos permiten modelar aquellos sistemas multivariantes,
+en tiempo y espacio. De esta manera, gracias a las herramientas estadisticas, se
+puede estudiar como se comportan señales variantes en el tiempo, que de otra
+forma serian muy dificiles de tratar. Los modelos estocásticos son fundamentales
+para el análisis espectral de señales bioeléctricas, y en general en señales
+discretas que se analizan en un tiempo finito. De esta formas, tanto la
+autocorrelación con la densidad espectral de potencia, son habitualmente muy
+utilizadas para describir procesos estocásticos de segundo orden. Con los
+estadisticos de segundo orden, por lo tanto, es posible describir patrones,
+tales como la periidicidad y la coherencia de las señales
+\cite{Requena08}. Siguiendo un enfoque de análisis de la señal multivariante, a
+lo largo de este capítulo, se identifica la relación entre el
+espectro de las señales cardiacas, la dinámica espacio-temporal de las fuentes
+cardíacos, y las características de los sistemas de captación de la actividad
+cardiaca.
+
+
+
+
+
+\subsection{Variable Aleatoria}\label{subs:varaleatoria}
 
 Una variable aleatoria, como función medible que asigna un número real a cada
-posible resultado del espacio muestral de un experimento aleatorio, se
-puede caracterizar por medio de su probabilidad de ocurrencia. De esta forma, la
-función de distribución ${F(x)}$  es una descripción de las probabilidades asociadas a los posibles
-valores de la variable aleatoria. 
+posible resultado del espacio muestral de un experimento aleatorio, se puede
+caracterizar por medio de su probabilidad de ocurrencia. De esta forma, la
+función de distribución ${F(x)}$  es una descripción de las probabilidades
+asociadas a los posibles valores de la variable aleatoria.
 
 Por tanto, toda variable aleatoria tiene asociada una función de distribución
-${F(x)}$, tal que ${F(x)=P(X \leq x)}$. Para variables aleatoria continua, la 
+${F(x)}$, tal que ${F(x)=P(X \leq x)}$. Para variables aleatoria continua, la
 distribución de probabilidad viene descrita por una función de densidad
 ${f(x)}$. en donde, ${f(x)= dF(x)/dx}$. Asi mismo,  para las variables
 aleatorias discretas relacionamos la función de distribución con la función de
 densidad como ${F(x)= \displaystyle\sum_{x_i \leq x }f(x_i)}$.
 
 Un proceso estocástico es una sucesión infinita de variables aleatorias que
-evolucionan en el tiempo. Por lo tanto, al dependen del un tiempo
-$t$  la función de distribución da lugar a ${F(x,t)=P(\mathbf{x}(t) \leq x)}$.
+evolucionan en el tiempo. Por lo tanto, al dependen del un tiempo $t$  la
+función de distribución da lugar a ${F(x,t)=P(\mathbf{x}(t) \leq x)}$.
 Por lo que, la función de densidad de $x(t)$ es $f(x,t)=
 \partial{F(x,t)}/\partial{x}$ \cite{Papoulis91}.
 
-Los modelos estocásticos son fundamentales para el análisis espectral de señales
-biolectricas, y en general en señales discretas que se analizan en un tiempo
-finito. De esta formas, tanto la autocorrelación con la densidad espectral de
-potencia, son habitualmente muy utilizadas para describir procesos
-estocasticos de segundo orden. Con los estadisticos de segundo orden, por lo
-tanto, es posible describir patrones, tales como la periidicidad  y la
-coherencia de las señales \cite{Requena08}.
+
 
 \subsection{Correlación de Señales}\label{subs:corresignal}
 Siendo $\mathbf{x}(t)$, un proceso estocasticos real y $\mathbf{x}(t_1)$,
