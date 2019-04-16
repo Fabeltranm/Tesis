@@ -18,25 +18,123 @@
 %							 las plantillas del mismo
 %   tmp/:	usado para los  ficheros temporales de compilación
 %
-%	se utiliza el entorno de edicion de  eclipse con el  plugin Texlipse
-%   para el glosario y los acrónimos se utiliza el paquete glossaries y
-%   para su complilacion se utiliza el script en pearl '\makeglossaries'
-%	Para que la compilación se realice en eclipse se debe crear el make
-%   glossaries en external tool configuration mas información en
-%   http://tex.stackexchange.com/questions/45416/using-glossaries-in-texlipse
-%.
-%	configuración de eclipse :
-%	1.)	Incluir en windows ->Preferences -> Texlipse -> Latex Temp File
-%		.acn, .acr, .alg, .glo, .xdy , .ist, .gls, .glg
-%	2.) Run -> External Tools -> External Tools config .. program
-%		en location 			selecionar el path de 	/usr/bin/makeglossaries
-%       en working Directory 	${project_loc}/tmp
-%		en Argument				-q ${project_name} si el .tex es el mismo nombre
-%   3.) Project->Properties->Builders
-%		 Selecionar import  y seleccionar la build anteriormente configurado
+% COMENTARIOS 
+% Para los comentario o cosas pendientes se recomiendo  usar el comando \TODO,
+% definido en el archivo config.tex
+% Para los comentarios del Director de tesis usar \commentDir
+
+\documentclass[12pt,a4paper, twoside,spanish ]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+
+%% fichero de configuración
+\input{00_config/config}
+
+%% Config de cabeceras de capitulos  y secciones especiales
+\input{00_config/headers}
+
+% Fichero con las macros para crear la bibliografia
+%\include{config/config_bib}
+
+ % fichero de las constantes a usar en el documento
+\include{00_config/constantes}
+\ifx\nogeneraacronimos\undefine
+	\makeglossaries
+	\input{00_varios/db_acron}
+\fi
 %
-%   nota: en algunos casos no se crea de forma inmediata el pdf o dvi con los
-% acronimos. Para solucionar este inconveniente  se puede generar  el build del
-% proyecto  2 o 3 veces seguidas. Otra forma es crear en external tolls config
-% un nuevo  build para latex y dvipdf igual que el paso 2 y 3 anterior.  de
-% esta forma la configuraci
+% "Metadatos" para el PDF
+%
+
+\pdfinfo{
+   /Author (\autorDoc)
+   /Title  (\tituloDoc)
+   /CreationDate (\today)
+   /Subject (PDFLaTeX)
+   /Keywords (PDF;LaTeX)
+
+}
+
+%\input{config/headers.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-----------------document begins here ---------%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+\ifx\release\undefined
+  \layout		% para ver la configuración de las paginas
+\fi
+
+ \include{00_varios/titlepage}
+
+\frontmatter % estilo que debe tener el documento (página de título, tabla de
+% contenidos, prólogos),
+% Números romanos
+
+
+\include{00_varios/resumen} 
+\include{00_varios/abstract}
+\include{00_varios/dedicatoria}
+\include{00_varios/agradecimientos}
+
+%% Tablas de Contenidos 
+\ifx\nogeneratoc\undefine
+  \input{00_config/config_toc} 
+\fi
+
+%% Lista de acrónimos
+% \input{00_varios/acronimos}
+
+
+%%---------------- AQUÍ COMIENZAN LOS CAPÍTULOS DEL DOCUMENTO ---------------- %
+
+\mainmatter % estilo que debe tener el texto principal del documento, numeradas
+% con números arábigos
+\restauraCabecera
+
+
+ \input{mindmap/all_mindmap}
+ \include{01_introduction/introduction}
+
+\part{Métodos}
+
+\include{02_Chapters/01_Chap}
+\include{02_Chapters/02_Chap}
+
+\part{Análisis y Simulaciones} 
+\include{02_Chapters/03_Chap}
+\include{02_Chapters/04_Chap}
+
+
+\part{Discusión y Conclusiones}
+\include{02_Chapters/05_Chap}
+
+
+\newpage
+
+
+%%-------------------FINAL DE LOS CAPÍTULOS DE LA TESIS-------------%
+
+% Apéndices
+\part{Apéndices}
+\appendix 
+\include{03_Appendix/01_appendix}
+
+
+% \nocite{*}
+
+\backmatter % se usa para el estilo de la parte final del libro (la
+% bibliografía, los índices de materias).
+
+% \bibliographystyle{IEEEtran}  
+ \bibliographystyle{plainnat}
+ \begin{small}
+   \bibliography{biblio_tesis}
+ \end{small}
+\addcontentsline{toc}{chapter}{Bibliografía} 
+\end{document}
+
+
