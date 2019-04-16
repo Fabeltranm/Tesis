@@ -1,7 +1,7 @@
 % -*-coding: iso-latin-1  -*-
 \usepackage{fancyhdr}			% Cambia los parametros de la cabecera
 \pagestyle{fancy}			    % elegir este estilo de cpps
-\addtolength{\headheight}{2pt}	% se evitan warnings por el tamaño de la cabecera
+\addtolength{\headheight}{2pt}	% se evitan warnings por el tamaï¿½o de la cabecera
 
 
 \newcommand{\restauraCabecera}{
@@ -11,7 +11,7 @@
 
 
 \renewcommand{\headrulewidth}{0.5pt}             % Cabecera: subraya la cabecera (fijar en "0pt" si no se desea).
-\renewcommand{\footrulewidth}{0pt}               % Pié: subraya el pie de página (fijar en "0pt" si no se desea).
+\renewcommand{\footrulewidth}{0pt}               % Piï¿½: subraya el pie de pï¿½gina (fijar en "0pt" si no se desea).
 \renewcommand{\chaptermark}[1]{%
    \markboth{\textsc{\chaptertitlename\ \thechapter.}\ #1}{}%
 }
@@ -19,9 +19,9 @@
 \fancyhf{}
 \restauraCabecera
 \fancyhead[RO,LE]{\thepage}
-\fancyhead[LE,RO]{\textbf{\thepage}}           % Cabecera: número de página en negrita.
+\fancyhead[LE,RO]{\textbf{\thepage}}           % Cabecera: nï¿½mero de pï¿½gina en negrita.
   
-% para los capítulos que  no tiene numeración  ni secciones  se debe cambiar
+% para los capï¿½tulos que  no tiene numeraciï¿½n  ni secciones  se debe cambiar
 \newcommand{\cabeceraEspecial}[1]{
   \fancyhead[LO]{\textsc{#1}}
   \fancyhead[RE]{\textsc{#1}}
@@ -35,8 +35,8 @@
 %\newcommand{\TocConclusiones}{\addcontentsline{toc}{section}{Conclusiones}}
 
 
-% Definición del estilo en la  página de inicio de capítulo: Número de
-% la página abajo a la derecha, y sin línea en la zona superior.
+% Definiciï¿½n del estilo en la  pï¿½gina de inicio de capï¿½tulo: Nï¿½mero de
+% la pï¿½gina abajo a la derecha, y sin lï¿½nea en la zona superior.
 \fancypagestyle{plain}{%
   \fancyhf{}  
   \fancyfoot[R]{\thepage}

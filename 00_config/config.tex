@@ -19,15 +19,15 @@
 %%%TEXTO
 
 \usepackage{verbatim}		% texto ascii puro tal cual
-\usepackage{geometry}		% para la configuración personal de margenes
-\usepackage[spanish]{layout}	% depuración de la config de las paginas 
+\usepackage{geometry}		% para la configuraciï¿½n personal de margenes
+\usepackage[spanish]{layout}	% depuraciï¿½n de la config de las paginas 
 				% se incluye el comando \layout en el 
-				% documento para ver la información de config de pag.
+				% documento para ver la informaciï¿½n de config de pag.
 
 %\usepackage[ansinew]{inputenc}	% windows
-\usepackage[T1]{fontenc}		% codificación de las fuentes de  salidas
+\usepackage[T1]{fontenc}		% codificaciï¿½n de las fuentes de  salidas
 \usepackage{textcomp}
-\usepackage[latin1]{inputenc}  	% codificación de fuentes
+\usepackage[latin1]{inputenc}  	% codificaciï¿½n de fuentes
 % de entrada \usepackage[utf8]{inputenc}  		% utf8
 
 
@@ -46,8 +46,8 @@
 
 %% PARRAFOS
 
-\usepackage{multicol}		% utilización de multicolumna
-\setlength{\parskip}{0.2ex} 	% separación entre parrafos se aumenta 
+\usepackage{multicol}		% utilizaciï¿½n de multicolumna
+\setlength{\parskip}{0.2ex} 	% separaciï¿½n entre parrafos se aumenta 
 \newcommand{\linespacing}[1]{\renewcommand{\baselinestretch}{#1}\normalsize}
 
 %% TITULOS
@@ -88,9 +88,9 @@
 
 %% TABLAS
 
-\usepackage{tabularx}		% hacer tablas con párrafos
+\usepackage{tabularx}		% hacer tablas con pï¿½rrafos
 \usepackage{longtable}		% tablas de  varias hojas 
-\renewcommand{\arraystretch}{1.2}	%(or 1.3) %más espacio entre las lineas de la tabla
+\renewcommand{\arraystretch}{1.2}	%(or 1.3) %mï¿½s espacio entre las lineas de la tabla
 \usepackage{colortbl}			% color en la tablas
 \usepackage{color}
 
@@ -100,20 +100,20 @@
 
 % MATEMATICAS
  
-\usepackage{calc}      % ayuda con cálculos  básicos dentro de latex
+\usepackage{calc}      % ayuda con cï¿½lculos  bï¿½sicos dentro de latex
 \usepackage{amsmath}   % From the American Mathematical Society
 \usepackage{amssymb}
 
 
 %% ACRONIMOS
 
-%% inclusión del paquete glossaries, para  tener lso acronimos
+%% inclusiï¿½n del paquete glossaries, para  tener lso acronimos
 %	xindy 	indicaque el motor de  busqueda es xindy, se necesita del  la instalacion de xindy
 %	acronym, indica que se genera lsita de acronimos
 %	nomumberlist	para  que no incluya la pagina donde aparece el acronimo
 %	sanitize=none evita lso problemas con los acentos  en algunos comandos
-%	\ac muestra el acrónimo en su forma  completa la primera vez  que se llama y
-%   la forma corta las siguentes 	\ac1 muestra la  forma larga del acrónimo
+%	\ac muestra el acrï¿½nimo en su forma  completa la primera vez  que se llama y
+%   la forma corta las siguentes 	\ac1 muestra la  forma larga del acrï¿½nimo
 %	\acs muestra la forma corta y \acf la forma completa
 % 	el fichero fuente esta en bd_acronimos
 
@@ -125,7 +125,7 @@ shortcuts,hyperfirst=false,sanitize=none]{glossaries}
 
 %%  OTROS
 
-% Redefinición al español los nombres de las  tablas  e índices, ya que 
+% Redefiniciï¿½n al espaï¿½ol los nombres de las  tablas  e ï¿½ndices, ya que 
 % el paquete babel  los pone con el nombre de cuadros
 \addto\captionsspanish{%
   \def\tablename{Tabla}%
@@ -133,15 +133,15 @@ shortcuts,hyperfirst=false,sanitize=none]{glossaries}
   \def\listfigurename{\'Indice de figuras}
   \def\contentsname{\'Indice general}%  
   \def\chaptername{Cap\'itulo}%  
-  \def\listacronymname{Acrónimos y abreviaturas}%
-  \renewcommand*{\acronymname}{Acrónimos y abreviaturas}
+  \def\listacronymname{AcrÃ³nimos y abreviaturas}%
+  \renewcommand*{\acronymname}{AcrÃ³nimos y abreviaturas}
   \renewcommand*{\glossaryname}{Glosario}
 }
  
 
 
 
-%% GENERACIÓN DE NUEVOS COMANDOS  PARA SIMPLIFICAR LA ESCRITURA
+%% GENERACIï¿½N DE NUEVOS COMANDOS  PARA SIMPLIFICAR LA ESCRITURA
 
 % insertar una figura con el fin de evitar la inclusion de la carperta
 % en donde estan las imagenes 
@@ -162,7 +162,7 @@ shortcuts,hyperfirst=false,sanitize=none]{glossaries}
 } 
 
 
-% Configuración del resumen de cada capitulo 
+% Configuraciï¿½n del resumen de cada capitulo 
 \newenvironment{resumen}{%
 \begin{quotation}\noindent\begin{small}\textbf{\textsc{Resumen:}}%
 }%
@@ -171,7 +171,7 @@ shortcuts,hyperfirst=false,sanitize=none]{glossaries}
 \bigskip%
 }
 
-% configiraciòn de comentarios y cosas por hacer 
+% configiraciï¿½n de comentarios y cosas por hacer 
 
 % TODO
 \newcommand{\TODO}[1]{{\color{orange} TODO: #1}}
