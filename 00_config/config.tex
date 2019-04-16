@@ -1,7 +1,6 @@
-% -*-coding: iso-latin-1  -*-
 % si estamos en debug o release
  \def\release{1}
-% en modo debug  se debe comentar el release 
+% en modo debug   se debe comentar el release
 
 \ifx\release\undefined
     % modo debug
@@ -19,25 +18,25 @@
 %%%TEXTO
 
 \usepackage{verbatim}		% texto ascii puro tal cual
-\usepackage{geometry}		% para la configuraci髇 personal de margenes
-\usepackage[spanish]{layout}	% depuraci髇 de la config de las paginas 
-				% se incluye el comando \layout en el 
-				% documento para ver la informaci髇 de config de pag.
+\usepackage{geometry}		% para la configuraci贸n personal de margenes
+\usepackage[spanish]{layout}	% depuraci贸n de la config de las paginas
+				% se incluye el comando \layout en el
+				% documento para ver la informaci贸n de config de pag.
 
 %\usepackage[ansinew]{inputenc}	% windows
-\usepackage[T1]{fontenc}		% codificaci髇 de las fuentes de  salidas
+\usepackage[T1]{fontenc}		% codificaci贸n de las fuentes de  salidas
 \usepackage{textcomp}
-\usepackage[latin1]{inputenc}  	% codificaci髇 de fuentes
+\usepackage[latin1]{inputenc}  	% codificaci贸n de fuentes
 % de entrada \usepackage[utf8]{inputenc}  		% utf8
 
 
-\usepackage[round]{natbib}	% soporte para bibliografia 
+\usepackage[round]{natbib}	% soporte para bibliografia
 				% \citep{ref} entre parentesis
 				% \citet{ref} cita normal
 				% \citeyear{ref} para la fecha
-				% \citeauthor{ref} 
+				% \citeauthor{ref}
 				% http://merkel.zoneo.net/Latex/natbib.php
-					
+
 
 \usepackage[spanish,activeacute]{babel}	% Soporte para castellano
 \fontfamily{garamond}
@@ -46,23 +45,23 @@
 
 %% PARRAFOS
 
-\usepackage{multicol}		% utilizaci髇 de multicolumna
-\setlength{\parskip}{0.2ex} 	% separaci髇 entre parrafos se aumenta 
+\usepackage{multicol}		% utilizaci贸n de multicolumna
+\setlength{\parskip}{0.2ex} 	% separaci贸n entre parrafos se aumenta
 \newcommand{\linespacing}[1]{\renewcommand{\baselinestretch}{#1}\normalsize}
 
 %% TITULOS
 
-\usepackage{titlesec} 	% Cambia el formato de lso  titulos  
-			% importante para la definicien de encabezados    
-			% \chaptertitlename, -> \chaptername ("Cap铆tulo")
-			% o  a \apendixname ("Ap茅ndice")
+\usepackage{titlesec} 	% Cambia el formato de lso  titulos
+			% importante para la definicien de encabezados
+			% \chaptertitlename, -> \chaptername ("Cap脙颅tulo")
+			% o  a \apendixname ("Ap脙漏ndice")
 
 
-			
+
 % DIRECCIONES WEB
 
-\usepackage{url}		% soporte para incluir direcc. web	
-				% \url{http://...} 
+\usepackage{url}		% soporte para incluir direcc. web
+				% \url{http://...}
 \usepackage{ifpdf}		% para compilaciones con pdflatex
 				% en lugar de latex, se define el ifpdf
 \ifpdf				% Color y borde de los enlaces
@@ -88,9 +87,9 @@
 
 %% TABLAS
 
-\usepackage{tabularx}		% hacer tablas con p醨rafos
-\usepackage{longtable}		% tablas de  varias hojas 
-\renewcommand{\arraystretch}{1.2}	%(or 1.3) %m醩 espacio entre las lineas de la tabla
+\usepackage{tabularx}		% hacer tablas con p谩rrafos
+\usepackage{longtable}		% tablas de  varias hojas
+\renewcommand{\arraystretch}{1.2}	%(or 1.3) %m谩s espacio entre las lineas de la tabla
 \usepackage{colortbl}			% color en la tablas
 \usepackage{color}
 
@@ -99,21 +98,21 @@
 
 
 % MATEMATICAS
- 
-\usepackage{calc}      % ayuda con c醠culos  b醩icos dentro de latex
+
+\usepackage{calc}      % ayuda con c谩lculos  b谩sicos dentro de latex
 \usepackage{amsmath}   % From the American Mathematical Society
 \usepackage{amssymb}
 
 
 %% ACRONIMOS
 
-%% inclusi髇 del paquete glossaries, para  tener lso acronimos
+%% inclusi贸n del paquete glossaries, para  tener lso acronimos
 %	xindy 	indicaque el motor de  busqueda es xindy, se necesita del  la instalacion de xindy
 %	acronym, indica que se genera lsita de acronimos
 %	nomumberlist	para  que no incluya la pagina donde aparece el acronimo
 %	sanitize=none evita lso problemas con los acentos  en algunos comandos
-%	\ac muestra el acr髇imo en su forma  completa la primera vez  que se llama y
-%   la forma corta las siguentes 	\ac1 muestra la  forma larga del acr髇imo
+%	\ac muestra el acr贸nimo en su forma  completa la primera vez  que se llama y
+%   la forma corta las siguentes 	\ac1 muestra la  forma larga del acr贸nimo
 %	\acs muestra la forma corta y \acf la forma completa
 % 	el fichero fuente esta en bd_acronimos
 
@@ -125,31 +124,31 @@ shortcuts,hyperfirst=false,sanitize=none]{glossaries}
 
 %%  OTROS
 
-% Redefinici髇 al espa駉l los nombres de las  tablas  e 韓dices, ya que 
+% Redefinici贸n al espa帽ol los nombres de las  tablas  e 铆ndices, ya que
 % el paquete babel  los pone con el nombre de cuadros
 \addto\captionsspanish{%
   \def\tablename{Tabla}%
   \def\listtablename{\'Indice de tablas}%
   \def\listfigurename{\'Indice de figuras}
-  \def\contentsname{\'Indice general}%  
-  \def\chaptername{Cap\'itulo}%  
-  \def\listacronymname{Acr髇imos y abreviaturas}%
-  \renewcommand*{\acronymname}{Acr髇imos y abreviaturas}
+  \def\contentsname{\'Indice general}%
+  \def\chaptername{Cap\'itulo}%
+  \def\listacronymname{Acr贸nimos y abreviaturas}%
+  \renewcommand*{\acronymname}{Acr贸nimos y abreviaturas}
   \renewcommand*{\glossaryname}{Glosario}
 }
- 
 
 
 
-%% GENERACI覰 DE NUEVOS COMANDOS  PARA SIMPLIFICAR LA ESCRITURA
+
+%% GENERACI脫N DE NUEVOS COMANDOS  PARA SIMPLIFICAR LA ESCRITURA
 
 % insertar una figura con el fin de evitar la inclusion de la carperta
-% en donde estan las imagenes 
+% en donde estan las imagenes
 \newcommand{\imagen}[2]{%
   \includegraphics[#2]{image/#1}%
-} 
+}
 
-% insertar figuras directamente desde el texto, se debe indicar 4 
+% insertar figuras directamente desde el texto, se debe indicar 4
 % argumentos 1 el nombre del fichero, 2 width=Xcm,height=Ycm,angle=Z,
 % 3 la etiqueta de la figura y 4 el titulo de la misma
 \newcommand{\figura}[4]{%
@@ -159,10 +158,10 @@ shortcuts,hyperfirst=false,sanitize=none]{glossaries}
       \caption{#4} \label{#3}%
     \end{center}%
   \end{figure}%
-} 
+}
 
 
-% Configuraci髇 del resumen de cada capitulo 
+% Configuraci贸n del resumen de cada capitulo
 \newenvironment{resumen}{%
 \begin{quotation}\noindent\begin{small}\textbf{\textsc{Resumen:}}%
 }%
@@ -171,7 +170,7 @@ shortcuts,hyperfirst=false,sanitize=none]{glossaries}
 \bigskip%
 }
 
-% configiraci騨 de comentarios y cosas por hacer 
+% configiraci貌n de comentarios y cosas por hacer
 
 % TODO
 \newcommand{\TODO}[1]{{\color{orange} TODO: #1}}
@@ -180,5 +179,3 @@ shortcuts,hyperfirst=false,sanitize=none]{glossaries}
 
 
 %%% FIN CONFIG
-
-

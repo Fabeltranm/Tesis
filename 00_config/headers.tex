@@ -1,7 +1,6 @@
-% -*-coding: iso-latin-1  -*-
 \usepackage{fancyhdr}			% Cambia los parametros de la cabecera
 \pagestyle{fancy}			    % elegir este estilo de cpps
-\addtolength{\headheight}{2pt}	% se evitan warnings por el tamaÒo de la cabecera
+\addtolength{\headheight}{2pt}	% se evitan warnings por el tama√±o de la cabecera
 
 
 \newcommand{\restauraCabecera}{
@@ -11,7 +10,7 @@
 
 
 \renewcommand{\headrulewidth}{0.5pt}             % Cabecera: subraya la cabecera (fijar en "0pt" si no se desea).
-\renewcommand{\footrulewidth}{0pt}               % PiÈ: subraya el pie de p·gina (fijar en "0pt" si no se desea).
+\renewcommand{\footrulewidth}{0pt}               % Pi√©: subraya el pie de p√°gina (fijar en "0pt" si no se desea).
 \renewcommand{\chaptermark}[1]{%
    \markboth{\textsc{\chaptertitlename\ \thechapter.}\ #1}{}%
 }
@@ -19,9 +18,9 @@
 \fancyhf{}
 \restauraCabecera
 \fancyhead[RO,LE]{\thepage}
-\fancyhead[LE,RO]{\textbf{\thepage}}           % Cabecera: n˙mero de p·gina en negrita.
-  
-% para los capÌtulos que  no tiene numeraciÛn  ni secciones  se debe cambiar
+\fancyhead[LE,RO]{\textbf{\thepage}}           % Cabecera: n√∫mero de p√°gina en negrita.
+
+% para los cap√≠tulos que  no tiene numeraci√≥n  ni secciones  se debe cambiar
 \newcommand{\cabeceraEspecial}[1]{
   \fancyhead[LO]{\textsc{#1}}
   \fancyhead[RE]{\textsc{#1}}
@@ -35,16 +34,16 @@
 %\newcommand{\TocConclusiones}{\addcontentsline{toc}{section}{Conclusiones}}
 
 
-% DefiniciÛn del estilo en la  p·gina de inicio de capÌtulo: N˙mero de
-% la p·gina abajo a la derecha, y sin lÌnea en la zona superior.
+% Definici√≥n del estilo en la  p√°gina de inicio de cap√≠tulo: N√∫mero de
+% la p√°gina abajo a la derecha, y sin l√≠nea en la zona superior.
 \fancypagestyle{plain}{%
-  \fancyhf{}  
+  \fancyhf{}
   \fancyfoot[R]{\thepage}
   \renewcommand{\headrulewidth}{0pt}
   \renewcommand{\footrulewidth}{0pt}
 }
 
-%% Prevenir que al cambiar de capitulo la pagina en blanco no tenga cabecera 
+%% Prevenir que al cambiar de capitulo la pagina en blanco no tenga cabecera
 \makeatletter
 \def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
   \hbox{}
@@ -59,6 +58,3 @@
 \ifx\release\undefined
   \fancyfoot[LE,RO]{\vspace*{1cm}\small \sc Draft  -- \today}
 \fi
-
-
-

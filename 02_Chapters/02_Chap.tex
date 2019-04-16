@@ -1,89 +1,88 @@
-% -*-coding: iso-latin-1  -*-
-\chapter{Definici髇  del Espectro}
+\chapter{Definici贸n  del Espectro}
 
 
 
 \begin{resumen}
 
-En el siguiente cap韙ulo se aborda el formalismo matem醫ico que enmarca la
-definici髇 del espectro de las se馻les cardiacas de esta \nombreDoc, y el cual
-se encuentra publicado en \cite{Requena13b}. La motivaci髇 del cap韙ulo es
-desarrollar la teor韆 que conecta el espectro de la se馻les cardiacas, con su
-din醡ica espacio-temporal de las se馻les cardiacas. 
+En el siguiente cap铆tulo se aborda el formalismo matem谩tico que enmarca la
+definici贸n del espectro de las se帽ales cardiacas de esta \nombreDoc, y el cual
+se encuentra publicado en \cite{Requena13b}. La motivaci贸n del cap铆tulo es
+desarrollar la teor铆a que conecta el espectro de la se帽ales cardiacas, con su
+din谩mica espacio-temporal de las se帽ales cardiacas.
 
 A lo largo del capitulo se plasman los diferentes conceptos necesarios para el
-an醠isis espectral, como la auto-correlaci髇 de las fuentes y  se馻les
-cardiacas. Y mediante el an醠isis multivariante, se estudian los mecanismos para
-la estimaci髇 del espectro que conllevan a los mapas de \acf{DF} y de \acf{PF}.
-Por 鷏timo, se abordan los efectos de sistemas de electrodos sobre el espectro
-de las se馻les.
+an谩lisis espectral, como la auto-correlaci贸n de las fuentes y  se帽ales
+cardiacas. Y mediante el an谩lisis multivariante, se estudian los mecanismos para
+la estimaci贸n del espectro que conllevan a los mapas de \acf{DF} y de \acf{PF}.
+Por 煤ltimo, se abordan los efectos de sistemas de electrodos sobre el espectro
+de las se帽ales.
 
 
-Para terminar, se aborda los mapas de (\ac{DF}), como ejemplo de an醠isis
-espectral. en donde se expome la relaci髇 entre las caracteristicas del sistema
+Para terminar, se aborda los mapas de (\ac{DF}), como ejemplo de an谩lisis
+espectral. en donde se expome la relaci贸n entre las caracteristicas del sistema
 de electrodos, utilizados para estimar la actividad local del miocardio, y el
 ancho de banda del espectro resultante.
 
-Los resultados te髍icos, presentes en este capitulo, derivan en el an醠isis e
-interpretaci髇 del espectro de se馻les cardiacas y los efectos del sistema
-de electrodos, que se abordan en los pr髕imos cap韙ulos
+Los resultados te贸ricos, presentes en este capitulo, derivan en el an谩lisis e
+interpretaci贸n del espectro de se帽ales cardiacas y los efectos del sistema
+de electrodos, que se abordan en los pr贸ximos cap铆tulos
 
 
 
 
 
-NOTAS llega hasta la descrip la correlaci髇 de voltajes  definicion de tipos de
+NOTAS llega hasta la descrip la correlaci贸n de voltajes  definicion de tipos de
 fuentes se toma del articulo
 
 \end{resumen}
 
 
-\section{Introducci髇}
+\section{Introducci贸n}
 
 En el estudio de la fibrilaciones cardiacas, por medio de \ac{ECG}, se observan
-trazas muy irregulares de la se馻l captada, y por lo tanto, tradicionalmente se
+trazas muy irregulares de la se帽al captada, y por lo tanto, tradicionalmente se
 han descrito dichas arritmias complejas como aleatorias  y desorganizadas.
-Pero el an醠isis espectral, t閏nica ampliamente utilizada en el estudio de
-se馻les cardiaca, a permitido cuantificar la organizaci髇 espacio-temporal del
-sustrato cardiaco durante la fibrilaci髇. Con el uso de la teoria de la din醡ica
-no lineal y gracias al desarrollo de t閏nicas de mapeo optico y el閏trico, se ha
-spropuesto que la fibrilaci髇 puede tener algun grado de regularidad
+Pero el an谩lisis espectral, t茅cnica ampliamente utilizada en el estudio de
+se帽ales cardiaca, a permitido cuantificar la organizaci贸n espacio-temporal del
+sustrato cardiaco durante la fibrilaci贸n. Con el uso de la teoria de la din谩mica
+no lineal y gracias al desarrollo de t茅cnicas de mapeo optico y el茅ctrico, se ha
+spropuesto que la fibrilaci贸n puede tener algun grado de regularidad
 espacio-temporal \cite{Hoekstra95, Jalife00}.
 
 
-De esta forma, las caracteristicas espectrales de se馻les cardiacas, se han
-propuestos como 韓dices experimentales para la detecci髇 de \ac{VF} \cite
-{Barro89}, para cuantificar el grado de organizaci髇 espacio-temporal de la
-\ac{AF} \cite{Everett01a} y para predecir el 閤ito de
-descargas de desfibrilaci髇 \cite{Strohmenger97, Eftestol00, Jekova04}. 
+De esta forma, las caracteristicas espectrales de se帽ales cardiacas, se han
+propuestos como 铆ndices experimentales para la detecci贸n de \ac{VF} \cite
+{Barro89}, para cuantificar el grado de organizaci贸n espacio-temporal de la
+\ac{AF} \cite{Everett01a} y para predecir el 茅xito de
+descargas de desfibrilaci贸n \cite{Strohmenger97, Eftestol00, Jekova04}.
 Adicionalmente con los mapas de \ac{DF} se han podido observar un grado de
 regularidad durante la \ac{AF} tanto en animales \cite{Skanes98,
-Mandapati00, Mansour01} como en humanos \cite{Sanders05, Atienza06}. 
+Mandapati00, Mansour01} como en humanos \cite{Sanders05, Atienza06}.
 
-Se observa, el an醠isis espectro de las se馻les cardiaca, viene en
-constante crecimiento. Sin embargo, a鵱 sigue siendo difusa la relaci髇 entre el
-espectro de se馻les cardiacas y la din醡ica espacio-temporales de las fuentes
-card韆cas subyacentes. por lo cual en este cap韙ulo se presenta  el formalismo
-matem醫ico que sustenta la investigaci髇 el espectro de la actividad el閏trica
-del coraz髇.
-
-
+Se observa, el an谩lisis espectro de las se帽ales cardiaca, viene en
+constante crecimiento. Sin embargo, a霉n sigue siendo difusa la relaci贸n entre el
+espectro de se帽ales cardiacas y la din谩mica espacio-temporales de las fuentes
+card铆acas subyacentes. por lo cual en este cap铆tulo se presenta  el formalismo
+matem谩tico que sustenta la investigaci贸n el espectro de la actividad el茅ctrica
+del coraz贸n.
 
 
-Los procesos estoc醩ticos nos permiten modelar aquellos sistemas multivariantes,
+
+
+Los procesos estoc谩sticos nos permiten modelar aquellos sistemas multivariantes,
 en tiempo y espacio. De esta manera, gracias a las herramientas estadisticas, se
-puede estudiar como se comportan se馻les variantes en el tiempo, que de otra
-forma serian muy dificiles de tratar. Los modelos estoc醩ticos son fundamentales
-para el an醠isis espectral de se馻les bioel閏tricas, y en general en se馻les
+puede estudiar como se comportan se帽ales variantes en el tiempo, que de otra
+forma serian muy dificiles de tratar. Los modelos estoc谩sticos son fundamentales
+para el an谩lisis espectral de se帽ales bioel茅ctricas, y en general en se帽ales
 discretas que se analizan en un tiempo finito. De esta formas, tanto la
-autocorrelaci髇 con la densidad espectral de potencia, son habitualmente muy
-utilizadas para describir procesos estoc醩ticos de segundo orden. Con los
+autocorrelaci贸n con la densidad espectral de potencia, son habitualmente muy
+utilizadas para describir procesos estoc谩sticos de segundo orden. Con los
 estadisticos de segundo orden, por lo tanto, es posible describir patrones,
-tales como la periidicidad y la coherencia de las se馻les
-\cite{Requena08}. Siguiendo un enfoque de an醠isis de la se馻l multivariante, a
-lo largo de este cap韙ulo, se identifica la relaci髇 entre el
-espectro de las se馻les cardiacas, la din醡ica espacio-temporal de las fuentes
-card韆cos, y las caracter韘ticas de los sistemas de captaci髇 de la actividad
+tales como la periidicidad y la coherencia de las se帽ales
+\cite{Requena08}. Siguiendo un enfoque de an谩lisis de la se帽al multivariante, a
+lo largo de este cap铆tulo, se identifica la relaci贸n entre el
+espectro de las se帽ales cardiacas, la din谩mica espacio-temporal de las fuentes
+card铆acos, y las caracter铆sticas de los sistemas de captaci贸n de la actividad
 cardiaca.
 
 
@@ -92,80 +91,80 @@ cardiaca.
 
 \subsection{Variable Aleatoria}\label{subs:varaleatoria}
 
-Una variable aleatoria, como funci髇 medible que asigna un n鷐ero real a cada
+Una variable aleatoria, como funci贸n medible que asigna un n煤mero real a cada
 posible resultado del espacio muestral de un experimento aleatorio, se puede
 caracterizar por medio de su probabilidad de ocurrencia. De esta forma, la
-funci髇 de distribuci髇 ${F(x)}$  es una descripci髇 de las probabilidades
+funci贸n de distribuci贸n ${F(x)}$  es una descripci贸n de las probabilidades
 asociadas a los posibles valores de la variable aleatoria.
 
-Por tanto, toda variable aleatoria tiene asociada una funci髇 de distribuci髇
+Por tanto, toda variable aleatoria tiene asociada una funci贸n de distribuci贸n
 ${F(x)}$, tal que ${F(x)=P(X \leq x)}$. Para variables aleatoria continua, la
-distribuci髇 de probabilidad viene descrita por una funci髇 de densidad
+distribuci贸n de probabilidad viene descrita por una funci贸n de densidad
 ${f(x)}$. en donde, ${f(x)= dF(x)/dx}$. Asi mismo,  para las variables
-aleatorias discretas relacionamos la funci髇 de distribuci髇 con la funci髇 de
+aleatorias discretas relacionamos la funci贸n de distribuci贸n con la funci贸n de
 densidad como ${F(x)= \displaystyle\sum_{x_i \leq x }f(x_i)}$.
 
-Un proceso estoc醩tico es una sucesi髇 infinita de variables aleatorias que
+Un proceso estoc谩stico es una sucesi贸n infinita de variables aleatorias que
 evolucionan en el tiempo. Por lo tanto, al dependen del un tiempo $t$  la
-funci髇 de distribuci髇 da lugar a ${F(x,t)=P(\mathbf{x}(t) \leq x)}$.
-Por lo que, la funci髇 de densidad de $x(t)$ es $f(x,t)=
+funci贸n de distribuci贸n da lugar a ${F(x,t)=P(\mathbf{x}(t) \leq x)}$.
+Por lo que, la funci贸n de densidad de $x(t)$ es $f(x,t)=
 \partial{F(x,t)}/\partial{x}$ \cite{Papoulis91}.
 
 
 
-\subsection{Correlaci髇 de Se馻les}\label{subs:corresignal}
+\subsection{Correlaci贸n de Se帽ales}\label{subs:corresignal}
 Siendo $\mathbf{x}(t)$, un proceso estocasticos real y $\mathbf{x}(t_1)$,
 $\mathbf{x}(t_2)$, dos valiables aleatorias, se define, $\mathbf{R}(t_1,t_2)$,
-la autocorrelaci髇 de $\mathbf{x}(t)$ como \cite{Papoulis91}:
+la autocorrelaci贸n de $\mathbf{x}(t)$ como \cite{Papoulis91}:
 
 \begin{eqnarray}\label{eq:autocorrelation}
 	\mathbf{R}(t_1,t_2)=E{\{ \mathbf{x}(t_1)\mathbf{x}(t_2) \}}
 \end{eqnarray}
-Donde $E$ es la media estadistica. De esta manera, se define la autocorrelaci髇
+Donde $E$ es la media estadistica. De esta manera, se define la autocorrelaci贸n
 de un procesos $\mathbf{x}$, real o complejo, como la media estadistica del
-producto de $\mathbf{x}(t_1)\mathbf{x}^*(t_2)$, donde la m醲ima correlaci髇 se
+producto de $\mathbf{x}(t_1)\mathbf{x}^*(t_2)$, donde la m谩xima correlaci贸n se
 obtienen cuando $t_1=t_2$.
 
 Cuando se tiene dos procesos estocasticos $\mathbf{x}(t)$ y
-$\mathbf{y}(t)$,se habla de corelaci髇 cruzada $\mathbf{R}_{xy}(\tau)$. como 
+$\mathbf{y}(t)$,se habla de corelaci贸n cruzada $\mathbf{R}_{xy}(\tau)$. como
 \cite{Requena08}:
 
 \begin{eqnarray}\label{eq:correlation}
 	\mathbf{R}_{xy}(\tau)=E{\{ \mathbf{x}(t-\tau)\mathbf{y}(t) \}}
 \end{eqnarray}
-De esta forma, la correlaci髇 es la operaci髇 b醩ica para la b鷖queda de
+De esta forma, la correlaci贸n es la operaci贸n b谩sica para la b煤squeda de
 patrones por emparejamiento. como se expone en \cite{Requena08} el ruido blanco,
-$W(t)$, es un porcesos estoc醩tico particular cuya funci髇 de autocorrelaci髇 es
-$\mathbf{R}(\tau)= \delta(\tau)$, donde $\delta(\tau)$ es la funci髇 delta de
+$W(t)$, es un porcesos estoc谩stico particular cuya funci贸n de autocorrelaci贸n es
+$\mathbf{R}(\tau)= \delta(\tau)$, donde $\delta(\tau)$ es la funci贸n delta de
 Dirac, y lo que indica es que las variables aleatorias que conforman $W(t)$
 no estan correlacionadas entre si.
 
 
-\subsection{Correlaci髇 de Vectores}\label{subs:correvector}
+\subsection{Correlaci贸n de Vectores}\label{subs:correvector}
 
 Un procesos vectorial, de $n$ dimensiones, es una familia de $n$ procesos
-estocasticos. Por lo tanto, un proceso estoc醩tico vectorial es un
-vector cuyas componentes son procesos estoc醩ticos escalares \cite{Requena08}. 
+estocasticos. Por lo tanto, un proceso estoc谩stico vectorial es un
+vector cuyas componentes son procesos estoc谩sticos escalares \cite{Requena08}.
 
-Se extienda la definici髇 de la correlaci髇 de dos se馻les, secci髇
+Se extienda la definici贸n de la correlaci贸n de dos se帽ales, secci贸n
 \ref{subs:corresignal}, a los procesos vectoriales, al realizar para cada par de
 procesos escalares  definidos por el producto vectorial de dos procesos
-vectoriales, como se expone en \cite{Requena08}. La correlaci髇 de vectores es la correlaci髇 cruzada de los
-componentes del vector que dan como resultado las matriz de correlaci髇
+vectoriales, como se expone en \cite{Requena08}. La correlaci贸n de vectores es la correlaci贸n cruzada de los
+componentes del vector que dan como resultado las matriz de correlaci贸n
 cruzada.
 
 Si $\mathbf{V}_n(t)$ y $\mathbf{W}_n(t)$ son dos procesos vectoriales  de $n$
 dimensiones, $\{v_1, v_2, v_3, \ldots v_n\}$ y  $\{w_1, w_2, w_3, \ldots
 w_n\}$ los respectivos procesos estocasticos. Entonces, acorde con la
-la ecuaci髇 \ref{eq:correlation}, decimos que la correlaci髇 cruzada entre dos
-componentes de $\mathbf{V}_n(t)$ y $\mathbf{W}_n(t)$, esta definida 
+la ecuaci贸n \ref{eq:correlation}, decimos que la correlaci贸n cruzada entre dos
+componentes de $\mathbf{V}_n(t)$ y $\mathbf{W}_n(t)$, esta definida
 
  \begin{eqnarray}\label{eq:correlationCompVector}
  {\rho_{11}}(v,w,\tau)=E{\{ \mathbf{v_1}(t-\tau)\mathbf{w_1}(t) \}}
  \end{eqnarray}
 
-De esta forma, la matriz de correlaci髇 cruzada entre dos procesos vectoriales
-$\mathbf{V}_n(t)$ y $\mathbf{W}_n(t)$, se define 
+De esta forma, la matriz de correlaci贸n cruzada entre dos procesos vectoriales
+$\mathbf{V}_n(t)$ y $\mathbf{W}_n(t)$, se define
 
  \begin{eqnarray}\label{eq:correlationVector}
  &&\boldsymbol{\rho}(v,w,\tau)
@@ -173,47 +172,47 @@ $\mathbf{V}_n(t)$ y $\mathbf{W}_n(t)$, se define
  {\rho}_{11}(v,w,\tau) & {\rho}_{12}(v,w,\tau) & \ldots &{\rho}_{1n}(v,w,\tau)\\
  {\rho}_{21}(v,w,\tau) & {\rho}_{22}(v,w,\tau) & \ldots &{\rho}_{2n}(v,w,\tau)\\
  \ldots & \ldots& & \ldots\\
- {\rho}_{n1}(v,w,\tau) & {\rho}_{n2}(v,w,\tau) & \ldots &{\rho}_{nn}(v,w,\tau) 
+ {\rho}_{n1}(v,w,\tau) & {\rho}_{n2}(v,w,\tau) & \ldots &{\rho}_{nn}(v,w,\tau)
  \end{array} \right).
  \end{eqnarray}
- 
+
 
 Si  $\boldsymbol{\rho}(v,w,\tau)$  es una matriz  nula de $nxn$ elementos, se
 decir que los dos procesos vectorales estas incorrelacionados. Adicionalmente,
 si $\mathbf{V}_n(t) = \mathbf{W}_n(t)$, entonces hablamos de que la diagonal de la
-matriz $\boldsymbol{\rho}(v,w,\tau)$, es la autocorrelaci髇 de cada una de las
+matriz $\boldsymbol{\rho}(v,w,\tau)$, es la autocorrelaci贸n de cada una de las
 componestes del  proceso vectorial.
 
 
-\section{Autocorrelaci髇 de fuentes bioelectricas}
+\section{Autocorrelaci贸n de fuentes bioelectricas}
 
-En esta secci髇 nosotros proponemos la definici髇 de autocorrelaci髇 tanto de
-fuentes como de sen馻les cardiacas. Nuestro punto de partida se refleja del
+En esta secci贸n nosotros proponemos la definici贸n de autocorrelaci贸n tanto de
+fuentes como de sen帽ales cardiacas. Nuestro punto de partida se refleja del
 trabajo realizado en \cite{Requena08}, que junto con la
-definici髇 de dipolo bioel閏trico de la secci髇 \ref{sec:modelElectrofi}
-enmarcan las fuentes bioel閏tricas en los procesos estocasticos de segundo.
+definici贸n de dipolo bioel茅ctrico de la secci贸n \ref{sec:modelElectrofi}
+enmarcan las fuentes bioel茅ctricas en los procesos estocasticos de segundo.
 
 
-\subsection{Autocorrelaci髇  de fuentes cardiacas}
+\subsection{Autocorrelaci贸n  de fuentes cardiacas}
 
-Como se vio en la secci髇 \ref{sec:modelElectrofi}, nosotros tomamos el dipolo
+Como se vio en la secci贸n \ref{sec:modelElectrofi}, nosotros tomamos el dipolo
 cardiaco como elemento basico de una fuente cardiaca, y de esta forma definimos
-la autocorrelaci髇 de fuentes cardiacas, como la correlaci髇 cruzada entre un
+la autocorrelaci贸n de fuentes cardiacas, como la correlaci贸n cruzada entre un
 dipolo cardiaco y todos los dipolos pertenecientes al tejido.
 
 El dipolo cardiaco es un ente  vectorial, tal que $\mathbf{J}(v,t)={\{ J_x(v,t),
 J_y(v,t), J_z(v,t) \}}$ \cite{Malmivuo95}, por lo que podemos extrapolar la
-correlaci髇 de vectores de  \ref{subs:correvector} a la correlacion entre dos
-dipolos,  como la correlaci髇 cruzada entre las tres componentes de cada dipolo.
+correlaci贸n de vectores de  \ref{subs:correvector} a la correlacion entre dos
+dipolos,  como la correlaci贸n cruzada entre las tres componentes de cada dipolo.
 
 La media de un dipolo cardiaco, segun \cite{Papoulis91},  esta dada por:
-  
+
  \begin{eqnarray}\label{eq:average_dipole}
  \bar{\mathbf{J}}(v)&=&\langle\mathbf{J}(v,t)\rangle_t  \nonumber \\
-	&=& [\langle J_x(v,t)\rangle_t, \langle J_y(v,t)\rangle_t, \langle J_z(v,t)\rangle_t]^T. 
+	&=& [\langle J_x(v,t)\rangle_t, \langle J_y(v,t)\rangle_t, \langle J_z(v,t)\rangle_t]^T.
  \end{eqnarray}
 
-A continuaci髇  y basados en  $\bar{\mathbf{J}}(v)$, se define el dipolo
+A continuaci贸n  y basados en  $\bar{\mathbf{J}}(v)$, se define el dipolo
 cardiaco con media cero, $\langle\mathbf{J'}(v,t)\rangle_t=\mathbf{0}$, como:
 
 
@@ -221,7 +220,7 @@ cardiaco con media cero, $\langle\mathbf{J'}(v,t)\rangle_t=\mathbf{0}$, como:
 	\mathbf{J'}(v,t)=\mathbf{J}(v,t)-\bar{\mathbf{J}}(v)
 \end{eqnarray}
 
-La correlaci髇 cruzada entre dos dipolos cardiacos, $\mathbf{J}(v,t)$ y 
+La correlaci贸n cruzada entre dos dipolos cardiacos, $\mathbf{J}(v,t)$ y
 $\mathbf{J}(w,t)$, del tejido cardiaco definido por $V$, queda definida como:
 
  \begin{eqnarray}\label{eq:autocorrelation_source}
@@ -230,35 +229,35 @@ $\mathbf{J}(w,t)$, del tejido cardiaco definido por $V$, queda definida como:
  &&= \left( \begin{array}{ccc}
  {\rho}_{xx}(v,w,\tau) & {\rho}_{xy}(v,w,\tau) & {\rho}_{xz}(v,w,\tau) \\
  {\rho}_{yx}(v,w,\tau) & {\rho}_{yy}(v,w,\tau) & {\rho}_{yz}(v,w,\tau) \\
- {\rho}_{zx}(v,w,\tau) & {\rho}_{zy}(v,w,\tau) & {\rho}_{zz}(v,w,\tau) 
+ {\rho}_{zx}(v,w,\tau) & {\rho}_{zy}(v,w,\tau) & {\rho}_{zz}(v,w,\tau)
  \end{array} \right).
  \end{eqnarray}
 
 Donde, $\boldsymbol{\rho}(v,w,\tau)$, define la matriz  que describe la
-correlaci髇 cruzada entre cada una de las componentes del par de dipolos, 
-$\mathbf{J}(v,t)$ y $\mathbf{J}(w,t)$ del  tejido cardiaco. 
+correlaci贸n cruzada entre cada una de las componentes del par de dipolos,
+$\mathbf{J}(v,t)$ y $\mathbf{J}(w,t)$ del  tejido cardiaco.
 
-Ahora bien, para definir la autocorrelaci髇 de fuentes cardiacas,  nosotros
+Ahora bien, para definir la autocorrelaci贸n de fuentes cardiacas,  nosotros
 definimo es primera instancia, a partir de \ref{eq:autocorrelation_source}, la
-correlaci髇 cruzada  total  entre dos dipolos cardiacos $\mathbf{J}(v,t)$ y
+correlaci贸n cruzada  total  entre dos dipolos cardiacos $\mathbf{J}(v,t)$ y
 $\mathbf{J}(w,t)$, como la suma de todos los elementos de $\boldsymbol{\rho}(v,w,\tau)$.
 
-\begin{eqnarray} 
-  R_{J}(v,w,\tau) &=&  \mathbf{1}^{T} \boldsymbol{\rho}(v,w,\tau) 
+\begin{eqnarray}
+  R_{J}(v,w,\tau) &=&  \mathbf{1}^{T} \boldsymbol{\rho}(v,w,\tau)
   \mathbf{1},\label{total_corr}
 \end{eqnarray}
 
 
 
-Para normalizar la correlaci髇 cruzada total es necesario definir la potencia
+Para normalizar la correlaci贸n cruzada total es necesario definir la potencia
 media del dipolo cardiaco como:
 
 \begin{equation}\label{eq:Potencia}
 {P}(v) = {R_{J}}(v,v,0)
 \end{equation}
 
-Donde, ${R_{J}}(v,v,0)$  es la auto-correlaci髇 total del dipolo $\mathbf{J}(v,t)$ en $\tau=0$. 
-De esta manera, ${R'}_{J}(v_o,w,\tau)$, es la correlaci髇 total normaliza por
+Donde, ${R_{J}}(v,v,0)$  es la auto-correlaci贸n total del dipolo $\mathbf{J}(v,t)$ en $\tau=0$.
+De esta manera, ${R'}_{J}(v_o,w,\tau)$, es la correlaci贸n total normaliza por
 las potencias de  $\mathbf{J}(v,t)$ y $\mathbf{J}(w,t)$, definida  por:
 
 \begin{equation}\label{eq:RjN}
@@ -306,14 +305,14 @@ S_{c}(f) &=&\int_{V\times V}{\mathbf{L}^{T}(v) \boldsymbol{\sigma}(v,w,f) \mathb
  different lead systems will in general have different spectra for the same
  underlying spatiotemporal dynamics.
 
-\subsection{Mapa de intensidades pico de autocorrelaci髇}
+\subsection{Mapa de intensidades pico de autocorrelaci贸n}
 
 
-El mapa de intensidades pico de correlaci髇 del  dipolo presenta la relaci髇 
-entre un dipolo dado, $\mathbf{J}(v_o,t)$ y todos los elementos del  tejido 
-cardiaco. 
-Cada elemento del mapa de intensidades pico de correlaci髇 del dipolo $\mathbf{J}(v,t)$, 
-corresponde a la m醲ima intensidad de la correlaci髇 total normalizada entre  el
+El mapa de intensidades pico de correlaci贸n del  dipolo presenta la relaci贸n
+entre un dipolo dado, $\mathbf{J}(v_o,t)$ y todos los elementos del  tejido
+cardiaco.
+Cada elemento del mapa de intensidades pico de correlaci贸n del dipolo $\mathbf{J}(v,t)$,
+corresponde a la m谩xima intensidad de la correlaci贸n total normalizada entre  el
 dipolo $\mathbf{J}(v,t)$ y cada dipolo $\mathbf{J}(w,t)$ del tejido cardiaco.
 
 \begin{figure}[t]
@@ -326,17 +325,17 @@ dipolo $\mathbf{J}(v,t)$ y cada dipolo $\mathbf{J}(w,t)$ del tejido cardiaco.
  \end{tabular}
   \caption{ejemplo de dipolos (a) perfectamente correlacionados, (b))
   parcialmente correlacionados y (c) perfectamente incorrelacionadas .}
-  \label{fig:din醡icas}
+  \label{fig:din谩micas}
 \end{figure}
 
-\subsection{Grado de auto-correlaci髇 del tejido cardiaco}
+\subsection{Grado de auto-correlaci贸n del tejido cardiaco}
 
-El grado de auto-correlaci髇 de una regi髇 nos da el porcentaje de dipolos correlacionados dentro del volumen cardiaco. Se cuantifica la relaci髇 entre los dipolos del tejido cardiaco, a trav閟 del promediado del n鷐ero de dipolos correlacionados  en cada mapa de intensidades pico.
+El grado de auto-correlaci贸n de una regi贸n nos da el porcentaje de dipolos correlacionados dentro del volumen cardiaco. Se cuantifica la relaci贸n entre los dipolos del tejido cardiaco, a trav茅s del promediado del n煤mero de dipolos correlacionados  en cada mapa de intensidades pico.
 
-En este sentido, si la regi髇 de auto-correlaci髇 es homog閚ea, podemos  hablar de 醨eas perfectamente  auto-correlacionadas cuando todos sus elementos est醤 correlacionados entre si, y de 醨eas  perfectamente incorrelacionadas cuando todos los elementos de  la regi髇 no satisfacen el  grado de correlaci髇, es decir su intensidad pico es nula.  Si la regi髇 de auto-correlaci髇 presenta diferentes intensidades de correlaci髇 total, nosotros definimos umbrales de correlaci髇 y de esta forma, se  clasifican las din醡icas parcialmente correlacionadas.
- 
-En este orden y en funci髇 de un umbral de correlaci髇, nosotros definimos la funci髇 boleana para todos los elementos del mapa de intensidades pico de correlaci髇, como:
- 
+En este sentido, si la regi贸n de auto-correlaci贸n es homog茅nea, podemos  hablar de 谩reas perfectamente  auto-correlacionadas cuando todos sus elementos est谩n correlacionados entre si, y de 谩reas  perfectamente incorrelacionadas cuando todos los elementos de  la regi贸n no satisfacen el  grado de correlaci贸n, es decir su intensidad pico es nula.  Si la regi贸n de auto-correlaci贸n presenta diferentes intensidades de correlaci贸n total, nosotros definimos umbrales de correlaci贸n y de esta forma, se  clasifican las din谩micas parcialmente correlacionadas.
+
+En este orden y en funci贸n de un umbral de correlaci贸n, nosotros definimos la funci贸n boleana para todos los elementos del mapa de intensidades pico de correlaci贸n, como:
+
 \begin{equation}
  \boldsymbol{U}(v,w)=
  \begin{cases}
@@ -347,65 +346,65 @@ En este orden y en funci髇 de un umbral de correlaci髇, nosotros definimos la fu
  \end{cases}
 \end{equation}
 
- La intensidad pico de correlaci髇 total de los  dipolos  $\mathbf{J}(v_0,t)$ y $\mathbf{J}(w,t)$, esta definido por: 
+ La intensidad pico de correlaci贸n total de los  dipolos  $\mathbf{J}(v_0,t)$ y $\mathbf{J}(w,t)$, esta definido por:
 \begin{equation}
 {r}(v_o,w)  =max{|{R'_{J}}(v_o,w,\tau)|}
 \end{equation}
 
-Donde ${r}(v_o,w)$, puede tomar valores entre 0 y 1, De esta forma, el mapa de intensidades pico de correlaci髇 del dipolo $\mathbf{J}(v_0,t)$, contiene  todo los elementos correspondientes  a  ${r}(v_o,w)$,  donde $w$ denota cada uno de los dipolos de $V$. Si ${r}(v_o,w)=0$, decimos que los dipolos  $\mathbf{J}(v_0,t)$ y $\mathbf{J}(w,t)$, est醤 perfectamente  incorrelacionados, cuando  ${r}(v_o,w)=1$, decimos que los dipolos  $\mathbf{J}(v_0,t)$ y $\mathbf{J}(w,t)$ est醤 perfectamente correlacionados. Cuando  $w = v_o$, ${r}(v_o,w)$ es la intensidad m醲ima de la auto-correlaci髇 del dipolo $\mathbf{J}(v_0,t)$, por lo que ${r}(v_o,w)={r}(v_o,v_o)=1$.
+Donde ${r}(v_o,w)$, puede tomar valores entre 0 y 1, De esta forma, el mapa de intensidades pico de correlaci贸n del dipolo $\mathbf{J}(v_0,t)$, contiene  todo los elementos correspondientes  a  ${r}(v_o,w)$,  donde $w$ denota cada uno de los dipolos de $V$. Si ${r}(v_o,w)=0$, decimos que los dipolos  $\mathbf{J}(v_0,t)$ y $\mathbf{J}(w,t)$, est谩n perfectamente  incorrelacionados, cuando  ${r}(v_o,w)=1$, decimos que los dipolos  $\mathbf{J}(v_0,t)$ y $\mathbf{J}(w,t)$ est谩n perfectamente correlacionados. Cuando  $w = v_o$, ${r}(v_o,w)$ es la intensidad m谩xima de la auto-correlaci贸n del dipolo $\mathbf{J}(v_0,t)$, por lo que ${r}(v_o,w)={r}(v_o,v_o)=1$.
 
 
 
 
-Donde $u$ es el umbral de correlaci髇  normalizado  por encima del cual  consideramos que la intensidad pico de correlaci髇 total ${r}(v,w)$ es satisfactoria, $u$ varia entre 0 y 1. Si la regi髇 de auto-correlaci髇 es heterog閚ea, es de suponer que a mayor valor del umbral de correlaci髇 es menor el radio de la regi髇 de auto-correlaci髇. De esta manera, el grado de auto-correlaci髇 del tejido cardiaco  se puede define como el promedio de la cantidad de  dipolos  correlacionados  para cada $\mathbf{U}(v.w) \in V$. 
+Donde $u$ es el umbral de correlaci贸n  normalizado  por encima del cual  consideramos que la intensidad pico de correlaci贸n total ${r}(v,w)$ es satisfactoria, $u$ varia entre 0 y 1. Si la regi贸n de auto-correlaci贸n es heterog茅nea, es de suponer que a mayor valor del umbral de correlaci贸n es menor el radio de la regi贸n de auto-correlaci贸n. De esta manera, el grado de auto-correlaci贸n del tejido cardiaco  se puede define como el promedio de la cantidad de  dipolos  correlacionados  para cada $\mathbf{U}(v.w) \in V$.
 
 \begin{equation}
 {T}=\frac{1}{V^2}\int_{VxV}{\mathbf{U}(v,w){dvdw}}
 \end{equation}
 
-En consecuencia, basados en el umbral de correlaci髇,  el volumen  cardiaco se
-caracteriza de acuerdo al grado de auto-correlaci髇,  en donde, en funci髇 del 
-porcentaje de dipolos que satisfacen la auto-correlaci髇 hablamos de  tejido 
-correlacionado o incorrelacionado. Si el tama駉 de  la regi髇 de
-auto-correlaci髇  es equiparado  con el tama駉 del tejido observado por el Lead
-Field,  podemos hablar que el tejido cardiaco se aproxima a una din醡ica
-perfectamente  correlacionada, por el contrario cuando  el  tama駉  de la regi髇
-de auto-correlaci髇  es significativamente menor que el volumen del  tejido,
-hablamos de din醡icas incorrelacionadas.
+En consecuencia, basados en el umbral de correlaci贸n,  el volumen  cardiaco se
+caracteriza de acuerdo al grado de auto-correlaci贸n,  en donde, en funci贸n del
+porcentaje de dipolos que satisfacen la auto-correlaci贸n hablamos de  tejido
+correlacionado o incorrelacionado. Si el tama帽o de  la regi贸n de
+auto-correlaci贸n  es equiparado  con el tama帽o del tejido observado por el Lead
+Field,  podemos hablar que el tejido cardiaco se aproxima a una din谩mica
+perfectamente  correlacionada, por el contrario cuando  el  tama帽o  de la regi贸n
+de auto-correlaci贸n  es significativamente menor que el volumen del  tejido,
+hablamos de din谩micas incorrelacionadas.
 
 \subsection{Spectrum of Cardic Signal}
 
-La estimaci髇 de la densidad espectral de potencia,   tanto para el  dipolo como
-para las se馻les cardiacas,  se realiza con el m閠odo de Welch.  La resoluci髇
-de la estimaci髇 espectral depende  del  n鷐ero de muestra del  e nventanado y
-del solapamiento del mismo. El c醠culo del promedio de periodogramas,  para
-observar la  envolvente espectral en las diferentes resoluciones  de Lead Field 
-en cada una de las din醡ica simuladas, se realiza con una ventana  Hamming de
-512  muestras y un solapamiento del 50\%. Para ilustrar la  relaci髇 entre los  
-espectro de las se馻les cardiacas del frente de onda plano y su din醡ica 
+La estimaci贸n de la densidad espectral de potencia,   tanto para el  dipolo como
+para las se帽ales cardiacas,  se realiza con el m茅todo de Welch.  La resoluci贸n
+de la estimaci贸n espectral depende  del  n煤mero de muestra del  e nventanado y
+del solapamiento del mismo. El c谩lculo del promedio de periodogramas,  para
+observar la  envolvente espectral en las diferentes resoluciones  de Lead Field
+en cada una de las din谩mica simuladas, se realiza con una ventana  Hamming de
+512  muestras y un solapamiento del 50\%. Para ilustrar la  relaci贸n entre los
+espectro de las se帽ales cardiacas del frente de onda plano y su din谩mica
 temporal,  nosotros empleamos ventanas Hamming de 2048 muestras para la
-estimaci髇 del  espectro de potencia  y observar los arm髇icos de la se馻l.
+estimaci贸n del  espectro de potencia  y observar los arm贸nicos de la se帽al.
 
-Las se馻les cardiacas de las tres din醡icas simuladas (frente de onda plano, 
-espiral y caos), son sintetizadas en los 8 tama駉s de lead Field definidos, 
-$A_1$, $A_2$, $A_3$, $A_4$, $A_5$, $A_6$, $A_7$ y $A_8$,. el tiempo total  de 
-simulaci髇 es de 60 s. Para la estimaci髇 del espectro  y  los mapas de
-correlaci髇  se toma un intervalo de 20 s. La  tasa de muestreo de las se馻les  
+Las se帽ales cardiacas de las tres din谩micas simuladas (frente de onda plano,
+espiral y caos), son sintetizadas en los 8 tama帽os de lead Field definidos,
+$A_1$, $A_2$, $A_3$, $A_4$, $A_5$, $A_6$, $A_7$ y $A_8$,. el tiempo total  de
+simulaci贸n es de 60 s. Para la estimaci贸n del espectro  y  los mapas de
+correlaci贸n  se toma un intervalo de 20 s. La  tasa de muestreo de las se帽ales
 sintetizadas es de 500 Hz.
 
-El espectro de las se馻les cardiacas  en la din醡ica perfectamente correlacionada, como se expone en \cite{RequenaSpectral1}, tiene asociado la funci髇 de diferencia de tiempos de activaci髇 ${\zeta}(v,w)$. Las diferencias de  tiempo son estimadas a partir de los instantes de  despolarizaci髇  de los  dipolo $\mathbf{J}(v,t)$ y $\mathbf{J}(w,t)$.  Cuando $v=w  { \zeta}(v,w)=0$. Para  las cuatro resoluciones espaciales de mayor tama駉 de LeadField  se generan la funciones de distribuci髇 $F_{A_1}(\zeta)$, $F_{A_2}(\zeta)$, $F_{A_3}(\zeta)$, $F_{A_4}(\zeta)$, respectivamente, y constituyen la descripci髇 espacial de los dipolos perfectamente correlacionados.  De esta forma, el espectro  de las se馻les cardiacas en din醡icas perfectamente correlacionas es expresado por:
+El espectro de las se帽ales cardiacas  en la din谩mica perfectamente correlacionada, como se expone en \cite{RequenaSpectral1}, tiene asociado la funci贸n de diferencia de tiempos de activaci贸n ${\zeta}(v,w)$. Las diferencias de  tiempo son estimadas a partir de los instantes de  despolarizaci贸n  de los  dipolo $\mathbf{J}(v,t)$ y $\mathbf{J}(w,t)$.  Cuando $v=w  { \zeta}(v,w)=0$. Para  las cuatro resoluciones espaciales de mayor tama帽o de LeadField  se generan la funciones de distribuci贸n $F_{A_1}(\zeta)$, $F_{A_2}(\zeta)$, $F_{A_3}(\zeta)$, $F_{A_4}(\zeta)$, respectivamente, y constituyen la descripci贸n espacial de los dipolos perfectamente correlacionados.  De esta forma, el espectro  de las se帽ales cardiacas en din谩micas perfectamente correlacionas es expresado por:
 
 \begin{equation}
 S_{C_o}(\omega)=S_{A_o}(\omega) \cdot  S_{J}(\omega)
 \end{equation}
 
-Donde, $S_{A_o}(\omega)$, es la transformada de  Fourier de la funcion de distribuci髇 de  tiempos  $F_{A_o}(\zeta)$ y $S_{J}(\omega)$, es el espectro de un  dipolo del  tejido card韆co. por lo que, el espectro del las  se馻les cardiacas en el frente de onda plano, depende de la resoluci髇 espacial de cada leadField que nosotros definimos. En consecuencia, nosotos calculamos a partir de la funcion de distribuci髇 de  tiempos, $S_{A_1}(\omega)$, $S_{A_2}(\omega)$, $S_{A_3}(\omega)$, $S_{A_4}(\omega)$.
+Donde, $S_{A_o}(\omega)$, es la transformada de  Fourier de la funcion de distribuci贸n de  tiempos  $F_{A_o}(\zeta)$ y $S_{J}(\omega)$, es el espectro de un  dipolo del  tejido card铆aco. por lo que, el espectro del las  se帽ales cardiacas en el frente de onda plano, depende de la resoluci贸n espacial de cada leadField que nosotros definimos. En consecuencia, nosotos calculamos a partir de la funcion de distribuci贸n de  tiempos, $S_{A_1}(\omega)$, $S_{A_2}(\omega)$, $S_{A_3}(\omega)$, $S_{A_4}(\omega)$.
 
 
 
 \subsection{spectrum of cardiac sources}
 
- 
+
  The spectrum of a cardiac source, $\boldsymbol{\sigma}(v,w,f)$, $\forall v,w\in
  V$, corresponds to the collection of the cross-spectra between all pairs of
  dipoles in $V$, and is defined as
@@ -420,14 +419,14 @@ Donde, $S_{A_o}(\omega)$, es la transformada de  Fourier de la funcion de distri
  \end{eqnarray}
  where the operator $\mathcal{F}[\cdot]$ is applied to
  $\boldsymbol{\rho}(v,w,\tau)$ on a component-by-component basis. For instance,
- ${\sigma}_{zy}(v,w, f)$ is $\mathcal{F}[{\rho}_{zy}(v,w,\tau)]$. 
- 
+ ${\sigma}_{zy}(v,w, f)$ is $\mathcal{F}[{\rho}_{zy}(v,w,\tau)]$.
+
  We also define the \emph{total cross-correlation} $R_{J}(v,w,\tau)$ between two
  cardiac dipoles $\mathbf{J}(v,t)$ and $\mathbf{J}(w,t)$ as the sum of the
  entries of $\boldsymbol{\rho}(v,w,\tau)$ and the \emph{total cross-spectrum}
  $S_{J}(v,w,f)$ as the Fourier Transform of $R_{J}(v,w,\tau)$. Mathematically,
  they can be expressed as
- 
+
  \begin{eqnarray}
  S_{J}(v,w,f)  &=&  \mathbf{1}^{T} \boldsymbol{\sigma}(v,w, f)  \mathbf{1}.
 \label{total_spectrum}
@@ -447,12 +446,10 @@ $\hat{R}_{J}(v,w,\tau)$ as
 
 
 
-\section{M閠odos estimaci髇 del espectro}
+\section{M茅todos estimaci贸n del espectro}
 \section{Frecuencia Dominante}
 
 hablar aca de Fischer  \cite{Fischer07} y de Berenfeld \cite{Berenfeld10},
 \cite{Berenfeld11} ,\cite{Berenfeld07}, \cite{Berenfeld10}
 
 \section{Concluciones}
-
- 

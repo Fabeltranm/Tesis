@@ -1,7 +1,6 @@
-% -*-coding: iso-latin-1  -*-
 % ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-% Documento maestros para la elaboración de la tesis  proyectos fin de carrera  y master
-%  modificación:	FERNEY BELTRAN
+% Documento maestros para la elaboraciÃ³n de la tesis  proyectos fin de carrera  y master
+%  modificaciÃ³n:	FERNEY BELTRAN
 %  Fecha:		    septiembre 2014
 % +
 %+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -9,172 +8,35 @@
 % Los ficheros necesarios para este documento son:
 %
 %   Varios/* : 		ficheros con las partes del documento que no
-%                   son capítulos ni apéndices (pórtada, agradecimientos,
-%                   bibliografia etc.) 	
-%   Capitulos/*.tex : capí­tulos de la tesis       
-%	Apendices/*.tex:  apéndices de la tesis       
-%	Config/*:			
-%			constantes.tex : constantes del documento       
-%			config.tex : 	 configuración del documento en general y de  
+%                   son capÃ­tulos ni apÃ©ndices (pÃ³rtada, agradecimientos,
+%                   bibliografia etc.)
+%   Capitulos/*.tex : capÃ­Â­tulos de la tesis
+%	Apendices/*.tex:  apÃ©ndices de la tesis
+%	Config/*:
+%			constantes.tex : constantes del documento
+%			config.tex : 	 configuraciÃ³n del documento en general y de
 %							 las plantillas del mismo
-%   tmp/:	usado para los  ficheros temporales de compilación
-%				
+%   tmp/:	usado para los  ficheros temporales de compilaciÃ³n
+%
 %	se utiliza el entorno de edicion de  eclipse con el  plugin Texlipse
-%   para el glosario y los acrónimos se utiliza el paquete glossaries y
+%   para el glosario y los acrÃ³nimos se utiliza el paquete glossaries y
 %   para su complilacion se utiliza el script en pearl '\makeglossaries'
-%	Para que la compilación se realice en eclipse se debe crear el make
-%   glossaries en external tool configuration mas información en 
+%	Para que la compilaciÃ³n se realice en eclipse se debe crear el make
+%   glossaries en external tool configuration mas informaciÃ³n en
 %   http://tex.stackexchange.com/questions/45416/using-glossaries-in-texlipse
 %.
-%	configuración de eclipse :
-%	1.)	Incluir en windows ->Preferences -> Texlipse -> Latex Temp File 
+%	configuraciÃ³n de eclipse :
+%	1.)	Incluir en windows ->Preferences -> Texlipse -> Latex Temp File
 %		.acn, .acr, .alg, .glo, .xdy , .ist, .gls, .glg
-%	2.) Run -> External Tools -> External Tools config .. program 
+%	2.) Run -> External Tools -> External Tools config .. program
 %		en location 			selecionar el path de 	/usr/bin/makeglossaries
 %       en working Directory 	${project_loc}/tmp
-%		en Argument				-q ${project_name} si el .tex es el mismo nombre 
+%		en Argument				-q ${project_name} si el .tex es el mismo nombre
 %   3.) Project->Properties->Builders
 %		 Selecionar import  y seleccionar la build anteriormente configurado
-%   
+%
 %   nota: en algunos casos no se crea de forma inmediata el pdf o dvi con los
 % acronimos. Para solucionar este inconveniente  se puede generar  el build del
 % proyecto  2 o 3 veces seguidas. Otra forma es crear en external tolls config
 % un nuevo  build para latex y dvipdf igual que el paso 2 y 3 anterior.  de
-% esta forma la configuraciÃ³n de los builders del proyecto podria quedar de la
-% siguiente forma:
-% 		latex -> makeglossaries -> latex ->latex -> dvipdf 
-%
-% La segunda opcion es usar el makefile que acompaña este documento. ejecutarlo
-% desde una terminar o configura  eclipse de la siguiente forma.
-% 1 Run -> External Tools -> External Tools config .. program 
-%		en location 	selecionar el path de make. Donde esta el script  que
-%                       ejecuta el makefile, (en linux lo sabe ejecutando 
-%                       whereis make) 
-% 2 En working Directory ${project_loc} 	
-% 3 En Argument          coloque el que más le convenga: latex, pdflatex, 
-%                        fastlatex, fastpdf 
-% 4  En Project ->Properties -> builders -> selecionar el nmbre anteriormente
-% creado y, en la pestaña build options, seleccionar during builds. 
-%
-% Para el clean, repetir paso 1 y 2 dle proceso anterior, y en arguments
-% colocar clean y en la ventana build options, seleccionar unicamente during
-% Clean.
-% Para hacer el bakups ejecute Makefile zipBackup
-% COMENTARIOS 
-% Para los comentario o cosas pendientes se recomiendao  usar el comando \TODO,
-% definido en el archivo config.tex
-% Para los comentarios del Director de tesis usar \commentDir
-	
-\documentclass[12pt,a4paper, twoside,spanish ]{book}
-
-
-%% fichero de configuración
-\input{00_config/config}
-
-%% Config de cabeceras de capitulos  y secciones especiales
-\input{00_config/headers}
-
-% Fichero con las macros para crear la bibliografia
-%\include{config/config_bib}
-
- % fichero de las constantes a usar en el documento
-\include{00_config/constantes}
-\ifx\nogeneraacronimos\undefine
-	\makeglossaries
-	\input{00_varios/db_acron}
-\fi
-%
-% "Metadatos" para el PDF
-%
-
-\pdfinfo{
-   /Author (\autorDoc)
-   /Title  (\tituloDoc)
-   /CreationDate (\today)
-   /Subject (PDFLaTeX)
-   /Keywords (PDF;LaTeX)
-
-}
-
-%\input{config/headers.tex}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%-----------------document begins here ---------%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{document}
-
-
-\ifx\release\undefined
-  \layout		% para ver la configuración de las pagimas
-\fi
-
-\include{00_varios/titlepage}
-
-\frontmatter % estilo que debe tener el documento (página de título, tabla de
-% contenidos, prólogos),
-% Números romanos
-
-
-\include{00_varios/resumen} 
-\include{00_varios/abstract}
-\include{00_varios/dedicatoria}
-\include{00_varios/agradecimientos}
-
-%% Tablas de Contenidos 
-\ifx\nogeneratoc\undefine
-  \input{00_config/config_toc} 
-\fi
-
-%% Lista de acrónimos
-\input{00_varios/acronimos}
-
-
-%%---------------- AQUÍ COMIENZAN LOS CAPÍTULOS DEL DOCUMENTO ---------------- %
-
-\mainmatter % estilo que debe tener el texto principal del documento, numeradas
-% con números arïábigos
-\restauraCabecera
-
-
-\input{mindmap/all_mindmap}
-\include{01_introduction/introduction}
-
-\part{Métodos}
-
-\include{02_Chapters/01_Chap}
-\include{02_Chapters/02_Chap}
-
-\part{Análisis y Simulaciones} 
-\include{02_Chapters/03_Chap}
-\include{02_Chapters/04_Chap}
-
-
-\part{Discusión y Conclusiones}
-\include{02_Chapters/05_Chap}
-
-
-\newpage
-
-
-%%-------------------FINAL DE LOS CAPÍTULOS DE LA TESIS-------------%
-
-% Apéndices
-\part{Apéndices}
-\appendix 
-\include{03_Appendix/01_appendix}
-
-
-% \nocite{*}
-
-\backmatter % se usa para el estilo de la parte final del libro (la
-% bibliografía, los í­ndices de materias).
-
-% \bibliographystyle{IEEEtran}  
- \bibliographystyle{plainnat}
- \begin{small}
-   \bibliography{biblio_tesis}
- \end{small}
-\addcontentsline{toc}{chapter}{Bibliografía} 
- 
-\end{document}
+% esta forma la configuraci
