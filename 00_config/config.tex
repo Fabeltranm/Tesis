@@ -4,7 +4,7 @@
 
 \ifx\release\undefined
     % modo debug
-    \def\debugmode{1}  
+    \def\debugmode{1}
     \def\printtodos{1}
     \def\printcoments{1}
     \def\nolayoutconfig{1}
@@ -143,9 +143,10 @@ shortcuts,hyperfirst=false,sanitize=none]{glossaries}
 
 % insertar una figura con el fin de evitar la inclusion de la carperta
 % en donde estan las imagenes
-\newcommand{\imagen}[2]{%
-  \includegraphics[#2]{image/#1}%
-}
+
+%\newcommand{\imagen}[2]{%
+%  \includegraphics[#2]{image/#1}%
+% }
 
 % insertar figuras directamente desde el texto, se debe indicar 4
 % argumentos 1 el nombre del fichero, 2 width=Xcm,height=Ycm,angle=Z,
