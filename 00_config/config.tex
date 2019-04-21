@@ -1,13 +1,14 @@
 % si estamos en debug o release
- \def\release{1}
+% \def\release{1}
 % en modo debug   se debe comentar el release
 
 \ifx\release\undefined
     % modo debug
+    \def\debugmode{1}  
     \def\printtodos{1}
     \def\printcoments{1}
+    \def\nolayoutconfig{1}
     %\psdraft % no aparecen las imagenes en el documento  impreso
-    \def\comsdestacados{1}
     \def\nogeneratoc{1}
     \def\nogeneraacronimos{1}
 
@@ -107,14 +108,14 @@
 %% ACRONIMOS
 
 %% inclusión del paquete glossaries, para  tener lso acronimos
-%	xindy 	indicaque el motor de  busqueda es xindy, se necesita del  la instalacion de xindy
-%	acronym, indica que se genera lsita de acronimos
+%	xindy 	indica que el motor de  busqueda es xindy, se necesita del  la instalacion de xindy
+%	acronym, indica que se genera lista de acronimos
 %	nomumberlist	para  que no incluya la pagina donde aparece el acronimo
 %	sanitize=none evita lso problemas con los acentos  en algunos comandos
 %	\ac muestra el acrónimo en su forma  completa la primera vez  que se llama y
-%   la forma corta las siguentes 	\ac1 muestra la  forma larga del acrónimo
+% la forma corta las siguentes 	\ac1 muestra la  forma larga del acrónimo
 %	\acs muestra la forma corta y \acf la forma completa
-% 	el fichero fuente esta en bd_acronimos
+% el fichero fuente esta en bd_acronimos
 
 \usepackage[xindy={language=spanish-traditional},
 acronym, nonumberlist,translate=false,toc,
@@ -136,8 +137,6 @@ shortcuts,hyperfirst=false,sanitize=none]{glossaries}
   \renewcommand*{\acronymname}{Acrónimos y abreviaturas}
   \renewcommand*{\glossaryname}{Glosario}
 }
-
-
 
 
 %% GENERACIÓN DE NUEVOS COMANDOS  PARA SIMPLIFICAR LA ESCRITURA
@@ -170,12 +169,12 @@ shortcuts,hyperfirst=false,sanitize=none]{glossaries}
 \bigskip%
 }
 
-% configiraciòn de comentarios y cosas por hacer
+% configuraciòn de comentarios y cosas por hacer
 
 % TODO
 \newcommand{\TODO}[1]{{\color{orange} TODO: #1}}
 % comentarios Director
-\newcommand{\commentDir}[1]{{\color{red} #1}}
+\newcommand{\commentDir}[1]{{\color{red} Comentarios Director: #1}}
 
 
 %%% FIN CONFIG

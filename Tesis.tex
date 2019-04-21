@@ -11,14 +11,14 @@
 %                   son capítulos ni apéndices (pórtada, agradecimientos,
 %                   bibliografia etc.)
 %   Capitulos/*.tex : capí­tulos de la tesis
-%	Apendices/*.tex:  apéndices de la tesis
-%	Config/*:
+%	  Apendices/*.tex:  apéndices de la tesis
+%	  Config/*:
 %			constantes.tex : constantes del documento
 %			config.tex : 	 configuración del documento en general y de
 %							 las plantillas del mismo
 %   tmp/:	usado para los  ficheros temporales de compilación
 %
-% COMENTARIOS 
+% COMENTARIOS
 % Para los comentario o cosas pendientes se recomiendo  usar el comando \TODO,
 % definido en el archivo config.tex
 % Para los comentarios del Director de tesis usar \commentDir
@@ -62,7 +62,7 @@
 \begin{document}
 
 
-\ifx\release\undefined
+\ifx\nolayoutconfig\undefined
   \layout		% para ver la configuración de las paginas
 \fi
 
@@ -73,10 +73,10 @@
 % Números romanos
 
 
-\include{00_varios/resumen}
-\include{00_varios/abstract}
-\include{00_varios/dedicatoria}
-\include{00_varios/agradecimientos}
+% \include{00_varios/resumen}
+% \include{00_varios/abstract}
+% \include{00_varios/dedicatoria}
+% \include{00_varios/agradecimientos}
 
 %% Tablas de Contenidos
 \ifx\nogeneratoc\undefine
@@ -97,29 +97,40 @@
  \input{mindmap/all_mindmap}
  \include{01_introduction/introduction}
 
-\part{Métodos}
+ \ifx\debugmode\undefined
+ 	\part{Métodos}
+ \fi
 
 \include{02_Chapters/01_Chap}
 \include{02_Chapters/02_Chap}
 
-\part{Análisis y Simulaciones}
+\ifx\debugmode\undefined
+ \part{Análisis y Simulaciones}
+\fi
+
 \include{02_Chapters/03_Chap}
 \include{02_Chapters/04_Chap}
 
-
+\ifx\debugmode\undefined
 \part{Discusión y Conclusiones}
+\fi
+
 \include{02_Chapters/05_Chap}
 
 
-\newpage
+\ifx\debugmode\undefined
+ \newpage
+ \fi
 
 
 %%-------FINAL DE LOS CAPÍTULOS DE LA TESIS-------------%
 
 % Apéndices
-\part{Apéndices}
-\appendix
-\include{03_Appendix/01_appendix}
+\ifx\debugmode\undefined
+ \part{Apéndices}
+ \appendix
+ \include{03_Appendix/01_appendix}
+\fi
 
 
 % \nocite{*}
