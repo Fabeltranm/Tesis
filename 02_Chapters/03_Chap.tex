@@ -2,31 +2,13 @@
 \chapter{Análisis}
 
 \begin{resumen}
-    En este capitulo se realiza el análisis sistemático 
-    
- se dedica a presentar el formalismos matemático,
-  que conecta el espectro de las señales cardiacas con las características
-  espacio temporal de diferentes dinámicas cardiacas. Por lo cual, en esta
-  sección se realizar el análisis sistemáticos de \ac{MSD}, nuestra propuesta de
-  cuantificación de la resolución espacial del sistema de electrodos. Así mismo,
-  se analizan las principales propiedades de la distribución de tiempos de
-  activación, para darle una base sólida en función de la correlación de la
-  actividad cardiaca.
-  
- In this section we study analytically the spectral manifestation of two
- second-order models of cardiac sources, namely the fully correlated (FC) source
- and the fully uncorrelated (FU) source.  The FC and FU models are
- physiologically meaningful and can be used to describe the dynamics of,
- respectively, highly organized and highly disorganized cardiac rhythms.
 
- We firstly define the autocorrelation and the spectrum of the following models
- of spatiotemporal dynamics: identically distributed (ID), FC and FU. The ID
- model is introduced for facilitating the comparison of the spectrum of cardiac
- signals measured during FC and FU dynamics. Secondly, we define a simple,
- idealized model of MSD, namely the pulse model. Because of its simplicity, the
- pulse model is used in the analytical derivations and in the simulation
- experiments throughout this study. Finally, we derive analytically the spectrum
- of cardiac signals measured by pulse MSD during FU and FC dynamics.
+En este capitulo se realiza el análisis sistemático,  que conecta el espectro de las señales cardiacas con las características espacio temporal de diferentes dinámicas cardiacas, como, ritmos cardiacas altamente organizados, ritmos altamente desorganizados y ritmos parcialmente organizados. Las tres dinámicas de segundo orden,  se modelan  como \acf{FC}, \acf{FI} \acf{FPC}, respectivamente.
+
+El capitulo inicia con la definición  del modelo espaciotemporal \acf{ID}, lo que permite relacionar los modelos de segundo orden con el espectro de las señales adquiridas en arritmias cardiacas. En este sentido se presenta la definición del  espectro de los modelos \ac{FC}, \ac{FI} \ac{FPC} y la respectiva autocorrelación.
+
+A continuación. se presenta la definición y el análisis matemático  de \acf{MSD}, propuesta de  cuantificación de la resolución espacial del sistema de electrodo. Así mismo, se analizan las principales propiedades de la distribución de tiempos de activación, para darle una base sólida en función de la correlación de la  actividad cardiaca.
+  
 
  \commentDir{ ... }
 
@@ -34,7 +16,7 @@
 
 \section{Introducción}
 \section{Modelos de fuentes de 2 orden}
-\subsection{Identically distributed spatiotemporal dynamics}
+\subsection{Dinámica Espacio-temporal de \acf{ID}}
 
 % In this model of spatiotemporal dynamics all cardiac dipoles have the same autocorrelation and spectrum,
 % \begin{eqnarray}
@@ -48,7 +30,7 @@
 % \end{eqnarray}
 % Note that this model only describes the activity of cardiac dipoles individually, and does not specify $\boldsymbol{\rho}(v,w,\tau)$ nor $\boldsymbol{\sigma}(v,w,f)$ for $v\neq w$.
 %
-\subsection{Fully correlated spatiotemporal dynamics}
+\subsection{Dinámicas Espacio-temporales completamente correlacionadas }
 
 % This model of spatiotemporal dynamics corresponds to highly regular rhythms, such as sinus rhythm, in which the activity of one dipole $\mathbf{J}(w,t)$ can be expressed as a delayed version of the activity of another dipole $\mathbf{J}(v,t)$,
 % \begin{equation}\label{def:FCS}
@@ -62,7 +44,7 @@
 % Consequently, FC sources are completely characterized by $\boldsymbol{\rho}(\tau)$, $\boldsymbol{\sigma}(f)$ and $\zeta (v,w)$.
 %
 
-\subsection{Fully uncorrelated spatiotemporal dynamics}
+\subsection{Dinámicas Espacio-temporales completamente Incorrelacionadas}
 
 % This model of spatiotemporal dynamics constitutes an idealization of highly irregular and disorganized rhythms, such as fibrillation, in which there is no second-order relationship between the temporal activity of any pair of cardiac dipoles. The autocorrelation and the spectrum of a FU source are defined as
 % \begin{eqnarray}
@@ -72,11 +54,19 @@
 % In words, the cross-correlation between two cardiac dipoles $\mathbf{J}(w,t)$ and $\mathbf{J}(v,t)$, where $v\neq w$, is null.
 %
 %
+
+\subsection{Dinámicas Espacio-temporales parcialmente correlacionadas}
+
+
 \section{Función de distribución de tiempos}
 
-\section{Lead Fields}
 
-\subsection{Idealized model}
+
+\section{\acf{MSD}}
+
+\subsection{Lead Fields}
+
+\subsubsection{Modelo ideal}
 
 % in this section we define one simple, idealized model of MSD, namely the pulse
 % model. The pulse model describes a lead system that measures with the same
@@ -117,3 +107,6 @@
 % we identify the relationship between: the spectrum of cardiac signals,
 % the spatiotemporal dynamics of cardiac sources and the measurement
 % characteristics of lead systems
+
+
+\section{Concluciones}
