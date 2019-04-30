@@ -6,7 +6,6 @@ En el siguiente capítulo se aborda el formalismo matemático que enmarca la def
 
 A lo largo del capitulo se plasman los diferentes conceptos necesarios para el análisis espectral, como la auto-correlación de las fuentes y señales cardiacas. Y mediante el análisis multivariante, se estudian los mecanismos para la estimación del espectro que conllevan a los mapas de \acf{DF} y de \acf{PF}. Por último, se abordan los efectos de sistemas de electrodos sobre el espectro de las señales.
 
-
 Para terminar, se aborda los mapas de \ac{DF}, como ejemplo de análisis espectral. en donde se expone la relación entre las características del sistema de electrodos, utilizados para estimar la actividad local del miocardio, y el ancho de banda del espectro resultante.
 
 Los resultados teóricos, presentes en este capitulo, derivan en el análisis e
@@ -22,61 +21,58 @@ NOTAS llega hasta la descripción de la correlación de voltajes  y la definici�
 
 \section{Introducción}
 
-% En el estudio de la fibrilaciones cardiacas, por medio de \ac{ECG}, se observan
-% trazas muy irregulares de la señal captada, y por lo tanto, tradicionalmente se
-% han descrito dichas arritmias complejas como aleatorias  y desorganizadas.
-% Pero el análisis espectral, técnica ampliamente utilizada en el estudio de
-% señales cardiaca, a permitido cuantificar la organización espacio-temporal del
-% sustrato cardiaco durante la fibrilación. Con el uso de la teoria de la dinámica
-% no lineal y gracias al desarrollo de técnicas de mapeo optico y eléctrico, se ha
-% spropuesto que la fibrilación puede tener algun grado de regularidad
-% espacio-temporal \cite{Hoekstra95, Jalife00}.
-%
-%
-% De esta forma, las caracteristicas espectrales de señales cardiacas, se han
-% propuestos como índices experimentales para la detección de \ac{VF} \cite
-% {Barro89}, para cuantificar el grado de organización espacio-temporal de la
-% \ac{AF} \cite{Everett01a} y para predecir el éxito de
-% descargas de desfibrilación \cite{Strohmenger97, Eftestol00, Jekova04}.
-% Adicionalmente con los mapas de \ac{DF} se han podido observar un grado de
-% regularidad durante la \ac{AF} tanto en animales \cite{Skanes98,
-% Mandapati00, Mansour01} como en humanos \cite{Sanders05, Atienza06}.
-%
-% Se observa, el análisis espectro de las señales cardiaca, viene en
-% constante crecimiento. Sin embargo, aùn sigue siendo difusa la relación entre el
-% espectro de señales cardiacas y la dinámica espacio-temporales de las fuentes
-% cardíacas subyacentes. por lo cual en este capítulo se presenta  el formalismo
-% matemático que sustenta la investigación el espectro de la actividad eléctrica
-% del corazón.
-%
+ % En el estudio de la fibrilaciones cardiacas, por medio de \ac{ECG}, se observan trazas muy irregulares de la señal captada, y por lo tanto, tradicionalmente se han descrito dichas arritmias complejas como aleatorias  y desorganizadas.
 
-% Los procesos estocásticos nos permiten modelar aquellos sistemas multivariantes,
-% en tiempo y espacio. De esta manera, gracias a las herramientas estadisticas, se
-% puede estudiar como se comportan señales variantes en el tiempo, que de otra
-% forma serian muy dificiles de tratar. Los modelos estocásticos son fundamentales
-% para el análisis espectral de señales bioeléctricas, y en general en señales
-% discretas que se analizan en un tiempo finito. De esta formas, tanto la
-% autocorrelación con la densidad espectral de potencia, son habitualmente muy
-% utilizadas para describir procesos estocásticos de segundo orden. Con los
-% estadisticos de segundo orden, por lo tanto, es posible describir patrones,
-% tales como la periidicidad y la coherencia de las señales
-% \cite{Requena08}. Siguiendo un enfoque de análisis de la señal multivariante, a
-% lo largo de este capítulo, se identifica la relación entre el
-% espectro de las señales cardiacas, la dinámica espacio-temporal de las fuentes
-% cardíacos, y las características de los sistemas de captación de la actividad
-% cardiaca.
-%
-%
+El análisis espectral, técnica ampliamente utilizada en el estudio de señales cardiaca, a permitido cuantificar la  organización espacio-temporal del sustrato cardiaco durante la fibrilación. Con el uso de la teoría de la dinámica no lineal y gracias al desarrollo de técnicas de mapeo óptico y eléctrico, se ha propuesto que la fibrilación cardiaca  puede tener algún grado de regularidad espacio-temporal \cite{Hoekstra95, Jalife00}.
+
+Las características espectrales de señales cardiacas, se han propuestos como índices experimentales para la detección de \ac{VF} \cite{Barro89}, para cuantificar el grado de organización espacio-temporal de la \ac{AF} \cite{Everett01a} y para predecir el éxito de descargas de desfibrilación \cite{Strohmenger97, Eftestol00, Jekova04}.
+Adicionalmente con los mapas de \ac{DF} se han podido observar un grado de regularidad durante la \ac{AF} tanto en animales \cite{Skanes98, Mandapati00, Mansour01} como en humanos \cite{Sanders05, Atienza06}. En este sentido, se observa, el análisis del espectro de las señales cardiaca viene en constante crecimiento. Sin embargo, aún sigue siendo difusa la relación entre el espectro de señales cardiacas y la dinámica espacio-temporales de las fuentes cardíacas subyacentes.
+
+
+En este capítulo se expone el formalismo matemático que sustenta las investigaciones relacionas con el espectro de la actividad eléctrica del corazón. A priori, los procesos estocásticos nos permiten modelar aquellos sistemas multivariantes, en tiempo y espacio. De esta manera, gracias a las herramientas estadísticas, se puede estudiar como se comportan señales variantes en el tiempo, que de otra forma serian muy difíciles de tratar. Los modelos estocásticos son fundamentales para el análisis espectral de señales bioeléctricas, y en general en señales discretas que se analizan en un tiempo finito. De esta formas, tanto la autocorrelación con la densidad espectral de potencia, son habitualmente muy utilizadas para describir procesos estocásticos de segundo orden. Con los estadísticos de segundo orden, por lo tanto, es posible describir patrones, tales como la periodicidad y la coherencia de las señales \cite{Requena08}. 
+
+
 
 \subsection{Variable Aleatoria}\label{subs:varaleatoria}
 
-Una variable aleatoria, como función medible que asigna un número real a cada posible resultado del espacio muestral de un experimento aleatorio, se puede caracterizar por medio de su probabilidad de ocurrencia. De esta forma, la función de distribución ${F(x)}$  es una descripción de las probabilidades asociadas a los posibles valores de la variable aleatoria.
+Una variable aleatoria se define como función medible que asigna un número real a cada posible resultado del espacio muestral de un experimento aleatorio y, por lo tanto, se puede caracterizar por medio de su probabilidad de ocurrencia. En este sentido, la función de distribución de probabilidad ${F(x)}$, describe las probabilidades asociadas a los posibles valores de la variable aleatoria.
 
-Por tanto, toda variable aleatoria tiene asociada una función de distribución ${F(x)}$, tal que ${F(x)=P(X \leq x)}$. Para variables aleatoria continua, la distribución de probabilidad viene descrita por una función de densidad
-${f(x)}$. en donde, ${f(x)= dF(x)/dx}$. Asi mismo,  para las variables aleatorias discretas relacionamos la función de distribución con la función de densidad como ${F(x)= \displaystyle\sum_{x_i \leq x }f(x_i)}$.
+Toda variable aleatoria tiene asociada una función de distribución ${F(x)}$:
 
-Un proceso estocástico es una sucesión infinita de variables aleatorias que evolucionan en el tiempo. Por lo tanto, al dependen del un tiempo $t$  la función de distribución da lugar a ${F(x,t)=P(\mathbf{x}(t) \leq x)}$.
-Por lo que, la función de densidad de $x(t)$ es $f(x,t)= \partial{F(x,t)}/\partial{x}$ \cite{Papoulis91}.
+\begin{eqnarray}\label{eq:función_distri}
+    {F(x)=P(X \leq x)}
+\end{eqnarray}
+
+Donde, cada valor de $x$ es la probabilidad que variable aleatoria $X$ sea menor o igual a $x$.
+
+Para variables aleatoria continua, la distribución de probabilidad viene descrita por la función de densidad
+${f(x)}$: 
+
+ \begin{eqnarray}\label{eq:función_distri_continua}
+    {f(x)= dF(x)/dx} 
+\end{eqnarray}
+
+Donde, si tomamos \ref{eq:función_distri} podemos decir que  $f(x)dx$ es la probabilidad de $X$ que tome un valor aleatorio en el intervalo $[x, x+dx]$.
+
+Para las variables aleatorias discretas, la función de distribución, es definida por la suma de todas las probabilidades de los valores de $x_i$  menores a $x$:
+
+\begin{eqnarray}\label{eq:función_distri_discreta}
+    {F(x)= \displaystyle\sum_{x_i \leq x }f(x_i)}
+\end{eqnarray}
+
+\subsection{Proceso Estocástico}\label{subs:proceso_estocástico}
+
+Se entiende un proceso estocástico, en el contexto de series temporales, como una sucesión infinita de variables aleatorias que evolucionan en el tiempo $t$  \cite{Papoulis91}. En este contexto,  para cada valor de $t$ se tienes una función de distribución $F(x)$, y con \ref{eq:función_distri}, la función de distribución da lugar a :
+
+\begin{eqnarray}\label{eq:función_distri_procesoe}
+   {F(x,t)=P(\mathbf{x}(t) \leq x)}
+\end{eqnarray}
+
+Ahora bien si se remplaza \ref{eq:función_distri_continua} en \ref{eq:función_distri_continua}, se dice que la función de densidad de la señal $x(t)$ esta dada por :
+
+\begin{eqnarray}\label{eq:función_distri_procesoe}
+f(x,t)= \partial{F(x,t)}/\partial{x}
+\end{eqnarray}
 
 \subsection{Correlación de Señales}\label{subs:corresignal}
 
